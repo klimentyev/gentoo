@@ -4851,7 +4851,7 @@ dev-libs/libhid 0.2.16-r4: Provides a generic and flexible way to access and int
 dev-libs/libhome 0.10.2-r1: libhome is a library providing a getpwnam() emulation
 dev-libs/libhtmlparse 0.1.13-r1: HTML parsing library
 dev-libs/libical 1.0.1 2.0.0-r2: An implementation of basic iCAL protocols
-dev-libs/libiconv 1.14 1.14-r1 1.14-r2: GNU charset conversion library for libc which doesn't implement it
+dev-libs/libiconv 1.14 1.14-r1 1.14-r2 1.15: GNU charset conversion library for libc which doesn't implement it
 dev-libs/libidmef 1.0.3: Implementation of the IDMEF XML draft
 dev-libs/libindicate 12.10.1-r2: A library to raise flags on DBus for other components of the desktop
 dev-libs/libindicate-qt 0.2.5.91: Qt wrapper for libindicate library
