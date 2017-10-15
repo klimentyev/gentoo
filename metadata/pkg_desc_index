@@ -30,7 +30,7 @@ app-accessibility/powiedz 1.0-r2: Polish speech synthesizer based on rsynth
 app-accessibility/simon 0.4.1 0.4.90: Open-source speech recognition program for replacing mouse and keyboard
 app-accessibility/sound-icons 0.1: a collection of Sound Icons for speech-dispatcher
 app-accessibility/speech-dispatcher 0.8.1 0.8.3 0.8.7: Speech synthesis interface
-app-accessibility/speech-tools 2.1-r2 2.1-r3: Speech tools for Festival Text to Speech engine
+app-accessibility/speech-tools 2.1-r2 2.1-r3 2.1-r4: Speech tools for Festival Text to Speech engine
 app-accessibility/speechd-el 2.5: Emacs speech support
 app-accessibility/sphinx2 0.6: CMU Speech Recognition-engine
 app-accessibility/sphinx3 0.8-r1: CMU Speech Recognition engine
