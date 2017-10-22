@@ -1,0 +1,7 @@
+DEFINED_PHASES=-
+DESCRIPTION=Virtual for Java Development Kit (JDK)
+EAPI=6
+KEYWORDS=~amd64 ~amd64-linux ~x64-macos ~sparc64-solaris
+RDEPEND=|| ( dev-java/oracle-jdk-bin:1.9 )
+SLOT=1.9
+_md5_=f43b38e5cfd3447222d69995be71ffef
