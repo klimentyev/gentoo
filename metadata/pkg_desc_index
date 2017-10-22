@@ -7513,7 +7513,7 @@ dev-python/decoratortools 1.8-r1: Class, function, and metaclass decorators
 dev-python/deform 0.9.9: Another form generation library
 dev-python/defusedxml 0.4.1-r1 0.5.0: XML bomb protection for Python stdlib modules, an xml serialiser
 dev-python/demjson 2.2.4: encoder, decoder, and lint/validator for JSON (JavaScript Object Notation) compliant with RFC 4627
-dev-python/denonavr 0.5.3: Automation Library for Denon AVR receivers
+dev-python/denonavr 0.5.3 0.5.4: Automation Library for Denon AVR receivers
 dev-python/deprecation 1.0.1: A library to handle automated deprecations
 dev-python/dexml 0.5.1: Dead-simple Object-XML mapper for Python
 dev-python/dib-utils 0.0.8 0.0.10: Standalone tools related to diskimage-builder.
@@ -19188,6 +19188,7 @@ x11-plugins/pidgintex 1.1.2_p20170107: Pidgin plugin to render LaTeX expressions
 x11-plugins/purple-facebook 20170608 20170831: Facebook protocol plugin for libpurple
 x11-plugins/purple-hangouts 0_p20170209 0_p20170714: Hangouts Plugin for libpurple
 x11-plugins/purple-libnotify-plus 1.99.2 2.99.1: Provide libnotify interface to Pidgin and Finch
+x11-plugins/purple-mattermost 1.2: A libpurple/Pidgin plugin for Mattermost
 x11-plugins/purple-plugin_pack 2.7.0-r1: A package with many different plugins for pidgin and libpurple
 x11-plugins/qled 0.6.2: Custom Led widget plugin for Qt-Designer
 x11-plugins/thinkhdaps 0.2.1-r1: A PyGTK based HDAPS monitor
