@@ -8956,7 +8956,7 @@ dev-python/visual 5.74-r1: Real-time 3D graphics library for Python
 dev-python/vobject 0.9.3: Python package for parsing and generating vCard and vCalendar files
 dev-python/voluptuous 0.9.3 0.10.5: A Python data validation library.
 dev-python/vulture 0.10: find unused classes, functions and variables in your code
-dev-python/w3lib 1.13.0 1.17.0: Python library of web-related functions
+dev-python/w3lib 1.13.0 1.17.0 1.18.0: Python library of web-related functions
 dev-python/waitress 1.0.1 1.0.2: A pure-Python WSGI server
 dev-python/warlock 1.1.0 1.2.0: Python object model built on JSON schema and JSON patch
 dev-python/watchdog 0.8.3-r1 0.8.3-r2: Python API and shell utilities to monitor file system events
