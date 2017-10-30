@@ -1,0 +1,11 @@
+DEFINED_PHASES=-
+DEPEND=sys-fs/fuse:= >=x11-libs/libX11-1.6.5 virtual/pkgconfig
+DESCRIPTION=Display and control state of X11 windows and window manager in the file system
+EAPI=6
+HOMEPAGE=https://github.com/gerstner-hub/xwmfs
+KEYWORDS=~amd64 ~x86 ~arm
+LICENSE=GPL-2
+RDEPEND=sys-fs/fuse:= >=x11-libs/libX11-1.6.5
+SLOT=0
+SRC_URI=https://github.com/gerstner-hub/xwmfs/releases/download/v0.81/xwmfs-0.81-dist.tar.gz
+_md5_=4788cbacd47e572979ce21ee4c5d8da7
