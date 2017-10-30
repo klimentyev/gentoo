@@ -12648,6 +12648,7 @@ media-fonts/zh-kcfonts 1.05-r3: Kuo Chauo Chinese Fonts collection in BIG5 encod
 media-gfx/aaphoto 0.43.1 0.45: Automatic color correction and resizing of photos
 media-gfx/aewan 1.0.01-r1: A curses-based ascii-art editor
 media-gfx/album 4.07 4.13-r1: HTML photo album generator
+media-gfx/alembic 1.7.4: Alembic is an open framework for storing and sharing scene data
 media-gfx/aoi 2.5 2.7.2: A free, open-source 3D modelling and rendering studio
 media-gfx/apng2gif 1.8: create a GIF from an APNG
 media-gfx/apngasm 2.7 2.91: create an APNG from multiple PNG files
@@ -13228,6 +13229,7 @@ media-libs/pnglite 0.1.17: Small and simple library for loading and writing PNG 
 media-libs/portaudio 19_pre20140130 19.06.00 19.06.00-r1: A free, cross-platform, open-source, audio I/O library
 media-libs/portmidi 217-r1: A library for real time MIDI input and output
 media-libs/ptex 2.1.28 2.1.28-r1: Per-Face Texture Mapping for Production Rendering
+media-libs/pyilmbase 2.2.0: Python bindings for the media-libs/ilmbase package
 media-libs/pyliblo 0.10.0: A Python wrapper for the liblo OSC library
 media-libs/pymemphis 0.2.1-r2: Python bindings for the libmemphis library
 media-libs/qhull 2012.1-r4 2015.2: Geometry library
@@ -16684,7 +16686,7 @@ sci-mathematics/reduce 20110414-r1: A general-purpose computer algebra system
 sci-mathematics/relational 2.5: Educational tool for relational algebra
 sci-mathematics/rkward 0.6.5_p20170420: IDE for the R-project
 sci-mathematics/rngstreams 1.0.1: Multiple independent streams of pseudo-random numbers
-sci-mathematics/rstudio 0.99.473-r1 0.99.482 0.99.483 0.99.484 0.99.486-r1 0.99.491 0.99.879 0.99.893 0.99.896 0.99.902 0.99.903 1.0.44 1.0.136 1.0.143 1.0.153 1.1.368: IDE for the R language
+sci-mathematics/rstudio 0.99.473-r1 0.99.482 0.99.483 0.99.484 0.99.486-r1 0.99.491 0.99.879 0.99.893 0.99.896 0.99.902 0.99.903 1.0.44 1.0.136 1.0.143 1.0.153 1.1.368 1.1.383: IDE for the R language
 sci-mathematics/rw 0.7-r2: Compute rank-width decompositions of graphs
 sci-mathematics/sha1-polyml 5.5.0 5.6_p1: implementation of SHA1 is taken from the GNU coreutils package
 sci-mathematics/singular 3.1.6 4.0.2 4.0.3: Computer algebra system for polynomial computations
