@@ -440,7 +440,7 @@ app-benchmarks/volanomark 2.5.0.9: Java server benchmark utility
 app-benchmarks/wrk 3.1.2 4.0.2: A modern HTTP benchmarking tool
 app-cdr/b5i2iso 0.2 0.2-r1: Convert CD images from b5i (BlindWrite) to iso
 app-cdr/bashburn 3.1.0: A shell script for burning optical media
-app-cdr/bchunk 1.2.0-r2: Convert CD images from bin/cue to iso+wav/cdr
+app-cdr/bchunk 1.2.0-r3: Convert CD images from bin/cue to iso+wav/cdr
 app-cdr/bin2iso 19b-r2: converts RAW format (.bin/.cue) files to ISO/WAV format
 app-cdr/brasero 3.12.1 3.12.1-r1 3.12.2: CD/DVD burning application for the GNOME desktop
 app-cdr/burn-cd 1.7.4 1.8.0-r1 1.8.1: Smart console frontend for the cdrkit/cdrtools & dvd+rw-tools
