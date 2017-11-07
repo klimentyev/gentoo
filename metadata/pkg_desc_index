@@ -4602,7 +4602,7 @@ dev-lang/scala 2.11.1-r2 2.11.2-r2 2.11.4-r1 2.11.4-r2 2.11.6-r1 2.11.7-r1 2.11.
 dev-lang/scala-bin 2.11.8: The Scala Programming Language
 dev-lang/smlnj 110.75: Standard ML of New Jersey compiler and libraries
 dev-lang/snobol 0.99.4 0.99.44 1.1 1.4.1: Phil Budne's port of Macro SNOBOL4 in C, for modern machines
-dev-lang/solidity 0.4.2: The Solidity Contract-Oriented Programming Language
+dev-lang/solidity 0.4.18: The Solidity Contract-Oriented Programming Language
 dev-lang/spark 2017: Software development for high-reliability applications.
 dev-lang/spidermonkey 1.7.0-r3 1.8.5-r6 17.0.0-r4 17.0.0-r5 24.2.0-r3 24.2.0-r4 38.2.1_rc0 45.0.2 52.4.0_pre20171003-r1: Stand-alone JavaScript C++ library
 dev-lang/squirrel 2.2.4-r2 3.1: A interpreted language mainly used for games
@@ -15612,7 +15612,7 @@ net-p2p/eiskaltdcpp 2.2.10 9999: Qt/DC++ based client for DirectConnect and ADC 
 net-p2p/fms 0.3.79: A spam-resistant message board application for Freenet
 net-p2p/freenet 0.7.5_p1475-r2 0.7.5_p1478 0.7.5_p1478-r1: An encrypted network without censorship
 net-p2p/gnut 0.4.28-r1: Text-mode gnutella client
-net-p2p/go-ethereum 1.5.5: Official golang implementation of the Ethereum protocol
+net-p2p/go-ethereum 1.7.2: Official golang implementation of the Ethereum protocol
 net-p2p/go-ipfs-bin 0.4.1 0.4.2 0.4.10 0.4.11: go-ipfs is the main implementation of IPFS.
 net-p2p/gtk-gnutella 1.1.11 1.1.11-r1 1.1.13: A GTK+ Gnutella client
 net-p2p/gtorrentviewer 0.2b: A GTK2-based viewer and editor for BitTorrent meta files
