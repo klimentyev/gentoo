@@ -6,14 +6,18 @@
 
 # This file contains a list of useflags that cannot be used on sparc.
 
+# David Seifert <soap@gentoo.org> (08 Jul 2017)
+# Games are not keyworded anymore on sparc
+fortune
+physfs
+
+# James Le Cuirot <chewi@gentoo.org> (29 Jun 2017)
+# Unmask as this profile is big endian.
+-big-endian
+
 # Andreas Sturmlechner <asturm@gentoo.org> (25 Feb 2017)
 # kwallet integration split from kde to distinct flag
 kwallet
-
-# Julian Ospald <hasufell@gentoo.org> (20 Sep 2015)
-# no LibreSSL support yet
-curl_ssl_libressl
-libressl
 
 # Andrey Grozin <grozin@gentoo.org> (25 Jun 2014)
 # keyworded on sparc
@@ -150,7 +154,6 @@ gps
 schroedinger
 ots
 frei0r
-libvirt
 prelude
 redis
 

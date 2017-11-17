@@ -73,7 +73,7 @@ RDEPEND="${PYTHON_DEPS}
 		x11-libs/qwt:6[qt4(+)]
 	)
 	sdl? ( >=media-libs/libsdl-1.2.0 )
-	uhd? ( >=net-wireless/uhd-3.4.3-r1:=[${PYTHON_USEDEP}] )
+	uhd? ( >=net-wireless/uhd-3.9.6:=[${PYTHON_USEDEP}] )
 	utils? ( dev-python/matplotlib[${PYTHON_USEDEP}] )
 	vocoder? ( media-sound/gsm )
 	wavelet? (
@@ -88,6 +88,7 @@ RDEPEND="${PYTHON_DEPS}
 	"
 
 DEPEND="${RDEPEND}
+	app-text/docbook-xml-dtd:4.2
 	>=dev-lang/swig-3.0.5
 	dev-python/cheetah[${PYTHON_USEDEP}]
 	virtual/pkgconfig

@@ -1,0 +1,34 @@
+--- gprbuild-2017/gpr/gpr.gpr.old	2017-05-27 20:59:07.061135892 +0200
++++ gprbuild-2017/gpr/gpr.gpr	2017-05-27 20:59:38.022638398 +0200
+@@ -67,6 +67,7 @@
+             for Switches ("gpr*.ad?") use
+               Compiler'Default_Switches ("Ada") & ("-g1");
+       end case;
++      for Driver ("C") use External ("CC", "gcc");
+    end Compiler;
+ 
+ end GPR;
+--- gprbuild-17.0/src/gprbuild-post_compile.adb.old	2017-05-18 14:17:06.114797015 +0200
++++ gprbuild-17.0/src/gprbuild-post_compile.adb	2017-05-18 14:18:55.466956852 +0200
+@@ -4744,7 +4744,9 @@
+                                  No_Create => Proj.Is_Aggregated);
+                            end if;
+ 
+-                           Shared_Libs := not Is_Static (Proj.Proj);
++                           if not Is_Static (Proj.Proj) then
++                              Shared_Libs := True;
++                           end if;
+ 
+                         end if;
+                      end if;
+--- gprbuild-gpl-2016-src/gpr/src/gpr-env.adb.old	2017-11-13 22:16:53.349083426 +0100
++++ gprbuild-gpl-2016-src/gpr/src/gpr-env.adb	2017-11-13 22:17:22.692590351 +0100
+@@ -1948,6 +1948,8 @@
+ 
+       end if;
+ 
++      Add_Directories (Self, "/usr/share/gpr");
++
+       if Gpr_Prj_Path.all /= "" then
+          Add_Directories (Self, Gpr_Prj_Path.all);
+       end if;
