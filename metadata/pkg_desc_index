@@ -2494,7 +2494,7 @@ app-text/writerperfect 0.9.5: Various formats to Open document format converter
 app-text/wscr 1.2-r1: A Lightweight and Fast Anagram Solver
 app-text/wv 1.2.9-r2: Tool for conversion of MSWord doc and rtf files to something readable
 app-text/wv2 0.4.2-r2: Excellent MS Word filter lib, used in most Office suites
-app-text/xapian-omega 1.2.22 1.2.24 1.2.25 1.4.4 1.4.5: An application built on Xapian, consisting of indexers and a CGI search frontend
+app-text/xapian-omega 1.2.24 1.2.25 1.4.4 1.4.5: An application built on Xapian, consisting of indexers and a CGI search frontend
 app-text/xchm 1.23-r1 1.23-r2: Utility for viewing Compiled HTML Help (CHM) files
 app-text/xdvik 22.87.03: DVI previewer for X Window System
 app-text/xdvipdfmx 0.7.8_p20120701 0.7.9_p20130530: Extended dvipdfmx for use with XeTeX and other unicode TeXs
@@ -2930,7 +2930,7 @@ dev-db/cppdb 0.3.1-r1: An SQL connectivity library for platform and database ind
 dev-db/datadraw 3.1.1: feature rich database generator for high performance C applications
 dev-db/db-je 3.3.75: A high performance, transactional storage engine written entirely in Java
 dev-db/dbmodel 0.3: Qt4 tool for drawing entity-relational diagrams
-dev-db/etcd 2.3.8 3.2.9: Highly-available key value store for shared configuration and service discovery
+dev-db/etcd 2.3.8 3.2.9 3.2.10: Highly-available key value store for shared configuration and service discovery
 dev-db/firebird 2.5.7.27050.0 3.0.2.32703.0-r2: Relational database offering many ANSI SQL:2003 and some SQL:2008 features
 dev-db/freetds 0.91 1.00.41 1.00.54-r1 9999: Tabular Datastream Library
 dev-db/gigabase 3.83-r2: OO-DBMS with interfaces for C/C++/Java/PHP/Perl
@@ -5123,8 +5123,8 @@ dev-libs/weston 1.9.0 1.11.0 3.0.0 9999: Wayland reference compositor
 dev-libs/wlc 0.0.10 0.0.11 9999: A helper library for Wayland compositors
 dev-libs/wnn7sdk 20011017 20011017-r1: Library and headers for Wnn7 client
 dev-libs/xalan-c 1.11.0_pre1153059: XSLT processor for transforming XML into HTML, text, or other XML types
-dev-libs/xapian 1.2.22 1.2.24 1.2.25 1.4.4 1.4.5: Xapian Probabilistic Information Retrieval library
-dev-libs/xapian-bindings 1.2.22 1.2.24 1.2.25 1.4.4 1.4.5: SWIG and JNI bindings for Xapian
+dev-libs/xapian 1.2.24 1.2.25 1.4.4 1.4.5: Xapian Probabilistic Information Retrieval library
+dev-libs/xapian-bindings 1.2.24 1.2.25 1.4.4 1.4.5: SWIG and JNI bindings for Xapian
 dev-libs/xerces-c 3.1.4-r1: A validating XML parser written in a portable subset of C++
 dev-libs/xml-security-c 1.7.3: Apache C++ XML security libraries
 dev-libs/xmlrpc-c 1.32.05-r1 1.39.11-r1: A lightweigt RPC library based on XML and HTTP
@@ -11746,6 +11746,7 @@ gnome-extra/docky 2.2.1.1-r1: Elegant, powerful, clean dock
 gnome-extra/eiciel 0.9.11 0.9.11-r1: ACL editor for GNOME, with Nautilus extension
 gnome-extra/evolution-data-server 3.22.7 3.24.5 3.24.6: Evolution groupware backend
 gnome-extra/evolution-ews 3.22.6 3.24.5: Evolution module for connecting to Microsoft Exchange Web Services
+gnome-extra/frogr 1.3: flickr applications for GNOME
 gnome-extra/gconf-editor 3.0.1-r1: An editor to the GNOME config system
 gnome-extra/gnome-activity-journal 0.8.0-r4 0.8.0-r5: Tool for easily browsing and finding files on your computer
 gnome-extra/gnome-boxes 3.22.4 3.24.0: Simple GNOME 3 application to access remote or virtual systems
