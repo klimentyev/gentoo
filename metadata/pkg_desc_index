@@ -12775,7 +12775,7 @@ media-gfx/iscan-plugin-gt-f720 0.0.1 0.0.1.2: Epson Perfection V300 PHOTO scanne
 media-gfx/iscan-plugin-gt-x770 2.1.2.1-r3: Epson Perfection V500 scanner plugin for SANE 'epkowa' backend
 media-gfx/iscan-plugin-gt-x820 2.2.0.1: Epson Perfection V600 scanner plugin for SANE 'epkowa' backend
 media-gfx/iscan-plugin-perfection-v370 1.0.0.2: Epson Perfection V370 and similar scanner plugin for SANE 'epkowa' backend
-media-gfx/jhead 2.97 3.00 3.00-r1: Exif Jpeg camera setting parser and thumbnail remover
+media-gfx/jhead 2.97 3.00 3.00-r1 3.00-r2: Exif Jpeg camera setting parser and thumbnail remover
 media-gfx/jigl 2.0.1: Jason's Image Gallery
 media-gfx/jp2a 1.0.6-r1: JPEG image to ASCII art converter
 media-gfx/jpeg2ps 1.9-r1: Converts JPEG images to Postscript using a wrapper
