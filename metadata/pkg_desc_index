@@ -17725,7 +17725,7 @@ sys-freebsd/freebsd-pf 8.2 9.1 10.3 11.0 11.1: FreeBSD's base system libraries
 sys-freebsd/freebsd-rescue 8.2 9.1 10.3 11.0 11.1: FreeBSD's rescue binaries
 sys-freebsd/freebsd-sbin 8.2-r1 9.1 10.3 11.0 11.1: FreeBSD sbin utils
 sys-freebsd/freebsd-share 8.2 9.1 10.3 11.0 11.1: FreeBSD shared tools/files
-sys-freebsd/freebsd-sources 8.2-r2 9.1-r3 9.1-r9 10.3-r6 11.0-r1 11.1_p1: FreeBSD kernel sources
+sys-freebsd/freebsd-sources 8.2-r2 9.1-r3 9.1-r9 10.3-r6 11.0-r1 11.1_p2: FreeBSD kernel sources
 sys-freebsd/freebsd-ubin 8.2-r1 9.1-r2 9.1-r3 10.3-r2 11.0-r1 11.1: FreeBSD's base system source for /usr/bin
 sys-freebsd/freebsd-usbin 8.2-r2 9.1-r1 10.3-r1 11.0-r1 11.1: FreeBSD /usr/sbin tools
 sys-freebsd/ubin-wrappers 0: /usr/bin wrapper scripts for FreeBSD script compatibility
