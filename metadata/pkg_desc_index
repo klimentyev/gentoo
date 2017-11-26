@@ -12469,7 +12469,7 @@ media-fonts/cantarell 0.0.25: Default fontset for GNOME Shell
 media-fonts/cardo 1.04: Unicode font for classicists, medievalists and linguists
 media-fonts/cheapskatefonts 1.0: Dustismo's decorative font collection
 media-fonts/clearsans 1.00: OpenType font optimized for readability on small screens
-media-fonts/cm-unicode 0.7.0: Computer Modern Unicode fonts
+media-fonts/cm-unicode 0.7.0 0.7.0-r1: Computer Modern Unicode fonts
 media-fonts/comic-neue 2.2 2.3: Typographically savvy casual script typeface
 media-fonts/corefonts 1-r7: Microsoft's TrueType core fonts
 media-fonts/courier-prime 1.203: A redesign of Courier
@@ -12538,7 +12538,7 @@ media-fonts/fs-fonts 0.1_alpha3: Japanese TrueType fonts designed for screen and
 media-fonts/gidole 2.0.2: Open source modern DIN fonts
 media-fonts/hack 2.020 2.020-r1: A typeface designed for source code
 media-fonts/hermit 1.1 1.21: A monospace font designed to be clear, pragmatic and very readable
-media-fonts/heuristica 0.2.1: A font based on Adobe Utopia
+media-fonts/heuristica 1.0.2: A font based on Adobe Utopia
 media-fonts/hkscs-ming 1.0_pre20030919-r2: Hong Kong Official Reference Chinese Font that implements ISO10646 & HKSCS-2001
 media-fonts/hunkyfonts 0.3.1: Free TrueType fonts based on Bitstream's Vera fonts with additional letters
 media-fonts/inconsolata 20140821: A beautiful sans-serif monotype font designed for code listings
