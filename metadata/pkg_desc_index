@@ -13852,7 +13852,7 @@ media-sound/moosic 1.5.6-r1: Music player that focuses on easy playlist manageme
 media-sound/mp32ogg 0.11-r6: A perl script to convert MP3 files to Ogg Vorbis files
 media-sound/mp3_check 1.98 1.98-r1: MP3 consistency checker
 media-sound/mp3asm 0.1.3-r2: A command line tool to clean and edit mp3 files
-media-sound/mp3blaster 3.2.5-r1 3.2.5-r2 3.2.6: Text console based program for playing audio files
+media-sound/mp3blaster 3.2.6: Text console based program for playing audio files
 media-sound/mp3c 0.31-r1: console based mp3 ripper, with cddb support
 media-sound/mp3cat 0.4: mp3cat reads and writes MP3 files
 media-sound/mp3check 0.8.4 0.8.7: Checks mp3 files for consistency and prints several errors and warnings
