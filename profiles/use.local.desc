@@ -2237,6 +2237,7 @@ dev-libs/tinyxml:stl - Compile with TIXML_USE_STL support
 dev-libs/tntnet:server - Enable tntnet server daemon
 dev-libs/totem-pl-parser:archive - Enables support for accessing media files in archives transparently via app-arch/libarchive
 dev-libs/totem-pl-parser:quvi - Use media-libs/libquvi for parsing video links
+dev-libs/tvision:gpm - Support text mode mouse through sys-libs/gpm
 dev-libs/ucommon:socks - Build with socks proxy support
 dev-libs/userspace-rcu:regression-test - Run regression tests (requires FEATURES=test)
 dev-libs/ustr:ustr-import - Install ustr-import developer program and source code for bundling.
