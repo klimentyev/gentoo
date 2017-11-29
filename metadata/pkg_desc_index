@@ -8985,7 +8985,7 @@ dev-python/w3lib 1.13.0 1.17.0 1.18.0: Python library of web-related functions
 dev-python/waitress 1.0.1 1.0.2: A pure-Python WSGI server
 dev-python/warlock 1.1.0 1.2.0: Python object model built on JSON schema and JSON patch
 dev-python/watchdog 0.8.3-r1 0.8.3-r2: Python API and shell utilities to monitor file system events
-dev-python/wcsaxes 0.8 0.9: Framework for plotting astronomical and geospatial data
+dev-python/wcsaxes 0.8 0.9 0.9-r1: Framework for plotting astronomical and geospatial data
 dev-python/wcwidth 0.1.7 0.1.7-r1: Measures number of Terminal column cells of wide-character codes
 dev-python/weakrefmethod 1.0.3: Backport of WeakMethod from Python 3.4 to Python 2.6+
 dev-python/weasyprint 0.29 0.39 0.40 0.41: Visual rendering engine for HTML and CSS that can export to PDF
