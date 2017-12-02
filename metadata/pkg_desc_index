@@ -10123,7 +10123,7 @@ dev-scheme/guile-lib 0.1.9 0.2.4: An accumulation place for pure-scheme Guile mo
 dev-scheme/guile-www 2.34 2.35: Guile Scheme modules to facilitate HTTP, URL and CGI programming
 dev-scheme/ikarus 0.0.3_p1870: A free optimizing incremental native-code compiler for R6RS Scheme
 dev-scheme/jscheme 7.2: JScheme is a dialect of Scheme with a very simple interface to Java, called the Javadot notation
-dev-scheme/kawa 1.10 1.14: Kawa, the Java-based Scheme system & Language Framework
+dev-scheme/kawa 1.14: Kawa, the Java-based Scheme system & Language Framework
 dev-scheme/net-http 0.3.1 0.3.1-r1: Library for doing HTTP client-side programming in Guile
 dev-scheme/racket 5.3.6 6.7 6.9: General purpose, multi-paradigm Lisp-Scheme programming language
 dev-scheme/scheme48 1.9.2-r1: Scheme48 is an implementation of the Scheme Programming Language
