@@ -1,0 +1,10 @@
+DEFINED_PHASES=configure install
+DESCRIPTION=Libite is a collection of useful BSD APIs
+EAPI=6
+HOMEPAGE=https://github.com/troglobit/libite
+IUSE=static-libs
+KEYWORDS=~amd64 ~x86
+LICENSE=MIT
+SLOT=0
+SRC_URI=https://github.com/troglobit/libite/releases/download/v2.0.0/libite-2.0.0.tar.xz
+_md5_=605b8381f6aa6ffc1c8fde81aacd5c81
