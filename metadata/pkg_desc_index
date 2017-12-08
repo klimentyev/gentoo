@@ -13755,7 +13755,7 @@ media-sound/dcadec 0.2.0: DTS Coherent Acoustics decoder with support for HD ext
 media-sound/dcaenc 2 2-r1 9999: DTS Coherent Acoustics audio encoder
 media-sound/dcd 0.95: A simple command-line based CD Player
 media-sound/declick 0.6.5: declick is a dynamic digital declicker for audio sample files
-media-sound/denemo 1.0.0 1.0.2: A music notation editor
+media-sound/denemo 1.0.0 1.0.2 2.2.0: A music notation editor
 media-sound/din 5.2.1: a software musical instrument and audio synthesizer
 media-sound/dir2ogg 0.11.6 0.11.8-r1: Converts mp3, m4a, wma, and wav files to Ogg Vorbis format
 media-sound/drumstick 0.5.0 1.0.2 1.1.0: Qt/C++ wrapper for ALSA sequencer
