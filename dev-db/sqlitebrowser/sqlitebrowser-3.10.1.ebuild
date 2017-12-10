@@ -11,18 +11,18 @@ SRC_URI="https://github.com/${PN}/${PN}/archive/v${PV}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="GPL-3 MPL-2.0"
 SLOT="0"
-KEYWORDS="amd64 x86"
+KEYWORDS="~amd64 ~x86"
 IUSE="test"
 
 RDEPEND="
 	dev-cpp/antlr-cpp:2
 	dev-db/sqlite:3
-	dev-libs/qcustomplot[qt5(+)]
+	>=dev-libs/qcustomplot-2.0.0[qt5(+)]
 	dev-qt/qtcore:5
 	dev-qt/qtgui:5
 	dev-qt/qtnetwork:5
 	dev-qt/qtwidgets:5
-	>=x11-libs/qscintilla-2.9.3-r2:=[qt5(+)]
+	>=x11-libs/qscintilla-2.10.1:=[qt5(+)]
 "
 DEPEND="${RDEPEND}
 	dev-qt/linguist-tools:5
@@ -30,8 +30,7 @@ DEPEND="${RDEPEND}
 "
 
 PATCHES=(
-	"${FILESDIR}"/${PN}-3.7.0-unbundle.patch
-	"${FILESDIR}"/${PN}-3.9.1-cmake.patch
+	"${FILESDIR}"/${PN}-3.10.1-unbundle.patch
 )
 
 src_prepare() {
@@ -49,7 +48,6 @@ src_prepare() {
 
 src_configure() {
 	local mycmakeargs=(
-		-DUSE_QT5=ON
 		-DENABLE_TESTING=$(usex test)
 	)
 	cmake-utils_src_configure
