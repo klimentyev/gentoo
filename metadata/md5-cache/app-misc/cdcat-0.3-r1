@@ -1,11 +1,10 @@
-DEFINED_PHASES=install unpack
+DEFINED_PHASES=install prepare
 DEPEND=virtual/cdrtools !app-backup/cdbkup
 DESCRIPTION=simple yet effective CD indexing program
-EAPI=0
+EAPI=6
 HOMEPAGE=https://web.archive.org/web/20070925183735/http://dev.gentoo.org:80/~centic/cdcat/page1.html#link0
-KEYWORDS=amd64 ppc x86
+KEYWORDS=~amd64 ~ppc ~x86
 LICENSE=GPL-2
-RDEPEND=virtual/cdrtools !app-backup/cdbkup
 SLOT=0
 SRC_URI=mirror://gentoo/cdcat-0.3.tar.gz
-_md5_=72a6efca91e97d79b01ae81897d7e4a0
+_md5_=0b2c2fe6faa50954948fc79e0bc18fd4

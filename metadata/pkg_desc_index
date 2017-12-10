@@ -1739,7 +1739,7 @@ app-misc/carbon-c-relay 3.0 3.1-r1 3.2: Enhanced C version of Carbon relay, aggr
 app-misc/cbrpager 0.9.20 0.9.22: a simple comic book pager
 app-misc/cbview 0.06-r1: viewer/converter for CBR/CBZ comic book archives
 app-misc/cdargs 1.35-r2: Bookmarks and browser for the shell builtin cd command
-app-misc/cdcat 0.3: simple yet effective CD indexing program
+app-misc/cdcat 0.3 0.3-r1: simple yet effective CD indexing program
 app-misc/cdctl 0.15 0.16: Utility to control your cd/dvd drive
 app-misc/cdircmp 0.3-r1: Compare directories and select files to copy
 app-misc/cdspeed 0.4-r1: Change the speed of your CD drive
