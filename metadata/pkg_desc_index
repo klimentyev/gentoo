@@ -15526,7 +15526,7 @@ net-misc/ttytter 2.1.00: A multi-functional, console-based Twitter client
 net-misc/ucarp 1.5.2-r3 1.5.2-r4 1.5.2-r5: Portable userland implementation of Common Address Redundancy Protocol (CARP)
 net-misc/udpcast 20120424 20120424-r1: Multicast file transfer tool
 net-misc/udpxy 1.0.23.7-r2: Small daemon to relay multicast UDP traffic to client's TCP (HTTP) connection
-net-misc/uftp 3.7 3.7.1: Encrypted UDP based FTP with multicast
+net-misc/uftp 3.7.1 4.9.4: Encrypted UDP based FTP with multicast
 net-misc/unison 2.48.3 2.48.4: Two-way cross-platform file synchronizer
 net-misc/unix2tcp 0.8.2-r1: a connection forwarder that converts Unix sockets into TCP sockets
 net-misc/urlview 0.9: extracts urls from text and will send them to another app
