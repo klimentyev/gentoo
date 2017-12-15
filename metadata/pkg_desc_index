@@ -14258,7 +14258,7 @@ media-video/subtitler-yuv 0.6.5: for mjpegtools for adding subtitles, pictures, 
 media-video/subtitleripper 0.3.4-r4: DVD Subtitle Ripper for Linux
 media-video/super_demux 0.3: DVB transport stream TS to ES demultiplexer
 media-video/syncplay 1.4.0 1.5.0 9999: Client/server to synchronize media playback
-media-video/tcmplex-panteltje 0.4.7 0.4.7-r1: Audio video multiplexer for 8 audio channels
+media-video/tcmplex-panteltje 0.4.7-r1: Audio video multiplexer for 8 audio channels
 media-video/tivodecode 0.2_pre4: TiVo File Decoder
 media-video/totem 3.22.1-r1 3.24.0: Media player for GNOME
 media-video/tovid 0.35.2-r1: A collection of DVD authoring tools
