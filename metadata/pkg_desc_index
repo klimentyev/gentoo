@@ -992,7 +992,7 @@ app-misc/fsniper 1.3.1-r2: Monitors a given set of directories for new files
 app-misc/g15composer 3.1: A library to render text and shapes into a buffer usable by the Logitech G15
 app-misc/g15daemon 1.9.5.3-r13: Takes control of the G15 keyboard, through the linux kernel uinput device driver
 app-misc/g15macro 1.0.3-r1: Macro recording plugin to G15daemon
-app-misc/gcal 3.6.3: The GNU Calendar - a replacement for cal
+app-misc/gcal 3.6.3 4.1: The GNU Calendar - a replacement for cal
 app-misc/gcstar 1.7.0: Manage your collections of movies, games, books, music and more
 app-misc/geekcode 1.7.3-r1: Geek code generator
 app-misc/geneweb 6.07: Genealogy software program with a Web interface
