@@ -1,4 +1,4 @@
-DEFINED_PHASES=install postinst
+DEFINED_PHASES=install postinst prepare
 DEPEND=app-admin/eselect !<net-analyzer/metasploit-4.6
 DESCRIPTION=eselect module for metasploit
 EAPI=5
@@ -8,4 +8,4 @@ LICENSE=GPL-2
 RDEPEND=app-admin/eselect !<net-analyzer/metasploit-4.6
 SLOT=0
 _eclasses_=multilib	97f470f374f2e94ccab04a2fb21d811e	toolchain-funcs	185a06792159ca143528e7010368e8af
-_md5_=fb0a03501932a94ec32ca99cbdb8c53b
+_md5_=3b49c7cf4159258849d6c7c1842ff0eb
