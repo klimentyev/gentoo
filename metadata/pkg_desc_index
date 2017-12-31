@@ -2851,7 +2851,7 @@ dev-lang/go 1.9.1 1.9.2: A concurrent garbage collected and typesafe programming
 dev-lang/gprolog 1.4.4: A native Prolog compiler with constraint solving over finite domains (FD)
 dev-lang/icon 9.4.3-r5 9.5.0: very high level language
 dev-lang/inform 6.33.1_p2: design system for interactive fiction
-dev-lang/jimtcl 0.73 0.76: Small footprint implementation of Tcl programming language
+dev-lang/jimtcl 0.76: Small footprint implementation of Tcl programming language
 dev-lang/lazarus 1.0.12: Lazarus IDE is a feature rich visual programming environment emulating Delphi
 dev-lang/lua 5.1.5-r4: A powerful light-weight programming language designed for extending applications
 dev-lang/luajit 2.0.2 2.0.3-r1 2.0.4: Just-In-Time Compiler for the Lua programming language
@@ -8865,7 +8865,7 @@ net-misc/ssvnc 1.0.28: VNC viewer that adds encryption security to VNC connectio
 net-misc/stone 2.3e-r1: A simple TCP/IP packet repeater
 net-misc/streamtuner 0.99.99-r5: Stream directory browser for browsing internet radio streams
 net-misc/stunnel 5.36: TLS/SSL - Port Wrapper
-net-misc/suite3270 3.3.15_p9 3.4_p9 3.4_p10: Complete 3270 access package
+net-misc/suite3270 3.4_p10: Complete 3270 access package
 net-misc/taylor-uucp 1.07-r2: Taylor UUCP
 net-misc/tcpsound 0.3.1-r1: Play sounds in response to network traffic
 net-misc/telnet-bsd 1.2-r1: Telnet and telnetd ported from OpenBSD with IPv6 support
