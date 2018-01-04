@@ -7621,7 +7621,7 @@ media-plugins/evas_generic_loaders 1.17.0: Provides external applications as gen
 media-plugins/fil-plugins 0.3.0: FIL-plugins ladspa plugin package. Filters by Fons Adriaensen
 media-plugins/frei0r-plugins 1.5.0: A minimalistic plugin API for video effects
 media-plugins/gimp-lqr 0.7.1 0.7.2: Content-aware resizing for the GIMP
-media-plugins/gkrellmpc 0.1_beta9-r1 0.1_beta10: A gkrellm plugin to control the MPD (Music Player Daemon)
+media-plugins/gkrellmpc 0.1_beta10: A gkrellm plugin to control the MPD (Music Player Daemon)
 media-plugins/gmpc-alarm 11.8.16: This plugin can start/stop/pause your music at a preset time
 media-plugins/gmpc-albumview 11.8.16: This plugin shows your music collection in albums
 media-plugins/gmpc-avahi 11.8.16: This plugin discovers avahi enabled mpd servers
