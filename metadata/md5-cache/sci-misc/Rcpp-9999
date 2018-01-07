@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install unpack
+DEPEND=dev-lang/R
+DESCRIPTION=Seamless R and C++ Integration
+EAPI=6
+HOMEPAGE=http://rcpp.org
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-2
+PROPERTIES=interactive
+RDEPEND=
+SLOT=0
+_eclasses_=Rutils	4b5ecfe9bab2d926a54bf7f83780b297
+_md5_=5eebcb85662f635c9527ecc4437cff8b

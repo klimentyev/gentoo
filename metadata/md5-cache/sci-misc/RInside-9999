@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile install unpack
+DEPEND=dev-lang/R
+DESCRIPTION=C++ classes to embed R in C++ applications
+EAPI=6
+HOMEPAGE=https://cran.r-project.org/web/packages/RInside/index.html
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-2
+RDEPEND=
+SLOT=0
+_eclasses_=Rutils	4b5ecfe9bab2d926a54bf7f83780b297
+_md5_=2a15979d2198d310562be76e095f2c0e
