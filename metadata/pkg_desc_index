@@ -546,7 +546,7 @@ app-editors/fte 20051115-r3: Lightweight text-mode editor
 app-editors/gedit 3.22.1: A text editor for the GNOME desktop
 app-editors/gedit-plugins 3.22.0: Official plugins for gedit
 app-editors/ghex 3.18.3: GNOME hexadecimal editor
-app-editors/gummi 0.6.6: Simple LaTeX editor for GTK+ users
+app-editors/gummi 0.6.6-r1: Simple LaTeX editor for GTK+ users
 app-editors/gvim 8.0.0386 8.0.1298: GUI version of the Vim text editor
 app-editors/hexcurse 1.55: ncurses based hex editor
 app-editors/hexedit 1.2.13: View and edit files in hex or ASCII
@@ -8465,7 +8465,7 @@ net-irc/inspircd 2.0.23: Inspire IRCd - The Stable, High-Performance Modular IRC
 net-irc/ircii 20110228 20111115: An IRC and ICB client that runs under most UNIX platforms
 net-irc/ircservices 5.1.24: ChanServ, NickServ, and MemoServ with support for several IRC daemons
 net-irc/iroffer-dinoex 3.29: IRC fileserver using DCC
-net-irc/irssi 1.0.4 1.0.5: A modular textUI IRC client with IPv6 support
+net-irc/irssi 1.0.4 1.0.5 1.0.6: A modular textUI IRC client with IPv6 support
 net-irc/irssi-otr 1.0.0-r1: Off-The-Record messaging (OTR) for irssi
 net-irc/irssistats 0.75: Generates HTML IRC stats based on irssi logs
 net-irc/konversation 1.7.4: A user friendly IRC Client
