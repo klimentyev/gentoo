@@ -1,0 +1,10 @@
+DEFINED_PHASES=install
+DESCRIPTION=Installs tmpfiles.d to reload CPU microcode
+EAPI=6
+HOMEPAGE=https://gentoo.org/
+KEYWORDS=amd64 x86
+LICENSE=public-domain
+RDEPEND=virtual/tmpfiles
+SLOT=0
+_eclasses_=tmpfiles	7bd1d7bf5261430a2d2991cff7958c52
+_md5_=a42914ab272084e756400ff920cecc4c

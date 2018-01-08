@@ -9951,13 +9951,14 @@ sys-firmware/alsa-firmware 1.0.29: Advanced Linux Sound Architecture firmware
 sys-firmware/atmel-firmware 1.3-r1: Firmware and config for atmel and atmel_cs wlan drivers included in linux 2.6
 sys-firmware/bluez-firmware 1.2: Firmware for Broadcom BCM203x and STLC2300 Bluetooth chips
 sys-firmware/edk2-ovmf 2017_pre20170505: UEFI firmware for 64-bit x86 virtual machines
-sys-firmware/intel-microcode 20140430 20150121 20151106 20161104 20170511 20170707 20171117_p20171215 20171117_p20171215-r1: Intel IA32/IA64 microcode update data
+sys-firmware/intel-microcode 20140430 20150121 20151106 20161104 20170511 20170707 20171117_p20171215 20171117_p20171215-r2: Intel IA32/IA64 microcode update data
 sys-firmware/ipw2100-firmware 1.3: Firmware for the Intel PRO/Wireless 2100 3B miniPCI adapter
 sys-firmware/ipw2200-firmware 3.1: Firmware for the Intel PRO/Wireless 2200BG/2915ABG miniPCI and 2225BG PCI
 sys-firmware/ipxe 1.0.0_p20130925 1.0.0_p20160620: Open source network boot (PXE) firmware
 sys-firmware/ivtv-firmware 20080701-r1: firmware for Hauppauge PVR-x50 and Conexant 2341x based cards
 sys-firmware/iwl1000-ucode 39.31.5.1: Intel (R) Wireless WiFi Link 1000BGN ucode
 sys-firmware/iwl6050-ucode 41.28.5.1: Intel (R) Wireless WiFi Link 6250-AGN ucode
+sys-firmware/microcode-reload 0: Installs tmpfiles.d to reload CPU microcode
 sys-firmware/seabios 1.10.1 1.10.2: Open Source implementation of a 16-bit x86 BIOS
 sys-firmware/sgabios 0.1_pre8: serial graphics adapter bios option rom for x86
 sys-firmware/tt-s2-6400-firmware 0.5.0: Firmware for the Technotrend S2-6400 DVB Card
@@ -10042,7 +10043,7 @@ sys-kernel/genkernel 3.4.52.3 3.4.52.4-r2: Gentoo automatic kernel building scri
 sys-kernel/genkernel-next 66: Gentoo automatic kernel building scripts, reloaded
 sys-kernel/gentoo-sources 4.1.43-r1 4.4.87-r1 4.9.49-r1 4.9.72: Full sources including the Gentoo patchset for the 4.9 kernel tree
 sys-kernel/kccmp 0.3: A simple tool for comparing two linux kernel .config files
-sys-kernel/linux-firmware 20170314 20180103-r1: Linux firmware files
+sys-kernel/linux-firmware 20170314 20180103-r2: Linux firmware files
 sys-kernel/linux-headers 3.18 4.3 4.4 4.13: Linux system headers
 sys-libs/argp-standalone 1.3-r2: Standalone argp library for use with uclibc
 sys-libs/binutils-libs 2.25.1-r2 2.27 2.28.1 2.29.1-r1: Core binutils libraries (libbfd, libopcodes, libiberty) for external packages
