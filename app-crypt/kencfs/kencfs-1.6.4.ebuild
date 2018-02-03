@@ -20,7 +20,7 @@ DEPEND="
 	kde-frameworks/kdelibs:4
 "
 RDEPEND="${DEPEND}
-	kde-apps/kwalletd:4
+	kde-frameworks/kwallet:5
 	sys-fs/encfs
 "
 

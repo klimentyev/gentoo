@@ -12,7 +12,7 @@ HOMEPAGE="https://ispc.github.com/"
 
 if [[ ${PV} = *9999 ]]; then
 	inherit git-r3
-	EGIT_REPO_URI="git://github.com/ispc/ispc.git"
+	EGIT_REPO_URI="https://github.com/ispc/ispc.git"
 	KEYWORDS=""
 else
 	SRC_URI="https://github.com/${PN}/${PN}/archive/v${PV}.tar.gz -> ${P}.tar.gz"
@@ -35,7 +35,8 @@ DEPEND="
 	"
 
 src_compile() {
-	sed -i '/^\t@/s/@//' Makefile || die #make all slient commands ("@") verbose
+	#make all slient commands ("@") verbose and remove -Werror (ispc/ispc#1295)
+	sed -e '/^\t@/s/@//' -e 's/-Werror//' -i Makefile || die
 	emake LDFLAGS="${LDFLAGS}" OPT="${CXXFLAGS}" CXX="$(tc-getCXX)" CPP="$(tc-getCPP)"
 }
 

@@ -1,4 +1,4 @@
-# Copyright 1999-2016 Gentoo Foundation
+# Copyright 1999-2017 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=6
@@ -10,7 +10,7 @@ SRC_URI="https://launchpad.net/armagetronad/${PV:0:5}/${PV:0:7}.x/+download/arma
 
 LICENSE="GPL-2+"
 SLOT="0"
-KEYWORDS="~amd64 ~x86"
+KEYWORDS="amd64 x86"
 IUSE="dedicated sound"
 
 RDEPEND="
@@ -27,6 +27,8 @@ RDEPEND="
 		)
 	)"
 DEPEND=${RDEPEND}
+
+PATCHES=( "${FILESDIR}"/${P}-gcc6.patch )
 
 src_prepare() {
 	default

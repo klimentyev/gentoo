@@ -20,8 +20,7 @@ _EUTILS_ECLASS=1
 # implicitly inherited (now split) eclasses
 case ${EAPI:-0} in
 0|1|2|3|4|5|6)
-	# note: we want to remove epunt-cxx retroactively for #566424
-	inherit epatch epunt-cxx estack ltprune multilib toolchain-funcs
+	inherit epatch estack ltprune multilib toolchain-funcs
 	;;
 esac
 
@@ -275,13 +274,11 @@ make_desktop_entry() {
 	# Don't append another ";" when a valid category value is provided.
 	type=${type%;}${type:+;}
 
-	eshopts_push -s extglob
 	if [[ -n ${icon} && ${icon} != /* ]] && [[ ${icon} == *.xpm || ${icon} == *.png || ${icon} == *.svg ]]; then
 		ewarn "As described in the Icon Theme Specification, icon file extensions are not"
 		ewarn "allowed in .desktop files if the value is not an absolute path."
-		icon=${icon%.@(xpm|png|svg)}
+		icon=${icon%.*}
 	fi
-	eshopts_pop
 
 	cat <<-EOF > "${desktop}"
 	[Desktop Entry]
@@ -830,8 +827,8 @@ use_if_iuse() {
 # @FUNCTION: optfeature
 # @USAGE: <short description> <package atom to match> [other atoms]
 # @DESCRIPTION:
-# Print out a message suggesting an optional package (or packages) which
-# provide the described functionality
+# Print out a message suggesting an optional package (or packages)
+# not currently installed which provides the described functionality.
 #
 # The following snippet would suggest app-misc/foo for optional foo support,
 # app-misc/bar or app-misc/baz[bar] for optional bar support

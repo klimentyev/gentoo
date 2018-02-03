@@ -13,10 +13,10 @@ SRC_URI="http://www.rabbitmq.com/releases/rabbitmq-server/v${PV}/rabbitmq-server
 
 LICENSE="GPL-2 MPL-1.1"
 SLOT="0"
-KEYWORDS="~amd64 ~arm64 ~x86"
+KEYWORDS="amd64 ~arm64 x86"
 IUSE=""
 
-RDEPEND="dev-lang/erlang[ssl]"
+RDEPEND=">=dev-lang/erlang-18[ssl]"
 DEPEND="${RDEPEND}
 	app-arch/zip
 	app-arch/unzip

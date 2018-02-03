@@ -5,10 +5,10 @@ EAPI=6
 
 inherit cmake-utils git-r3
 
-EGIT_REPO_URI="git://github.com/openstreetmap/osm2pgsql.git"
+EGIT_REPO_URI="https://github.com/openstreetmap/${PN}.git"
 
 DESCRIPTION="Converts OSM planet.osm data to a PostgreSQL/PostGIS database"
-HOMEPAGE="http://wiki.openstreetmap.org/wiki/Osm2pgsql"
+HOMEPAGE="https://wiki.openstreetmap.org/wiki/Osm2pgsql"
 SRC_URI=""
 
 LICENSE="GPL-2"
@@ -20,7 +20,6 @@ COMMON_DEPEND="
 	app-arch/bzip2
 	dev-db/postgresql:=
 	dev-libs/expat
-	<sci-libs/geos-3.6.0
 	sci-libs/proj
 	sys-libs/zlib
 	lua? ( dev-lang/lua:= )

@@ -14,19 +14,19 @@ S="${S}/all/${P}"
 LICENSE="Apache-2.0"
 SLOT="0"
 IUSE="debug test"
-KEYWORDS="~amd64 ~hppa ~ppc ~ppc64 ~x86"
+KEYWORDS="amd64 hppa ~ppc ~ppc64 x86"
 
 BDEPEND="
 	>=sys-devel/gcc-4.8:*
-	>=dev-libs/boost-1.54[nls]
 	>=dev-libs/leatherman-0.9.3
-	>=dev-cpp/yaml-cpp-0.5.1
 	dev-cpp/cpp-hocon"
 CDEPEND="
 	dev-libs/openssl:*
 	sys-apps/util-linux
 	app-emulation/virt-what
 	net-misc/curl
+	>=dev-libs/boost-1.54[nls]
+	>=dev-cpp/yaml-cpp-0.5.1
 	!<app-admin/puppet-4.0.0"
 
 RDEPEND="${CDEPEND}"

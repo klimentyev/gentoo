@@ -6,15 +6,16 @@ EAPI=6
 inherit kde4-base
 
 DESCRIPTION="Simple kdelibs4-based live data viewer for collectd"
-HOMEPAGE="http://www.forwiss.uni-passau.de/~berberic/Linux/kcollectd.html"
-SRC_URI="http://www.forwiss.uni-passau.de/~berberic/Linux/${PN}/${P}.tar.gz"
+HOMEPAGE="https://www.forwiss.uni-passau.de/~berberic/Linux/kcollectd.html"
+SRC_URI="https://www.forwiss.uni-passau.de/~berberic/Linux/${PN}/${P}.tar.gz"
 
 LICENSE="GPL-3"
 SLOT="4"
 KEYWORDS="~amd64 ~x86"
 IUSE="debug"
 
-DEPEND="dev-libs/boost
+DEPEND="
+	dev-libs/boost:=
 	net-analyzer/rrdtool"
 RDEPEND="${DEPEND}
 	|| ( app-admin/collectd[collectd_plugins_rrdtool] app-admin/collectd[collectd_plugins_rrdcached] )"

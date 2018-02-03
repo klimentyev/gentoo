@@ -2,15 +2,15 @@
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=6
-inherit eutils toolchain-funcs
+inherit toolchain-funcs
 
 DESCRIPTION="A fast, lightweight imageviewer using imlib2"
-HOMEPAGE="http://feh.finalrewind.org/"
-SRC_URI="http://feh.finalrewind.org/${P}.tar.bz2"
+HOMEPAGE="https://feh.finalrewind.org/"
+SRC_URI="https://feh.finalrewind.org/${P}.tar.bz2"
 
 LICENSE="feh"
 SLOT="0"
-KEYWORDS="~amd64 ~arm ~mips ~ppc ~ppc64 ~x86"
+KEYWORDS="amd64 ~arm ~mips ppc ppc64 x86"
 IUSE="debug curl exif test xinerama"
 
 COMMON_DEPEND="media-libs/imlib2[X]

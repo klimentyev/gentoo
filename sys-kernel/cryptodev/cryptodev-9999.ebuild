@@ -9,10 +9,10 @@ HOMEPAGE="http://cryptodev-linux.org/index.html"
 
 if [[ ${PV} == 9999 ]]; then
 	inherit git-r3
-	EGIT_REPO_URI="git://github.com/cryptodev-linux/cryptodev-linux.git"
+	EGIT_REPO_URI="https://github.com/cryptodev-linux/cryptodev-linux.git"
 	S="${WORKDIR}/${PN}-${PV}"
 else
-	SRC_URI="http://download.gna.org/cryptodev-linux/${PN}-linux-${PV}.tar.gz"
+	SRC_URI="http://nwl.cc/pub/cryptodev-linux/${PN}-linux-${PV}.tar.gz"
 	KEYWORDS="~amd64 ~arm ~x86"
 	S=${WORKDIR}/${PN}-linux-${PV}
 fi
@@ -22,8 +22,8 @@ SLOT="0"
 IUSE="examples"
 
 DEPEND="virtual/linux-sources"
-RDEPEND=""
-#test now compile, but need the module to run
+
+#test requires that the module is already loaded
 RESTRICT="test"
 
 MODULE_NAMES="cryptodev(extra:${S})"

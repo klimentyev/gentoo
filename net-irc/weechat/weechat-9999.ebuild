@@ -2,7 +2,7 @@
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=6
-PYTHON_COMPAT=( python{2_7,3_4,3_5} )
+PYTHON_COMPAT=( python{2_7,3_4,3_5,3_6} )
 CMAKE_MAKEFILE_GENERATOR=emake
 inherit python-single-r1 cmake-utils
 
@@ -11,21 +11,22 @@ if [[ ${PV} == "9999" ]] ; then
 	EGIT_REPO_URI="https://github.com/weechat/weechat.git"
 else
 	SRC_URI="https://weechat.org/files/src/${P}.tar.xz"
-	KEYWORDS="~amd64"
+	KEYWORDS="~amd64 ~x86"
 fi
 
 DESCRIPTION="Portable and multi-interface IRC client"
-HOMEPAGE="http://weechat.org/"
+HOMEPAGE="https://weechat.org/"
 
 LICENSE="GPL-3"
 SLOT="0"
 
 NETWORKS="+irc"
-PLUGINS="+alias +charset +exec +fifo +logger +relay +scripts +spell +trigger +xfer"
+PLUGINS="+alias +buflist +charset +exec +fifo +logger +relay +scripts +spell +trigger +xfer"
 # dev-lang/v8 was dropped from Gentoo so we can't enable javascript support
 SCRIPT_LANGS="guile lua +perl +python ruby tcl"
 LANGS=" cs de es fr hu it ja pl pt pt_BR ru tr"
 IUSE="doc nls +ssl test ${LANGS// / linguas_} ${SCRIPT_LANGS} ${PLUGINS} ${INTERFACES} ${NETWORKS}"
+REQUIRED_USE="python? ( ${PYTHON_REQUIRED_USE} )"
 
 RDEPEND="
 	dev-libs/libgcrypt:0=
@@ -38,7 +39,7 @@ RDEPEND="
 	nls? ( virtual/libintl )
 	perl? ( dev-lang/perl:= )
 	python? ( ${PYTHON_DEPS} )
-	ruby? ( || ( dev-lang/ruby:2.4 dev-lang/ruby:2.3 dev-lang/ruby:2.2 dev-lang/ruby:2.1 ) )
+	ruby? ( || ( dev-lang/ruby:2.4 dev-lang/ruby:2.3 dev-lang/ruby:2.2 ) )
 	ssl? ( net-libs/gnutls )
 	spell? ( app-text/aspell )
 	tcl? ( >=dev-lang/tcl-8.4.15:0= )
@@ -64,7 +65,7 @@ pkg_setup() {
 }
 
 src_prepare() {
-	default
+	cmake-utils_src_prepare
 
 	# fix libdir placement
 	sed -i \
@@ -99,30 +100,31 @@ src_prepare() {
 src_configure() {
 	local mycmakeargs=(
 		-DENABLE_NCURSES=ON
+		-DENABLE_NLS=$(usex nls)
+		-DENABLE_GNUTLS=$(usex ssl)
 		-DENABLE_LARGEFILE=ON
-		-DENABLE_JAVASCRIPT=OFF
 		-DENABLE_ALIAS=$(usex alias)
-		-DENABLE_DOC=$(usex doc)
+		-DENABLE_ASPELL=$(usex spell)
+		-DENABLE_BUFLIST=$(usex buflist)
 		-DENABLE_CHARSET=$(usex charset)
 		-DENABLE_EXEC=$(usex exec)
 		-DENABLE_FIFO=$(usex fifo)
-		-DENABLE_GUILE=$(usex guile)
 		-DENABLE_IRC=$(usex irc)
 		-DENABLE_LOGGER=$(usex logger)
-		-DENABLE_LUA=$(usex lua)
-		-DENABLE_NLS=$(usex nls)
+		-DENABLE_RELAY=$(usex relay)
+		-DENABLE_SCRIPT=$(usex scripts)
+		-DENABLE_SCRIPTS=$(usex scripts)
 		-DENABLE_PERL=$(usex perl)
 		-DENABLE_PYTHON=$(usex python)
-		-DENABLE_RELAY=$(usex relay)
 		-DENABLE_RUBY=$(usex ruby)
-		-DENABLE_SCRIPTS=$(usex scripts)
-		-DENABLE_SCRIPT=$(usex scripts)
-		-DENABLE_ASPELL=$(usex spell)
-		-DENABLE_GNUTLS=$(usex ssl)
+		-DENABLE_LUA=$(usex lua)
 		-DENABLE_TCL=$(usex tcl)
-		-DENABLE_TESTS=$(usex test)
+		-DENABLE_GUILE=$(usex guile)
+		-DENABLE_JAVASCRIPT=OFF
 		-DENABLE_TRIGGER=$(usex trigger)
 		-DENABLE_XFER=$(usex xfer)
+		-DENABLE_DOC=$(usex doc)
+		-DENABLE_TESTS=$(usex test)
 	)
 
 	if use python; then

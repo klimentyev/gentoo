@@ -6,7 +6,7 @@ EAPI=6
 inherit autotools eutils linux-info multilib pam
 
 DESCRIPTION="Tools for Managing Linux CIFS Client Filesystems"
-HOMEPAGE="http://wiki.samba.org/index.php/LinuxCIFS_utils"
+HOMEPAGE="https://wiki.samba.org/index.php/LinuxCIFS_utils"
 SRC_URI="https://ftp.samba.org/pub/linux-cifs/${PN}/${P}.tar.bz2"
 
 LICENSE="GPL-3"
@@ -34,6 +34,10 @@ PDEPEND="
 REQUIRED_USE="acl? ( ads )"
 
 DOCS="doc/linux-cifs-client-guide.odt"
+
+PATCHES=(
+	"${FILESDIR}/${P}-talloc.patch"
+)
 
 pkg_setup() {
 	linux-info_pkg_setup

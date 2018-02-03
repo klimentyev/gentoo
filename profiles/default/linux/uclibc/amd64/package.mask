@@ -9,8 +9,6 @@ app-arch/stuffit
 app-benchmarks/cpuburn
 =app-editors/emacs-18*
 app-emulation/crossover-bin
-app-emulation/crossover-office-bin
-app-emulation/crossover-office-pro-bin
 app-emulation/playonlinux
 app-emulation/q4wine
 app-emulation/virtualbox
@@ -93,14 +91,6 @@ games-fps/ut2004-demo
 games-puzzle/hoh-bin
 games-roguelike/adom
 games-rpg/eschalon-book-1-demo
-games-rpg/nwmouse
-games-rpg/nwmovies
-games-rpg/nwn
-games-rpg/nwn-cep
-games-rpg/nwn-data
-games-rpg/nwn-penultima
-games-rpg/nwn-penultimarerolled
-games-rpg/nwn-shadowlordsdreamcatcherdemon
 games-rpg/penumbra-collection
 games-server/etqw-ded
 games-server/nwn-ded
@@ -129,7 +119,6 @@ sci-biology/foldingathome
 sci-electronics/eagle
 sci-chemistry/cara-bin
 sci-chemistry/cyana
-sci-chemistry/icm
 sci-chemistry/mars
 sci-libs/ipp
 sys-libs/lib-compat-loki
