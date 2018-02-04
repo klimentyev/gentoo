@@ -3435,10 +3435,6 @@ media-video/rtmpdump:gnutls - Use GnuTLS library instead of the default OpenSSL
 media-video/smplayer:autoshutdown - Enable the option to shutdown your computer after finishing the playlist. This requires dev-qt/qtdbus as dependency.
 media-video/smplayer:mpris - Enable support for MPRIS2 (Media Player Remote Interfacing Specification, version 2), a DBus interface for remote control, which requires dev-qt/qtdbus as dependency.
 media-video/subtitlecomposer:mpv - Build mpv backend support
-media-video/syncplay:client - Install Syncplay client
-media-video/syncplay:gui - Enable gui support
-media-video/syncplay:server - Install Syncplay server
-media-video/syncplay:vlc - Enable VLC2.x support
 media-video/totem:lirc - Enable support for controlling Totem with a remote control using app-misc/lirc
 media-video/totem:nautilus - Enable the nautilus extension
 media-video/totem:python - Build support for dev-lang/python plugins
@@ -5142,6 +5138,7 @@ sys-apps/hwloc:plugins - Build hwloc components as plugins so that the hwloc cor
 sys-apps/iotools:make-symlinks - Generate sub-command symlinks to iotools -- note that a lot are simple like "xor"
 sys-apps/ipmitool:openipmi - Use the system OpenIPMI implementation.
 sys-apps/iproute2:berkdb - build programs that use berkdb (just arpd)
+sys-apps/iproute2:elf - support loading eBPF programs from ELFs (e.g. LLVM's eBPF backend)
 sys-apps/iproute2:iptables - include support for iptables filtering
 sys-apps/iproute2:minimal - only install ip and tc programs, without eBPF support
 sys-apps/irqbalance:numa - Support balancing IRQs across NUMA nodes
@@ -5179,6 +5176,7 @@ sys-apps/pcsc-lite:policykit - Uses sys-auth/polkit to restrict access to smartc
 sys-apps/pcsc-lite:udev - Use sys-fs/udev rules to handle devices' permissions and hotplug support. Unless you know what you're doing do not disable this flag on Linux kernels. This is provided as an option for completeness.
 sys-apps/policycoreutils:audit - Enable support for sys-process/audit and use the audit_* functions (like audit_getuid instead of getuid())
 sys-apps/portage:epydoc - Build html API documentation with epydoc.
+sys-apps/portage:gentoo-dev - Enable features required for Gentoo ebuild development.
 sys-apps/portage:ipc - Use inter-process communication between portage and running ebuilds.
 sys-apps/portage:native-extensions - Compiles native "C" extensions (speedups, instead of using python backup code). Currently includes libc-locales. This should only be temporarily disabled for some bootstrapping operations. Cross-compilation is not supported.
 sys-apps/portage:rsync-verify - Enable full-tree cryptographic verification of Gentoo repository rsync checkouts using app-portage/gemato.

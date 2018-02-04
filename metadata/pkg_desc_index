@@ -41,7 +41,7 @@ app-admin/chroot_safe 1.4: a tool to chroot any dynamically linked application i
 app-admin/chrootuid 1.3 1.3-r1: Run a network service at low privilege level and restricted file system access
 app-admin/chrpath 0.13-r2: chrpath can modify the rpath and runpath of ELF executables
 app-admin/clustershell 1.6: Python framework for efficient cluster administration
-app-admin/collectd 5.6.2-r4: Collects system statistics and provides mechanisms to store the values
+app-admin/collectd 5.6.2-r4 5.7.2-r1: Collects system statistics and provides mechanisms to store the values
 app-admin/conky 1.10.4: An advanced, highly configurable system monitor for X
 app-admin/conserver 8.1.18 8.1.18-r1: Serial Console Manager
 app-admin/cpulimit 1.8: Limits the CPU usage of a process
@@ -81,7 +81,7 @@ app-admin/lib_users 0.10: Check for mapped libs and open files that are marked a
 app-admin/localepurge 0.5.4-r2: Script to recover diskspace on unneeded locale files & localized man pages
 app-admin/logcheck 1.3.15-r2: Mails anomalies in the system logfiles to the administrator
 app-admin/logmon 0.4.4-r1: Split-screen terminal/ncurses based log viewer
-app-admin/logrotate 3.9.1 3.12.3-r1 3.13.0: Rotates, compresses, and mails system logs
+app-admin/logrotate 3.9.1 3.13.0: Rotates, compresses, and mails system logs
 app-admin/logsentry 1.1.1: Automatically monitor system logs and mail security violations
 app-admin/logsurfer+ 1.8-r3: Real Time Log Monitoring and Alerting
 app-admin/lsat 0.9.7.1-r2: The Linux Security Auditing Tool
@@ -345,6 +345,7 @@ app-crypt/mhash 0.9.9.9-r2: library providing a uniform interface to a large num
 app-crypt/mit-krb5 1.15.2 1.15.2-r1: MIT Kerberos V
 app-crypt/mit-krb5-appl 1.0.3: Kerberized applications split from the main MIT Kerberos V distribution
 app-crypt/monkeysphere 0.37: Leverage the OpenPGP web of trust for OpenSSH and Web authentication
+app-crypt/openpgp-keys-gentoo-mirror 20180203: OpenPGP key used to sign gentoo-mirror commits
 app-crypt/openssl-blacklist 0.5.3: Detection of weak ssl keys produced by certain debian versions in 2006-2008
 app-crypt/p11-kit 0.23.2: Provides a standard configuration setup for installing PKCS#11
 app-crypt/paperkey 1.4: OpenPGP key archiver
@@ -497,6 +498,7 @@ app-doc/abs-guide 10: An in-depth exploration of the art of shell scripting
 app-doc/autobook 1.5: GNU Autoconf, Automake and Libtool
 app-doc/blas-docs 3.1.1: Documentation reference and man pages for blas implementations
 app-doc/casting-spels-emacs 19-r2: Casting SPELs in Lisp - A Comic Book (Emacs Lisp Edition)
+app-doc/diveintopython 2 3: 'Dive Into Python' by Mark Pilgrim - Python 3
 app-doc/doxygen 1.8.13-r1: Documentation system for most programming languages
 app-doc/edox-data 0.16.8.0.2: The Enlightenment online help
 app-doc/elisp-manual 18.1.03 21.2.8-r2 22.2.9 23.4 24.5: The GNU Emacs Lisp Reference Manual
@@ -1151,10 +1153,10 @@ app-office/kexi 3.0.2: Visual database applications creator
 app-office/kmymoney 4.8.1.1-r1: Personal finance manager by KDE
 app-office/ledger 3.1.1: A double-entry accounting system with a command-line reporting interface
 app-office/libalkimia 5.0.0: Library with common classes and functionality used by KDE finance applications
-app-office/libreoffice 5.4.2.2: A full office productivity suite
+app-office/libreoffice 5.4.4.2: A full office productivity suite
 app-office/libreoffice-bin 5.4.2.2 5.4.2.2-r1: A full office productivity suite. Binary package
 app-office/libreoffice-bin-debug 5.4.2.2 5.4.2.2-r1: LibreOffice, a full office productivity suite. Binary package, debug info
-app-office/libreoffice-l10n 5.4.2.2: Translations for the Libreoffice suite
+app-office/libreoffice-l10n 5.4.2.2 5.4.4.2: Translations for the Libreoffice suite
 app-office/lyx 2.0.8.1-r1 2.1.5-r1 2.2.3-r1: WYSIWYM frontend for LaTeX, DocBook, etc.
 app-office/mdbtools 0.7.1-r2: Set of libraries and utilities for reading Microsoft Access database (MDB) files
 app-office/ooextras 20060909: OOExtras: Extra Templates for OpenOffice.org!
@@ -1267,7 +1269,7 @@ app-text/antiword 0.37-r1: free MS Word reader
 app-text/apvlv 0.1.5-r1: Alf's PDF Viewer Like Vim
 app-text/asa 1.1-r1: ASA Carriage control conversion for ouput by Fortran programs
 app-text/asciidoc 8.6.9-r2 8.6.10: AsciiDoc is a plain text human readable/writable document format
-app-text/aspell 0.60.6.1-r3 0.60.7_rc1: A spell checker replacement for ispell
+app-text/aspell 0.60.7_rc1: A spell checker replacement for ispell
 app-text/atril 1.12.2-r4: Atril document viewer for MATE
 app-text/barcode 0.98-r1: barcode generator
 app-text/bdf2psf 1.104: Converter to generate console fonts from BDF source fonts
@@ -1411,7 +1413,7 @@ app-text/pelican 3.6.0 3.7.0: A tool to generate a static blog, with restructure
 app-text/pinfo 0.6.10-r5: Hypertext info and man viewer based on (n)curses
 app-text/po4a 0.45-r3 0.47-r1: Tools for helping translation of documentation
 app-text/podofo 0.9.6_pre20170508-r1: PoDoFo is a C++ library to work with the PDF file format
-app-text/poppler 0.57.0-r1: PDF rendering library based on the xpdf-3.0 code base
+app-text/poppler 0.57.0-r1 0.62.0-r1: PDF rendering library based on the xpdf-3.0 code base
 app-text/poppler-data 0.4.7: Data files for poppler to support uncommon encodings without xpdfrc
 app-text/ps2eps 1.68: Generate Encapsulated Postscript Format files from one-page Postscript documents
 app-text/ps2pkm 1.5_p20120701 1.7_p20150521 1.8_p20160523 1.8_p20170524: Tool that converts a PostScript type1 font into a corresponding TeX PK font
@@ -1450,7 +1452,7 @@ app-text/teckit 2.5.1 2.5.6: Text Encoding Conversion toolkit
 app-text/tesseract 3.04.01 3.05.01: An OCR Engine, orginally developed at HP, now open source.
 app-text/texi2html 5.0-r1: Perl script that converts Texinfo to HTML
 app-text/texlive 2015 2016: A complete TeX distribution
-app-text/texlive-core 2012-r1 2014-r4 2015-r1 2016-r5: A complete TeX distribution
+app-text/texlive-core 2012-r1 2014-r4 2015-r1 2016-r5 2016-r6: A complete TeX distribution
 app-text/tidy-html5 5.6.0: Tidy the layout and correct errors in HTML, HTML5 and XML documents
 app-text/tkinfo 2.8-r1: Info Browser in TK
 app-text/trang 20151127: Multi-format schema converter based on RELAX NG
@@ -1955,7 +1957,7 @@ dev-erlang/xmpp 1.1.9: XMPP parsing and serialization library on top of Fast XML
 dev-games/KXL 1.1.7-r2: Development Library for making games for X
 dev-games/aseprite 1.1.6: Animated sprite editor & pixel art tool
 dev-games/cardpics 0.4: set of free cards sets
-dev-games/cegui 0.6.2b 0.8.7: Crazy Eddie's GUI System
+dev-games/cegui 0.8.7: Crazy Eddie's GUI System
 dev-games/clanlib 0.8.1 2.3.7: multi-platform game development library
 dev-games/crystalspace 2.0-r1: Portable 3D Game Development Kit written in C++
 dev-games/flatzebra 0.1.6: A generic game engine for 2D double-buffering animation
@@ -2907,7 +2909,7 @@ dev-libs/beignet 1.3.1: OpenCL implementation for Intel GPUs
 dev-libs/bglibs 1.041 1.106-r1: Bruce Guenters Libraries Collection
 dev-libs/bitset 2.8.3 2.8.4-r1: A compressed bitset with supporting data structures and algorithms
 dev-libs/boehm-gc 6.8 7.1-r1 7.2d 7.2d-r1 7.2e 7.4.2: The Boehm-Demers-Weiser conservative garbage collector
-dev-libs/boost 1.63.0: Boost Libraries for C++
+dev-libs/boost 1.63.0 1.65.0: Boost Libraries for C++
 dev-libs/botan 1.10.17 2.3.0: A C++ crypto library
 dev-libs/btparser 0.24 0.25 0.26: Parser and analyzer for backtraces produced by GDB
 dev-libs/c-blosc 1.11.2: Blocking, shuffling and lossless compression library
@@ -3055,7 +3057,7 @@ dev-libs/libgnome-games-support 1.2.3: Library for code common to Gnome games
 dev-libs/libgpg-error 1.27-r1: Contains error handling functions used by GnuPG software
 dev-libs/libgudev 232: GObject bindings for libudev
 dev-libs/libgusb 0.2.11: GObject wrapper for libusb
-dev-libs/libgweather 3.20.4 3.24.1: Library to access weather information from online services
+dev-libs/libgweather 3.24.1: Library to access weather information from online services
 dev-libs/libical 1.0.1 2.0.0-r2 2.0.0-r3: An implementation of basic iCAL protocols
 dev-libs/libiconv 1.14 1.14-r1: GNU charset conversion library for libc which doesn't implement it
 dev-libs/libindicate 12.10.1-r2: A library to raise flags on DBus for other components of the desktop
@@ -4628,7 +4630,7 @@ dev-python/cangjie 1.2-r1: The Python bindings to libcangjie
 dev-python/carbon 0.9.13: Backend data caching and persistence daemon for Graphite
 dev-python/carrot 0.10.7-r1: AMQP Messaging Framework for Python
 dev-python/case 1.5.2-r1: Python unittest Utilities
-dev-python/castellan 0.4.0 0.12.1: Generic Key Manager interface for OpenStack
+dev-python/castellan 0.12.2: Generic Key Manager interface for OpenStack
 dev-python/casuarius 1.1: Cython wrapper for the Cassowary incremental constraint solver
 dev-python/cbor 1.0.0: RFC 7049 - Concise Binary Object Representation
 dev-python/cddb-py 1.4-r1: CDDB Module for Python
@@ -4739,7 +4741,7 @@ dev-python/dnspython 1.15.0-r1: DNS toolkit for Python
 dev-python/doc8 0.6.0: Style checker for Sphinx (or other) RST documentation
 dev-python/docker-py 2.4.2: Python client for Docker
 dev-python/docker-pycreds 0.2.1: Python bindings for the docker credentials store API
-dev-python/docopt 0.6.2-r1: Pythonic argument parser, that will make you smile
+dev-python/docopt 0.6.2-r2: Pythonic argument parser, that will make you smile
 dev-python/doctest-ignore-unicode 0.1.2: Add flag to ignore unicode literal prefixes in doctests
 dev-python/docutils 0.12 0.13.1: Python Documentation Utilities
 dev-python/docutils-glep 0.4-r1: Gentoo GLEP support for docutils
@@ -4954,7 +4956,7 @@ dev-python/kaa-imlib2 0.2.3-r2: Imlib2 wrapper for Python
 dev-python/kaa-metadata 0.7.7-r1: Powerful media metadata parser for media files in Python, successor of MMPython
 dev-python/kazoo 2.2.1: A high-level Python library that makes it easier to use Apache Zookeeper
 dev-python/keyczar 0.715: Toolkit for safe and simple cryptography
-dev-python/keyring 10.3.3 10.4.0 10.5.0 10.5.1: Provides access to the system keyring service
+dev-python/keyring 10.6.0: Provides access to the system keyring service
 dev-python/keystoneauth 2.4.1 2.4.2 2.12.3 2.18.0 3.1.0: This package contains tools for authenticating to an OpenStack-based cloud.
 dev-python/keystonemiddleware 4.4.1 4.9.1 4.14.0 4.17.0: A middleware for the OpenStack Keystone API
 dev-python/kid 0.9.6-r1: A simple and Pythonic XML template language
@@ -5182,7 +5184,7 @@ dev-python/pyalsaaudio 0.7-r2 0.8.2: A Python wrapper for the ALSA API
 dev-python/pyao 0.82-r3: Python bindings for the libao library
 dev-python/pyasn1 0.2.3: ASN.1 library for Python
 dev-python/pyasn1-modules 0.0.5-r1 0.0.8: pyasn1 modules
-dev-python/pyatspi 2.20.3 2.24.0: Python binding to at-spi library
+dev-python/pyatspi 2.24.0: Python binding to at-spi library
 dev-python/pyaudio 0.2.11: Python bindings for PortAudio
 dev-python/pyblake2 0.9.3-r1 1.1.0: BLAKE2 hash function extension module
 dev-python/pybloomfiltermmap 0.3.11-r1: A Bloom filter (bloomfilter) for Python built on mmap
@@ -5744,7 +5746,7 @@ dev-ruby/flexmock 2.3.5: Simple mock object library for Ruby unit testing
 dev-ruby/gherkin 2.12.0-r3 2.12.2 4.1.3: Fast Gherkin lexer and parser
 dev-ruby/git 1.3.0: Library for using Git in Ruby
 dev-ruby/gruff 0.6.0: Beautiful graphs for one or multiple datasets
-dev-ruby/hashdiff 0.3.4 0.3.5: Simple Hash extension to make working with nested hashes easier
+dev-ruby/hashdiff 0.3.5: Simple Hash extension to make working with nested hashes easier
 dev-ruby/hashie 2.1.2-r1: Hashie is a small collection of tools that make hashes more powerful
 dev-ruby/heredoc_unindent 1.2.0: Removes leading whitespace from Ruby heredocs
 dev-ruby/hiera 1.3.4-r1 3.2.2: A simple pluggable Hierarchical Database
@@ -6089,7 +6091,7 @@ dev-util/bbe 0.2.2: Sed-like editor for binary files
 dev-util/bcpp 20150811-r1: Indents C/C++ source code
 dev-util/biew 6.1.0-r3: A portable viewer of binary files, hexadecimal and disassembler modes
 dev-util/bluej 3.1.1: An integrated Java environment for introductory teaching
-dev-util/boost-build 1.62.0-r1 1.63.0: A system for large project software construction, simple to use and powerful
+dev-util/boost-build 1.62.0-r1 1.63.0 1.65.0: A system for large project software construction, simple to use and powerful
 dev-util/bsdiff 4.3-r3: bsdiff: Binary Differencer using a suffix alg
 dev-util/buildbot 0.8.12-r3: BuildBot build automation system
 dev-util/buildbot-slave 0.8.12: BuildBot Slave Daemon
@@ -6132,7 +6134,7 @@ dev-util/debootstrap 1.0.87 1.0.89: Debian/Ubuntu bootstrap scripts
 dev-util/debugedit 5.3.5-r1: standalone debugedit taken from rpm
 dev-util/dejagnu 1.4.4-r3: framework for testing other programs
 dev-util/desktop-file-utils 0.23: Command line utilities to work with desktop menu entries
-dev-util/devhelp 3.22.0 3.24.0: An API documentation browser for GNOME
+dev-util/devhelp 3.24.0: An API documentation browser for GNOME
 dev-util/dialog 1.3.20160828 1.3.20170131: tool to display dialog boxes from a shell
 dev-util/diffball 1.0.1: Delta compression suite for using/generating binary patches
 dev-util/difffilter 0.3.3: Filter files out of unified diffs using POSIX extended regular expressions
@@ -6311,12 +6313,12 @@ dev-vcs/topgit 0.9: A different patch queue manager
 dev-vcs/tortoisehg 4.4.1-r1: Set of graphical tools for Mercurial
 dev-vcs/vcsh 1.20151229.1: Manage config files in $HOME via fake bare git repositories
 games-action/supermariowar 2.0_beta1-r1: Fan-made multiplayer Super Mario Bros. style deathmatch game
-games-arcade/gnome-nibbles 3.22.2.2 3.24.0: Nibbles clone for Gnome
+games-arcade/gnome-nibbles 3.24.0: Nibbles clone for Gnome
 games-arcade/gnome-robots 3.22.2: Avoid the robots and make them crash into each other
 games-board/four-in-a-row 3.22.2: Make lines of the same color to win
-games-board/gnome-chess 3.22.2 3.24.1: Play the classic two-player boardgame of chess
+games-board/gnome-chess 3.24.1: Play the classic two-player boardgame of chess
 games-board/gnome-mahjongg 3.22.0: Disassemble a pile of tiles by removing matching pairs
-games-board/gnome-mines 3.20.1 3.22.2 3.24.0: Clear hidden mines from a minefield
+games-board/gnome-mines 3.20.1 3.24.0: Clear hidden mines from a minefield
 games-board/gnuchess 6.2.4: Console based chess interface
 games-board/gnugo 3.9.1-r1: A Go-playing program
 games-board/iagno 3.22.0: Dominate the board in a classic version of Reversi
@@ -6336,35 +6338,35 @@ games-misc/xcowsay 1.3: configurable talking graphical cow (inspired by cowsay)
 games-mud/gnome-mud 0.11.2-r2: GNOME MUD client
 games-puzzle/five-or-more 3.22.2: Five or More Game for GNOME
 games-puzzle/gnome-klotski 3.22.2: Slide blocks to solve the puzzle
-games-puzzle/gnome-sudoku 3.22.2 3.24.0: Test your logic skills in this number grid puzzle
+games-puzzle/gnome-sudoku 3.24.0: Test your logic skills in this number grid puzzle
 games-puzzle/gnome-taquin 3.22.0: Move tiles so that they reach their places
 games-puzzle/gnome-tetravex 3.22.0: Complete the puzzle by matching numbered tiles
 games-puzzle/hitori 3.22.4: Logic puzzle game for GNOME
-games-puzzle/lightsoff 3.22.2 3.24.0: Turn off all the lights
+games-puzzle/lightsoff 3.24.0: Turn off all the lights
 games-puzzle/quadrapassel 3.22.0: Fit falling blocks together
-games-puzzle/swell-foop 3.22.2 3.24.0: Clear the screen by removing groups of colored and shaped tiles
+games-puzzle/swell-foop 3.24.0: Clear the screen by removing groups of colored and shaped tiles
 games-strategy/seven-kingdoms 2.14.4: Seven Kingdoms: Ancient Adversaries
 games-util/pogo-manager-bin 0.1.6: Pokemon Go manager
 games-util/qstat 2.11: Server statics collector supporting many FPS games
 games-util/wit 2.40a: command line tools to manipulate Wii/GameCube ISO images and WBFS containers
 gnome-base/dconf 0.26.1: Simple low-level configuration system
-gnome-base/dconf-editor 3.22.3 3.24.3: Graphical tool for editing the dconf configuration database
+gnome-base/dconf-editor 3.24.3: Graphical tool for editing the dconf configuration database
 gnome-base/gconf 3.2.6-r4: GNOME configuration system and daemon
-gnome-base/gdm 3.22.3-r1 3.24.3: GNOME Display Manager for managing graphical display servers and user logins
-gnome-base/gnome 3.20.0 3.22.2 3.24.2: Meta package for GNOME 3, merge this package to install
+gnome-base/gdm 3.24.3: GNOME Display Manager for managing graphical display servers and user logins
+gnome-base/gnome 3.20.0 3.24.2: Meta package for GNOME 3, merge this package to install
 gnome-base/gnome-common 3.18.0-r1: Common files for development of Gnome packages
-gnome-base/gnome-control-center 3.22.2-r1 3.24.3: GNOME's main interface to configure various aspects of the desktop
-gnome-base/gnome-core-apps 3.20.0 3.22.2 3.24.2: Sub-meta package for the core applications integrated with GNOME 3
-gnome-base/gnome-core-libs 3.22.2 3.24.2: Sub-meta package for the core libraries of GNOME 3
-gnome-base/gnome-desktop 2.32.1-r2 3.22.2 3.24.2: Libraries for the gnome desktop that are not part of the UI
-gnome-base/gnome-extra-apps 3.22.2 3.24.2: Sub-meta package for the applications of GNOME 3
+gnome-base/gnome-control-center 3.24.3: GNOME's main interface to configure various aspects of the desktop
+gnome-base/gnome-core-apps 3.20.0 3.24.2: Sub-meta package for the core applications integrated with GNOME 3
+gnome-base/gnome-core-libs 3.24.2: Sub-meta package for the core libraries of GNOME 3
+gnome-base/gnome-desktop 2.32.1-r2 3.24.2: Libraries for the gnome desktop that are not part of the UI
+gnome-base/gnome-extra-apps 3.24.2: Sub-meta package for the applications of GNOME 3
 gnome-base/gnome-keyring 3.20.0 3.20.1: Password and keyring managing daemon
-gnome-base/gnome-light 3.22.2 3.24.2: Meta package for GNOME-Light, merge this package to install
+gnome-base/gnome-light 3.24.2: Meta package for GNOME-Light, merge this package to install
 gnome-base/gnome-menus 3.10.1-r1 3.13.3 3.13.3-r1: Library for the Desktop Menu fd.o specification
 gnome-base/gnome-mime-data 2.18.0: MIME data for Gnome
-gnome-base/gnome-session 3.22.3 3.24.2-r1: Gnome session manager
-gnome-base/gnome-settings-daemon 3.22.2-r1 3.24.3: Gnome Settings Daemon
-gnome-base/gnome-shell 3.22.3-r2 3.24.3: Provides core UI functions for the GNOME 3 desktop
+gnome-base/gnome-session 3.24.2-r1: Gnome session manager
+gnome-base/gnome-settings-daemon 3.24.3: Gnome Settings Daemon
+gnome-base/gnome-shell 3.24.3: Provides core UI functions for the GNOME 3 desktop
 gnome-base/gnome-vfs 2.24.4-r5: Gnome Virtual Filesystem
 gnome-base/gsettings-desktop-schemas 3.22.0 3.24.1: Collection of GSettings schemas for GNOME desktop
 gnome-base/gvfs 1.30.4 1.32.1-r1: Virtual filesystem implementation for gio
@@ -6380,7 +6382,7 @@ gnome-base/libgnomeprintui 2.18.6-r2: User interface libraries for gnome print
 gnome-base/libgnomeui 2.24.5-r1: User Interface routines for Gnome
 gnome-base/libgtop 2.34.2 2.36.0: A library that provides top functionality to applications
 gnome-base/librsvg 2.40.18: Scalable Vector Graphics (SVG) rendering library
-gnome-base/nautilus 3.20.4 3.22.3 3.24.2.1: A file manager for the GNOME desktop
+gnome-base/nautilus 3.20.4 3.24.2.1: A file manager for the GNOME desktop
 gnome-base/orbit 2.14.19-r5: ORBit2 is a high-performance CORBA ORB
 gnome-extra/assogiate 0.2.1-r1: assoGiate is an editor of the file types database for GNOME
 gnome-extra/chrome-gnome-shell 8-r1: GNOME Shell integration for Chrome/Chromium, Firefox, Vivaldi, Opera browsers
@@ -6395,34 +6397,34 @@ gnome-extra/cinnamon-translations 2.8.3 3.0.3: Translation data for Cinnamon
 gnome-extra/cjs 3.0.1: Linux Mint's fork of gjs for Cinnamon
 gnome-extra/eiciel 0.9.11 0.9.11-r1: ACL editor for GNOME, with Nautilus extension
 gnome-extra/evolution-data-server 3.22.7 3.24.7: Evolution groupware backend
-gnome-extra/evolution-ews 3.22.6 3.24.6: Evolution module for connecting to Microsoft Exchange Web Services
+gnome-extra/evolution-ews 3.24.6: Evolution module for connecting to Microsoft Exchange Web Services
 gnome-extra/gconf-editor 3.0.1-r1: An editor to the GNOME config system
-gnome-extra/gnome-boxes 3.22.4 3.24.0: Simple GNOME 3 application to access remote or virtual systems
+gnome-extra/gnome-boxes 3.24.0: Simple GNOME 3 application to access remote or virtual systems
 gnome-extra/gnome-builder 3.22.4 3.24.2: Builder attempts to be an IDE for writing software for GNOME
-gnome-extra/gnome-calculator 3.22.3 3.24.0: A calculator application for GNOME
-gnome-extra/gnome-calendar 3.22.5 3.24.3: Manage your online calendars with simple and modern interface
-gnome-extra/gnome-characters 3.22.0 3.24.0: Unicode character map viewer and library
-gnome-extra/gnome-clocks 3.22.1 3.24.0: Clocks application for GNOME
-gnome-extra/gnome-color-manager 3.22.2 3.24.0: Color profile manager for the GNOME desktop
+gnome-extra/gnome-calculator 3.24.0: A calculator application for GNOME
+gnome-extra/gnome-calendar 3.24.3: Manage your online calendars with simple and modern interface
+gnome-extra/gnome-characters 3.24.0: Unicode character map viewer and library
+gnome-extra/gnome-clocks 3.24.0: Clocks application for GNOME
+gnome-extra/gnome-color-manager 3.24.0: Color profile manager for the GNOME desktop
 gnome-extra/gnome-commander 1.6.1 1.6.3: A graphical, full featured, twin-panel file manager
 gnome-extra/gnome-contacts 3.22.1-r1: GNOME contact management application
 gnome-extra/gnome-directory-thumbnailer 0.1.9: Thumbnail generator for directories
-gnome-extra/gnome-documents 3.22.5 3.24.3: A document manager application for GNOME
+gnome-extra/gnome-documents 3.24.3: A document manager application for GNOME
 gnome-extra/gnome-dvb-daemon 0.2.90: Setup your DVB devices, record and watch TV shows and browse EPG using GStreamer
-gnome-extra/gnome-getting-started-docs 3.22.0 3.24.1: Help a new user get started in GNOME
+gnome-extra/gnome-getting-started-docs 3.24.1: Help a new user get started in GNOME
 gnome-extra/gnome-integration-spotify 20140907-r1: GNOME integration for Spotify
-gnome-extra/gnome-logs 3.22.1 3.24.2: Log messages and event viewer
-gnome-extra/gnome-power-manager 3.22.2 3.24.0: GNOME power management service
+gnome-extra/gnome-logs 3.24.2: Log messages and event viewer
+gnome-extra/gnome-power-manager 3.24.0: GNOME power management service
 gnome-extra/gnome-search-tool 3.6.0: Search tool for GNOME 3
-gnome-extra/gnome-shell-extensions 3.22.2 3.24.3: JavaScript extensions for GNOME Shell
+gnome-extra/gnome-shell-extensions 3.24.3: JavaScript extensions for GNOME Shell
 gnome-extra/gnome-shell-extensions-topicons-plus 21: Moves legacy tray icons to top panel
 gnome-extra/gnome-shell-frippery 3.18.2 3.20.0: Unofficial extension pack providing GNOME 2-like features for GNOME 3
-gnome-extra/gnome-system-monitor 3.22.2 3.24.0: The Gnome System Monitor
+gnome-extra/gnome-system-monitor 3.24.0: The Gnome System Monitor
 gnome-extra/gnome-tweak-tool 3.22.0 3.24.1: Tool to customize GNOME 3 options
-gnome-extra/gnome-user-docs 3.22.0 3.24.2: GNOME end user documentation
+gnome-extra/gnome-user-docs 3.24.2: GNOME end user documentation
 gnome-extra/gnome-user-share 3.18.3: Personal file sharing for the GNOME desktop
 gnome-extra/gnome-utils 3.8.0: Meta package for utilities for the GNOME desktop
-gnome-extra/gnome-weather 3.20.2 3.24.0: A weather application for GNOME
+gnome-extra/gnome-weather 3.24.0: A weather application for GNOME
 gnome-extra/gpointing-device-settings 1.5.1-r3: A GTK+ based configuration utility for the synaptics driver
 gnome-extra/gtkhtml 4.10.0: Lightweight HTML rendering/printing/editing engine
 gnome-extra/gucharmap 3.0.1-r200 9.0.2 9.0.4: Unicode character map viewer and library
@@ -6442,7 +6444,7 @@ gnome-extra/sushi 3.24.0: A quick previewer for Nautilus, the GNOME file manager
 gnome-extra/synapse 0.2.99.2: A program launcher in the style of GNOME Do
 gnome-extra/yelp 3.22.0: Help browser for GNOME
 gnome-extra/yelp-xsl 3.20.1: XSL stylesheets for yelp
-gnome-extra/zenity 3.22.0 3.24.0: Tool to display dialogs from the commandline and shell scripts
+gnome-extra/zenity 3.24.0: Tool to display dialogs from the commandline and shell scripts
 gnustep-apps/aclock 0.4.0: Analog dockapp clock for GNUstep
 gnustep-apps/addresses 0.4.8: Addresses is a Apple Addressbook work alike (standalone and for GNUMail)
 gnustep-apps/affiche 0.6.0-r4: Affiche allows people to 'stick' notes
@@ -6893,8 +6895,8 @@ mail-client/balsa 2.5.2-r1 2.5.3-r1: Email client for GNOME
 mail-client/claws-mail 3.15.0-r2: An email client (and news reader) based on GTK+
 mail-client/clawsker 0.7.8: Applet to edit Claws Mail's hidden preferences
 mail-client/cone 0.92: CONE: COnsole News reader and Emailer
-mail-client/evolution 3.22.6 3.24.6: Integrated mail, addressbook and calendaring functionality
-mail-client/geary 0.11.3 0.12.0: A lightweight, easy-to-use, feature-rich email client
+mail-client/evolution 3.24.6: Integrated mail, addressbook and calendaring functionality
+mail-client/geary 0.12.0: A lightweight, easy-to-use, feature-rich email client
 mail-client/mail-notification 5.4-r10: Status icon informing about new mail
 mail-client/mailx 8.1.2.20050715-r6: The /bin/mail program, which is used to send mail via shell scripts
 mail-client/mailx-support 20060102-r1 20060102-r2: Provides lockspool utility
@@ -7169,7 +7171,7 @@ media-gfx/dpic 20130310: Converts PIC plots into pstricks, PGF/TikZ, PostScript,
 media-gfx/duhdraw 2.8.13-r1: ASCII art editor
 media-gfx/ebdftopcf 2: ebdftopcf optimially generators PCF files from BDF files
 media-gfx/enblend 4.1.3-r1 4.2.0_p20161007-r1: Image Blending with Multiresolution Splines
-media-gfx/eog 3.20.5 3.24.1: The Eye of GNOME image viewer
+media-gfx/eog 3.24.1: The Eye of GNOME image viewer
 media-gfx/eog-plugins 3.16.6: Eye of GNOME plugins
 media-gfx/eom 1.12.2-r3: The MATE image viewer
 media-gfx/evoluspencil 2.0.5: A simple GUI prototyping tool to create mockups
@@ -7196,8 +7198,8 @@ media-gfx/gimp 2.8.22 2.8.22-r1: GNU Image Manipulation Program
 media-gfx/gimp-arrow-brushes 20120122: Brushes for GIMP with the styles arrow, handpointer, button arrow and cursor
 media-gfx/gliv 1.9.6 1.9.7: An image viewer that uses OpenGL
 media-gfx/gnofract4d 3.14-r1: A program for drawing beautiful mathematically-based images known as fractals
-media-gfx/gnome-font-viewer 3.22.0 3.24.0: Font viewer for GNOME
-media-gfx/gnome-photos 3.22.6 3.24.5: Access, organize and share your photos on GNOME
+media-gfx/gnome-font-viewer 3.24.0: Font viewer for GNOME
+media-gfx/gnome-photos 3.24.5: Access, organize and share your photos on GNOME
 media-gfx/gnome-raw-thumbnailer 3.0.0: A lightweight and fast raw image thumbnailer for GNOME
 media-gfx/gnome-screenshot 3.22.0: Screenshot utility for GNOME
 media-gfx/gozer 0.7-r2: tool for rendering arbitrary text as graphics, using ttfs and styles
@@ -7285,13 +7287,13 @@ media-gfx/scour 0.36: Take an SVG file and produce a cleaner and more concise fi
 media-gfx/scrot 0.8_p13: Screen capture utility using imlib2 library
 media-gfx/sfftobmp 3.1.2-r1: sff to bmp converter
 media-gfx/shotwell 0.24.6: Open source photo manager for GNOME
-media-gfx/simple-scan 3.22.0.1 3.24.1: Simple document scanning utility
+media-gfx/simple-scan 3.24.1: Simple document scanning utility
 media-gfx/splash-themes-gentoo 20101212-r1: A collection of Gentoo themes for splashutils
 media-gfx/splash-themes-livecd 2004.3 2005.0 2005.1 2006.0 2006.1 2007.0-r3: Gentoo theme for gensplash consoles
 media-gfx/splashutils 1.5.4.4-r7: Framebuffer splash utilities
 media-gfx/springgraph 88: Generate spring graphs from graphviz input files
 media-gfx/svg2rlg 0.3: python tool to convert SVG files to reportlab graphics
-media-gfx/sxiv 1.3.2-r2: Simple (or small or suckless) X Image Viewer
+media-gfx/sxiv 24: Simple (or small or suckless) X Image Viewer
 media-gfx/symboleditor 2.0.0: Application to create libraries of QPainterPath objects with redering hints
 media-gfx/tic98 1.01-r3: compressor for black-and-white images, in particular scanned documents
 media-gfx/transfig 3.2.5e: A set of tools for creating TeX documents with graphics
@@ -7343,7 +7345,7 @@ media-libs/elementary 1.17.0: Basic widget set, based on EFL for mobile touch-sc
 media-libs/elles_icc_profiles 20160501.0932: Elle Stone's well-behaved RGB and grey ICC profiles
 media-libs/esdl 1.0.1: Erlang bindings for the SDL library
 media-libs/exempi 2.2.1 2.4.2: Exempi is a port of the Adobe XMP SDK to work on UNIX
-media-libs/exiftool 10.68: Read and write meta information in image, audio and video files
+media-libs/exiftool 10.72: Read and write meta information in image, audio and video files
 media-libs/faac 1.28-r4: Free MPEG-4 audio codecs by AudioCoding.com
 media-libs/faad2 2.7-r3: AAC audio decoding library
 media-libs/ffmpegsource 2.23: A libav/ffmpeg based source library for easy frame accurate access
@@ -7473,7 +7475,7 @@ media-libs/libirman 0.4.5: library for Irman control of Unix software
 media-libs/libjackasyn 0.13: An application/library for connecting OSS apps to Jackit
 media-libs/libjpeg-turbo 1.5.0 1.5.1: MMX, SSE, and SSE2 SIMD accelerated JPEG library
 media-libs/libjsw 1.5.8: provide a uniform API and user configuration for joysticks and game controllers
-media-libs/libkate 0.3.7-r1 0.4.1-r2: Codec for karaoke and text encapsulation for Ogg
+media-libs/libkate 0.4.1-r2: Codec for karaoke and text encapsulation for Ogg
 media-libs/liblastfm 1.0.9-r1: Collection of libraries to integrate Last.fm services
 media-libs/liblingoteach 0.2.3: A library to support lingoteach-ui and for generic lesson development
 media-libs/liblo 0.29: Lightweight OSC (Open Sound Control) implementation
@@ -7484,7 +7486,7 @@ media-libs/libmad 0.15.1b-r8: "M"peg "A"udio "D"ecoder library
 media-libs/libmatemixer 1.12.1-r1: Mixer library for MATE Desktop
 media-libs/libmatroska 1.4.5 1.4.8: Extensible multimedia container format based on EBML
 media-libs/libmediaart 1.9.4: Manages, extracts and handles media art caches
-media-libs/libmediainfo 0.7.99: MediaInfo libraries
+media-libs/libmediainfo 17.12: MediaInfo libraries
 media-libs/libmetalink 0.1.0-r1 0.1.1 0.1.1-r1: Library for handling Metalink files
 media-libs/libmikmod 3.3.8: A library to play a wide range of module formats
 media-libs/libmkv 0.6.5.1: Lightweight Matroska muxer written for HandBrake
@@ -7566,7 +7568,7 @@ media-libs/mutagen 1.35.1: Audio metadata tag reader and writer implemented in p
 media-libs/nas 1.9.4 1.9.4-r1: Network Audio System
 media-libs/netpbm 10.66.00 10.70.00: A set of utilities for converting to/from the netpbm (and related) formats
 media-libs/openal 1.15.1-r2 1.18.2-r1: A software implementation of the OpenAL 3D audio API
-media-libs/opencollada 1.6.25 1.6.58: Stream based read/write library for COLLADA files
+media-libs/opencollada 1.6.25 1.6.58 1.6.62: Stream based read/write library for COLLADA files
 media-libs/opencolorio 1.0.9-r2: A color management framework for visual effects and animation
 media-libs/opencore-amr 0.1.3-r1: Implementation of Adaptive Multi Rate Narrowband and Wideband speech codec
 media-libs/opencv 2.4.13-r3: A collection of algorithms and sample code for various computer vision problems
@@ -7913,12 +7915,12 @@ media-sound/gmorgan 0.79-r1: Opensource software rhythm station
 media-sound/gmpc 11.8.16-r1: A GTK+2 client for the Music Player Daemon
 media-sound/gmusicbrowser 1.1.15-r3: An open-source jukebox for large collections of mp3/ogg/flac files
 media-sound/gnomad 2.9.6: A GTK+ music manager and swiss army knife for the Portable Digital Entertainment (PDE) protocol
-media-sound/gnome-music 3.22.2-r1 3.24.2: Music management for Gnome
-media-sound/gnome-sound-recorder 3.21.92 3.24.0.1: Simple sound recorder
+media-sound/gnome-music 3.24.2: Music management for Gnome
+media-sound/gnome-sound-recorder 3.24.0.1: Simple sound recorder
 media-sound/gnump3d 3.0-r1: A streaming server for MP3, OGG vorbis and other streamable files
 media-sound/gom 0.29.103-r1: Console Mixer Program for OSS
 media-sound/gramofile 1.6-r1: Transfer sound from gramophone records to CD
-media-sound/grip 3.3.1-r3 3.4.3: GTK+ based Audio CD Player/Ripper
+media-sound/grip 3.4.3: GTK+ based Audio CD Player/Ripper
 media-sound/gsm 1.0.13-r1: Lossy speech compression library and tool
 media-sound/gstreamripper 0.2: A GTK+ toolkit based frontend for streamripper
 media-sound/gtick 0.5.0: a metronome application supporting different meters and speeds ranging
@@ -8015,7 +8017,6 @@ media-sound/qjackctl 0.4.5: Qt GUI to control the JACK Audio Connection Kit and 
 media-sound/qmidiroute 0.4.0: QMidiRoute is a filter/router for MIDI events
 media-sound/qmmp 1.1.7-r1: Qt5-based audio player with winamp/xmms skins support
 media-sound/qmpdclient 1.2.2-r3: QMPDClient with NBL additions, such as lyrics' display
-media-sound/qpitch 1.0.1-r1: A program to tune musical instruments using Qt4
 media-sound/qsynth 0.4.4: A Qt application to control FluidSynth
 media-sound/qtscrobbler 0.10: Updates a last.fm profile using information from a supported portable music player
 media-sound/quark 3.24: Quark is the Anti-GUI Music Player with a cool Docklet!
@@ -8042,7 +8043,7 @@ media-sound/sidplay 2.0.9: C64 SID player
 media-sound/smixer 1.0.4: command-line tool for setting and viewing mixer settings
 media-sound/solfege 3.22.2: GNU Solfege is a program written to help you practice ear training
 media-sound/sonata 1.6.2.1-r1: An elegant GTK+ music client for the Music Player Daemon (MPD)
-media-sound/sound-juicer 3.22.1 3.24.0: CD ripper for GNOME
+media-sound/sound-juicer 3.24.0: CD ripper for GNOME
 media-sound/soundconverter 2.1.6: A simple audiofile converter application for the GNOME environment
 media-sound/sox 14.4.2: The swiss army knife of sound processing programs
 media-sound/split2flac 122: sh script to split an APE/FLAC/WV/WAV audio image with CUE sheet into tracks
@@ -8113,7 +8114,7 @@ media-video/camorama 0.19-r2: A webcam application featuring various image filte
 media-video/ccextractor 0.59: Extract closed captioning subtitles from video to SRT
 media-video/cclive 0.9.3-r2: Command line tool for extracting videos from various websites
 media-video/chaplin 1.10-r2: This is a program to raw copy chapters from a dvd using libdvdread
-media-video/cheese 3.22.1 3.24.0: A cheesy program to take pictures and videos from your webcam
+media-video/cheese 3.24.0: A cheesy program to take pictures and videos from your webcam
 media-video/cinelerra 2.3: The most advanced non-linear video editor and compositor
 media-video/clive 2.3.0.1: Command line tool for extracting videos from various websites
 media-video/cpdvd 1.10-r1: transfer a DVD title to your harddisk with ease on Linux
@@ -8151,7 +8152,7 @@ media-video/kmplayer 0.12.0b-r1: Video player plugin for Konqueror and basic MPl
 media-video/libav 9.17 11.8: Complete solution to record, convert and stream audio and video
 media-video/lsdvd 0.17: Utility for getting info out of DVDs
 media-video/matroxset 0.4: Matrox utility to switch output modes (activate tvout)
-media-video/mediainfo 0.7.99: MediaInfo supplies technical and tag information about media files
+media-video/mediainfo 17.12: MediaInfo supplies technical and tag information about media files
 media-video/minitube 2.5.2-r1: Qt5 YouTube Client
 media-video/mjpegtools 2.1.0-r2: Tools for MJPEG video
 media-video/mkvtoolnix 9.6.0 19.0.0: Tools to create, alter, and inspect Matroska files
@@ -8185,8 +8186,7 @@ media-video/subliminal 2.0.5-r1: Python library to search and download subtitles
 media-video/subtitlecomposer 0.6.4: Text-based subtitles editor
 media-video/subtitleeditor 0.54.0: GTK+3 subtitle editing tool
 media-video/subtitleripper 0.3.4-r4: DVD Subtitle Ripper for Linux
-media-video/syncplay 1.4.0: Client/server to synchronize media playback
-media-video/totem 3.22.1-r1 3.24.0: Media player for GNOME
+media-video/totem 3.24.0: Media player for GNOME
 media-video/tovid 0.35.2-r1: A collection of DVD authoring tools
 media-video/transcode 1.1.7-r3: A suite of utilities for transcoding video and audio codecs in different containers
 media-video/ttcut 0.19.6-r3 0.19.6_p1: Tool for cutting MPEG files especially for removing commercials
@@ -8347,7 +8347,7 @@ net-analyzer/ttcp 1.12-r2: Tool to test TCP and UDP throughput
 net-analyzer/upnpscan 0.4-r3: Scans the network for UPNP capable devices
 net-analyzer/vnstat 1.17: Console-based network traffic monitor that keeps statistics of network usage
 net-analyzer/w3af 1.1-r1: Web Application Attack and Audit Framework
-net-analyzer/wireshark 2.4.2-r1 2.4.3-r1: A network protocol analyzer formerly known as ethereal
+net-analyzer/wireshark 2.4.3-r1: A network protocol analyzer formerly known as ethereal
 net-analyzer/xnetload 1.11.3-r1: displays a count and a graph of the traffic over a specified network connection
 net-analyzer/yersinia 0.7.3: A layer 2 attack framework
 net-analyzer/zabbix 2.2.16: ZABBIX is software for monitoring of your applications, network and servers
@@ -8422,7 +8422,7 @@ net-firewall/nftables 0.8-r3: Linux kernel (3.13+) firewall, NAT and packet mang
 net-firewall/pglinux 2.3.1: Privacy oriented firewall application
 net-firewall/psad 2.2.5: Port Scanning Attack Detection daemon
 net-firewall/rtsp-conntrack 3.7: RTSP conntrack module for Netfilter
-net-firewall/shorewall 5.1.9-r1: A high-level tool for configuring Netfilter
+net-firewall/shorewall 5.1.9-r1 5.1.11.2: A high-level tool for configuring Netfilter
 net-firewall/ufw 0.34_pre805-r2 0.35-r1: A program used to manage a netfilter firewall
 net-firewall/xtables-addons 2.13: iptables extensions not yet accepted in the main kernel
 net-fs/autofs 5.1.2: Kernel based automounter
@@ -8508,7 +8508,7 @@ net-irc/kvirc 5.0_pre20171001143427: Advanced IRC Client
 net-irc/ngircd 23-r1 24: An IRC server written from scratch
 net-irc/ninja 1.5.9_pre14-r1: Ninja IRC Client
 net-irc/pisg 0.73-r1: Perl IRC Statistics Generator
-net-irc/polari 3.22.2 3.24.2: An IRC client for Gnome
+net-irc/polari 3.24.2: An IRC client for Gnome
 net-irc/quassel 0.12.4: Qt/KDE IRC client supporting a remote daemon for 24/7 connectivity
 net-irc/rhapsody 0.28b: IRC client intended to be displayed on a text console
 net-irc/savirc 1.99-r1: User friendly IRC client with unicode support and tcl/tk scripting
@@ -8540,7 +8540,7 @@ net-libs/enet 1.2.2-r1 1.3.7 1.3.13: relatively thin, simple and robust network 
 net-libs/farstream 0.1.2-r2 0.2.8-r1: Audio/video conferencing framework specifically designed for instant messengers
 net-libs/glib-networking 2.50.0: Network-related giomodules for glib
 net-libs/gnet 2.0.8-r2: A simple network library
-net-libs/gnome-online-accounts 3.22.7 3.24.4: GNOME framework for accessing online accounts
+net-libs/gnome-online-accounts 3.24.4: GNOME framework for accessing online accounts
 net-libs/gnutls 3.5.15: A TLS 1.2 and SSL 3.0 implementation for the GNU project
 net-libs/gsnmp 0.3.0: An SNMP library based on glib and gnet
 net-libs/gsoap 2.8.51: A cross-platform open source C and C++ SDK for SOAP/XML Web services
@@ -8625,7 +8625,7 @@ net-libs/miniupnpc 2.0.20170509: UPnP client library and a simple UPnP client
 net-libs/nativebiginteger 0.6.4: NativeBigInteger libs for Freenet taken from i2p
 net-libs/neon 0.30.2: HTTP and WebDAV client library
 net-libs/net6 1.3.14 1.3.14-r1 1.3.14-r2: Network access framework for IPv4/IPv6 written in C++
-net-libs/nghttp2 1.10.0 1.19.0: HTTP/2 C Library
+net-libs/nghttp2 1.19.0: HTTP/2 C Library
 net-libs/nodejs 0.12.17 4.8.5 6.9.4 6.11.5: A JavaScript runtime built on Chrome's V8 JavaScript engine
 net-libs/obby 0.4.8-r1: Library for collaborative text editing
 net-libs/openpgm 5.1.118-r1 5.2.122: Open source implementation of the Pragmatic General Multicast specification
@@ -8667,7 +8667,7 @@ net-mail/courier-imap 4.15-r2 4.16.2-r1 4.17.3: An IMAP daemon designed specific
 net-mail/cyrus-imapd 3.0.4: The Cyrus IMAP Server
 net-mail/dbmail 3.2.2 3.2.3-r1: Enables storage of mail messages in a relational database
 net-mail/dot-forward 0.71-r3: reads sendmail's .forward files under qmail
-net-mail/dovecot 2.2.29.1 2.2.32 2.2.33.2-r1: An IMAP and POP3 server written with security primarily in mind
+net-mail/dovecot 2.2.29.1 2.2.32 2.2.33.2-r1 2.2.33.2-r2: An IMAP and POP3 server written with security primarily in mind
 net-mail/email 2.5.0 3.1.3: Advanced CLI tool for sending email
 net-mail/ezmlm-idx 6.0.0: Simple yet powerful mailing list manager for qmail
 net-mail/fdm 1.7: fetch, filter and deliver mail
@@ -8773,7 +8773,7 @@ net-misc/freerdp 1.2.1_pre20150326-r1 2.0.0_rc0: Free implementation of the Remo
 net-misc/gcap 0.1.1-r1: Command line tool for downloading Youtube closed captions
 net-misc/geoipupdate 2.3.1: performs automatic updates of GeoIP2 and GeoIP Legacy binary databases
 net-misc/getdate 1.2-r1: Network Date/Time Query and Set Local Date/Time Utility
-net-misc/gnome-online-miners 3.22.0 3.24.0: Crawls through your online content
+net-misc/gnome-online-miners 3.24.0: Crawls through your online content
 net-misc/gofish 1.2: Gofish gopher server
 net-misc/grdesktop 0.23-r1: Gtk2 frontend for rdesktop
 net-misc/gsasl 1.8.0-r1: The GNU SASL client, server, and library
@@ -8877,7 +8877,7 @@ net-misc/rdesktop 1.8.3: A Remote Desktop Protocol Client
 net-misc/remmina 1.2.0_rc24: A GTK+ RDP, SPICE, VNC, XDMCP and SSH client
 net-misc/rinetd 0.62-r2: redirects TCP connections from one IP address and port to another
 net-misc/rsync 3.1.2-r2: File transfer program to keep remote files into sync
-net-misc/rygel 0.32.1 0.34.0: Rygel is an open source UPnP/DLNA MediaServer
+net-misc/rygel 0.34.0: Rygel is an open source UPnP/DLNA MediaServer
 net-misc/s3cmd 1.6.1: Command line client for Amazon S3
 net-misc/scponly 4.8-r5: A tiny pseudoshell which only permits scp and sftp
 net-misc/secpanel 0.6.1-r1: Graphical frontend for managing and running SSH and SCP connections
@@ -9038,7 +9038,7 @@ net-voip/linphone 3.5.2: Video softphone based on the SIP protocol
 net-voip/telepathy-gabble 0.18.4: A XMPP connection manager, handles single and multi user chats and voice calls
 net-voip/telepathy-haze 0.8.0-r1 0.8.0-r2: Telepathy connection manager providing libpurple supported protocols
 net-voip/telepathy-rakia 0.8.0: A SIP connection manager for Telepathy based around the Sofia-SIP library
-net-voip/telepathy-salut 0.8.1 0.8.1-r1: A link-local XMPP connection manager for Telepathy
+net-voip/telepathy-salut 0.8.1-r1: A link-local XMPP connection manager for Telepathy
 net-vpn/6tunnel 0.12: TCP proxy for applications that don't speak IPv6
 net-vpn/aiccu 2007.01.15-r5: AICCU Client to configure an IPv6 tunnel to SixXS
 net-vpn/badvpn 1.999.127 1.999.129: Peer-to-peer VPN, NCD scripting language, tun2socks proxifier
@@ -9216,9 +9216,9 @@ sci-electronics/xnec2c 3.5.1: A GTK+ graphical interactive version of nec2c
 sci-electronics/xoscope 2.0: Soundcard Oscilloscope for X
 sci-geosciences/congen 1.6.2: Calculate speeds, equilibrium arguments, node factors of tidal constituents
 sci-geosciences/foxtrotgps 1.2.0: Easy to use, fast and lightweight mapping application (fork of tangogps)
-sci-geosciences/geocode-glib 3.20.1 3.24.0: GLib geocoding library that uses the Yahoo! Place Finder service
+sci-geosciences/geocode-glib 3.24.0: GLib geocoding library that uses the Yahoo! Place Finder service
 sci-geosciences/gmt 4.5.6: Powerful map generator
-sci-geosciences/gnome-maps 3.22.2 3.24.3: A map application for GNOME
+sci-geosciences/gnome-maps 3.24.3: A map application for GNOME
 sci-geosciences/gpsbabel 1.5.4-r1: GPS waypoints, tracks and routes converter
 sci-geosciences/gpsd 3.10 3.16 3.17 3.17-r2: GPS daemon and library for USB/serial GPS devices and GPS/mapping clients
 sci-geosciences/gtk-g-rays2 2.05: GUI for accessing the Wintec WBT 201 / G-Rays 2 GPS device
@@ -9271,7 +9271,7 @@ sci-libs/fetk 1.5: The Finite Element ToolKit - Meta package
 sci-libs/fftw 2.1.5-r9 3.3.6_p2: Fast C library for the Discrete Fourier Transform
 sci-libs/galib 2.4.7-r1: Library for genetic algorithms in C++ programs
 sci-libs/gamer 1.5-r2: Geometry-preserving Adaptive MeshER
-sci-libs/gdal 2.0.3: Translator library for raster geospatial data formats (includes OGR support)
+sci-libs/gdal 2.2.3-r1: Translator library for raster geospatial data formats (includes OGR support)
 sci-libs/geos 3.6.1 3.6.2: Geometry engine library for Geographic Information Systems
 sci-libs/gsl 1.16: The GNU Scientific Library
 sci-libs/gts 20121130: GNU Triangulated Surface Library
@@ -9385,263 +9385,264 @@ sci-visualization/mayavi 4.3.0: Enthought Tool Suite: Scientific data 3-dimensio
 sci-visualization/opendx 4.4.4-r5: 3D data visualization tool
 sci-visualization/pyxplot 0.9.2-r1: Gnuplot like graphing program publication-quality figures
 sci-visualization/quickplot 0.10.6: A fast interactive 2D plotter
-sec-policy/selinux-abrt 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for abrt
-sec-policy/selinux-accountsd 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for accountsd
-sec-policy/selinux-acct 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for acct
-sec-policy/selinux-ada 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for ada
-sec-policy/selinux-afs 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for afs
-sec-policy/selinux-aide 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for aide
-sec-policy/selinux-alsa 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for alsa
-sec-policy/selinux-amanda 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for amanda
-sec-policy/selinux-amavis 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for amavis
-sec-policy/selinux-android 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for android
-sec-policy/selinux-apache 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for apache
-sec-policy/selinux-apcupsd 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for apcupsd
-sec-policy/selinux-apm 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for acpi
-sec-policy/selinux-arpwatch 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for arpwatch
-sec-policy/selinux-asterisk 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for asterisk
-sec-policy/selinux-at 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for at
-sec-policy/selinux-automount 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for automount
-sec-policy/selinux-avahi 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for avahi
-sec-policy/selinux-awstats 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for awstats
-sec-policy/selinux-backup 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for generic backup apps
-sec-policy/selinux-bacula 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for bacula
-sec-policy/selinux-base 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: Gentoo base policy for SELinux
-sec-policy/selinux-base-policy 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for core modules
-sec-policy/selinux-bind 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for bind
-sec-policy/selinux-bitcoin 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for bitcoin
-sec-policy/selinux-bitlbee 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for bitlbee
-sec-policy/selinux-bluetooth 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for bluetooth
-sec-policy/selinux-brctl 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for brctl
-sec-policy/selinux-cachefilesd 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for cachefilesd
-sec-policy/selinux-calamaris 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for calamaris
-sec-policy/selinux-canna 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for canna
-sec-policy/selinux-ccs 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for ccs
-sec-policy/selinux-cdrecord 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for cdrecord
-sec-policy/selinux-ceph 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for ceph
-sec-policy/selinux-cgmanager 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for cgmanager
-sec-policy/selinux-cgroup 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for cgroup
-sec-policy/selinux-chromium 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for chromium
-sec-policy/selinux-chronyd 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for chronyd
-sec-policy/selinux-clamav 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for clamav
-sec-policy/selinux-clockspeed 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for clockspeed
-sec-policy/selinux-collectd 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for collectd
-sec-policy/selinux-consolekit 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for consolekit
-sec-policy/selinux-corosync 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for corosync
-sec-policy/selinux-couchdb 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for couchdb
-sec-policy/selinux-courier 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for courier
-sec-policy/selinux-cpucontrol 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for cpucontrol
-sec-policy/selinux-cpufreqselector 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for cpufreqselector
-sec-policy/selinux-cups 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for cups
-sec-policy/selinux-cvs 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for cvs
-sec-policy/selinux-cyphesis 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for cyphesis
-sec-policy/selinux-daemontools 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for daemontools
-sec-policy/selinux-dante 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for dante
-sec-policy/selinux-dbadm 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for dbadm
-sec-policy/selinux-dbskk 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for dbskk
-sec-policy/selinux-dbus 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for dbus
-sec-policy/selinux-dcc 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for dcc
-sec-policy/selinux-ddclient 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for ddclient
-sec-policy/selinux-ddcprobe 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for ddcprobe
-sec-policy/selinux-denyhosts 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for denyhosts
-sec-policy/selinux-devicekit 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for devicekit
-sec-policy/selinux-dhcp 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for dhcp
-sec-policy/selinux-dictd 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for dictd
-sec-policy/selinux-dirsrv 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for dirsrv
-sec-policy/selinux-distcc 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for distcc
-sec-policy/selinux-djbdns 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for djbdns
-sec-policy/selinux-dkim 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for dkim
-sec-policy/selinux-dmidecode 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for dmidecode
-sec-policy/selinux-dnsmasq 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for dnsmasq
-sec-policy/selinux-dovecot 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for dovecot
-sec-policy/selinux-dpkg 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for dpkg
-sec-policy/selinux-dracut 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for dracut
-sec-policy/selinux-dropbox 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for dropbox
-sec-policy/selinux-entropyd 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for entropyd
-sec-policy/selinux-evolution 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for evolution
-sec-policy/selinux-exim 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for exim
-sec-policy/selinux-fail2ban 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for fail2ban
-sec-policy/selinux-fetchmail 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for fetchmail
-sec-policy/selinux-finger 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for finger
-sec-policy/selinux-flash 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for flash
-sec-policy/selinux-fprintd 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for fprintd
-sec-policy/selinux-ftp 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for ftp
-sec-policy/selinux-games 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for games
-sec-policy/selinux-gatekeeper 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for gatekeeper
-sec-policy/selinux-git 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for git
-sec-policy/selinux-gitosis 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for gitosis
-sec-policy/selinux-gnome 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for gnome
-sec-policy/selinux-googletalk 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for googletalk
-sec-policy/selinux-gorg 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for gorg
-sec-policy/selinux-gpg 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for gpg
-sec-policy/selinux-gpm 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for gpm
-sec-policy/selinux-gpsd 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for gpsd
-sec-policy/selinux-gssproxy 2.20170805-r3: SELinux policy for gssproxy
-sec-policy/selinux-hddtemp 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for hddtemp
-sec-policy/selinux-howl 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for howl
-sec-policy/selinux-icecast 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for icecast
-sec-policy/selinux-ifplugd 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for ifplugd
-sec-policy/selinux-imaze 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for imaze
-sec-policy/selinux-inetd 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for inetd
-sec-policy/selinux-inn 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for inn
-sec-policy/selinux-ipsec 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for ipsec
-sec-policy/selinux-irc 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for irc
-sec-policy/selinux-ircd 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for ircd
-sec-policy/selinux-irqbalance 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for irqbalance
-sec-policy/selinux-jabber 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for jabber
-sec-policy/selinux-java 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for java
-sec-policy/selinux-kdeconnect 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for kdeconnect
-sec-policy/selinux-kdump 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for kdump
-sec-policy/selinux-kerberos 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for kerberos
-sec-policy/selinux-kerneloops 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for kerneloops
-sec-policy/selinux-kismet 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for kismet
-sec-policy/selinux-ksmtuned 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for ksmtuned
-sec-policy/selinux-kudzu 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for kudzu
-sec-policy/selinux-ldap 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for ldap
-sec-policy/selinux-links 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for links
-sec-policy/selinux-lircd 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for lircd
-sec-policy/selinux-loadkeys 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for loadkeys
-sec-policy/selinux-lockdev 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for lockdev
-sec-policy/selinux-logrotate 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for logrotate
-sec-policy/selinux-logsentry 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for logsentry
-sec-policy/selinux-logwatch 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for logwatch
-sec-policy/selinux-lpd 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for lpd
-sec-policy/selinux-mailman 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for mailman
-sec-policy/selinux-makewhatis 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for makewhatis
-sec-policy/selinux-mandb 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for mandb
-sec-policy/selinux-mcelog 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for mcelog
-sec-policy/selinux-memcached 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for memcached
-sec-policy/selinux-milter 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for milter
-sec-policy/selinux-modemmanager 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for modemmanager
-sec-policy/selinux-mono 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for mono
-sec-policy/selinux-mozilla 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for mozilla
-sec-policy/selinux-mpd 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for mpd
-sec-policy/selinux-mplayer 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for mplayer
-sec-policy/selinux-mrtg 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for mrtg
-sec-policy/selinux-munin 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for munin
-sec-policy/selinux-mutt 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for mutt
-sec-policy/selinux-mysql 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for mysql
-sec-policy/selinux-nagios 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for nagios
-sec-policy/selinux-ncftool 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for ncftool
-sec-policy/selinux-nessus 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for nessus
-sec-policy/selinux-networkmanager 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for networkmanager
-sec-policy/selinux-nginx 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for nginx
-sec-policy/selinux-nslcd 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for nslcd
-sec-policy/selinux-ntop 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for ntop
-sec-policy/selinux-ntp 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for ntp
-sec-policy/selinux-nut 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for nut
-sec-policy/selinux-nx 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for nx
-sec-policy/selinux-oddjob 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for oddjob
-sec-policy/selinux-oident 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for oident
-sec-policy/selinux-openct 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for openct
-sec-policy/selinux-openrc 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for openrc
-sec-policy/selinux-openvpn 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for openvpn
-sec-policy/selinux-pan 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for pan
-sec-policy/selinux-pcmcia 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for pcmcia
-sec-policy/selinux-pcscd 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for pcscd
-sec-policy/selinux-perdition 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for perdition
-sec-policy/selinux-phpfpm 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for phpfpm
-sec-policy/selinux-plymouthd 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for plymouthd
-sec-policy/selinux-podsleuth 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for podsleuth
-sec-policy/selinux-policykit 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for policykit
-sec-policy/selinux-portmap 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for portmap
-sec-policy/selinux-postfix 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for postfix
-sec-policy/selinux-postgresql 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for postgresql
-sec-policy/selinux-postgrey 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for postgrey
-sec-policy/selinux-ppp 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for ppp
-sec-policy/selinux-prelink 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for prelink
-sec-policy/selinux-prelude 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for prelude
-sec-policy/selinux-privoxy 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for privoxy
-sec-policy/selinux-procmail 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for procmail
-sec-policy/selinux-psad 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for psad
-sec-policy/selinux-publicfile 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for publicfile
-sec-policy/selinux-pulseaudio 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for pulseaudio
-sec-policy/selinux-puppet 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for puppet
-sec-policy/selinux-pyicqt 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for pyicqt
-sec-policy/selinux-pyzor 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for pyzor
-sec-policy/selinux-qemu 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for qemu
-sec-policy/selinux-qmail 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for qmail
-sec-policy/selinux-quota 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for quota
-sec-policy/selinux-radius 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for radius
-sec-policy/selinux-radvd 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for radvd
-sec-policy/selinux-razor 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for razor
-sec-policy/selinux-remotelogin 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for remotelogin
-sec-policy/selinux-resolvconf 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for resolvconf
-sec-policy/selinux-rgmanager 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for rgmanager
-sec-policy/selinux-rngd 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for rngd
-sec-policy/selinux-roundup 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for roundup
-sec-policy/selinux-rpc 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for rpc
-sec-policy/selinux-rpcbind 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for rpcbind
-sec-policy/selinux-rpm 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for rpm
-sec-policy/selinux-rssh 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for rssh
-sec-policy/selinux-rtkit 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for rtkit
-sec-policy/selinux-rtorrent 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for rtorrent
-sec-policy/selinux-salt 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for salt
-sec-policy/selinux-samba 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for samba
-sec-policy/selinux-sasl 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for sasl
-sec-policy/selinux-screen 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for screen
-sec-policy/selinux-sendmail 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for sendmail
-sec-policy/selinux-sensord 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for sensord
-sec-policy/selinux-shorewall 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for shorewall
-sec-policy/selinux-shutdown 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for shutdown
-sec-policy/selinux-skype 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for skype
-sec-policy/selinux-slocate 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for slocate
-sec-policy/selinux-slrnpull 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for slrnpull
-sec-policy/selinux-smartmon 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for smartmon
-sec-policy/selinux-smokeping 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for smokeping
-sec-policy/selinux-snmp 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for snmp
-sec-policy/selinux-snort 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for snort
-sec-policy/selinux-soundserver 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for soundserver
-sec-policy/selinux-spamassassin 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for spamassassin
-sec-policy/selinux-speedtouch 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for speedtouch
-sec-policy/selinux-squid 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for squid
-sec-policy/selinux-sssd 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for sssd
-sec-policy/selinux-stunnel 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for stunnel
-sec-policy/selinux-subsonic 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for subsonic
-sec-policy/selinux-sudo 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for sudo
-sec-policy/selinux-sxid 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for sxid
-sec-policy/selinux-syncthing 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for syncthing
-sec-policy/selinux-sysstat 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for sysstat
-sec-policy/selinux-tboot 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for tboot
-sec-policy/selinux-tcpd 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for tcpd
-sec-policy/selinux-tcsd 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for tcsd
-sec-policy/selinux-telnet 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for telnet
-sec-policy/selinux-tftp 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for tftp
-sec-policy/selinux-tgtd 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for tgtd
-sec-policy/selinux-thunderbird 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for thunderbird
-sec-policy/selinux-timidity 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for timidity
-sec-policy/selinux-tmpreaper 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for tmpreaper
-sec-policy/selinux-tor 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for tor
-sec-policy/selinux-tripwire 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for tripwire
-sec-policy/selinux-ucspitcp 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for ucspitcp
-sec-policy/selinux-ulogd 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for ulogd
-sec-policy/selinux-uml 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for uml
-sec-policy/selinux-unconfined 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for unconfined
-sec-policy/selinux-uptime 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for uptime
-sec-policy/selinux-usbmuxd 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for usbmuxd
-sec-policy/selinux-uucp 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for uucp
-sec-policy/selinux-uwimap 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for uwimap
-sec-policy/selinux-uwsgi 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for uWSGI
-sec-policy/selinux-varnishd 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for varnishd
-sec-policy/selinux-vbetool 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for vbetool
-sec-policy/selinux-vdagent 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for vdagent
-sec-policy/selinux-vde 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for vde
-sec-policy/selinux-virt 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for virt
-sec-policy/selinux-vlock 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for vlock
-sec-policy/selinux-vmware 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for vmware
-sec-policy/selinux-vnstatd 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for vnstatd
-sec-policy/selinux-vpn 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for vpn
-sec-policy/selinux-watchdog 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for watchdog
-sec-policy/selinux-webalizer 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for webalizer
-sec-policy/selinux-wine 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for wine
-sec-policy/selinux-wireshark 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for wireshark
-sec-policy/selinux-wm 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for wm
-sec-policy/selinux-xen 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for xen
-sec-policy/selinux-xfs 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for xfs
-sec-policy/selinux-xprint 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for xprint
-sec-policy/selinux-xscreensaver 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for xscreensaver
-sec-policy/selinux-xserver 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for xserver
-sec-policy/selinux-zabbix 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3: SELinux policy for zabbix
+sec-policy/selinux-abrt 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for abrt
+sec-policy/selinux-accountsd 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for accountsd
+sec-policy/selinux-acct 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for acct
+sec-policy/selinux-ada 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for ada
+sec-policy/selinux-afs 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for afs
+sec-policy/selinux-aide 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for aide
+sec-policy/selinux-alsa 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for alsa
+sec-policy/selinux-amanda 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for amanda
+sec-policy/selinux-amavis 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for amavis
+sec-policy/selinux-android 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for android
+sec-policy/selinux-apache 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for apache
+sec-policy/selinux-apcupsd 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for apcupsd
+sec-policy/selinux-apm 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for acpi
+sec-policy/selinux-arpwatch 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for arpwatch
+sec-policy/selinux-asterisk 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for asterisk
+sec-policy/selinux-at 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for at
+sec-policy/selinux-automount 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for automount
+sec-policy/selinux-avahi 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for avahi
+sec-policy/selinux-awstats 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for awstats
+sec-policy/selinux-backup 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for generic backup apps
+sec-policy/selinux-bacula 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for bacula
+sec-policy/selinux-base 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: Gentoo base policy for SELinux
+sec-policy/selinux-base-policy 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for core modules
+sec-policy/selinux-bind 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for bind
+sec-policy/selinux-bitcoin 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for bitcoin
+sec-policy/selinux-bitlbee 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for bitlbee
+sec-policy/selinux-bluetooth 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for bluetooth
+sec-policy/selinux-brctl 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for brctl
+sec-policy/selinux-cachefilesd 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for cachefilesd
+sec-policy/selinux-calamaris 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for calamaris
+sec-policy/selinux-canna 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for canna
+sec-policy/selinux-ccs 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for ccs
+sec-policy/selinux-cdrecord 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for cdrecord
+sec-policy/selinux-ceph 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for ceph
+sec-policy/selinux-cgmanager 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for cgmanager
+sec-policy/selinux-cgroup 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for cgroup
+sec-policy/selinux-chromium 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for chromium
+sec-policy/selinux-chronyd 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for chronyd
+sec-policy/selinux-clamav 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for clamav
+sec-policy/selinux-clockspeed 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for clockspeed
+sec-policy/selinux-collectd 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for collectd
+sec-policy/selinux-consolekit 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for consolekit
+sec-policy/selinux-corosync 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for corosync
+sec-policy/selinux-couchdb 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for couchdb
+sec-policy/selinux-courier 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for courier
+sec-policy/selinux-cpucontrol 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for cpucontrol
+sec-policy/selinux-cpufreqselector 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for cpufreqselector
+sec-policy/selinux-cups 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for cups
+sec-policy/selinux-cvs 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for cvs
+sec-policy/selinux-cyphesis 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for cyphesis
+sec-policy/selinux-daemontools 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for daemontools
+sec-policy/selinux-dante 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for dante
+sec-policy/selinux-dbadm 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for dbadm
+sec-policy/selinux-dbskk 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for dbskk
+sec-policy/selinux-dbus 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for dbus
+sec-policy/selinux-dcc 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for dcc
+sec-policy/selinux-ddclient 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for ddclient
+sec-policy/selinux-ddcprobe 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for ddcprobe
+sec-policy/selinux-denyhosts 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for denyhosts
+sec-policy/selinux-devicekit 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for devicekit
+sec-policy/selinux-dhcp 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for dhcp
+sec-policy/selinux-dictd 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for dictd
+sec-policy/selinux-dirmngr 2.20180114-r1: SELinux policy for dirmngr
+sec-policy/selinux-dirsrv 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for dirsrv
+sec-policy/selinux-distcc 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for distcc
+sec-policy/selinux-djbdns 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for djbdns
+sec-policy/selinux-dkim 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for dkim
+sec-policy/selinux-dmidecode 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for dmidecode
+sec-policy/selinux-dnsmasq 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for dnsmasq
+sec-policy/selinux-dovecot 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for dovecot
+sec-policy/selinux-dpkg 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for dpkg
+sec-policy/selinux-dracut 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for dracut
+sec-policy/selinux-dropbox 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for dropbox
+sec-policy/selinux-entropyd 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for entropyd
+sec-policy/selinux-evolution 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for evolution
+sec-policy/selinux-exim 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for exim
+sec-policy/selinux-fail2ban 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for fail2ban
+sec-policy/selinux-fetchmail 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for fetchmail
+sec-policy/selinux-finger 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for finger
+sec-policy/selinux-flash 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for flash
+sec-policy/selinux-fprintd 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for fprintd
+sec-policy/selinux-ftp 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for ftp
+sec-policy/selinux-games 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for games
+sec-policy/selinux-gatekeeper 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for gatekeeper
+sec-policy/selinux-git 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for git
+sec-policy/selinux-gitosis 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for gitosis
+sec-policy/selinux-gnome 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for gnome
+sec-policy/selinux-googletalk 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for googletalk
+sec-policy/selinux-gorg 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for gorg
+sec-policy/selinux-gpg 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for gpg
+sec-policy/selinux-gpm 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for gpm
+sec-policy/selinux-gpsd 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for gpsd
+sec-policy/selinux-gssproxy 2.20170805-r3 2.20180114-r1: SELinux policy for gssproxy
+sec-policy/selinux-hddtemp 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for hddtemp
+sec-policy/selinux-howl 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for howl
+sec-policy/selinux-icecast 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for icecast
+sec-policy/selinux-ifplugd 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for ifplugd
+sec-policy/selinux-imaze 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for imaze
+sec-policy/selinux-inetd 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for inetd
+sec-policy/selinux-inn 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for inn
+sec-policy/selinux-ipsec 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for ipsec
+sec-policy/selinux-irc 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for irc
+sec-policy/selinux-ircd 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for ircd
+sec-policy/selinux-irqbalance 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for irqbalance
+sec-policy/selinux-jabber 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for jabber
+sec-policy/selinux-java 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for java
+sec-policy/selinux-kdeconnect 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for kdeconnect
+sec-policy/selinux-kdump 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for kdump
+sec-policy/selinux-kerberos 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for kerberos
+sec-policy/selinux-kerneloops 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for kerneloops
+sec-policy/selinux-kismet 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for kismet
+sec-policy/selinux-ksmtuned 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for ksmtuned
+sec-policy/selinux-kudzu 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for kudzu
+sec-policy/selinux-ldap 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for ldap
+sec-policy/selinux-links 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for links
+sec-policy/selinux-lircd 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for lircd
+sec-policy/selinux-loadkeys 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for loadkeys
+sec-policy/selinux-lockdev 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for lockdev
+sec-policy/selinux-logrotate 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for logrotate
+sec-policy/selinux-logsentry 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for logsentry
+sec-policy/selinux-logwatch 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for logwatch
+sec-policy/selinux-lpd 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for lpd
+sec-policy/selinux-mailman 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for mailman
+sec-policy/selinux-makewhatis 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for makewhatis
+sec-policy/selinux-mandb 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for mandb
+sec-policy/selinux-mcelog 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for mcelog
+sec-policy/selinux-memcached 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for memcached
+sec-policy/selinux-milter 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for milter
+sec-policy/selinux-modemmanager 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for modemmanager
+sec-policy/selinux-mono 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for mono
+sec-policy/selinux-mozilla 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for mozilla
+sec-policy/selinux-mpd 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for mpd
+sec-policy/selinux-mplayer 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for mplayer
+sec-policy/selinux-mrtg 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for mrtg
+sec-policy/selinux-munin 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for munin
+sec-policy/selinux-mutt 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for mutt
+sec-policy/selinux-mysql 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for mysql
+sec-policy/selinux-nagios 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for nagios
+sec-policy/selinux-ncftool 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for ncftool
+sec-policy/selinux-nessus 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for nessus
+sec-policy/selinux-networkmanager 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for networkmanager
+sec-policy/selinux-nginx 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for nginx
+sec-policy/selinux-nslcd 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for nslcd
+sec-policy/selinux-ntop 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for ntop
+sec-policy/selinux-ntp 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for ntp
+sec-policy/selinux-nut 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for nut
+sec-policy/selinux-nx 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for nx
+sec-policy/selinux-oddjob 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for oddjob
+sec-policy/selinux-oident 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for oident
+sec-policy/selinux-openct 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for openct
+sec-policy/selinux-openrc 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for openrc
+sec-policy/selinux-openvpn 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for openvpn
+sec-policy/selinux-pan 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for pan
+sec-policy/selinux-pcmcia 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for pcmcia
+sec-policy/selinux-pcscd 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for pcscd
+sec-policy/selinux-perdition 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for perdition
+sec-policy/selinux-phpfpm 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for phpfpm
+sec-policy/selinux-plymouthd 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for plymouthd
+sec-policy/selinux-podsleuth 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for podsleuth
+sec-policy/selinux-policykit 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for policykit
+sec-policy/selinux-portmap 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for portmap
+sec-policy/selinux-postfix 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for postfix
+sec-policy/selinux-postgresql 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for postgresql
+sec-policy/selinux-postgrey 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for postgrey
+sec-policy/selinux-ppp 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for ppp
+sec-policy/selinux-prelink 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for prelink
+sec-policy/selinux-prelude 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for prelude
+sec-policy/selinux-privoxy 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for privoxy
+sec-policy/selinux-procmail 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for procmail
+sec-policy/selinux-psad 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for psad
+sec-policy/selinux-publicfile 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for publicfile
+sec-policy/selinux-pulseaudio 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for pulseaudio
+sec-policy/selinux-puppet 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for puppet
+sec-policy/selinux-pyicqt 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for pyicqt
+sec-policy/selinux-pyzor 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for pyzor
+sec-policy/selinux-qemu 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for qemu
+sec-policy/selinux-qmail 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for qmail
+sec-policy/selinux-quota 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for quota
+sec-policy/selinux-radius 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for radius
+sec-policy/selinux-radvd 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for radvd
+sec-policy/selinux-razor 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for razor
+sec-policy/selinux-remotelogin 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for remotelogin
+sec-policy/selinux-resolvconf 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for resolvconf
+sec-policy/selinux-rgmanager 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for rgmanager
+sec-policy/selinux-rngd 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for rngd
+sec-policy/selinux-roundup 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for roundup
+sec-policy/selinux-rpc 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for rpc
+sec-policy/selinux-rpcbind 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for rpcbind
+sec-policy/selinux-rpm 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for rpm
+sec-policy/selinux-rssh 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for rssh
+sec-policy/selinux-rtkit 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for rtkit
+sec-policy/selinux-rtorrent 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for rtorrent
+sec-policy/selinux-salt 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for salt
+sec-policy/selinux-samba 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for samba
+sec-policy/selinux-sasl 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for sasl
+sec-policy/selinux-screen 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for screen
+sec-policy/selinux-sendmail 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for sendmail
+sec-policy/selinux-sensord 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for sensord
+sec-policy/selinux-shorewall 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for shorewall
+sec-policy/selinux-shutdown 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for shutdown
+sec-policy/selinux-skype 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for skype
+sec-policy/selinux-slocate 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for slocate
+sec-policy/selinux-slrnpull 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for slrnpull
+sec-policy/selinux-smartmon 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for smartmon
+sec-policy/selinux-smokeping 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for smokeping
+sec-policy/selinux-snmp 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for snmp
+sec-policy/selinux-snort 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for snort
+sec-policy/selinux-soundserver 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for soundserver
+sec-policy/selinux-spamassassin 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for spamassassin
+sec-policy/selinux-speedtouch 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for speedtouch
+sec-policy/selinux-squid 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for squid
+sec-policy/selinux-sssd 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for sssd
+sec-policy/selinux-stunnel 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for stunnel
+sec-policy/selinux-subsonic 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for subsonic
+sec-policy/selinux-sudo 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for sudo
+sec-policy/selinux-sxid 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for sxid
+sec-policy/selinux-syncthing 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for syncthing
+sec-policy/selinux-sysstat 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for sysstat
+sec-policy/selinux-tboot 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for tboot
+sec-policy/selinux-tcpd 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for tcpd
+sec-policy/selinux-tcsd 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for tcsd
+sec-policy/selinux-telnet 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for telnet
+sec-policy/selinux-tftp 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for tftp
+sec-policy/selinux-tgtd 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for tgtd
+sec-policy/selinux-thunderbird 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for thunderbird
+sec-policy/selinux-timidity 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for timidity
+sec-policy/selinux-tmpreaper 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for tmpreaper
+sec-policy/selinux-tor 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for tor
+sec-policy/selinux-tripwire 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for tripwire
+sec-policy/selinux-ucspitcp 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for ucspitcp
+sec-policy/selinux-ulogd 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for ulogd
+sec-policy/selinux-uml 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for uml
+sec-policy/selinux-unconfined 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for unconfined
+sec-policy/selinux-uptime 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for uptime
+sec-policy/selinux-usbmuxd 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for usbmuxd
+sec-policy/selinux-uucp 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for uucp
+sec-policy/selinux-uwimap 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for uwimap
+sec-policy/selinux-uwsgi 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for uWSGI
+sec-policy/selinux-varnishd 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for varnishd
+sec-policy/selinux-vbetool 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for vbetool
+sec-policy/selinux-vdagent 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for vdagent
+sec-policy/selinux-vde 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for vde
+sec-policy/selinux-virt 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for virt
+sec-policy/selinux-vlock 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for vlock
+sec-policy/selinux-vmware 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for vmware
+sec-policy/selinux-vnstatd 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for vnstatd
+sec-policy/selinux-vpn 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for vpn
+sec-policy/selinux-watchdog 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for watchdog
+sec-policy/selinux-webalizer 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for webalizer
+sec-policy/selinux-wine 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for wine
+sec-policy/selinux-wireshark 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for wireshark
+sec-policy/selinux-wm 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for wm
+sec-policy/selinux-xen 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for xen
+sec-policy/selinux-xfs 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for xfs
+sec-policy/selinux-xprint 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for xprint
+sec-policy/selinux-xscreensaver 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for xscreensaver
+sec-policy/selinux-xserver 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for xserver
+sec-policy/selinux-zabbix 2.20170204-r2 2.20170204-r3 2.20170204-r4 2.20170805-r2 2.20170805-r3 2.20180114-r1: SELinux policy for zabbix
 sys-apps/accountsservice 0.6.45: D-Bus interfaces for querying and manipulating user account information
 sys-apps/ack 2.18-r1: ack is a tool like grep, optimized for programmers
 sys-apps/acl 2.2.52-r1: access control list utilities, libraries and headers
@@ -9650,7 +9651,7 @@ sys-apps/apply-default-acl 0.0.6: Apply default POSIX ACLs to files and director
 sys-apps/arrayprobe 2.0-r2: Utility to report status of an HP (Compaq) array controller (both IDA & CCISS)
 sys-apps/attr 2.4.47-r2: Extended attributes tools
 sys-apps/audio-entropyd 2.0.3-r1: Audio-entropyd generates entropy-data for the /dev/random device
-sys-apps/baobab 3.22.1 3.24.0: Disk usage browser for GNOME
+sys-apps/baobab 3.24.0: Disk usage browser for GNOME
 sys-apps/bar 1.11.1: Console Progress Bar
 sys-apps/baselayout 2.3 2.4.1-r2: Filesystem baselayout and init scripts
 sys-apps/baselayout-java 0.1.0: Baselayout for Java
@@ -9698,7 +9699,7 @@ sys-apps/fxload 20081013-r1: USB firmware uploader
 sys-apps/gawk 3.1.8 4.0.2 4.1.3 4.1.4: GNU awk pattern-matching language
 sys-apps/gentoo-functions 0.12: base functions required by all Gentoo systems
 sys-apps/gentoo-systemd-integration 7: systemd integration files for Gentoo
-sys-apps/gnome-disk-utility 3.22.1 3.24.1: Disk Utility for GNOME using udisks
+sys-apps/gnome-disk-utility 3.24.1: Disk Utility for GNOME using udisks
 sys-apps/gptfdisk 1.0.1: GPT partition table manipulator for Linux
 sys-apps/gradm 3.1.201603152148 3.1.201607172312: Administrative interface for the grsecurity Role Based Access Control system
 sys-apps/grep 2.27-r1 3.0: GNU regular expression matcher
@@ -9724,7 +9725,7 @@ sys-apps/install-xattr 0.5: Wrapper to coreutil's install to preserve Filesystem
 sys-apps/iotools 1.5: Simple commands to access hardware device registers
 sys-apps/ipmitool 1.8.14-r1 1.8.17-r1: Utility for controlling IPMI enabled devices.
 sys-apps/ipmiutil 3.0.6: IPMI Management Utilities
-sys-apps/iproute2 4.4.0 4.14.1-r1 4.14.1-r2: kernel routing and traffic control utilities
+sys-apps/iproute2 4.4.0 4.14.1-r2: kernel routing and traffic control utilities
 sys-apps/irqbalance 1.0.9-r1 1.3.0: Distribute hardware interrupts across processors on a multiprocessor system
 sys-apps/isapnptools 1.27: Tools for configuring ISA PnP devices
 sys-apps/iucode_tool 2.1.1: tool to manipulate Intel X86 and X86-64 processor microcode update collections
@@ -9742,7 +9743,7 @@ sys-apps/lshw 02.16b-r2 02.18b: Hardware Lister
 sys-apps/makedev 3.23.1: program used for creating device files in /dev
 sys-apps/man 1.6g: Standard commands to read man pages
 sys-apps/man-db 2.7.6.1-r2: a man replacement that utilizes berkdb instead of flat files
-sys-apps/man-pages 4.13: A somewhat comprehensive collection of Linux man pages
+sys-apps/man-pages 4.14: A somewhat comprehensive collection of Linux man pages
 sys-apps/man-pages-posix 2013a: POSIX man-pages (0p, 1p, 3p)
 sys-apps/man2html 1.6g: Standard commands to read man pages
 sys-apps/mawk 1.3.4_p20150503 1.3.4_p20161120: an (often faster than gawk) awk-interpreter
@@ -9755,7 +9756,7 @@ sys-apps/miller 4.2.0: A tool like sed, awk, cut, join, and sort for name-indexe
 sys-apps/miscfiles 1.5-r3: Miscellaneous files
 sys-apps/mlocate 0.26-r2: Merging locate is an utility to index and quickly search for files
 sys-apps/modutils 2.4.27-r1: Standard kernel module utilities for linux-2.4 and older
-sys-apps/moreutils 0.60-r1 0.61: a collection of tools that nobody thought to write when Unix was young
+sys-apps/moreutils 0.61: a collection of tools that nobody thought to write when Unix was young
 sys-apps/most 5.0.0a-r1: Paging program that displays, one windowful at a time, the contents of a file
 sys-apps/msr-tools 1.3: Utilities allowing the read and write of CPU model-specific registers (MSR)
 sys-apps/net-tools 1.60_p20161110235919: Standard Linux networking tools
@@ -9825,6 +9826,7 @@ sys-apps/xinetd 2.3.15-r2 2.3.15-r3: powerful replacement for inetd
 sys-apps/xmbmon 2.0.5-r1: Mother Board Monitor Program for X Window System
 sys-auth/bioapi 1.2.3-r2 1.2.4: Framework for biometric-based authentication
 sys-auth/consolekit 0.4.6 1.1.0-r1 1.1.2 1.2.0: Framework for defining and tracking users, login sessions and seats
+sys-auth/elogind 235.2-r1: The systemd project's logind, extracted to a standalone package
 sys-auth/fprintd 0.5.0: D-Bus service to access fingerprint readers
 sys-auth/keystone 12.0.0: The Openstack authentication, authorization, and service catalog
 sys-auth/libfprint 0.4.0-r1 0.5.0-r2: library to add support for consumer fingerprint readers
@@ -9886,7 +9888,7 @@ sys-block/scsiping 0.0.1: SCSIPing pings a host on the SCSI-chain
 sys-block/seekwatcher 0.12_p20091015-r1: generates graphs from blktrace to help visualize IO patterns and performance
 sys-block/storcli 1.19.04 1.20.15 1.21.06: MegaRAID StorCLI (successor of the MegaCLI)
 sys-block/tapecat 1.0.0: tapecat is a tape utility used to describe the physical content of a tape
-sys-block/tgt 1.0.71 1.0.72: Linux SCSI target framework (tgt)
+sys-block/tgt 1.0.72 1.0.73: Linux SCSI target framework (tgt)
 sys-block/thin-provisioning-tools 0.4.1 0.7.0: A suite of tools for thin provisioning on Linux
 sys-block/tw_cli 9.2.1.1 9.4.1.2 9.5.2 10.2 10.2.2.1-r1: 3ware SATA/PATA/SAS RAID controller Command Line Interface tool
 sys-block/vblade 20: vblade exports a block device using AoE
@@ -10085,7 +10087,7 @@ sys-libs/cracklib 2.9.6-r1: Password Checking Library
 sys-libs/db 1.85-r3 3.2.9_p2 4.2.52_p5-r1 4.3.29_p1-r1 4.5.20_p2-r1 4.6.21_p4 4.7.25_p4 4.8.30-r2 5.3.28-r2: Oracle Berkeley DB
 sys-libs/e2fsprogs-libs 1.43.3 1.43.6: e2fsprogs libraries (common error and subsystem)
 sys-libs/efivar 30 31: Tools and library to manipulate EFI variables
-sys-libs/freeipmi 1.2.2 1.4.3: Provides Remote-Console and System Management Software as per IPMI v1.5/2.0
+sys-libs/freeipmi 1.4.8: Provides Remote-Console and System Management Software as per IPMI v1.5/2.0
 sys-libs/fts-standalone 0.2-r1: Standalone fts library for use with musl
 sys-libs/gdbm 1.11 1.13-r2: Standard GNU database libraries
 sys-libs/glibc 2.25-r9: GNU libc6 (also called glibc2) C library
@@ -10187,7 +10189,7 @@ sys-process/memwatch 0.1.0: Interactive memory viewer
 sys-process/nmon 16f: Nigel's performance MONitor for CPU, memory, network, disks, etc...
 sys-process/numactl 2.0.9 2.0.11: Utilities and libraries for NUMA systems
 sys-process/numad 0.5 0.5-r1: The NUMA daemon that manages application locality
-sys-process/parallel 20170822: A shell tool for executing jobs in parallel locally or on remote machines
+sys-process/parallel 20171222: A shell tool for executing jobs in parallel locally or on remote machines
 sys-process/prll 0.6.2: A utility for parallelizing execution of shell functions
 sys-process/procps 3.3.12 3.3.12-r1: standard informational utilities and process-handling tools
 sys-process/psmisc 22.21-r3: A set of tools that use the proc filesystem
@@ -10443,7 +10445,7 @@ www-client/chromium 63.0.3239.108 63.0.3239.132: Open-source version of Google C
 www-client/conkeror 1.0_pre20140212: A Mozilla-based web browser whose design is inspired by GNU Emacs
 www-client/dillo 3.0.5: Lean FLTK based web browser
 www-client/elinks 0.12_pre6-r1: Advanced and well-established text-mode web browser
-www-client/epiphany 3.22.7 3.24.5: GNOME webbrowser based on Webkit
+www-client/epiphany 3.24.5: GNOME webbrowser based on Webkit
 www-client/fetch 1.0-r3: HTTP download tool built atop the HTTP fetcher library
 www-client/firefox 52.4.0 52.6.0: Firefox Web Browser
 www-client/firefox-bin 52.6.0: Firefox Web Browser
@@ -10479,7 +10481,7 @@ www-servers/apache 2.2.34 2.4.27-r1: The Apache Web Server
 www-servers/gunicorn 19.1.1 19.6.0: A WSGI HTTP Server for UNIX
 www-servers/lighttpd 1.4.42 1.4.45: Lightweight high-performance web server
 www-servers/monkeyd 1.6.9-r1: A small, fast, and scalable web server
-www-servers/nginx 1.12.1 1.12.2-r1: Robust, small and high performance http and reverse proxy server
+www-servers/nginx 1.12.2-r1: Robust, small and high performance http and reverse proxy server
 www-servers/puma 3.11.0: a simple, fast, threaded, and highly concurrent HTTP 1.1 server for Ruby/Rack
 www-servers/spawn-fcgi 1.6.3-r1: A FCGI spawner for lighttpd and cherokee and other webservers
 www-servers/thttpd 2.27.1: Fork of thttpd, a small, fast, multiplexing webserver
@@ -10715,7 +10717,7 @@ x11-libs/snorenotify 0.7.0-r1: Multi platform Qt notification framework
 x11-libs/startup-notification 0.12-r1: Application startup notification and feedback library
 x11-libs/tslib 1.0-r3: Touchscreen Access Library
 x11-libs/vte 0.28.2-r208 0.36.5 0.46.2 0.48.4: Library providing a virtual terminal emulator widget
-x11-libs/wxGTK 2.8.12.1-r1 2.8.12.1-r2 3.0.2.0-r3 3.0.3: GTK+ version of wxWidgets, a cross-platform C++ GUI toolkit
+x11-libs/wxGTK 2.8.12.1-r2 3.0.2.0-r3 3.0.3: GTK+ version of wxWidgets, a cross-platform C++ GUI toolkit
 x11-libs/xbae 4.60.4: Motif-based widget to display a grid of cells as a spreadsheet
 x11-libs/xcb-util 0.4.0: X C-language Bindings sample implementations
 x11-libs/xcb-util-cursor 0.1.1-r1 0.1.2 0.1.3-r1: X C-language Bindings sample implementations
@@ -11074,7 +11076,7 @@ x11-proto/xineramaproto 1.2.1-r1: X.Org Xinerama protocol headers
 x11-proto/xproto 7.0.31: X.Org xproto protocol headers
 x11-terms/aterm 1.0.1-r3: rxvt compatible terminal emulator with transparency support
 x11-terms/eterm 0.9.5: A vt102 terminal emulator for X
-x11-terms/gnome-terminal 3.22.2 3.24.2: The Gnome Terminal
+x11-terms/gnome-terminal 3.24.2: The Gnome Terminal
 x11-terms/guake 0.8.8: Drop-down terminal for GTK+ desktops
 x11-terms/kterm 6.2.0-r5: Japanese Kanji X Terminal
 x11-terms/mate-terminal 1.12.1: The MATE Terminal
@@ -11124,7 +11126,7 @@ x11-themes/gentoo-xcursors 0.3.1: A high quality set of animated mouse cursors
 x11-themes/gentoo10-backgrounds 20110309: Gentoo - 10 Years Compiling Background Artwork
 x11-themes/geramik 0.27-r1: GTK+1 and GTK+2 Geramik Themes
 x11-themes/gkrellm-themes 0.1: A pack of ~200 themes for GKrellM
-x11-themes/gnome-backgrounds 3.22.1 3.24.0: A set of backgrounds packaged with the GNOME desktop
+x11-themes/gnome-backgrounds 3.24.0: A set of backgrounds packaged with the GNOME desktop
 x11-themes/gnome-colors-common 5.5.1-r1: Colorized icons shared between all gnome-colors iconsets
 x11-themes/gnome-colors-themes 5.5.1: Some gnome-colors iconsets including a Gentoo one
 x11-themes/gnome-icon-theme 3.12.0-r1: GNOME default icon theme
@@ -11197,7 +11199,7 @@ x11-themes/wm-icons 0.4.0_pre1-r1: A Large Assortment of Beutiful Themed Icons, 
 x11-themes/xcursor-themes 1.0.4: X.Org cursor themes: whiteglass, redglass and handhelds
 x11-themes/xfce-gant-icon-theme 3.9_p6 3.9_p6-r1: Xfce Gant Icon Theme
 x11-themes/xfwm4-themes 4.10.0 4.10.0-r1: Additional themes for the Xfce window manager
-x11-themes/zuki-themes 3.20 3.24.3: Zuki themes for GTK, gnome-shell and more
+x11-themes/zuki-themes 3.24.3: Zuki themes for GTK, gnome-shell and more
 x11-themes/zukini 20120806: Unified look for GTK+ 2.x, GTK+ 3.x, gnome-shell, metacity and more
 x11-themes/zukitwo 2016.08.08: Transition package to zuki-themes
 x11-themes/zukitwo-shell 2016.08.08: Transition package to zuki-themes
