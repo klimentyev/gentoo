@@ -1,0 +1,11 @@
+DEFINED_PHASES=install
+DEPEND=|| ( >=app-shells/bash-3.0 app-shells/zsh )
+DESCRIPTION=A tool for changing your GEM_HOME.
+EAPI=6
+HOMEPAGE=https://github.com/postmodern/gem_home
+KEYWORDS=~amd64 ~x86
+LICENSE=MIT
+RDEPEND=|| ( >=app-shells/bash-3.0 app-shells/zsh )
+SLOT=0
+SRC_URI=https://github.com/postmodern/gem_home/archive/v0.1.0.tar.gz
+_md5_=220c7c292060b05e0deed5c3e622ec81
