@@ -5988,6 +5988,7 @@ x11-misc/ktsuss:sudo - Use the sudo backend instead the su one
 x11-misc/lightdm:gtk - Pull in the gtk+ greeter
 x11-misc/mate-notification-daemon:gtk3 - Build with GTK+3 instead of GTK+2
 x11-misc/mozo:gtk3 - Build with GTK+3 instead of GTK+2
+x11-misc/obconf-qt:pull-translations - Pull translations from lxqt-l10n as part of the package.
 x11-misc/openbox-menu:icons - Enable support for icons in menus
 x11-misc/openbox-menu:svg - Support SVG icons
 x11-misc/qt5ct:dbus - Enable system tray and global menu support
