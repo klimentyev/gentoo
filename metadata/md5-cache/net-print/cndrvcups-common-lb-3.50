@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile configure install prepare setup unpack
+DESCRIPTION=Common files for Canon drivers
+EAPI=6
+HOMEPAGE=https://www.canon-europe.com/support/products/imagerunner/imagerunner-1133.aspx?type=drivers&language=EN&os=LINUX
+KEYWORDS=-* ~amd64 ~x86
+LICENSE=Canon-UFR-II GPL-2 MIT
+RDEPEND=dev-libs/libxml2 gnome-base/libglade net-print/cups x11-libs/gtk+:2
+SLOT=0
+SRC_URI=http://gdlp01.c-wss.com/gds/0/0100009240/01/linux-UFRII-drv-v350-uken.tar.gz
+_eclasses_=estack	43ddf5aaffa7a8d0482df54d25a66a1f	versionator	ce21313503c41896ebcd7d58b0607e37
+_md5_=2bbcbafa5e125caa3cb20ab4ad0f2268
