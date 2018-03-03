@@ -1,0 +1,10 @@
+DEFINED_PHASES=install postinst prepare unpack
+DESCRIPTION=Static code analysis and dynamic code analysis tools
+EAPI=6
+HOMEPAGE=https://www.coverity.com
+KEYWORDS=~amd64 ~x86
+LICENSE=coverity-PLA
+RESTRICT=fetch mirror bindist
+SLOT=0
+SRC_URI=amd64? ( cov-analysis-linux64-2017.07.tar.gz ) x86? ( cov-analysis-linux-2017.07.tar.gz )
+_md5_=da903d590b8c86819ce0fdc8e4ce4451
