@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install postinst prepare test
+DEPEND=>=dev-qt/qtcore-5.7.1:5 >=dev-qt/qtgui-5.7.1:5 >=dev-qt/qtnetwork-5.7.1:5 >=dev-qt/qtwidgets-5.7.1:5 >=dev-qt/qtxml-5.7.1:5 >=kde-frameworks/kitemmodels-5.40.0 3d? ( >=dev-qt/qt3d-5.7.1:5 ) bluetooth? ( >=dev-qt/qtbluetooth-5.7.1:5 ) concurrent? ( >=dev-qt/qtconcurrent-5.7.1:5 ) designer? ( >=dev-qt/designer-5.7.1:5 ) geolocation? ( >=dev-qt/qtpositioning-5.7.1:5 ) printsupport? ( >=dev-qt/qtprintsupport-5.7.1:5 ) qml? ( >=dev-qt/qtdeclarative-5.7.1:5[widgets] ) script? ( >=dev-qt/qtscript-5.7.1:5[scripttools] ) scxml? ( >=dev-qt/qtscxml-5.7.1:5 ) svg? ( >=dev-qt/qtsvg-5.7.1:5 ) webengine? ( >=dev-qt/qtwebengine-5.7.1:5[widgets] ) wayland? ( >=dev-qt/qtwayland-5.7.1:5 ) test? ( >=dev-qt/qttest-5.7.1:5 ) sys-devel/make >=dev-util/cmake-3.7.2
+DESCRIPTION=High-level runtime introspection tool for Qt applications
+EAPI=6
+HOMEPAGE=https://github.com/KDAB/GammaRay
+IUSE=3d bluetooth concurrent designer -doc geolocation printsupport script scxml svg test qml wayland webengine
+KEYWORDS=~amd64
+LICENSE=GPL-2 BSD MIT
+RDEPEND=>=dev-qt/qtcore-5.7.1:5 >=dev-qt/qtgui-5.7.1:5 >=dev-qt/qtnetwork-5.7.1:5 >=dev-qt/qtwidgets-5.7.1:5 >=dev-qt/qtxml-5.7.1:5 >=kde-frameworks/kitemmodels-5.40.0 3d? ( >=dev-qt/qt3d-5.7.1:5 ) bluetooth? ( >=dev-qt/qtbluetooth-5.7.1:5 ) concurrent? ( >=dev-qt/qtconcurrent-5.7.1:5 ) designer? ( >=dev-qt/designer-5.7.1:5 ) geolocation? ( >=dev-qt/qtpositioning-5.7.1:5 ) printsupport? ( >=dev-qt/qtprintsupport-5.7.1:5 ) qml? ( >=dev-qt/qtdeclarative-5.7.1:5[widgets] ) script? ( >=dev-qt/qtscript-5.7.1:5[scripttools] ) scxml? ( >=dev-qt/qtscxml-5.7.1:5 ) svg? ( >=dev-qt/qtsvg-5.7.1:5 ) webengine? ( >=dev-qt/qtwebengine-5.7.1:5[widgets] ) wayland? ( >=dev-qt/qtwayland-5.7.1:5 )
+SLOT=0
+SRC_URI=https://github.com/KDAB/GammaRay/releases/download/v2.9.0/gammaray-2.9.0.tar.gz
+_eclasses_=cmake-utils	202a2becc86cb78ba14baad148d06759	desktop	2ccd1dd1dd7bfb8795eea024a4f91bb6	epatch	8233751dc5105a6ae8fcd86ce2bb0247	estack	43ddf5aaffa7a8d0482df54d25a66a1f	eutils	63392afb034aad67f17fa129019eb4d9	flag-o-matic	02908f00f002f0f07c5b74783d778325	kde5-functions	f969e0903765bc89fad95c1552831e5e	ltprune	2770eed66a9b8ef944714cd0e968182e	multilib	97f470f374f2e94ccab04a2fb21d811e	multiprocessing	cac3169468f893670dac3e7cb940e045	ninja-utils	ebb2eaddc6331c4fa000b8eb8f6fe074	preserve-libs	ef207dc62baddfddfd39a164d9797648	toolchain-funcs	885c7d8dd70a58825f3d17e35a3cd1e9	vcs-clean	2a0f74a496fa2b1552c4f3398258b7bf	versionator	ce21313503c41896ebcd7d58b0607e37	xdg-utils	f2c8335407f0b935b0a96d4adf23ef25
+_md5_=451c0dc4f783ad148d97eb5a1f75c491
