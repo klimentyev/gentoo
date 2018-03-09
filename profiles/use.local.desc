@@ -57,6 +57,7 @@ app-admin/glance:swift - Adds swift storage support
 app-admin/gtkdiskfree:gtk2 - Support GTK+ 2.x instead of GTK+ 3.x
 app-admin/hddtemp:network-cron - Monthly cronjob to update hddtemp.db.
 app-admin/keepass:aot - Generate native code at build time, rather than runtime.
+app-admin/keepassxc:agent - Add support for loading keys into ssh-agent
 app-admin/keepassxc:autotype - Add support to autotype the passwords into other applications
 app-admin/keepassxc:browser - Enables browser plugin support
 app-admin/keepassxc:http - Add http support
