@@ -1,0 +1,11 @@
+DEFINED_PHASES=install
+DEPEND=>=net-libs/nodejs-4.8.7
+DESCRIPTION=Check if argv has a specific flag
+EAPI=6
+HOMEPAGE=https://github.com/sindresorhus/has-flag
+KEYWORDS=~amd64 ~x86
+LICENSE=MIT
+RDEPEND=>=net-libs/nodejs-4.8.7
+SLOT=0
+SRC_URI=https://github.com/sindresorhus/has-flag/archive/v3.0.0.tar.gz -> has-flag-3.0.0.tar.gz
+_md5_=8ab6a3f42210121b66600523b422b1ab
