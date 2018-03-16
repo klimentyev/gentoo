@@ -1,0 +1,10 @@
+DEFINED_PHASES=unpack
+DEPEND=net-im/pidgin dev-vcs/git >=dev-vcs/git-1.8.2.1
+DESCRIPTION=A libpurple plugin for the web-based slack api.
+EAPI=6
+HOMEPAGE=https://github.com/dylex/slack-libpurple
+LICENSE=GPL-2
+RDEPEND=net-im/pidgin
+SLOT=0
+_eclasses_=git-r3	fec09a83ae965b041b47f5ff7c8ba29a
+_md5_=485777015a93a3b57160c71d1571a02f
