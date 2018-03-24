@@ -7,4 +7,4 @@ LICENSE=LGPL-2.1
 RDEPEND=~dev-db/m17n-db-1.6.3
 SLOT=0
 SRC_URI=mirror://nongnu/m17n/m17n-contrib-1.1.13.tar.gz
-_md5_=ac54b54f54e71f532e800ceef8a85f46
+_md5_=b3813e9144a4e1c8f6d7d5bf8b470f1d

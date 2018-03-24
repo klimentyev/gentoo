@@ -9,4 +9,4 @@ RDEPEND=x11-libs/libXdamage x11-libs/libXcomposite x11-libs/libXfixes x11-libs/l
 SLOT=0
 SRC_URI=https://github.com/XVilka/set_opacity/archive-tarball/1.0 -> set_opacity-1.0.tar.gz
 _eclasses_=multilib	97f470f374f2e94ccab04a2fb21d811e	toolchain-funcs	885c7d8dd70a58825f3d17e35a3cd1e9
-_md5_=efb926ba924831b815f54731baf0b2bf
+_md5_=ceabd71f9c1053a34d1687cc216a67e4

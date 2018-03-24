@@ -7,4 +7,4 @@ LICENSE=GPL-2
 RDEPEND=app-shells/bash sys-apps/gawk
 SLOT=0
 SRC_URI=https://github.com/mvertes/txt2man/archive/txt2man-1.6.0.tar.gz
-_md5_=520093bf5c0396b9e6377bd756684a61
+_md5_=6bfb7952ff372e2dbed1355bbf991679

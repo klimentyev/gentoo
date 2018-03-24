@@ -11,4 +11,4 @@ REQUIRED_USE=ermt? ( ssl ) ssl? ( zlib ) test? ( sqlite? ( uuid ) )
 SLOT=0
 SRC_URI=mirror://sourceforge/dump/dump-0.4b46.tar.gz
 _eclasses_=estack	43ddf5aaffa7a8d0482df54d25a66a1f	versionator	ce21313503c41896ebcd7d58b0607e37
-_md5_=7de37ba7a386490a0bcf23bf3b48adea
+_md5_=4015bdebc51aa67725b604da0047833b

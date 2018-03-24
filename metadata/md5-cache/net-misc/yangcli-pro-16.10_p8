@@ -9,4 +9,4 @@ RESTRICT=bindist mirror strip
 SLOT=0
 SRC_URI=amd64? ( https://www.yumaworks.com/pub/yangcli-pro/16.10-8/deb8/yangcli-pro-16.10-8.deb8.amd64.deb )
 _eclasses_=unpacker	f40f7b4bd5aa88c2a4ba7b0d1e0ded70
-_md5_=073139777dac96b4ece2023e8de08f45
+_md5_=0760bda8bef70ba8699d6583e5c317cb

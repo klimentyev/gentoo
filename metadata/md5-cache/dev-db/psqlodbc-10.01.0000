@@ -9,4 +9,4 @@ LICENSE=LGPL-2
 RDEPEND=dev-db/postgresql:*[ssl?] !iodbc? ( dev-db/unixODBC ) iodbc? ( dev-db/libiodbc )
 SLOT=0
 SRC_URI=mirror://postgresql/odbc/versions/src/psqlodbc-10.01.0000.tar.gz
-_md5_=0f116a4fd5e103bdf01297da2d1f3792
+_md5_=64623fb5c4f186e06b7941ea699c533e

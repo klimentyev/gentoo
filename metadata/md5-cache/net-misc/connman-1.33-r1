@@ -10,4 +10,4 @@ RDEPEND=>=dev-libs/glib-2.16 >=sys-apps/dbus-1.2.24 >=net-firewall/iptables-1.4.
 SLOT=0
 SRC_URI=mirror://kernel/linux/network/connman/connman-1.33.tar.xz
 _eclasses_=autotools	4842e626555a9a4344f34cef2e190b67	libtool	0081a71a261724730ec4c248494f044d	multilib	97f470f374f2e94ccab04a2fb21d811e	systemd	a31844b675f1a1fea87fbe1144aee5f5	toolchain-funcs	885c7d8dd70a58825f3d17e35a3cd1e9
-_md5_=ff17605182b48f0c6f80770d3936920d
+_md5_=21642d2b42e7e967e38529d5f2eae1dc

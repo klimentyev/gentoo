@@ -8,4 +8,4 @@ LICENSE=GPL-2
 RDEPEND=dev-lang/perl !<sys-apps/less-483-r1
 SLOT=0
 SRC_URI=https://www-zeuthen.desy.de/~friebel/unix/less/lesspipe-1.83.tar.gz
-_md5_=b1416f1c4a59010ef8b3b85f933b47ac
+_md5_=c543f2826292c7f598cd50305e956ff4

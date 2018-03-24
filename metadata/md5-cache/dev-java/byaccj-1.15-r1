@@ -7,4 +7,4 @@ LICENSE=public-domain
 SLOT=0
 SRC_URI=mirror://sourceforge/byaccj/byaccj1.15_src.tar.gz
 _eclasses_=multilib	97f470f374f2e94ccab04a2fb21d811e	toolchain-funcs	885c7d8dd70a58825f3d17e35a3cd1e9
-_md5_=810f14bb0bba0b982d433e60a94f677d
+_md5_=0baafe1d4b07a7656fd55a62bc2e8778

@@ -9,4 +9,4 @@ RDEPEND=sec-policy/selinux-daemontools sec-policy/selinux-ucspitcp >=sys-apps/po
 SLOT=0
 SRC_URI=https://raw.githubusercontent.com/wiki/TresysTechnology/refpolicy/files/refpolicy-2.20180114.tar.bz2 https://dev.gentoo.org/~swift/patches/selinux-base-policy/patchbundle-selinux-base-policy-2.20180114-r1.tar.bz2
 _eclasses_=selinux-policy-2	426dde83b8cbb78f4bf8e9edf7715355
-_md5_=97b600c736a4a0e5d5bc8632150aa35b
+_md5_=ad5cd6e11b4e0bd38ecd8e8fd7fad369

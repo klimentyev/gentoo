@@ -10,4 +10,4 @@ RDEPEND=dev-lang/php:*[xml] >=dev-php/PEAR-XML_Parser-1.2.7 >=dev-php/PEAR-XML_U
 SLOT=0
 SRC_URI=https://pear.php.net/get/XML_Serializer-0.21.0.tgz
 _eclasses_=php-pear-r2	eb6928c33771db74564e814c5ca6c1b3
-_md5_=cd02b985731e118c0b366d38d35c39c0
+_md5_=def8e4b8ff10244d0ff2346fdfb9c7bf

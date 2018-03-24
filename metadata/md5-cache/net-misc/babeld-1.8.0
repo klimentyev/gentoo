@@ -6,4 +6,4 @@ KEYWORDS=~amd64 ~x86
 LICENSE=MIT
 SLOT=0
 SRC_URI=http://www.pps.jussieu.fr/~jch/software/files/babeld-1.8.0.tar.gz
-_md5_=180c47249ffe732ec9cf91e393547f27
+_md5_=de5e22dfcd7d61daebfe8735cc19ec7d

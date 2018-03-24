@@ -8,4 +8,4 @@ KEYWORDS=amd64 ~arm hppa ia64 ppc ppc64 sparc x86 ~amd64-fbsd ~x86-fbsd
 LICENSE=ipadic
 SLOT=0
 SRC_URI=mirror://sourceforge/mecab/mecab-ipadic-2.7.0-20070801.tar.gz
-_md5_=47d1d8a3362ada81e529616b593bddad
+_md5_=66139332e1aa4a924324212b412fb0a3

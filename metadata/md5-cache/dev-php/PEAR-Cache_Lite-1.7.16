@@ -9,4 +9,4 @@ RDEPEND=dev-lang/php:* >=dev-php/pear-1.8.1
 SLOT=0
 SRC_URI=http://pear.php.net/get/Cache_Lite-1.7.16.tgz
 _eclasses_=multilib	97f470f374f2e94ccab04a2fb21d811e	php-pear-r1	0093cb21d97586741eb5800ab65bd467	toolchain-funcs	885c7d8dd70a58825f3d17e35a3cd1e9
-_md5_=c6876d44adca40125da83a4d20283ff5
+_md5_=efae8abb1c57173d3fdac2fc2295fe84

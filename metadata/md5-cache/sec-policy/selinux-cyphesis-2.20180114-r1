@@ -9,4 +9,4 @@ RDEPEND=>=sys-apps/policycoreutils-2.0.82 >=sec-policy/selinux-base-policy-2.201
 SLOT=0
 SRC_URI=https://raw.githubusercontent.com/wiki/TresysTechnology/refpolicy/files/refpolicy-2.20180114.tar.bz2 https://dev.gentoo.org/~swift/patches/selinux-base-policy/patchbundle-selinux-base-policy-2.20180114-r1.tar.bz2
 _eclasses_=selinux-policy-2	426dde83b8cbb78f4bf8e9edf7715355
-_md5_=a203cf864ba3d5060dae7ce0fb08653d
+_md5_=907107db8ef1b6c95f4cd2d1c5c0c8bc

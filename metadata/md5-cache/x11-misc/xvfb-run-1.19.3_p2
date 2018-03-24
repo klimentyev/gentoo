@@ -8,4 +8,4 @@ LICENSE=GPL-2+
 RDEPEND=x11-apps/xauth x11-base/xorg-server[xvfb]
 SLOT=0
 SRC_URI=mirror://debian/pool/main/x/xorg-server/xorg-server_1.19.3-2.diff.gz
-_md5_=477486354040c581d78e0687d364ccdb
+_md5_=9d56fb5c6c2b6e24e055e5676e4d4a6e

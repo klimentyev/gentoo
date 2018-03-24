@@ -9,4 +9,4 @@ RDEPEND=dev-libs/expat
 SLOT=0
 SRC_URI=mirror://sourceforge/rnv/rnv-1.7.11.zip
 _eclasses_=multilib	97f470f374f2e94ccab04a2fb21d811e	toolchain-funcs	885c7d8dd70a58825f3d17e35a3cd1e9
-_md5_=0e8a8c41d0039de8b6b7d0b1bef605a7
+_md5_=f057815e98d05aa3d864af1b1da5df39

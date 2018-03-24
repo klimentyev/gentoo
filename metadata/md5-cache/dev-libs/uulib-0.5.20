@@ -7,4 +7,4 @@ LICENSE=GPL-2
 SLOT=0
 SRC_URI=http://www.fpx.de/fp/Software/UUDeview/download/uudeview-0.5.20.tar.gz
 _eclasses_=multilib	97f470f374f2e94ccab04a2fb21d811e	toolchain-funcs	885c7d8dd70a58825f3d17e35a3cd1e9
-_md5_=bb79e286e72fc69fa196eb9f76b892fe
+_md5_=655a19122a0dc73f55c1510950172959

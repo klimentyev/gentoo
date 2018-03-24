@@ -10,4 +10,4 @@ RDEPEND=!libressl? ( dev-libs/openssl:0= ) libressl? ( dev-libs/libressl:= ) vir
 SLOT=0
 SRC_URI=http://www.eterna.com.au/bozohttpd/bozohttpd-20170201.tar.bz2
 _eclasses_=multilib	97f470f374f2e94ccab04a2fb21d811e	toolchain-funcs	885c7d8dd70a58825f3d17e35a3cd1e9
-_md5_=68116748c57c4540d915f3025db053c1
+_md5_=853ef9e80020740b07fd94d82222dc80

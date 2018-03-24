@@ -9,4 +9,4 @@ RDEPEND=>=sys-libs/ncurses-5.4
 SLOT=0
 SRC_URI=http://home.hccnet.nl/paul.schuurmans/download/cdircmp-0.3.tar.gz
 _eclasses_=multilib	97f470f374f2e94ccab04a2fb21d811e	toolchain-funcs	885c7d8dd70a58825f3d17e35a3cd1e9
-_md5_=e47d136e0ac2abfbb786c8ec917ba4de
+_md5_=837959a01c5aff744f88ca25db7e0f79

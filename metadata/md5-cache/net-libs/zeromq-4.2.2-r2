@@ -10,4 +10,4 @@ RDEPEND=!elibc_Darwin? ( unwind? ( sys-libs/libunwind ) ) sodium? ( dev-libs/lib
 SLOT=0/5
 SRC_URI=https://github.com/zeromq/libzmq/releases/download/v4.2.2/zeromq-4.2.2.tar.gz
 _eclasses_=autotools	4842e626555a9a4344f34cef2e190b67	libtool	0081a71a261724730ec4c248494f044d	multilib	97f470f374f2e94ccab04a2fb21d811e	toolchain-funcs	885c7d8dd70a58825f3d17e35a3cd1e9
-_md5_=5490f4312a04bc33a83d5dbca86b404f
+_md5_=bb6efd33707a261f11c8025f206a41ae

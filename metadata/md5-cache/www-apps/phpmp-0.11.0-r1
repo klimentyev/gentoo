@@ -10,4 +10,4 @@ RDEPEND=virtual/httpd-php || ( <dev-lang/php-5.3[pcre] >=dev-lang/php-5.3 ) >=ap
 SLOT=0.11.0-r1
 SRC_URI=mirror://sourceforge/musicpd/phpMp-0.11.0.tar.gz
 _eclasses_=webapp	a76ebd3cb5649737496e8238992dd7ca
-_md5_=50dfbb2d558ddeb000dfe7712829baa8
+_md5_=75cf6e732cfed69d0b559f9652ba3467

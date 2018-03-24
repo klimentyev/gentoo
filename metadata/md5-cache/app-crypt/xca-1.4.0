@@ -9,4 +9,4 @@ LICENSE=BSD
 RDEPEND=dev-qt/qtgui:5 dev-qt/qtwidgets:5 !libressl? ( dev-libs/openssl:0=[bindist=] ) libressl? ( dev-libs/libressl:0= ) doc? ( app-text/linuxdoc-tools )
 SLOT=0
 SRC_URI=mirror://sourceforge/xca/xca-1.4.0.tar.gz
-_md5_=3366fe85185ea0c8579eaeaebf8db00e
+_md5_=bed837c918833c97af6dd47e8178b568

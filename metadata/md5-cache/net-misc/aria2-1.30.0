@@ -12,4 +12,4 @@ RESTRICT=!test? ( test )
 SLOT=0
 SRC_URI=https://github.com/aria2/aria2/releases/download/release-1.30.0/aria2-1.30.0.tar.xz
 _eclasses_=bash-completion-r1	8e447753aaf658afa609fbf961d80ab7	multilib	97f470f374f2e94ccab04a2fb21d811e	toolchain-funcs	885c7d8dd70a58825f3d17e35a3cd1e9
-_md5_=b6eb66b92a0f2a7f46bed17ff639a0a7
+_md5_=f79a2cf314fc53857bfd63f58516dd4e

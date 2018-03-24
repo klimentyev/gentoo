@@ -8,4 +8,4 @@ LICENSE=GPL-2
 RESTRICT=test
 SLOT=0
 SRC_URI=mirror://sourceforge/bashdb/bashdb-4.4-0.92.tar.bz2
-_md5_=89ef710ab9f5b0805309b5dc83fe1e3b
+_md5_=09e57bd5cd9ad1f74669149e23941057

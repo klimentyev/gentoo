@@ -10,4 +10,4 @@ RDEPEND=virtual/man !<sys-apps/keyutils-1.5.9-r4 !<sys-apps/attr-2.4.47-r2 !<dev
 RESTRICT=binchecks
 SLOT=0
 SRC_URI=mirror://kernel/linux/docs/man-pages/Archive/man-pages-4.15.tar.xz mirror://kernel/linux/docs/man-pages/man-pages-4.15.tar.xz mirror://gentoo/man-pages-gentoo-2.tar.bz2 https://dev.gentoo.org/~cardoe/files/man-pages-gentoo-2.tar.bz2
-_md5_=3d35fd6ba5e34d14c21e1a607e669a5e
+_md5_=f8498afe79e2656469c62cac8e56bee9

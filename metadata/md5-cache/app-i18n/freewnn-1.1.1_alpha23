@@ -9,4 +9,4 @@ LICENSE=GPL-2
 RDEPEND=uum? ( sys-libs/ncurses:= )
 SLOT=0
 SRC_URI=mirror://sourceforge.jp/freewnn/63271/FreeWnn-1.1.1-a023.tar.bz2
-_md5_=cd3ba0f7e5b474a070bb8683ad20b72b
+_md5_=506afac7bfcb570fef89c24811a7688b

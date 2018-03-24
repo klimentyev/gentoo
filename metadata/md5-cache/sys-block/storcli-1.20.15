@@ -7,4 +7,4 @@ LICENSE=Avago LSI BSD
 SLOT=0/6.12
 SRC_URI=https://docs.broadcom.com/docs-and-downloads/raid-controllers/raid-controllers-common-files/1.20.15_StorCLI.zip -> storcli-1.20.15.zip
 _eclasses_=pax-utils	b963274a93e76570a88168c1f1db4cd7
-_md5_=af9c809625dd570b3ae567c9d7ed8431
+_md5_=fd34a77af28863b60f58fced7c8b6dce

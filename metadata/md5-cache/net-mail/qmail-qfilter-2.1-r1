@@ -9,4 +9,4 @@ RDEPEND=>=dev-libs/bglibs-1.106 virtual/qmail
 SLOT=0
 SRC_URI=http://untroubled.org/qmail-qfilter/archive/qmail-qfilter-2.1.tar.gz
 _eclasses_=multilib	97f470f374f2e94ccab04a2fb21d811e	toolchain-funcs	885c7d8dd70a58825f3d17e35a3cd1e9
-_md5_=f508967024343ac85b06798cd66a3128
+_md5_=987dbc11f6b2db62410079d66c164f02

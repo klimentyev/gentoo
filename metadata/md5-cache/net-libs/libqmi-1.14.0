@@ -10,4 +10,4 @@ RDEPEND=>=dev-libs/glib-2.32
 SLOT=0
 SRC_URI=https://www.freedesktop.org/software/libqmi/libqmi-1.14.0.tar.xz
 _eclasses_=multilib	97f470f374f2e94ccab04a2fb21d811e	toolchain-funcs	885c7d8dd70a58825f3d17e35a3cd1e9
-_md5_=965fdf97c84b2432645f578a0afcd042
+_md5_=df22602eb64b597804d14a6ac184bff5

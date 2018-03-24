@@ -7,4 +7,4 @@ KEYWORDS=~amd64 ~x86
 LICENSE=HPND
 SLOT=0
 SRC_URI=mirror://gentoo/ldic-1.04-wnn.txt
-_md5_=9137555a948f55afd532d8b751f4ab00
+_md5_=976b61ad6bea347fcb9cea885c64cdab

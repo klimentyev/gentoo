@@ -9,4 +9,4 @@ RDEPEND=sec-policy/selinux-apache sec-policy/selinux-inetd >=sys-apps/policycore
 SLOT=0
 SRC_URI=https://raw.githubusercontent.com/wiki/TresysTechnology/refpolicy/files/refpolicy-2.20180114.tar.bz2 https://dev.gentoo.org/~swift/patches/selinux-base-policy/patchbundle-selinux-base-policy-2.20180114-r1.tar.bz2
 _eclasses_=selinux-policy-2	426dde83b8cbb78f4bf8e9edf7715355
-_md5_=5dab34abd92ef3c1c89059e17e09dd89
+_md5_=ee56a0dd089c24b930494d929aa42035

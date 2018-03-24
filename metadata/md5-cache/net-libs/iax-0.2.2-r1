@@ -7,4 +7,4 @@ KEYWORDS=~amd64 ~ppc x86
 LICENSE=LGPL-2
 SLOT=0
 SRC_URI=http://downloads.asterisk.org/pub/telephony/libiax/iax-0.2.2.tar.gz
-_md5_=fbcd93294eda886d2588116402220c51
+_md5_=ec2a0a93feec390d0d21105745b6f37e

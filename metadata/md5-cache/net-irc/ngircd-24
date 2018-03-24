@@ -11,4 +11,4 @@ RESTRICT=test
 SLOT=0
 SRC_URI=https://arthur.barton.de/pub/ngircd/ngircd-24.tar.gz
 _eclasses_=user	8bc2845510e2109af75e3eeac607ec81
-_md5_=c2a6df2c9d141696c241b58c3b70440a
+_md5_=26d495a941378395b4a29d84dd1eaaab

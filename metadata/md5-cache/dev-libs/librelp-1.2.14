@@ -10,4 +10,4 @@ RDEPEND=ssl? ( >=net-libs/gnutls-3.3.17.1:0= )
 SLOT=0/0.3.0
 SRC_URI=http://download.rsyslog.com/librelp/librelp-1.2.14.tar.gz
 _eclasses_=autotools	4842e626555a9a4344f34cef2e190b67	libtool	0081a71a261724730ec4c248494f044d	multilib	97f470f374f2e94ccab04a2fb21d811e	toolchain-funcs	885c7d8dd70a58825f3d17e35a3cd1e9
-_md5_=9a4080ce18cdd6db0359e26fe6e3db3b
+_md5_=629828a61ba58a11a0e5b85a69d2fec1

@@ -11,4 +11,4 @@ REQUIRED_USE=|| ( initramfs monolithic split-ucode )
 SLOT=0
 SRC_URI=http://downloadmirror.intel.com/26798/eng/microcode-20170511.tgz
 _eclasses_=multilib	97f470f374f2e94ccab04a2fb21d811e	toolchain-funcs	885c7d8dd70a58825f3d17e35a3cd1e9
-_md5_=c77669e2281cb997844ff6d3ccfc0c3e
+_md5_=3ff629db3e1ed2429f495c03e7b148b8

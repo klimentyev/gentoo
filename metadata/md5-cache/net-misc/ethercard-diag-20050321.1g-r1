@@ -8,4 +8,4 @@ RDEPEND=!sys-apps/nictools
 SLOT=0
 SRC_URI=mirror://gentoo/ethercard-diag-20050321.1g.tar.lzma
 _eclasses_=multilib	97f470f374f2e94ccab04a2fb21d811e	toolchain-funcs	885c7d8dd70a58825f3d17e35a3cd1e9
-_md5_=ea7fa66d88befd8af0a44211acf7f3e8
+_md5_=4260100ed32d50f1ac565e87e5935d8b

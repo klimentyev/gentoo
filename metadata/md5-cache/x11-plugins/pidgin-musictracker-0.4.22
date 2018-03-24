@@ -10,4 +10,4 @@ RDEPEND=>=net-im/pidgin-2.0.0[gtk] >=dev-libs/dbus-glib-0.73 dev-libs/libpcre >=
 SLOT=0
 SRC_URI=https://pidgin-musictracker.googlecode.com/files/pidgin-musictracker-0.4.22.tar.bz2
 _eclasses_=autotools	4842e626555a9a4344f34cef2e190b67	libtool	0081a71a261724730ec4c248494f044d	multilib	97f470f374f2e94ccab04a2fb21d811e	toolchain-funcs	885c7d8dd70a58825f3d17e35a3cd1e9
-_md5_=6650983669f315ec028278c941ce3c2a
+_md5_=91202a18ddc7943b70051532a864a138

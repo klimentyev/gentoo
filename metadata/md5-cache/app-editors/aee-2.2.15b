@@ -10,4 +10,4 @@ RDEPEND=X? ( x11-libs/libX11 )
 SLOT=0
 SRC_URI=mirror://gentoo/aee-2.2.15b.tar.gz
 _eclasses_=multilib	97f470f374f2e94ccab04a2fb21d811e	toolchain-funcs	885c7d8dd70a58825f3d17e35a3cd1e9
-_md5_=2d0c5046915f0ac09912e1e85e0476c1
+_md5_=605dc7c475b14bd0090274a792e93392
