@@ -10743,7 +10743,7 @@ x11-misc/gbase 0.5-r1: a convert program for decimal, hexadecimal, octal and bin
 x11-misc/gccmakedep 1.0.3: create dependencies in makefiles using 'gcc -M'
 x11-misc/gcolor2 0.4-r4: A GTK+ color selector
 x11-misc/gigolo 0.4.2 0.4.2-r1: a frontend to easily manage connections to remote filesystems using GIO/GVfs
-x11-misc/gmrun 0.9.2-r1: A GTK-2 based launcher box with bash style auto completion!
+x11-misc/gmrun 0.9.2-r2: A GTK-2 based launcher box with bash style auto completion!
 x11-misc/grabc 1.1-r2: Identify color of a pixel on the screen by clicking on a pixel on the screen
 x11-misc/grsync 1.2.6: A gtk frontend to rsync
 x11-misc/grun 0.9.3-r1: A GTK based Run dialog resembling the Windows Run dialog, just like xexec
