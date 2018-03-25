@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile configure install postinst prepare setup unpack
+DEPEND=sys-devel/m4 sys-apps/gawk sys-devel/autoconf >=sys-devel/automake-1.14.1 dev-lang/perl >=dev-vcs/git-1.8.2.1
+DESCRIPTION=Gather some system information and show it in this statusbar program
+EAPI=6
+HOMEPAGE=https://github.com/su8/pinky-bar
+IUSE=x11 alsa +net libnl +pci dvd sensors ncurses colours weather mpd drivetemp drivetemp-light smartemp perl python2 lua ruby r lisp slang tcl cpp
+LICENSE=GPL-3
+RDEPEND=alsa? ( media-libs/alsa-lib ) x11? ( x11-libs/libX11 ) net? ( sys-apps/iproute2 ) libnl? ( >=dev-libs/libnl-3.2.27 dev-util/pkgconfig ) pci? ( sys-apps/pciutils ) dvd? ( dev-libs/libcdio ) sensors? ( sys-apps/lm_sensors ) ncurses? ( sys-libs/ncurses ) weather? ( net-misc/curl app-arch/gzip ) mpd? ( media-sound/mpd media-libs/libmpdclient ) drivetemp? ( net-misc/curl app-admin/hddtemp ) drivetemp-light? ( app-admin/hddtemp ) smartemp? ( sys-apps/smartmontools ) python2? ( dev-lang/python:2.7= ) lua? ( dev-lang/lua ) ruby? ( dev-lang/ruby ) r? ( dev-lang/R ) lisp? ( dev-lisp/ecls ) slang? ( sys-libs/slang ) tcl? ( dev-lang/tcl )
+REQUIRED_USE=x11? ( !ncurses ) ncurses? ( !x11 ) drivetemp? ( !smartemp ) drivetemp-light? ( !smartemp ) smartemp? ( !drivetemp !drivetemp-light )
+SLOT=0
+_eclasses_=git-r3	fec09a83ae965b041b47f5ff7c8ba29a
+_md5_=2445c5e055a00c5420870fab5b9c69f0
