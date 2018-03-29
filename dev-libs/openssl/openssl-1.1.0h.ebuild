@@ -227,7 +227,7 @@ multilib_src_test() {
 }
 
 multilib_src_install() {
-	emake DESTDIR="${D}" install
+	emake -j1 DESTDIR="${D}" install
 }
 
 multilib_src_install_all() {
