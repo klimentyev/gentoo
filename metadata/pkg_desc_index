@@ -10435,6 +10435,7 @@ www-client/surfraw 2.2.9-r1: A fast unix command line interface to WWW
 www-client/uget 1.8.0 1.10.3: Download manager using gtk+ and libcurl
 www-client/w3m 0.5.3-r9: Text based WWW browser, supports tables and frames
 www-misc/awstats 7.1_p20121017 7.4: AWStats is short for Advanced Web Statistics
+www-misc/buku 3.7: Powerful command-line bookmark manager
 www-misc/fcgiwrap 1.1.0-r1: Simple FastCGI wrapper for CGI scripts (CGI support for nginx)
 www-misc/htdig 3.2.0_beta6-r3 3.2.0_beta6-r5: HTTP/HTML indexing and searching system
 www-misc/mergelog 4.5-r2: A utility to merge apache logs in chronological order
