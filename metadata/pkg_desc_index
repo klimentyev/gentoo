@@ -96,7 +96,7 @@ app-admin/mongo-tools 3.0.14 3.2.17 3.4.10: A high-performance, open source, sch
 app-admin/monit 5.23.0: Monitoring and managing daemons or similar programs running on a Unix system
 app-admin/newsyslog 1.1-r1: a highly configurable program for managing and archiving log files
 app-admin/openrc-settingsd 1.0.1: System settings D-Bus service for OpenRC
-app-admin/packagekit-base 1.0.11 1.1.5-r2 1.1.7: Manage packages in a secure way using a cross-distro and cross-architecture API
+app-admin/packagekit-base 1.0.11 1.1.5-r2 1.1.7-r1: Manage packages in a secure way using a cross-distro and cross-architecture API
 app-admin/packagekit-qt 1.0.0: Qt PackageKit backend library
 app-admin/pass 1.7.1: Stores, retrieves, generates, and synchronizes passwords securely
 app-admin/passook 20121001: Password generator capable of generating pronounceable and/or secure passwords
@@ -145,7 +145,7 @@ app-admin/usbview 2.0: Display the topology of devices on the USB bus
 app-admin/verynice 1.1-r2: A tool for dynamically adjusting the nice-level of processes
 app-admin/watchfolder 0.3.3-r1: watches directories and processes files
 app-admin/webalizer 2.23.05 2.23.08: Webserver log file analyzer
-app-admin/webapp-config 1.52-r1 1.53-r2 1.55: Gentoo's installer for web-based applications
+app-admin/webapp-config 1.52-r1 1.53-r2 1.55-r1: Gentoo's installer for web-based applications
 app-admin/whowatch 1.8.5: Displays information about users currently logged on in real time
 app-admin/xstow 1.0.1: replacement for GNU stow with extensions
 app-admin/xtail 2.1-r1: Tail multiple logfiles at once, even if rotated
@@ -539,7 +539,7 @@ app-editors/editra 0.7.20-r2: Multi-platform text editor supporting over 50 prog
 app-editors/ee 1.5.2: An easy to use text editor. A subset of aee
 app-editors/efte 1.1-r1: A fast text editor supporting folding, syntax highlighting, etc.
 app-editors/elvis 2.2.0-r4: A vi/ex clone
-app-editors/emacs 18.59-r11 23.4-r17 24.5-r5 25.3-r1 25.3-r3: The extensible, customizable, self-documenting real-time display editor
+app-editors/emacs 18.59-r11 23.4-r17 24.5-r5 25.3-r1 25.3-r4: The extensible, customizable, self-documenting real-time display editor
 app-editors/emact 2.56.0: EmACT, a fork of Conroy's MicroEmacs
 app-editors/ersatz-emacs 20060515: A very minimal imitation of the famous GNU Emacs editor
 app-editors/fe 1.8 1.9: A small and easy to use folding editor
@@ -724,7 +724,7 @@ app-emulation/cloud-init 0.7.6-r1 0.7.8-r2 0.7.9: cloud initialisation magic
 app-emulation/containerd 0.2.9_p20170917 1.0.1: A daemon to control runC
 app-emulation/dinero 4.7-r1: Cache simulator
 app-emulation/diskimage-builder 2.10.1 2.11.0: Golden Disk Image builder.
-app-emulation/docker 17.09.1: The core functions you need to create Docker images and run Docker containers
+app-emulation/docker 17.09.1 17.12.1: The core functions you need to create Docker images and run Docker containers
 app-emulation/docker-proxy 0.8.0_p20170917: Docker container networking
 app-emulation/docker-runc 1.0.0_rc4_p20170917 1.0.0_rc4_p20180122: runc container cli tools (docker fork)
 app-emulation/dosemu 1.4.1_pre20130107-r5: DOS Emulator
@@ -1134,7 +1134,6 @@ app-mobilephone/lightblue 0.4-r1: API for Python which provides simple access to
 app-mobilephone/obexftp 0.24-r1: File transfer over OBEX for mobile phones
 app-mobilephone/sobexsrv 1.0.1-r1: Scripting/Secure OBEX Server (for BlueZ Linux)
 app-mobilephone/vmoconv 1.0-r1: A tool that converts Siemens phones VMO and VMI audio files to gsm and wav
-app-mobilephone/wammu 0.40: Front-end for gammu to access mobile phones easily
 app-office/abiword 3.0.2-r1: Fully featured yet light and fast cross platform word processor
 app-office/abiword-docs 3.0.1 3.0.2: Fully featured yet light and fast cross platform word processor documentation
 app-office/calcurse 4.2.1: a text-based calendar and scheduling application
@@ -1192,33 +1191,33 @@ app-pda/usbmuxd 1.0.8_p20140530: USB multiplex daemon for use with Apple iPhone/
 app-portage/cfg-update 1.8.9: Easy to use GUI & CLI alternative for etc-update
 app-portage/conf-update 1.0.3-r1: conf-update is a ncurses-based config management utility
 app-portage/cpuid2cpuflags 1 5: Tool to guess CPU_FLAGS_X86 flags for the host
-app-portage/demerge 0.047-r2: demerge - revert to previous installation states
+app-portage/demerge 0.047-r3: demerge - revert to previous installation states
 app-portage/eclass-manpages 20180119 20180302: Collection of Gentoo eclass manpages
 app-portage/eix 0.32.9: Search and query ebuilds
 app-portage/elogv 0.7.6.1-r1: Curses based utility to parse the contents of elogs created by Portage
-app-portage/elogviewer 0.6.2-r3 2.1-r1 2.1-r2 2.6 2.6-r1 2.7: Elog viewer for Gentoo
+app-portage/elogviewer 0.6.2-r3 2.1-r1 2.1-r2 2.6 2.6-r1 2.7-r1: Elog viewer for Gentoo
 app-portage/elt-patches 20170317 20170422 20170815: Collection of patches for libtool.eclass
 app-portage/emerge-delta-webrsync 3.6.2 3.7.2-r1: emerge-webrsync using patches to minimize bandwidth
 app-portage/epkg 0.3: A simple portage wrapper which works like other package managers
-app-portage/esearch 1.3-r1: Replacement for 'emerge --search' with search-index
+app-portage/esearch 1.3-r2: Replacement for 'emerge --search' with search-index
 app-portage/etc-proposals 1.4.3-r3: a set of tools for updating gentoo config files
-app-portage/euscan 0.1.1-r1: Ebuild upstream scan utility
+app-portage/euscan 0.1.1-r2: Ebuild upstream scan utility
 app-portage/euses 2.5.9: look up USE flag descriptions fast
-app-portage/flaggie 0.2.1: A smart CLI mangler for package.* files
-app-portage/g-cpan 0.16.5 0.16.9: Autogenerate and install ebuilds for CPAN modules
+app-portage/flaggie 0.2.1-r1: A smart CLI mangler for package.* files
+app-portage/g-cpan 0.16.5 0.16.9-r1: Autogenerate and install ebuilds for CPAN modules
 app-portage/genlop 0.30.9-r1: A nice emerge.log parser
 app-portage/gentoolkit 0.3.3 0.4.0: Collection of administration scripts for Gentoo
 app-portage/gentoolkit-dev 0.2.8.3-r1 0.3.0: Collection of developer scripts for Gentoo
-app-portage/gentoopm 0.2.9: A common interface to Gentoo package managers
-app-portage/grs 0.5 0.6: Suite to build Gentoo Reference Systems
-app-portage/layman 2.0.0-r1 2.0.0-r3 2.4.2: Tool to manage Gentoo overlays
+app-portage/gentoopm 0.2.9-r1: A common interface to Gentoo package managers
+app-portage/grs 0.5 0.6-r1: Suite to build Gentoo Reference Systems
+app-portage/layman 2.0.0-r1 2.0.0-r3 2.4.2-r1: Tool to manage Gentoo overlays
 app-portage/metagen 0.6.2-r1 0.6.3 0.6.5: metadata.xml generator for ebuilds
 app-portage/mirrorselect 2.2.0.1 2.2.2 2.2.2-r2 2.2.3: Tool to help select distfiles mirrors for Gentoo
-app-portage/overlint 0.5.3: Simple tool for static analysis of overlays
+app-portage/overlint 0.5.3-r1: Simple tool for static analysis of overlays
 app-portage/perl-info 0.16: Tool to gather relevant perl data useful for bugreport; 'emerge --info' for perl
-app-portage/pfl 2.4-r4: Searchable online file/package database for Gentoo
+app-portage/pfl 2.4-r5: Searchable online file/package database for Gentoo
 app-portage/portage-utils 0.62 0.64: small and fast portage helper tools written in C
-app-portage/porthole 0.6.1-r4: A GTK+-based frontend to Portage
+app-portage/porthole 0.6.1-r5: A GTK+-based frontend to Portage
 app-portage/porticron 0.7_p20140126: cron script to sync portage and send update mails to root
 app-portage/portpeek 2.1.21 2.1.25: A helper program for maintaining the package.keyword and package.unmask files
 app-portage/repoman 2.3.0-r1 2.3.3 2.3.6: Repoman is a Quality Assurance tool for Gentoo ebuilds
@@ -1227,7 +1226,7 @@ app-portage/splat 0.08-r1: Simple Portage Log Analyzer Tool
 app-portage/tatt 0.4 0.5: arch testing tool
 app-portage/ufed 0.91 0.92: Gentoo Linux USE flags editor
 app-portage/unsandbox 2: The Sandbox escapist tool
-app-portage/unsymlink-lib 12: Convert your system to SYMLINK_LIB=no
+app-portage/unsymlink-lib 12-r1: Convert your system to SYMLINK_LIB=no
 app-shells/autojump 22.2.4-r4: change directory command that learns
 app-shells/bash 2.05b_p13 3.0_p22 3.1_p23 3.2_p57 4.0_p44 4.1_p17 4.2_p53 4.3_p48-r1 4.4_p12: The standard GNU Bourne again shell
 app-shells/bash-completion 2.4-r1: Programmable Completion for bash
@@ -1473,7 +1472,7 @@ app-text/wv 1.2.9-r2: Tool for conversion of MSWord doc and rtf files to somethi
 app-text/wv2 0.4.2-r2: Excellent MS Word filter lib, used in most Office suites
 app-text/xapian-omega 1.2.24 1.4.4: An application built on Xapian, consisting of indexers and a CGI search frontend
 app-text/xchm 1.23-r1: Utility for viewing Compiled HTML Help (CHM) files
-app-text/xdvik 22.87.03: DVI previewer for X Window System
+app-text/xdvik 22.87.03-r1: DVI previewer for X Window System
 app-text/xfbib 0.0.2-r1 0.0.2-r2: a lightweight BibTeX editor
 app-text/xhtml1 20020801-r5: DTDs for the eXtensible HyperText Markup Language 1.0
 app-text/xindy 2.4-r1: A Flexible Indexing System
@@ -1855,7 +1854,7 @@ dev-db/oracle-instantclient-sqlplus 10.2.0.3 11.2.0.3 11.2.0.3-r1 11.2.0.4: Orac
 dev-db/percona-toolkit 2.2.11: essential command-line utilities for MySQL
 dev-db/percona-xtrabackup 2.4.7 2.4.8 2.4.9: Hot backup utility for MySQL based servers
 dev-db/pg_top 3.7.0: 'top' for PostgreSQL
-dev-db/pgadmin3 1.22.1-r1 1.22.2: wxWidgets GUI for PostgreSQL
+dev-db/pgadmin3 1.22.2: wxWidgets GUI for PostgreSQL
 dev-db/pgadmin4 2.0-r1: GUI administration and development platform for PostgreSQL
 dev-db/pgagent 3.4.0-r3: pgAgent is a job scheduler for PostgreSQL
 dev-db/pgbadger 9.2: pgBadger is a PostgreSQL log analyzer.
@@ -1864,7 +1863,7 @@ dev-db/pgpool2 3.7.0: Connection pool server for PostgreSQL
 dev-db/pgtap 0.98.0: Unit testing for PostgreSQL
 dev-db/phpmyadmin 4.0.10.20 4.7.0 4.7.7-r1 4.7.8: Web-based administration for MySQL database in PHP
 dev-db/postgis 2.4.2: Geographic Objects for PostgreSQL
-dev-db/postgresql 9.2.19 9.2.22 9.2.24 9.3.15 9.3.20 9.3.21 9.3.22 9.4.10 9.4.15 9.4.16 9.4.17 9.5.5 9.5.10 9.5.11 9.5.12 9.6.6 9.6.7 9.6.8 10.1 10.2 10.3: PostgreSQL RDBMS
+dev-db/postgresql 9.3.20 9.3.22 9.4.15 9.4.17 9.5.10 9.5.12 9.6.6 9.6.7 9.6.8 10.1 10.3: PostgreSQL RDBMS
 dev-db/pspg 0.8.0: A better pager for psql and mysql
 dev-db/psqlodbc 10.01.0000: Official ODBC driver for PostgreSQL
 dev-db/qdbm 1.8.78-r1: Quick Database Manager
@@ -2548,7 +2547,7 @@ dev-java/japitools 0.9.7-r4: Java API compatibility testing tools
 dev-java/jarbundler 1.8.1-r2: Jar Bundler Ant Task
 dev-java/jarjar 1.4: Tool for repackaging third-party jars
 dev-java/java-apicheck 0_p20150907: Command line tool to check Java packages for API compatibility
-dev-java/java-config 2.2.0-r3: Java environment configuration query tool
+dev-java/java-config 2.2.0-r4: Java environment configuration query tool
 dev-java/java-dep-check 0.3-r1: Java Dependency checker
 dev-java/java-getopt 1.0.14: Java command line option parser
 dev-java/java-sdk-docs 1.8.0.162: Oracle's documentation bundle (including API) for Java SE
@@ -3084,7 +3083,7 @@ dev-libs/libmix 2.05-r7: Programs Crypto/Network/Multipurpose Library
 dev-libs/libmodbus 3.1.2: Modbus library which supports RTU communication over a serial line or a TCP link
 dev-libs/libmoe 1.5.8-r3: Multi octet character encoding handling library
 dev-libs/libmongo-client 0.1.7: The alternative C driver for MongoDB
-dev-libs/libmowgli 1.0.0: High-performance C development framework. Can be used stand-alone or as a supplement to GLib
+dev-libs/libmowgli 1.0.0 2.1.3: Useful set of performance and usability-oriented extensions to C
 dev-libs/libmspack 0.5_alpha 0.6_alpha: A library for Microsoft compression formats
 dev-libs/libnatspec 0.2.6-r1: library to smooth charset/localization issues
 dev-libs/libnl 1.1.4 3.2.28: Libraries providing APIs to netlink protocol based Linux kernel interfaces
@@ -3097,7 +3096,7 @@ dev-libs/libotf 0.9.13: Library for handling OpenType fonts (OTF)
 dev-libs/libowfat 0.31-r1: reimplement libdjb - excellent libraries from Dan Bernstein
 dev-libs/libp11 0.4.4: Abstraction layer to simplify PKCS#11 API
 dev-libs/libparserutils 0.2.3: library for building efficient parsers, written in C
-dev-libs/libpcre 8.40-r1 8.41 8.41-r1: Perl-compatible regular expression library
+dev-libs/libpcre 8.41-r1: Perl-compatible regular expression library
 dev-libs/libpcre2 10.30: Perl-compatible regular expression library
 dev-libs/libpeas 1.20.0-r1: A GObject plugins library
 dev-libs/libpipeline 1.4.0 1.4.2: a pipeline manipulation library
@@ -3196,7 +3195,7 @@ dev-libs/ptexenc 1.3.4_p20160523 1.3.5_p20170524: Library for Japanese pTeX prov
 dev-libs/pugixml 1.8: Light-weight, simple, and fast XML parser for C++ with XPath support
 dev-libs/qcustomplot 1.3.2: Qt C++ widget for plotting and data visualization
 dev-libs/qjson 0.9.0: Library for mapping JSON data to QVariant objects
-dev-libs/qoauth 2.0.1_pre20160315-r2: Qt-based library for OAuth support
+dev-libs/qoauth 2.0.1_pre20160315-r3: Qt-based library for OAuth support
 dev-libs/qof 0.8.8-r1: A Query Object Framework
 dev-libs/qqwing 1.3.3 1.3.4: Sudoku puzzle generator and solver
 dev-libs/qtkeychain 0.8.0: Qt API for storing passwords securely
@@ -4029,7 +4028,7 @@ dev-perl/PatchReader 0.9.6-r1: Module for reading diff-compatible patch files
 dev-perl/Path-Class 0.360.0: Cross-platform path specification manipulation
 dev-perl/Path-Tiny 0.104.0: File path utility
 dev-perl/Pegex 0.600.0: Acmeist PEG Parser Framework
-dev-perl/Perl-Critic 1.123 1.130.0: Critique Perl source code for best-practices
+dev-perl/Perl-Critic 1.130.0: Critique Perl source code for best-practices
 dev-perl/Perl-Critic-Dynamic 0.50.0-r1: Base class for dynamic Policies
 dev-perl/Perl-Tags 0.320.0: Generate (possibly exuberant) Ctags style tags for Perl sourcecode
 dev-perl/Perl-Tidy 20160302.0.0: Perl script indenter and beautifier
@@ -4281,7 +4280,6 @@ dev-perl/Variable-Magic 0.610.0: Associate user-defined magic to variables from 
 dev-perl/Video-Frequencies 0.03-r1: Video Frequencies perl module, for use with ivtv-ptune
 dev-perl/Video-Info 0.993.0-r1: Perl extension for getting video info
 dev-perl/Video-ivtv 0.13-r1: Video::ivtv perl module, for use with ivtv-ptune
-dev-perl/WWW-Bugzilla 1.500.0-r1: WWW::Bugzilla - automate interaction with bugzilla
 dev-perl/WWW-Curl 4.170.0: Perl extension interface for libcurl
 dev-perl/WWW-Form-UrlEncoded 0.240.0: parser and builder for application/x-www-form-urlencoded
 dev-perl/WWW-Form-UrlEncoded-XS 0.240.0: XS parsing/building of application/x-www-form-urlencoded
@@ -4984,7 +4982,7 @@ dev-python/markdown 2.6.5 2.6.8: Python implementation of the markdown markup la
 dev-python/markdown2 2.3.0: Python Markdown language reimplementation
 dev-python/markups 2.0.0: A wrapper around various text markups
 dev-python/markupsafe 0.23: Implements a XML/HTML/XHTML Markup safe string for Python
-dev-python/matplotlib 1.4.3 2.1.0-r1: Pure python plotting library with matlab like syntax
+dev-python/matplotlib 1.4.3 2.1.0-r1 2.1.2-r1: Pure python plotting library with matlab like syntax
 dev-python/mccabe 0.2.1 0.6.1: flake8 plugin: McCabe complexity checker
 dev-python/mecab-python 0.996: Python binding for MeCab
 dev-python/mechanize 0.2.5-r1: Stateful programmatic web browsing in Python
@@ -5715,7 +5713,7 @@ dev-ruby/erubi 1.7.0: a ERB template engine for ruby; a simplified fork of Erubi
 dev-ruby/erubis 2.7.0-r2: Erubis is an implementation of eRuby
 dev-ruby/eventmachine 1.0.9.1 1.2.0.1: EventMachine is a fast, simple event-processing library for Ruby programs
 dev-ruby/execjs 2.6.0: ExecJS lets you run JavaScript code from Ruby
-dev-ruby/facter 2.4.6 3.1.8 3.9.2 3.10.0: A cross-platform ruby library for retrieving facts from operating systems
+dev-ruby/facter 2.4.6 3.9.2 3.10.0: A cross-platform ruby library for retrieving facts from operating systems
 dev-ruby/fakefs 0.9.2 0.11.3: A fake filesystem. Use it in your tests
 dev-ruby/fakeweb 1.3.0.20131201-r1: Helper for faking web requests in Ruby
 dev-ruby/fast_xs 0.8.0-r2: fast_xs text escaping library ruby bindings
@@ -6287,7 +6285,7 @@ dev-vcs/qgit 2.7: Qt GUI for git repositories
 dev-vcs/rapidsvn 0.12.1-r3: Cross-platform GUI front-end for the Subversion revision system
 dev-vcs/rcs 5.8.2 5.9.3: Revision Control System
 dev-vcs/stgit 0.16-r2: Manage a stack of patches using GIT as a backend
-dev-vcs/subversion 1.8.18 1.9.7 1.9.7-r1: Advanced version control system
+dev-vcs/subversion 1.9.7-r1: Advanced version control system
 dev-vcs/svn2cl 0.12: Create a GNU-style ChangeLog from subversion's svn log --xml output
 dev-vcs/tig 2.2.2: text mode interface for git
 dev-vcs/tkcvs 8.2.2 8.2.3: Tcl/Tk-based graphical interface to CVS with Subversion support
@@ -6782,7 +6780,7 @@ kde-frameworks/syntax-highlighting 5.43.0: Framework for syntax highlighting
 kde-frameworks/threadweaver 5.43.0: Framework for managing threads using job and queue-based interfaces
 kde-misc/basket 2.49a_p20170225-r1: A DropDrawers clone. Multiple information organizer
 kde-misc/kanyremote 6.4: KDE frontend to Anyremote
-kde-misc/kdeconnect 1.2.1-r1: Adds communication between KDE Plasma and your smartphone
+kde-misc/kdeconnect 1.2.1-r2: Adds communication between KDE Plasma and your smartphone
 kde-misc/kdiff3 0.9.98_p20170219-r1: Frontend to diff3 based on Qt/KF5
 kde-misc/kdirstat 3.1.2: GUI equivalent to the du command based on KDE Frameworks
 kde-misc/kio-gdrive 1.2.1-r1: KIO Slave for Google Drive service
@@ -6855,7 +6853,7 @@ lxde-base/lxsession 0.5.2: LXDE session manager
 lxde-base/lxsession-edit 0.2.0: LXDE session autostart editor
 lxde-base/lxshortcut 0.1.2: LXDE tool to edit desktop entry files
 lxde-base/lxtask 0.1.7 0.1.8: LXDE Task manager
-lxde-base/lxterminal 0.1.11: Lightweight vte-based tabbed terminal emulator for LXDE
+lxde-base/lxterminal 0.1.11 0.3.1: Lightweight vte-based tabbed terminal emulator for LXDE
 lxde-base/menu-cache 0.3.3 0.5.1 1.0.0-r1 1.0.1 1.0.2: Library to create and utilize caches to speed up freedesktop application menus
 lxqt-base/liblxqt 0.11.0-r1: Common base library for the LXQt desktop environment
 lxqt-base/libsysstat 0.3.2: A Qt-based interface to system statistics
@@ -7867,7 +7865,7 @@ media-sound/cdcd 0.6.6-r2: a simple yet powerful command line cd player
 media-sound/cdparanoia 3.10.2-r6: an advanced CDDA reader with error correction
 media-sound/cdplay 1.0: a commandline CD Player
 media-sound/cdtool 2.1.8-r1: collection of command-line utilities to control cdrom devices
-media-sound/clementine 1.3.1_p20171113: Modern music player and library organizer based on Amarok 1.4 and Qt
+media-sound/clementine 1.3.1_p20171113-r1: Modern music player and library organizer based on Amarok 1.4 and Qt
 media-sound/cmus 2.8.0_rc0: A ncurses based music player with plugin support for many formats
 media-sound/cvoicecontrol 0.9_alpha: Console based speech recognition system
 media-sound/dagrab 0.513-r1: fixed point cd ripper
@@ -8222,7 +8220,7 @@ net-analyzer/hping 3_pre20051105-r6: A ping-like TCP/IP packet assembler/analyze
 net-analyzer/httping 2.5: http protocol ping-like program
 net-analyzer/hydra 8.1: Advanced parallized login hacker
 net-analyzer/icinga 1.14.2: Nagios Fork - Check daemon, CGIs, docs, IDOutils
-net-analyzer/icinga2 2.8.1: Distributed, general purpose, network monitoring engine
+net-analyzer/icinga2 2.8.2: Distributed, general purpose, network monitoring engine
 net-analyzer/ifstat 1.1-r2: Network interface bandwidth usage, with support for snmp targets
 net-analyzer/ifstatus 1.1.0-r1 1.1.0-r2: A simple CLI program for displaying network statistics in real time
 net-analyzer/iftop 1.0_pre4-r2: display bandwidth usage on an interface
@@ -8267,7 +8265,7 @@ net-analyzer/netwatch 1.3.0.1-r3: Ethernet/PPP IP Packet Monitor
 net-analyzer/nfdump 1.6.14-r1: A set of tools to collect and process netflow data
 net-analyzer/ngrep 1.45-r3: A grep for network layers
 net-analyzer/nload 0.7.4: console application which monitors network traffic and bandwidth usage in real time
-net-analyzer/nmap 7.40: A utility for network discovery and security auditing
+net-analyzer/nmap 7.40 7.70: A utility for network discovery and security auditing
 net-analyzer/nmbscan 1.2.5: netbios scanner
 net-analyzer/nrpe 2.15-r3: Nagios Remote Plugin Executor
 net-analyzer/nsca 2.7.2-r103: Nagios Service Check Acceptor
@@ -8354,7 +8352,7 @@ net-dialup/rp-pppoe 3.11-r3 3.12-r1: A user-mode PPPoE client and server suite f
 net-dialup/wvdial 1.61: Excellent program to automatically configure PPP sessions
 net-dialup/xc 4.3.2-r3 4.3.2-r4: Modem dialout & serial terminal program
 net-dialup/xl2tpd 1.3.1-r2 1.3.1-r3 1.3.1-r4 1.3.10: A modern version of the Layer 2 Tunneling Protocol (L2TP) daemon
-net-dns/avahi 0.6.31-r10 0.6.32 0.7: System which facilitates service discovery on a local network
+net-dns/avahi 0.6.31-r10 0.6.32 0.7 0.7-r1: System which facilitates service discovery on a local network
 net-dns/bind 9.11.1_p3 9.11.2_p1: BIND - Berkeley Internet Name Domain - Name Server
 net-dns/bind-tools 9.11.1_p3 9.11.2_p1: bind tools: dig, nslookup, host, nsupdate, dnssec-keygen
 net-dns/c-ares 1.13.0: C library that resolves names asynchronously
@@ -8438,7 +8436,7 @@ net-ftp/vsftpd 2.3.5 3.0.2 3.0.2-r1: Very Secure FTP Daemon written with speed, 
 net-ftp/weex 2.6.1.5-r1: Automates maintaining a web page or other FTP archive
 net-im/bitlbee 3.5.1: irc to IM gateway that support multiple IM protocols
 net-im/centerim 5.0.1: CenterIM is a ncurses ICQ/Yahoo!/AIM/IRC/MSN/Jabber/GaduGadu/RSS/LiveJournal Client
-net-im/choqok 1.6.0: Free/Open Source micro-blogging client by KDE
+net-im/choqok 1.6.0-r1: Free/Open Source micro-blogging client by KDE
 net-im/climm 0.7.1: ICQ text-mode client with many features
 net-im/dianara 1.3.7-r1: Qt-based client for the pump.io distributed social network
 net-im/ejabberd 16.09: Robust, scalable and extensible XMPP server
@@ -8480,7 +8478,7 @@ net-irc/iroffer-dinoex 3.29: IRC fileserver using DCC
 net-irc/irssi 1.0.4 1.0.5 1.0.6: A modular textUI IRC client with IPv6 support
 net-irc/irssi-otr 1.0.0-r1: Off-The-Record messaging (OTR) for irssi
 net-irc/irssistats 0.75: Generates HTML IRC stats based on irssi logs
-net-irc/konversation 1.7.4: A user friendly IRC Client
+net-irc/konversation 1.7.4-r1: A user friendly IRC Client
 net-irc/kvirc 5.0_pre20171001143427 5.0_pre20171211100641 5.0_pre20180209140255: Advanced IRC Client
 net-irc/muh 2.2a-r1: Persistent IRC bouncer
 net-irc/ngircd 23-r1 24: An IRC server written from scratch
@@ -8549,7 +8547,7 @@ net-libs/libhubbub 0.3.3: HTML5 compliant parsing library, written in C
 net-libs/libident 0.32 0.32-r1: A small library to interface to the Ident protocol server
 net-libs/libircclient 1.6-r2 1.8: Small but powerful library implementing the client-server IRC protocol
 net-libs/libiscsi 1.18.0: iscsi client library and utilities
-net-libs/libktorrent 2.1: BitTorrent library based on KDE Frameworks
+net-libs/libktorrent 2.1-r1: BitTorrent library based on KDE Frameworks
 net-libs/liblockfile 1.09: Implements functions designed to lock the standard mailboxes
 net-libs/libmbim 1.6.0 1.10.0 1.14.0: Mobile Broadband Interface Model (MBIM) modem protocol helper library
 net-libs/libmicrohttpd 0.9.52 0.9.55: Small C library to run an HTTP server as part of another application
@@ -9325,7 +9323,7 @@ sci-mathematics/mathomatic 15.8.5: Automatic algebraic manipulator
 sci-mathematics/maxima 5.38.1: Free computer algebra environment based on Macsyma
 sci-mathematics/nauty 2.5.9: Computing automorphism groups of graphs and digraphs
 sci-mathematics/normaliz 2.12.2 3.1.1 3.1.3: Tool for computations in affine monoids and more
-sci-mathematics/octave 4.2.1: High-level interactive language for numerical computations
+sci-mathematics/octave 4.2.1 4.2.2: High-level interactive language for numerical computations
 sci-mathematics/otter 3.3-r3: An Automated Deduction System
 sci-mathematics/pari 2.3.5: A software package for computer-aided number theory
 sci-mathematics/prng 3.0.2-r2: Pseudo-Random Number Generator library
@@ -9857,7 +9855,7 @@ sys-block/mtx 1.3.12: Utilities for controlling SCSI media changers and tape dri
 sys-block/nbd 3.11 3.15.3: Userland client/server for kernel network block device
 sys-block/noflushd 2.7.3: A daemon to spin down your disks and force accesses to be cached
 sys-block/open-iscsi 2.0.872-r2 2.0.873 2.0.873-r1: A performant, transport independent, multi-platform implementation of RFC3720
-sys-block/parted 3.2 3.2-r1: Create, destroy, resize, check, copy partitions and file systems
+sys-block/parted 3.2-r1: Create, destroy, resize, check, copy partitions and file systems
 sys-block/partimage 0.6.9: Console-based application to efficiently save raw partition data to image file
 sys-block/partitionmanager 3.3.1: KDE utility for management of partitions and file systems
 sys-block/qla-fc-firmware 20101015: QLogic Linux Fibre Channel HBA Firmware for ql2xxx cards
@@ -10023,7 +10021,7 @@ sys-fs/multipath-tools 0.5.0-r1 0.6.4-r1: Device mapper target autoconfig
 sys-fs/ncdu 1.12: NCurses Disk Usage
 sys-fs/nilfs-utils 2.1.5-r1: A New Implementation of a Log-structured File System for Linux
 sys-fs/ntfs3g 2016.2.22-r2: Open source read-write NTFS driver that runs under FUSE
-sys-fs/owfs 3.1_p4: Access 1-Wire devices like a filesystem
+sys-fs/owfs 3.1_p4-r1: Access 1-Wire devices like a filesystem
 sys-fs/progsreiserfs 0.3.1_rc8: Library for accessing and manipulating reiserfs partitions
 sys-fs/pysize 0.2-r1: A graphical and console tool for exploring the size of directories
 sys-fs/quota 4.03: Linux quota tools
@@ -10239,7 +10237,7 @@ virtual/ooo 0: Virtual for OpenOffice.org/LibreOffice
 virtual/opencl 0-r4: Virtual for OpenCL implementations
 virtual/opengl 7.0 7.0-r1: Virtual for OpenGL implementation
 virtual/os-headers 0: Virtual for operating system headers
-virtual/package-manager 0: Virtual for the package manager
+virtual/package-manager 1: Virtual for the package manager
 virtual/pager 0: Virtual for command-line pagers
 virtual/pam 0 0-r1: Virtual for PAM (Pluggable Authentication Modules)
 virtual/perl-Archive-Tar 2.40.100_rc-r5: Virtual for Archive-Tar
@@ -10421,7 +10419,7 @@ www-client/elinks 0.12_pre6-r1: Advanced and well-established text-mode web brow
 www-client/epiphany 3.24.5: GNOME webbrowser based on Webkit
 www-client/fetch 1.0-r3: HTTP download tool built atop the HTTP fetcher library
 www-client/firefox 52.4.0 52.6.0: Firefox Web Browser
-www-client/firefox-bin 52.6.0: Firefox Web Browser
+www-client/firefox-bin 52.7.2: Firefox Web Browser
 www-client/httrack 3.48.21-r1: HTTrack Website Copier, Open Source Offline Browser
 www-client/links 2.14 2.14-r1: A fast and lightweight web browser running in both graphics and text mode
 www-client/lynx 2.8.9_pre11: An excellent console-based web browser with ssl support
@@ -11177,7 +11175,7 @@ x11-wm/cwm 5.1 5.6: OpenBSD fork of calmwm, a clean and lightweight window manag
 x11-wm/dwm 6.1: a dynamic window manager for X11
 x11-wm/enlightenment 0.20.5 1.0.17: Enlightenment Window Manager (e16)
 x11-wm/evilwm 1.0.1-r1: A minimalist, no frills window manager for X
-x11-wm/fluxbox 1.3.7-r3: Fluxbox is an X11 window manager featuring tabs and an iconbar
+x11-wm/fluxbox 1.3.7-r3: X11 window manager featuring tabs and an iconbar
 x11-wm/fvwm 2.6.5-r1: An extremely powerful ICCCM-compliant multiple virtual desktop window manager
 x11-wm/herbstluftwm 0.7.0: A manual tiling window manager for X
 x11-wm/i3 4.13-r1: An improved dynamic tiling window manager
