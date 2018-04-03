@@ -29,6 +29,23 @@
 
 #--- END OF EXAMPLES ---
 
+# Aaron W. Swenson <titanofold@gentoo.org> (22 Mar 2018)
+# EOL. No longer receives bug or security fixes. Recommended to update
+# to latest available.
+# Removal in 30 days (21 Apr 2018). Bug 634028.
+<dev-db/postgresql-9.3
+
+# Kent Fredric <kentnl@gentoo.org> (21 Mar 2018)
+# Not usable with versions of Bugzilla shipped by Gentoo since 2013,
+# Dead upstream. Use dev-perl/BZ-Client instead.
+# Removal in 30 days. Bug 651056
+dev-perl/WWW-Bugzilla
+
+# Michał Górny <mgorny@gentoo.org> (20 Mar 2018)
+# Poorly tested version bump followed by a series of quick hacks
+# that do not make it any more working. Bug #651030.
+>=sys-devel/distcc-3.3
+
 # Brian Evans <grknight@gentoo.org (20 Mar 2018)
 # These PEAR packages are unmaintained upstream and
 # are difficult to test or have no tests.
@@ -694,12 +711,6 @@ app-emacs/emacs-wiki-blog
 # Sergey Popov <pinkbyte@gentoo.org> (13 Feb 2018)
 # Requires dead Qt4 (bug #645420). Removal in 30 days
 media-gfx/qiviewer
-
-# Kristian Fiskerstrand <k_f@gentoo.org> (11 Feb 2018)
-# Lastrite: app-crypt/monkeysign . Please use caff from 
-# app-crypt/signing-party instead. Removal in 30 days.
-# Bug: #647352
-app-crypt/monkeysign
 
 # Eray Aslan <eras@gentoo.org> (08 Feb 2018)
 # Mask experimental software
