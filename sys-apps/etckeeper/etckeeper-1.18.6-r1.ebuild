@@ -5,14 +5,14 @@ EAPI=6
 
 PYTHON_COMPAT=( python2_7 )
 
-inherit eutils prefix python-r1
+inherit bash-completion-r1 prefix python-r1 versionator
 
 DESCRIPTION="A collection of tools to let /etc be stored in a repository"
 HOMEPAGE="https://etckeeper.branchable.com/"
-SRC_URI="https://github.com/joeyh/etckeeper/archive/${PV}.tar.gz -> ${P}.tar.gz"
+SRC_URI="https://git.joeyh.name/index.cgi/etckeeper.git/snapshot/${P}.tar.gz"
 
 LICENSE="GPL-2"
-KEYWORDS="amd64 ~arm x86"
+KEYWORDS="~amd64 ~arm ~x86"
 SLOT="0"
 IUSE="bazaar cron"
 REQUIRED_USE="bazaar? ( ${PYTHON_REQUIRED_USE} )"
@@ -20,7 +20,7 @@ REQUIRED_USE="bazaar? ( ${PYTHON_REQUIRED_USE} )"
 VCS_DEPEND="dev-vcs/git
 	dev-vcs/mercurial
 	dev-vcs/darcs"
-DEPEND="bazaar? ( dev-vcs/bzr )"
+DEPEND="bazaar? ( dev-vcs/bzr[${PYTHON_USEDEP}] )"
 RDEPEND="${DEPEND}
 	app-portage/portage-utils
 	cron? ( virtual/cron )
@@ -38,7 +38,7 @@ src_install(){
 	emake DESTDIR="${ED}" install
 
 	bzr_install() {
-		${PYTHON} ./${PN}-bzr/__init__.py install --root="${ED}" ||
+		"${EPYTHON}" ./${PN}-bzr/__init__.py install --root="${ED}" ||
 			die "bzr support installation failed!"
 	}
 	use bazaar && python_foreach_impl bzr_install
@@ -48,9 +48,9 @@ src_install(){
 		eprefixify "${ED%/}"/etc/env.d/99${PN}
 	fi
 
+	newbashcomp bash_completion ${PN}
 	dodoc doc/README.mdwn
-	docinto examples
-	newdoc "${FILESDIR}"/bashrc-r1 bashrc
+	newdoc "${FILESDIR}"/bashrc-r1 bashrc.example
 
 	if use cron ; then
 		exeinto /etc/cron.daily
