@@ -1432,7 +1432,7 @@ app-text/recode 3.6_p20-r1: Convert files between various character sets
 app-text/rfcutil 3.2.3-r2: return all related RFCs based upon a number or a search string
 app-text/rhyme 0.9-r1: Console based Rhyming Dictionary
 app-text/rman 3.2-r1: PolyGlotMan man page translator AKA RosettaMan
-app-text/rnv 1.7.11 1.7.11-r1: A lightweight Relax NG Compact Syntax validator
+app-text/rnv 1.7.11-r1: A lightweight Relax NG Compact Syntax validator
 app-text/ronn 0.7.3-r3: Converts simple, human readable textfiles to roff for terminal display, and HTML
 app-text/rpl 1.5.5-r1: Intelligent recursive search/replace utility
 app-text/sablotron 1.0.3-r1: An XSLT Parser in C++
@@ -1849,7 +1849,7 @@ dev-db/mysql-connector-c++ 1.1.3 1.1.6: MySQL database connector for C++ (mimics
 dev-db/mysql-init-scripts 2.2-r3: Gentoo MySQL init scripts.
 dev-db/mysql-super-smack 1.3-r3: Benchmarking, stress testing, and load generation tool for MySQL & PostGreSQL
 dev-db/mysql-workbench 6.3.4-r1: MySQL Workbench
-dev-db/mysqltuner 1.2.0 1.6.18: MySQLTuner is a high-performance MySQL tuning script
+dev-db/mysqltuner 1.6.18: MySQLTuner is a high-performance MySQL tuning script
 dev-db/mytop 1.6-r4: mytop - a top clone for mysql
 dev-db/opendbx 1.4.5-r1: OpenDBX - A database abstraction layer
 dev-db/oracle-instantclient-basic 10.2.0.3-r1 11.2.0.3 11.2.0.4: Oracle 11g Instant Client with SDK
@@ -9817,7 +9817,7 @@ sys-apps/sysvinit 2.88-r9: /sbin/init - parent of all processes
 sys-apps/tcp-wrappers 7.6.22-r1: TCP Wrappers
 sys-apps/texinfo 6.1 6.3: The GNU info program and utilities
 sys-apps/the_silver_searcher 2.0.0: A code-searching tool similar to ack, but faster
-sys-apps/timer_entropyd 0.2 0.3: A timer-based entropy generator
+sys-apps/timer_entropyd 0.3: A timer-based entropy generator
 sys-apps/uam 0.3.2: Simple udev-based automounter for removable USB media
 sys-apps/ucspi-proxy 0.99: proxy program for two connections set up by a UCSPI server and a UCSPI client
 sys-apps/ucspi-ssl 0.94-r1: Command-line tools for building SSL client-server applications
@@ -10984,7 +10984,7 @@ x11-plugins/pidgin-otr 4.0.2: (OTR) Messaging allows you to have private convers
 x11-plugins/pidgin-privacy-please 0.7.1: pidgin plugin to stop spammers from annoying you
 x11-plugins/pidgin-rhythmbox 2.0: automatically update your pidgin profile with current info from Rhythmbox
 x11-plugins/pidgin-sipe 1.22.0: Pidgin Plug-in SIPE (Sip Exchange Protocol)
-x11-plugins/pidgin-xmpp-receipts 0.6 0.8: Implementation of xmpp message delivery receipts (XEP-0184) for Pidgin
+x11-plugins/pidgin-xmpp-receipts 0.8: Implementation of xmpp message delivery receipts (XEP-0184) for Pidgin
 x11-plugins/pidgintex 1.1.2_p20170107: Pidgin plugin to render LaTeX expressions in messages
 x11-plugins/purple-libnotify-plus 1.99.2 2.99.1: Provide libnotify interface to Pidgin and Finch
 x11-plugins/purple-plugin_pack 2.7.0-r1: A package with many different plugins for pidgin and libpurple
@@ -11213,7 +11213,7 @@ x11-wm/aewm++ 1.1.5-r2: A window manager with more modern features than aewm
 x11-wm/afterstep 2.2.12: A feature rich NeXTish window manager
 x11-wm/awesome 3.5.6-r2 3.5.9-r2: A dynamic floating and tiling window manager
 x11-wm/blackbox 0.70.1-r1: A small, fast, full-featured window manager for X
-x11-wm/ctwm 3.7 3.8a-r1 4.0.1: A clean, light window manager
+x11-wm/ctwm 3.7 4.0.1: A clean, light window manager
 x11-wm/cwm 5.1 5.6: OpenBSD fork of calmwm, a clean and lightweight window manager
 x11-wm/dwm 6.1: a dynamic window manager for X11
 x11-wm/enlightenment 0.20.5 1.0.17: Enlightenment Window Manager (e16)
