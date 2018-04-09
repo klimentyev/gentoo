@@ -1454,7 +1454,7 @@ app-text/teckit 2.5.6: Text Encoding Conversion toolkit
 app-text/tesseract 3.05.01: An OCR Engine, orginally developed at HP, now open source.
 app-text/texi2html 5.0-r1: Perl script that converts Texinfo to HTML
 app-text/texlive 2017: A complete TeX distribution
-app-text/texlive-core 2016-r5 2016-r6 2017-r3: A complete TeX distribution
+app-text/texlive-core 2017-r3: A complete TeX distribution
 app-text/tidy-html5 5.6.0: Tidy the layout and correct errors in HTML, HTML5 and XML documents
 app-text/tkinfo 2.8-r1: Info Browser in TK
 app-text/trang 20151127: Multi-format schema converter based on RELAX NG
@@ -5407,7 +5407,7 @@ dev-python/pyzmq 16.0.2: Lightweight and super-fast messaging library built on t
 dev-python/pyzor 1.0.0: A distributed, collaborative spam detection and filtering network
 dev-python/qpid-python 0.20: A high-speed platform independent enterprise messaging system for Apache
 dev-python/qrcode 5.1-r1: QR Code generator on top of PIL
-dev-python/qscintilla-python 2.10.1-r1 2.10.3: Python bindings for Qscintilla
+dev-python/qscintilla-python 2.10.3: Python bindings for Qscintilla
 dev-python/queuelib 1.1.1: Collection of persistent (disk-based) queues
 dev-python/quixote 2.8: Python HTML templating framework for developing web applications
 dev-python/rarfile 2.8 3.0: Module for RAR archive reading
@@ -6042,52 +6042,44 @@ dev-tex/translator 1.00: A package for translating words in TeX
 dev-tex/tth 3.77: Translate TEX into HTML
 dev-tex/xcolor 2.11 2.12: xcolor -- easy driver-independent access to colors
 dev-tex/xmltex 1.9-r2: A non validating namespace aware XML parser implemented in TeX
-dev-texlive/texlive-basic 2016 2017-r1: TeXLive Essential programs and files
-dev-texlive/texlive-bibtexextra 2016 2017: TeXLive BibTeX additional styles
-dev-texlive/texlive-context 2016 2017: TeXLive ConTeXt and packages
-dev-texlive/texlive-documentation-base 2012: TeXLive TeX Live documentation
-dev-texlive/texlive-fontsextra 2016 2017: TeXLive Additional fonts
-dev-texlive/texlive-fontsrecommended 2016 2017: TeXLive Recommended fonts
-dev-texlive/texlive-fontutils 2016 2017: TeXLive Graphics and font utilities
-dev-texlive/texlive-formatsextra 2016 2017: TeXLive Additional formats
-dev-texlive/texlive-games 2016 2017: TeXLive Games typesetting
-dev-texlive/texlive-genericextra 2016: TeXLive Generic additional packages
-dev-texlive/texlive-genericrecommended 2016: TeXLive Generic recommended packages
-dev-texlive/texlive-humanities 2016 2017: TeXLive Humanities packages
-dev-texlive/texlive-langafrican 2016: TeXLive African scripts
-dev-texlive/texlive-langarabic 2016 2017: TeXLive Arabic
-dev-texlive/texlive-langchinese 2016 2017: TeXLive Chinese
-dev-texlive/texlive-langcjk 2016 2017: TeXLive Chinese/Japanese/Korean (base)
-dev-texlive/texlive-langcyrillic 2016 2017: TeXLive Cyrillic
+dev-texlive/texlive-basic 2017-r1: TeXLive Essential programs and files
+dev-texlive/texlive-bibtexextra 2017: TeXLive BibTeX additional styles
+dev-texlive/texlive-context 2017: TeXLive ConTeXt and packages
+dev-texlive/texlive-fontsextra 2017: TeXLive Additional fonts
+dev-texlive/texlive-fontsrecommended 2017: TeXLive Recommended fonts
+dev-texlive/texlive-fontutils 2017: TeXLive Graphics and font utilities
+dev-texlive/texlive-formatsextra 2017: TeXLive Additional formats
+dev-texlive/texlive-games 2017: TeXLive Games typesetting
+dev-texlive/texlive-humanities 2017: TeXLive Humanities packages
+dev-texlive/texlive-langarabic 2017: TeXLive Arabic
+dev-texlive/texlive-langchinese 2017: TeXLive Chinese
+dev-texlive/texlive-langcjk 2017: TeXLive Chinese/Japanese/Korean (base)
+dev-texlive/texlive-langcyrillic 2017: TeXLive Cyrillic
 dev-texlive/texlive-langczechslovak 2017: TeXLive Czech/Slovak
 dev-texlive/texlive-langenglish 2017: TeXLive US and UK English
 dev-texlive/texlive-langeuropean 2017: TeXLive Other European languages
 dev-texlive/texlive-langfrench 2017: TeXLive French
 dev-texlive/texlive-langgerman 2017: TeXLive German
 dev-texlive/texlive-langgreek 2017: TeXLive Greek
-dev-texlive/texlive-langitalian 2016 2017: TeXLive Italian
-dev-texlive/texlive-langjapanese 2016 2017: TeXLive Japanese
-dev-texlive/texlive-langkorean 2016 2017: TeXLive Korean
-dev-texlive/texlive-langother 2016 2017: TeXLive Other languages
-dev-texlive/texlive-langpolish 2016 2017: TeXLive Polish
-dev-texlive/texlive-langportuguese 2016 2017: TeXLive Portuguese
-dev-texlive/texlive-langspanish 2016 2017: TeXLive Spanish
-dev-texlive/texlive-latex 2016 2017: TeXLive LaTeX fundamental packages
-dev-texlive/texlive-latexextra 2016 2017: TeXLive LaTeX additional packages
-dev-texlive/texlive-latexrecommended 2016 2017: TeXLive LaTeX recommended packages
-dev-texlive/texlive-luatex 2016 2017: TeXLive LuaTeX packages
-dev-texlive/texlive-mathextra 2015: TeXLive Mathematics packages
-dev-texlive/texlive-mathscience 2016 2017: TeXLive Mathematics and science packages
-dev-texlive/texlive-metapost 2016 2017: TeXLive MetaPost and Metafont packages
-dev-texlive/texlive-music 2016 2017: TeXLive Music packages
-dev-texlive/texlive-omega 2016: TeXLive Omega packages
-dev-texlive/texlive-pictures 2016 2017: TeXLive Graphics, pictures, diagrams
-dev-texlive/texlive-plainextra 2016: TeXLive Plain TeX packages
+dev-texlive/texlive-langitalian 2017: TeXLive Italian
+dev-texlive/texlive-langjapanese 2017: TeXLive Japanese
+dev-texlive/texlive-langkorean 2017: TeXLive Korean
+dev-texlive/texlive-langother 2017: TeXLive Other languages
+dev-texlive/texlive-langpolish 2017: TeXLive Polish
+dev-texlive/texlive-langportuguese 2017: TeXLive Portuguese
+dev-texlive/texlive-langspanish 2017: TeXLive Spanish
+dev-texlive/texlive-latex 2017: TeXLive LaTeX fundamental packages
+dev-texlive/texlive-latexextra 2017: TeXLive LaTeX additional packages
+dev-texlive/texlive-latexrecommended 2017: TeXLive LaTeX recommended packages
+dev-texlive/texlive-luatex 2017: TeXLive LuaTeX packages
+dev-texlive/texlive-mathscience 2017: TeXLive Mathematics and science packages
+dev-texlive/texlive-metapost 2017: TeXLive MetaPost and Metafont packages
+dev-texlive/texlive-music 2017: TeXLive Music packages
+dev-texlive/texlive-pictures 2017: TeXLive Graphics, pictures, diagrams
 dev-texlive/texlive-plaingeneric 2017: TeXLive Plain (La)TeX packages
-dev-texlive/texlive-pstricks 2016 2017: TeXLive PSTricks
-dev-texlive/texlive-publishers 2016 2017: TeXLive Publisher styles, theses, etc.
-dev-texlive/texlive-science 2015: TeXLive Natural and computer sciences
-dev-texlive/texlive-xetex 2016 2017: TeXLive XeTeX and packages
+dev-texlive/texlive-pstricks 2017: TeXLive PSTricks
+dev-texlive/texlive-publishers 2017: TeXLive Publisher styles, theses, etc.
+dev-texlive/texlive-xetex 2017: TeXLive XeTeX and packages
 dev-util/android-studio 3.0.1.0.171.4443003: A new Android development environment based on IntelliJ IDEA
 dev-util/android-tools 5.1.1_p13 6.0.1_p79: Android platform tools (adb, fastboot, and mkbootimg)
 dev-util/anjuta 3.22.0: A versatile IDE for GNOME
@@ -9245,7 +9237,7 @@ sci-geosciences/mapnik-world-boundaries 20090514: Mapnik World Boundaries
 sci-geosciences/mtkbabel 0.8.3.1-r1: MTKBabel is a Perl program to operate the i-Blue 747 GPS data logger
 sci-geosciences/osm-gps-map 1.1.0: A GTK+ widget for displaying OpenStreetMap tiles
 sci-geosciences/osm2pgsql 0.94.0: Converts OSM data to SQL and insert into PostgreSQL db
-sci-geosciences/qgis 2.18.12 3.0.1: User friendly Geographic Information System
+sci-geosciences/qgis 3.0.1: User friendly Geographic Information System
 sci-geosciences/qmapshack 1.6.3: GPS mapping utility
 sci-geosciences/routino 3.1.1: Routing application based on openstreetmap data
 sci-geosciences/seawater 2.0.1: Calculate properties of sea water. Similar to SEAWATER 3.2 for MATLAB
@@ -10719,7 +10711,7 @@ x11-libs/neXtaw 0.15.1-r1 0.15.1-r2: Athena Widgets with N*XTSTEP appearance
 x11-libs/pango 1.40.12-r1 1.40.14-r1: Internationalized text layout and rendering library
 x11-libs/pangox-compat 0.0.2 0.0.2-r1: PangoX compatibility library
 x11-libs/pixman 0.34.0: Low-level pixel manipulation routines
-x11-libs/qscintilla 2.10.1 2.10.3: A Qt port of Neil Hodgson's Scintilla C++ editor class
+x11-libs/qscintilla 2.10.3: A Qt port of Neil Hodgson's Scintilla C++ editor class
 x11-libs/qtermwidget 0.7.1: Qt terminal emulator widget
 x11-libs/qwt 5.2.3-r2 6.1.3-r1: 2D plotting library for Qt4 and Qt5
 x11-libs/qwtpolar 1.1.1-r1: Library for displaying values on a polar coordinate system
