@@ -1,0 +1,12 @@
+DEFINED_PHASES=install
+DEPEND=media-libs/libpng:*
+DESCRIPTION=Codec for encoding data on paper
+EAPI=6
+HOMEPAGE=https://github.com/colindean/optar
+IUSE=+pgm2ps
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-2
+RDEPEND=media-libs/libpng:* pgm2ps? ( media-gfx/imagemagick )
+SLOT=0
+SRC_URI=https://github.com/colindean/optar/archive/1.0.0-colindean.tar.gz -> optar-1.0.0.tar.gz
+_md5_=d963bf7aa58ce75304f7cc245c9f7721
