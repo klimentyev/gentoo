@@ -5,13 +5,13 @@ EAPI=6
 
 inherit flag-o-matic
 
-DESCRIPTION="RetroArch is a sophisticated libretro frontend for emulators, game engines and media players."
+DESCRIPTION="A sophisticated libretro frontend for emulators, game engines and media players."
 HOMEPAGE="http://retroarch.com/"
-SRC_URI="https://github.com/libretro/RetroArch/archive/v1.7.1.tar.gz -> ${P}.tar.gz"
+SRC_URI="https://github.com/libretro/RetroArch/archive/v${PV}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="GPL-3"
 SLOT="0"
-KEYWORDS="~amd64 ~x86 ~arm ~ia64"
+KEYWORDS="~amd64 ~x86 ~arm"
 IUSE="+opengl +pulseaudio -alsa -sdl -X cg"
 
 DEPEND="
@@ -28,8 +28,17 @@ RDEPEND="
 	x86? ( cg? ( media-gfx/nvidia-cg-toolkit ) )
 	amd64? ( cg? ( media-gfx/nvidia-cg-toolkit ) )"
 
+src_unpack() {
+	if [ "${A}"  == "${P}.tar.gz" ]; then
+		unpack ${A}
+		mv "RetroArch-${PV}" "retroarch-${PV}"
+	else unpack ${A}
+	fi
+}
+
 src_configure(){
 	./configure
+	#default
 }
 
 src_prepare(){
