@@ -3,9 +3,9 @@
 
 EAPI=6
 
-#PATCHSET=1
+PATCHSET=1
 
-inherit autotools eutils flag-o-matic multilib versionator
+inherit autotools flag-o-matic versionator
 
 MY_P="${PN}-$(get_version_component_range 1-3)"
 S=${WORKDIR}/${MY_P}
@@ -72,8 +72,7 @@ PDEPEND="
 	xemacs? ( app-xemacs/ruby-modes )"
 
 src_prepare() {
-	EPATCH_FORCE="yes" EPATCH_SUFFIX="patch" \
-		epatch "${WORKDIR}/patches"
+	eapply "${WORKDIR}/patches"
 
 	einfo "Unbundling gems..."
 	cd "$S"
