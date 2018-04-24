@@ -29,6 +29,13 @@
 
 #--- END OF EXAMPLES ---
 
+# Michał Górny <mgorny@gentoo.org> (25 Apr 2018)
+# Obsolete package used during some past GSoC development
+# and unmaintained since.  All of its users have retired already.
+# No reverse dependencies.  The ebuild runs test suite of CPython
+# instead of its own.  Removal in 30 days.  Bug #526552.
+dev-python/tdaemon
+
 # Michał Górny <mgorny@gentoo.org> (22 Apr 2018)
 # Unmaintained buggy package with unresearched segfaults.  No support
 # for Python 3.  No reverse dependencies.
