@@ -8,7 +8,6 @@ inherit flag-o-matic
 DESCRIPTION="A sophisticated libretro frontend for emulators, game engines and media players."
 HOMEPAGE="http://retroarch.com/"
 SRC_URI="https://github.com/libretro/RetroArch/archive/v${PV}.tar.gz -> ${P}.tar.gz"
-S="${WORKDIR}/RetroArch-${PV}"
 
 LICENSE="GPL-3"
 SLOT="0"
@@ -29,11 +28,13 @@ RDEPEND="
 	x86? ( cg? ( media-gfx/nvidia-cg-toolkit ) )
 	amd64? ( cg? ( media-gfx/nvidia-cg-toolkit ) )"
 
-src_configure(){
-	./configure
-}
+S="${WORKDIR}/RetroArch-${PV}"
 
-src_prepare(){
+src_prepare() {
 	append-cflags "-v"
 	default
+}
+
+src_configure() {
+	./configure
 }
