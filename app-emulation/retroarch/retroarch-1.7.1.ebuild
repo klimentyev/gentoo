@@ -5,28 +5,29 @@ EAPI=6
 
 inherit flag-o-matic
 
-DESCRIPTION="A sophisticated libretro frontend for emulators, game engines and media players."
-HOMEPAGE="http://retroarch.com/"
+DESCRIPTION="A sophisticated libretro frontend for emulators, game engines and media players"
+HOMEPAGE="https://retroarch.com/"
 SRC_URI="https://github.com/libretro/RetroArch/archive/v${PV}.tar.gz -> ${P}.tar.gz"
 
+IUSE="-alsa cg +opengl +pulseaudio -sdl X"
+KEYWORDS="~amd64 ~arm ~x86"
 LICENSE="GPL-3"
 SLOT="0"
-KEYWORDS="~amd64 ~x86 ~arm"
-IUSE="+opengl +pulseaudio -alsa -sdl -X cg"
+
 
 DEPEND="
 	dev-libs/libxml2
 	>=media-libs/freetype-2.8
-	opengl? ( virtual/opengl )
-	X? ( x11-libs/libX11 x11-apps/xinput )
-	pulseaudio? ( media-sound/pulseaudio )
 	alsa? ( media-sound/alsa-utils )
-	sdl? ( media-libs/libsdl2 )"
+	opengl? ( virtual/opengl )
+	pulseaudio? ( media-sound/pulseaudio )
+	sdl? ( media-libs/libsdl2 )
+	X? ( x11-libs/libX11 x11-apps/xinput )"
 
 RDEPEND="
 	${DEPEND}
-	x86? ( cg? ( media-gfx/nvidia-cg-toolkit ) )
-	amd64? ( cg? ( media-gfx/nvidia-cg-toolkit ) )"
+	amd64? ( cg? ( media-gfx/nvidia-cg-toolkit ) )
+	x86? ( cg? ( media-gfx/nvidia-cg-toolkit ) )"
 
 S="${WORKDIR}/RetroArch-${PV}"
 
@@ -36,5 +37,5 @@ src_prepare() {
 }
 
 src_configure() {
-	./configure
+	./configure || die
 }
