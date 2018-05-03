@@ -1,0 +1,12 @@
+DEFINED_PHASES=install prepare setup
+DEPEND=virtual/pkgconfig
+DESCRIPTION=serves a fully RESTful API from existing PostgreSQL database (Binary)
+EAPI=6
+HOMEPAGE=https://postgrest.com
+KEYWORDS=~amd64 ~x86
+LICENSE=MIT
+RDEPEND=!dev-db/postgrest dev-db/postgresql
+SLOT=0
+SRC_URI=x86? ( https://github.com/begriffs/postgrest/releases/download/v0.4.4.0/postgrest-v0.4.4.0-ubuntui386.tar.xz ) amd64? ( https://github.com/begriffs/postgrest/releases/download/v0.4.4.0/postgrest-v0.4.4.0-ubuntu.tar.xz )
+_eclasses_=multilib	97f470f374f2e94ccab04a2fb21d811e	systemd	a31844b675f1a1fea87fbe1144aee5f5	toolchain-funcs	885c7d8dd70a58825f3d17e35a3cd1e9	user	8bc2845510e2109af75e3eeac607ec81
+_md5_=399e75c56c639c85dc9e6a7d5e5472a9
