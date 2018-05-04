@@ -510,3 +510,7 @@ app-admin/rsyslog zeromq
 # Ian Whyman <thev00d00@gentoo.org> (05 Sept 2017)
 # missing keywords dev-lang/duktape media-libs/lastfmlib
 net-misc/gerbera javascript lastfm
+
+# Mahmoud Jaoune <mjaoune55@gmail.com> (04 May 2018)
+# Nvidia-Cg-Toolkit not available for ARM
+app-emulation/retroarch cg

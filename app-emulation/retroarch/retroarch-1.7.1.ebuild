@@ -9,8 +9,8 @@ DESCRIPTION="A sophisticated libretro frontend for emulators, game engines and m
 HOMEPAGE="https://retroarch.com/"
 SRC_URI="https://github.com/libretro/RetroArch/archive/v${PV}.tar.gz -> ${P}.tar.gz"
 
-IUSE="-alsa cg +opengl +pulseaudio -sdl X"
-KEYWORDS="~amd64 ~arm ~x86"
+IUSE="alsa cg +opengl +pulseaudio sdl X"
+KEYWORDS="~amd64 ~arm ~arm64 ~x86"
 LICENSE="GPL-3"
 SLOT="0"
 
@@ -23,7 +23,9 @@ DEPEND="
 	sdl? ( media-libs/libsdl2 )
 	X? ( x11-libs/libX11 x11-apps/xinput )"
 
-RDEPEND="${DEPEND}"
+RDEPEND="
+	${DEPEND}
+	cg? ( media-gfx/nvidia-cg-toolkit )"
 
 S="${WORKDIR}/RetroArch-${PV}"
 
