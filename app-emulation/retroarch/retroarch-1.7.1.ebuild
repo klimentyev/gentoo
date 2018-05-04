@@ -14,7 +14,6 @@ KEYWORDS="~amd64 ~arm ~x86"
 LICENSE="GPL-3"
 SLOT="0"
 
-
 DEPEND="
 	dev-libs/libxml2
 	>=media-libs/freetype-2.8
@@ -24,10 +23,7 @@ DEPEND="
 	sdl? ( media-libs/libsdl2 )
 	X? ( x11-libs/libX11 x11-apps/xinput )"
 
-RDEPEND="
-	${DEPEND}
-	amd64? ( cg? ( media-gfx/nvidia-cg-toolkit ) )
-	x86? ( cg? ( media-gfx/nvidia-cg-toolkit ) )"
+RDEPEND="${DEPEND}"
 
 S="${WORKDIR}/RetroArch-${PV}"
 
