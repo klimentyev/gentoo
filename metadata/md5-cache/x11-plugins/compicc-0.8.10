@@ -1,0 +1,11 @@
+DEFINED_PHASES=-
+DEPEND=dev-libs/libxml2 >=media-libs/oyranos-0.9.6 >=x11-wm/compiz-0.8 <x11-wm/compiz-0.9 x11-libs/libXinerama x11-libs/libXxf86vm x11-libs/libXfixes x11-libs/libXrandr x11-base/xorg-proto >=dev-util/intltool-0.35 >=sys-devel/gettext-0.17 virtual/pkgconfig
+DESCRIPTION=The Compiz ICC colour server
+EAPI=6
+HOMEPAGE=https://github.com/compiz-reloaded
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-2+
+RDEPEND=dev-libs/libxml2 >=media-libs/oyranos-0.9.6 >=x11-wm/compiz-0.8 <x11-wm/compiz-0.9 x11-libs/libXinerama x11-libs/libXxf86vm x11-libs/libXfixes x11-libs/libXrandr x11-base/xorg-proto
+SLOT=0
+SRC_URI=https://github.com/compiz-reloaded/compicc/releases/download/0.8.10/compicc-0.8.10.tar.xz
+_md5_=93db233915230d0c0e9689631c72f142
