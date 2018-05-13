@@ -1,0 +1,18 @@
+#!/sbin/openrc-run
+# Copyright 1999-2017 Gentoo Foundation
+# Distributed under the terms of the GNU General Public License v3
+
+SSH_AUTH_SOCK="$SOCK_DIR/$SOCK_FILE"
+
+command="/usr/bin/mc-agent"
+command_args="--address=${SSH_AUTH_SOCK} --no-fork"
+pidfile=/var/run/mc-agent.pid
+
+start_stop_daemon_args="--umask 007 --env SSH_AUTH_SOCK=${SSH_AUTH_SOCK} --background --make-pidfile --user mc-agent --group mc-agent"
+
+
+depend() {
+        need opentmpfiles-setup
+}
+
+
