@@ -7,7 +7,8 @@ MY_PN="${PN/-bin/}"
 
 inherit gnome2-utils pax-utils unpacker xdg-utils
 DESCRIPTION="Allows you to send and receive messages of Signal Messenger on your computer"
-HOMEPAGE="https://signal.org/ https://github.com/WhisperSystems/Signal-Desktop"
+HOMEPAGE="https://signal.org/
+	https://github.com/WhisperSystems/Signal-Desktop"
 SRC_URI="https://updates.signal.org/desktop/apt/pool/main/s/${MY_PN}/${MY_PN}_${PV}_amd64.deb"
 
 LICENSE="GPL-3"
