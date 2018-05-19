@@ -126,7 +126,7 @@ app-admin/sudo 1.8.20_p2 1.8.22-r2: Allows users or groups to run commands as ot
 app-admin/superadduser 1.0.9: Interactive adduser script from Slackware
 app-admin/supervisor 3.1.4: A system for controlling process state under UNIX
 app-admin/swatchdog 3.2.4-r1: Simple log watcher
-app-admin/sxid 4.2-r1 4.2-r2: suid, sgid file and directory checking
+app-admin/sxid 4.2-r2: suid, sgid file and directory checking
 app-admin/sysklogd 1.5.1-r1: Standard log daemons
 app-admin/syslog-ng 3.7.3 3.13.2: syslog replacement with advanced filtering features
 app-admin/syslog-summary 1.14-r1: Summarizes the contents of a syslog log file
@@ -938,7 +938,7 @@ app-metrics/node_exporter 0.15.2: Prometheus exporter for machine metrics
 app-misc/abook 0.6.1: Abook is a text-based addressbook program designed to use with mutt mail client
 app-misc/actkbd 0.2.8-r2: A keyboard shortcut daemon
 app-misc/asciinema 1.4.0: Command line recorder for asciinema.org service
-app-misc/astrolog 5.40-r2 5.40-r3: A many featured astrology chart calculation program
+app-misc/astrolog 5.40-r3: A many featured astrology chart calculation program
 app-misc/astrolog-ephemeris 5.40: ephemeris files for optional extended accuracy of astrolog's calculations
 app-misc/away 0.9.5-r2: Terminal locking program with few additional features
 app-misc/banner 1.3.3: The well known banner program for Linux
@@ -1056,7 +1056,7 @@ app-misc/mosquitto 1.4.14: An Open Source MQTT v3 Broker
 app-misc/mouseremote 0.90-r2: X10 MouseRemote
 app-misc/mtail 1.1.1-r3: Tail workalike, that performs output colourising
 app-misc/muttprint 0.73-r4: Script for pretty printing of your mails
-app-misc/mvcase 0.1-r1 0.1-r2: A modified version of mv, used to convert filenames to lower/upper case
+app-misc/mvcase 0.1-r2: A modified version of mv, used to convert filenames to lower/upper case
 app-misc/neofetch 3.4.0: Simple information system script
 app-misc/note 1.3.3-r1: A note taking perl program
 app-misc/nut 20.1: Record what you eat and analyze your nutrient levels
@@ -11142,7 +11142,7 @@ x11-terms/sakura 3.3.4: sakura is a terminal emulator based on GTK and VTE
 x11-terms/st 0.7: simple terminal implementation for X
 x11-terms/terminator 1.91: Multiple GNOME terminals in one window
 x11-terms/terminology 0.9.1: Feature rich terminal emulator using the Enlightenment Foundation Libraries
-x11-terms/tilda 0.9.6 0.9.6-r1: A drop down terminal, similar to the consoles found in first person shooters
+x11-terms/tilda 0.9.6-r1: A drop down terminal, similar to the consoles found in first person shooters
 x11-terms/xfce4-terminal 0.8.6 0.8.7.2: A terminal emulator for the Xfce desktop environment
 x11-terms/xterm 327: Terminal Emulator for X Windows
 x11-terms/xvt 2.1-r3: A tiny vt100 terminal emulator for X
@@ -11275,7 +11275,7 @@ x11-wm/muffin 2.8.5 3.0.5 3.6.0: Compositing window manager forked from Mutter f
 x11-wm/musca 0.9.24_p20100226-r3: A simple dynamic window manager, with features nicked from ratpoison and dwm
 x11-wm/mutter 3.22.4-r1 3.24.4: GNOME 3 compositing window manager based on Clutter
 x11-wm/openbox 3.5.2-r1 3.6.1: A standards compliant, fast, light-weight, extensible window manager
-x11-wm/oroborus 2.0.20 2.0.20-r1: Small and fast window manager
+x11-wm/oroborus 2.0.20-r1: Small and fast window manager
 x11-wm/pekwm 0.1.17-r1: A lightweight window manager initially based on aewm++
 x11-wm/ratpoison 1.4.8-r1: window manager without mouse dependency
 x11-wm/sawfish 1.9.1-r2: Extensible window manager using a Lisp-based scripting language
