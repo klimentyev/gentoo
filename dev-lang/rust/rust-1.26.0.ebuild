@@ -138,6 +138,9 @@ src_configure() {
 		use-jemalloc = $(toml_usex jemalloc)
 		default-linker = "$(tc-getCC)"
 		rpath = false
+		dist-src = false
+		[dist]
+		src-tarball = false
 		[target.${rust_target}]
 		cc = "$(tc-getBUILD_CC)"
 		cxx = "$(tc-getBUILD_CXX)"
