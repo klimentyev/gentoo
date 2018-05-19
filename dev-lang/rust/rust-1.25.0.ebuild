@@ -73,6 +73,14 @@ pkg_pretend () {
 		die "${CHOST} is not supported by upstream Rust. You must use a hard float version."
 	fi
 
+	if use arm; then
+		ewarn 
+		elog "The minimal setup to compile dev-lang/rust is 1G of both"
+		elog "physical ram and swap space. If you have less than 1G of"
+		elog "physical ram you will not have a good time, regardless of"
+		elog "how much swap you may add"
+	fi 
+
 }
 
 src_prepare() {
