@@ -1,3 +1,7 @@
 # Anthony Ryan <anthonyryan1@gmail.com> (21 Jan 2017)
 # This package states supports for arm >= v6
 dev-lang/nim
+
+# There is no prebuilt rustc available for armv4 by upstream
+dev-lang/rust
+dev-lang/rust-bin

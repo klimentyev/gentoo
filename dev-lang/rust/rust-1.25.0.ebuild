@@ -25,11 +25,13 @@ fi
 CHOST_amd64=x86_64-unknown-linux-gnu
 CHOST_x86=i686-unknown-linux-gnu
 CHOST_arm64=aarch64-unknown-linux-gnu
+CHOST_arm=armv7-unknown-linux-gnueabihf
 
 RUST_STAGE0_VERSION="1.$(($(get_version_component_range 2) - 1)).0"
 RUST_STAGE0_amd64="rust-${RUST_STAGE0_VERSION}-${CHOST_amd64}"
 RUST_STAGE0_x86="rust-${RUST_STAGE0_VERSION}-${CHOST_x86}"
 RUST_STAGE0_arm64="rust-${RUST_STAGE0_VERSION}-${CHOST_arm64}"
+RUST_STAGE0_arm="rust-${RUST_STAGE0_VERSION}-${CHOST_arm}"
 
 CARGO_DEPEND_VERSION="0.$(($(get_version_component_range 2) + 1)).0"
 
@@ -38,8 +40,9 @@ HOMEPAGE="http://www.rust-lang.org/"
 
 SRC_URI="https://static.rust-lang.org/dist/${SRC} -> rustc-${PV}-src.tar.gz
 	amd64? ( https://static.rust-lang.org/dist/${RUST_STAGE0_amd64}.tar.gz )
-	x86? ( https://static.rust-lang.org/dist/${RUST_STAGE0_x86}.tar.gz )
+	arm? ( https://static.rust-lang.org/dist/${RUST_STAGE0_arm}.tar.gz )
 	arm64? ( https://static.rust-lang.org/dist/${RUST_STAGE0_arm64}.tar.gz )
+	x86? ( https://static.rust-lang.org/dist/${RUST_STAGE0_x86}.tar.gz )
 "
 
 LICENSE="|| ( MIT Apache-2.0 ) BSD-1 BSD-2 BSD-4 UoI-NCSA"
@@ -62,6 +65,22 @@ S="${WORKDIR}/${MY_P}-src"
 
 toml_usex() {
 	usex "$1" true false
+}
+
+pkg_pretend () {
+
+	if [[ "$(tc-is-softfloat)" != "no" ]] && [[ ${CHOST} == armv7* ]]; then
+		die "${CHOST} is not supported by upstream Rust. You must use a hard float version."
+	fi
+
+	if use arm; then
+		ewarn 
+		elog "The minimal setup to compile dev-lang/rust is 1G of both"
+		elog "physical ram and swap space. If you have less than 1G of"
+		elog "physical ram you will not have a good time, regardless of"
+		elog "how much swap you may add"
+	fi 
+
 }
 
 src_prepare() {
@@ -111,6 +130,9 @@ src_configure() {
 		use-jemalloc = $(toml_usex jemalloc)
 		default-linker = "$(tc-getCC)"
 		rpath = false
+		dist-src = false
+		[dist]
+		src-tarball = false
 		[target.${rust_target}]
 		cc = "$(tc-getBUILD_CC)"
 		cxx = "$(tc-getBUILD_CXX)"

@@ -125,7 +125,7 @@ winapi-i686-pc-windows-gnu-0.4.0
 winapi-x86_64-pc-windows-gnu-0.4.0
 wincolor-0.1.6"
 
-inherit cargo bash-completion-r1 versionator
+inherit cargo bash-completion-r1 versionator toolchain-funcs
 
 BOOTSTRAP_VERSION="0.$(($(get_version_component_range 2) - 1)).0"
 
@@ -141,6 +141,11 @@ SRC_URI="https://github.com/rust-lang/cargo/archive/${PV}.tar.gz -> ${P}.tar.gz
 	)
 	arm64? (
 		https://static.rust-lang.org/dist/cargo-${BOOTSTRAP_VERSION}-aarch64-unknown-linux-gnu.tar.xz
+	)
+	arm? (
+		https://static.rust-lang.org/dist/cargo-${BOOTSTRAP_VERSION}-arm-unknown-linux-gnueabi.tar.xz
+		https://static.rust-lang.org/dist/cargo-${BOOTSTRAP_VERSION}-arm-unknown-linux-gnueabihf.tar.xz
+		https://static.rust-lang.org/dist/cargo-${BOOTSTRAP_VERSION}-armv7-unknown-linux-gnueabihf.tar.xz
 	)"
 
 RESTRICT="mirror"
@@ -156,6 +161,12 @@ elif [[ ${ARCH} = "x86" ]]; then
 	TRIPLE="i686-unknown-linux-gnu"
 elif [[ ${ARCH} = "arm64" ]]; then
 	TRIPLE="aarch64-unknown-linux-gnu"
+elif [[ "$(tc-is-softfloat)" != "no" ]] && [[ ${CHOST} == armv6* ]]; then
+	TRIPLE="arm-unknown-linux-gnueabi"
+elif [[ ${CHOST} == armv6*h* ]]; then
+	TRIPLE="arm-unknown-linux-gnueabihf"
+elif [[ ${CHOST} == armv7*h* ]]; then
+	TRIPLE="armv7-unknown-linux-gnueabihf"
 fi
 
 COMMON_DEPEND="sys-libs/zlib
