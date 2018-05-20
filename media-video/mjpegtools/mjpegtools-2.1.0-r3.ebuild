@@ -32,6 +32,8 @@ DEPEND="${RDEPEND}
 	cpu_flags_x86_mmx? ( dev-lang/nasm )
 "
 
+DOCS=( mjpeg_howto.txt PLANS HINTS docs/FAQ.txt )
+
 src_prepare() {
 	epatch "${FILESDIR}"/${P}-pic.patch
 	# https://sourceforge.net/p/mjpeg/bugs/139/
@@ -97,8 +99,6 @@ multilib_src_install() {
 
 multilib_src_install_all() {
 	einstalldocs
-	dodoc mjpeg_howto.txt PLANS HINTS docs/FAQ.txt
-
 	find "${D}" -name '*.la' -delete || die
 }
 
