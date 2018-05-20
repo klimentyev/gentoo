@@ -34,11 +34,14 @@ DEPEND="${RDEPEND}
 
 DOCS=( mjpeg_howto.txt PLANS HINTS docs/FAQ.txt )
 
-src_prepare() {
-	epatch "${FILESDIR}"/${P}-pic.patch
+PATCHES=(
+	"${FILESDIR}"/${P}-pic.patch
 	# https://sourceforge.net/p/mjpeg/bugs/139/
-	epatch "${FILESDIR}"/${P}-sdl-cflags.patch
-	epatch "${FILESDIR}"/mjpegtools-2.1.0-no_format.patch
+	"${FILESDIR}"/${P}-sdl-cflags.patch
+	"${FILESDIR}"/mjpegtools-2.1.0-no_format.patch
+)
+
+src_prepare() {
 	default
 
 	eautoreconf
