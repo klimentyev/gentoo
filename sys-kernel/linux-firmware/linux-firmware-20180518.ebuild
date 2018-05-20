@@ -8,9 +8,9 @@ if [[ ${PV} == 99999999* ]]; then
 	inherit git-r3
 	SRC_URI=""
 	EGIT_REPO_URI="https://git.kernel.org/pub/scm/linux/kernel/git/firmware/${PN}.git"
-	KEYWORDS=""
+	KEYWORDS="~amd64 ~hppa ~ia64 ~ppc ~ppc64 ~x86"
 else
-	GIT_COMMIT=""
+	GIT_COMMIT="2a9b2cf50fb32e36e4fc1586c2f6f1421913b553"
 	SRC_URI="https://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git/snapshot/linux-firmware-${GIT_COMMIT}.tar.gz -> ${P}.tar.gz"
 	KEYWORDS="~alpha ~amd64 ~arm ~arm64 ~hppa ~ia64 ~mips ~ppc ~ppc64 ~s390 ~sh ~sparc ~x86"
 fi
