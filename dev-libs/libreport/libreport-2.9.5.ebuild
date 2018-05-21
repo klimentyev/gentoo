@@ -59,8 +59,8 @@ src_prepare() {
 
 src_configure() {
 	local myargs=(
-		--localstatedir="${EPREFIX}/var" \
-		--without-bugzilla \
+		--localstatedir="${EPREFIX}/var"
+		--without-bugzilla
         # Fixes "syntax error in VERSION script" and we aren't supporting Python2 anyway
 		--without-python2
 	)
