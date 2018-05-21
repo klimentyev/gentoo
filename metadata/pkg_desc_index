@@ -9175,7 +9175,7 @@ sci-biology/uchime 4.2.40: Fast, accurate chimera detection
 sci-biology/vaal 46233-r2: Algorithm for detecting SNPs, indels, and other polymorphisms
 sci-biology/velvet 1.0.18-r1: A sequence assembler for very short reads
 sci-biology/vienna-rna 2.1.1: RNA secondary structure prediction and comparison
-sci-biology/wgs-assembler 7.0-r1 7.0-r2: The Celera de novo whole-genome shotgun DNA sequence assembler, aka CABOG
+sci-biology/wgs-assembler 7.0-r2: The Celera de novo whole-genome shotgun DNA sequence assembler, aka CABOG
 sci-calculators/calculator 1.7.54: Scientific calculator based on the FOX Toolkit
 sci-calculators/galculator 2.1.4: GTK+ based algebraic and RPN calculator
 sci-calculators/hcalc 1.2-r1: DJ's Hex Calculator
