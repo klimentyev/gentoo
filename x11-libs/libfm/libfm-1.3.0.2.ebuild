@@ -3,15 +3,15 @@
 
 EAPI=6
 
-inherit autotools git-r3 vala xdg-utils
+inherit autotools vala xdg-utils
 
 DESCRIPTION="A library for file management"
 HOMEPAGE="https://wiki.lxde.org/en/PCManFM"
-EGIT_REPO_URI="https://github.com/lxde/${PN}"
+SRC_URI="mirror://sourceforge/pcmanfm/${P}.tar.xz"
 
 LICENSE="GPL-2"
 SLOT="0/5.1.1" #copy ABI_VERSION because it seems upstream change it randomly
-KEYWORDS=""
+KEYWORDS="~alpha ~amd64 ~arm ~arm64 ~mips ~ppc ~x86 ~amd64-linux ~x86-linux"
 IUSE="+automount debug doc examples exif gtk udisks +vala"
 
 COMMON_DEPEND=">=dev-libs/glib-2.18:2
@@ -31,11 +31,10 @@ DEPEND="${COMMON_DEPEND}
 	doc? (
 		dev-util/gtk-doc
 	)
+	app-arch/xz-utils
 	>=dev-util/intltool-0.40
 	virtual/pkgconfig
 	sys-devel/gettext"
-
-DOCS=( AUTHORS TODO )
 
 REQUIRED_USE="udisks? ( automount ) doc? ( gtk )"
 
@@ -45,13 +44,10 @@ src_prepare() {
 	if ! use doc; then
 		sed -ie '/^SUBDIR.*=/s#docs##' "${S}"/Makefile.am || die "sed failed"
 		sed -ie '/^[[:space:]]*docs/d' configure.ac || die "sed failed"
-	else
-		gtkdocize --copy || die
 	fi
 	sed -i -e "s:-O0::" -e "/-DG_ENABLE_DEBUG/s: -g::" \
 		configure.ac || die "sed failed"
 
-	intltoolize --force --copy --automake || die
 	#disable unused translations. Bug #356029
 	for trans in app-chooser ask-rename exec-file file-prop preferred-apps \
 		progress;do
