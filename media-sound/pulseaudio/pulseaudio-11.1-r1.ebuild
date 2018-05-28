@@ -43,7 +43,6 @@ RDEPEND="
 	)
 	dev-libs/libltdl:0
 	>=media-libs/libsndfile-1.0.20[${MULTILIB_USEDEP}]
-	>=media-libs/speex-1.2.0
 	media-libs/speexdsp
 	alsa? ( >=media-libs/alsa-lib-1.0.19 )
 	asyncns? ( net-libs/libasyncns[${MULTILIB_USEDEP}] )
