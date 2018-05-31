@@ -2,7 +2,7 @@
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=6
-inherit eutils golang-build systemd user
+inherit golang-build systemd
 
 DESCRIPTION="Modern SSH server for teams managing distributed infrastructure"
 HOMEPAGE="https://gravitational.com/teleport"
@@ -22,9 +22,7 @@ LICENSE="Apache-2.0"
 SLOT="0"
 IUSE=""
 
-DEPEND="
-	app-arch/zip
-	>=dev-lang/go-1.7"
+DEPEND="app-arch/zip"
 RDEPEND=""
 
 src_compile() {

@@ -2,7 +2,7 @@
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=6
-inherit eutils golang-build systemd user
+inherit golang-build systemd
 
 DESCRIPTION="Modern SSH server for teams managing distributed infrastructure"
 HOMEPAGE="https://gravitational.com/teleport"
@@ -23,19 +23,17 @@ LICENSE="Apache-2.0"
 RESTRICT="test strip"
 SLOT="0"
 
-DEPEND="
-	app-arch/zip
-	>=dev-lang/go-1.9.2"
+DEPEND="app-arch/zip"
 RDEPEND=""
 
 src_prepare() {
 	default
 
-	sed -i -e 's/-j 4/-j 1/g' src/${EGO_PN%/*}/Makefile
+	sed -i -e 's/-j 3/-j 1/g' src/${EGO_PN%/*}/Makefile || die
 }
 
 src_compile() {
-	GOPATH="${S}" emake -j1 -C src/${EGO_PN%/*} full
+	BUILDFLAGS="" GOPATH="${S}" emake -j1 -C src/${EGO_PN%/*} full
 }
 
 src_install() {
@@ -43,12 +41,12 @@ src_install() {
 	dobin src/${EGO_PN%/*}/build/{tsh,tctl,teleport}
 
 	insinto /etc/${PN}
-	doins "${FILESDIR}"/${PN}.yaml
+	newins "${FILESDIR}"/${PN}-2.6.yaml ${PN}.yaml
 
 	newinitd "${FILESDIR}"/${PN}.init.d ${PN}
 	newconfd "${FILESDIR}"/${PN}.conf.d ${PN}
 
-	systemd_dounit "${FILESDIR}"/${PN}.service
+	systemd_newunit "${FILESDIR}"/${PN}.service ${PN}.service
 	systemd_install_serviced "${FILESDIR}"/${PN}.service.conf ${PN}.service
 }
 
