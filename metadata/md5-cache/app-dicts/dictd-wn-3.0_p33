@@ -8,4 +8,4 @@ LICENSE=Princeton
 SLOT=0
 SRC_URI=mirror://debian/pool/main/w/wordnet/dict-wn_3.0-33_all.deb
 _eclasses_=unpacker	f40f7b4bd5aa88c2a4ba7b0d1e0ded70
-_md5_=247b7e277af3b96a1f943cde15d42e5f
+_md5_=5c16e35a24b78a867d35d9b6bd9f92c8

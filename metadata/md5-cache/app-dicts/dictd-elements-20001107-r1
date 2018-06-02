@@ -1,11 +1,11 @@
 DEFINED_PHASES=install
-DESCRIPTION=The original U.S. Gazetteer Place and Zipcode Files for dict
+DESCRIPTION=elements dictionary for dictd
 EAPI=6
 HOMEPAGE=http://www.dict.org
 KEYWORDS=x86 ppc sparc amd64 ppc64
 LICENSE=GPL-2+
 RDEPEND=app-text/dictd
 SLOT=0
-SRC_URI=ftp://ftp.dict.org/pub/dict/pre/dict-gazetteer-1.2-pre.tar.gz
+SRC_URI=ftp://ftp.dict.org/pub/dict/pre/elements-20001107-pre.tar.gz
 _eclasses_=dict	e4468f45ec65e6e12af69b318778d974
-_md5_=b218a8c0b18f7403904f6a85557fd0c1
+_md5_=09f107c295fc7bbb62618a6a22a47f80
