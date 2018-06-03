@@ -8185,7 +8185,6 @@ media-video/ffmpegthumbnailer 2.2.0: Lightweight video thumbnailer that can be u
 media-video/flvstreamer 2.1c: Open source command-line RTMP client intended to stream audio or video flash content
 media-video/gaupol 0.91: A subtitle editor for text-based subtitles
 media-video/get_flash_videos 1.24-r1: Downloads videos from various Flash-based video hosting sites
-media-video/gnome-mplayer 1.0.8 1.0.9: A GTK+ interface to MPlayer
 media-video/gnome-video-effects 0.4.3: Effects for Cheese, the webcam video and picture application
 media-video/gpac 0.6.1-r2: Implementation of the MPEG-4 Systems standard developed from scratch in ANSI C
 media-video/griffith 0.13-r2: Movie collection manager
