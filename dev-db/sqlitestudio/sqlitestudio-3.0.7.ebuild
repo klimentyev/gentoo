@@ -1,11 +1,11 @@
-# Copyright 1999-2016 Gentoo Foundation
+# Copyright 1999-2018 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 
 # Upstream guide: http://wiki.sqlitestudio.pl/index.php/Compiling_application_from_sources
 
 EAPI=6
 
-inherit qmake-utils fdo-mime kde5-functions
+inherit desktop eutils gnome2-utils kde5-functions qmake-utils xdg-utils
 
 DESCRIPTION="SQLiteStudio3 is a powerful cross-platform SQLite database manager"
 HOMEPAGE="http://sqlitestudio.pl"
@@ -126,5 +126,11 @@ src_install() {
 }
 
 pkg_postinst() {
-	fdo-mime_desktop_database_update
+	gnome2_icon_cache_update
+	xdg_desktop_database_update
+}
+
+pkg_postrm() {
+	gnome2_icon_cache_update
+	xdg_desktop_database_update
 }
