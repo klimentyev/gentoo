@@ -1,0 +1,12 @@
+DEFINED_PHASES=configure install prepare
+DEPEND=app-pda/libirecovery:0= >=app-pda/libimobiledevice-1.1.6:0= app-pda/libplist:0= >=dev-libs/libzip-0.8.0 >=net-misc/curl-7.0.0 dev-libs/openssl:0= sys-libs/zlib virtual/pkgconfig >=app-portage/elt-patches-20170422 !<sys-devel/gettext-0.18.1.1-r3 || ( >=sys-devel/automake-1.16.1:1.16 >=sys-devel/automake-1.15.1:1.15 ) >=sys-devel/autoconf-2.69 >=sys-devel/libtool-2.4
+DESCRIPTION=A cross-platform tool to restore Apple devices from IPSW files.
+EAPI=6
+HOMEPAGE=http://libimobiledevice.org
+KEYWORDS=~amd64
+LICENSE=GPL-2 LGPL-2.1
+RDEPEND=app-pda/libirecovery:0= >=app-pda/libimobiledevice-1.1.6:0= app-pda/libplist:0= >=dev-libs/libzip-0.8.0 >=net-misc/curl-7.0.0 dev-libs/openssl:0= sys-libs/zlib
+SLOT=0/6
+SRC_URI=https://github.com/libimobiledevice/idevicerestore/archive/707856d9005a48ee006dfcc7e5424473cf9e7652.tar.gz -> idevicerestore-20180601.tar.gz
+_eclasses_=autotools	d0e5375d47f4c809f406eb892e531513	desktop	2ccd1dd1dd7bfb8795eea024a4f91bb6	epatch	9a5f039771f143195164a15a4faa41a1	estack	43ddf5aaffa7a8d0482df54d25a66a1f	eutils	63392afb034aad67f17fa129019eb4d9	flag-o-matic	5128c4729303400bd8d4b0b966530955	libtool	0081a71a261724730ec4c248494f044d	ltprune	607e058da37aa6dabfa408b7d61da72e	multilib	97f470f374f2e94ccab04a2fb21d811e	preserve-libs	ef207dc62baddfddfd39a164d9797648	toolchain-funcs	1e35303c63cd707f6c3422b4493d5607	vcs-clean	2a0f74a496fa2b1552c4f3398258b7bf
+_md5_=a8b3c3d34f3f64b88e4e77c7d69e9783
