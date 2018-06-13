@@ -2,7 +2,7 @@
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI="6"
-MY_EXTRAS_VER="20180308-1938Z"
+MY_EXTRAS_VER="20180515-0123Z"
 # The wsrep API version must match between upstream WSREP and sys-cluster/galera major number
 WSREP_REVISION="25"
 SUBSLOT="18"
@@ -23,7 +23,7 @@ REQUIRED_USE="jdbc? ( extraengine server !static ) server? ( tokudb? ( jemalloc 
 # REMEMBER: also update eclass/mysql*.eclass before committing!
 KEYWORDS="~alpha amd64 arm ~arm64 ~hppa ~ia64 ~mips ~ppc ppc64 ~s390 ~sh ~sparc x86 ~x86-fbsd ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~x64-solaris ~x86-solaris"
 
-MY_PATCH_DIR="${WORKDIR}/mysql-extras-${MY_EXTRAS_VER}"
+MY_PATCH_DIR="${WORKDIR%/}/mysql-extras-${MY_EXTRAS_VER}"
 
 PATCHES=(
 	"${MY_PATCH_DIR}"/20006_all_cmake_elib-mariadb-10.1.27.patch
@@ -33,6 +33,7 @@ PATCHES=(
 	"${MY_PATCH_DIR}"/20025_all_mariadb-10.1.26-gssapi-detect.patch
 	"${MY_PATCH_DIR}"/20029_all_mariadb-10.1.31-enable-numa.patch
 	"${MY_PATCH_DIR}"/20033_all_mariadb-10.1.31-xtradb-sst.patch
+	"${MY_PATCH_DIR}"/20035_all_mariadb-10.1-atomic-detection.patch
 )
 
 COMMON_DEPEND="
@@ -79,8 +80,8 @@ RDEPEND="${RDEPEND} ${COMMON_DEPEND}
 		virtual/perl-Time-HiRes )
 	server? ( extraengine? ( jdbc? ( >=virtual/jre-1.6 ) ) )
 "
-# xtrabackup-bin causes a circular dependency if DBD-mysql is not already installed
-PDEPEND="galera? ( sst-xtrabackup? ( || ( >=dev-db/xtrabackup-bin-2.2.4 dev-db/percona-xtrabackup ) ) )"
+# percona-xtrabackup-bin causes a circular dependency if DBD-mysql is not already installed
+PDEPEND="galera? ( sst-xtrabackup? ( || ( >=dev-db/percona-xtrabackup-bin-2.2.4 dev-db/percona-xtrabackup ) ) )"
 
 MULTILIB_WRAPPED_HEADERS+=( /usr/include/mysql/mysql_version.h
 	/usr/include/mysql/private/probes_mysql_nodtrace.h

@@ -1,6 +1,24 @@
 # Copyright 1999-2018 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 
+# Pacho Ramos <pacho@gentoo.org> (28 May 2018)
+# Don't rely on stable inkscape
+app-text/dblatex inkscape
+
+# Andreas Sturmlechner <asturm@gentoo.org> (07 May 2018)
+# Requires unstable dev-python/PyQt4
+media-sound/pulseaudio qt4
+
+# Andreas Sturmlechner <asturm@gentoo.org> (07 May 2018)
+# Requires not stabilised dev-python/restkit
+dev-python/wsgiproxy2 test
+dev-python/pyquery test
+
+# Andreas Sturmlechner <asturm@gentoo.org> (07 May 2018)
+# Requires not stabilised Qt5
+app-i18n/ibus kde
+dev-qt/qtchooser test
+
 # Andreas Sturmlechner <asturm@gentoo.org> (07 May 2018)
 # Requires not stabilised dev-python/matplotlib
 dev-python/numpydoc test

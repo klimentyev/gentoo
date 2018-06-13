@@ -50,6 +50,7 @@ directfb
 lirc
 java
 hardened
+qt5
 
 # Needs java
 pdfannotextractor
@@ -106,7 +107,6 @@ video_cards_r600
 video_cards_radeon
 video_cards_radeonsi
 video_cards_tdfx
-video_cards_vesa
 
 # Chí-Thanh Christopher Nguyễn <chithanh@gentoo.org> (22 Aug 2013)
 # virtual/opencl is not keyworded

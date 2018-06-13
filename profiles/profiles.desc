@@ -54,6 +54,7 @@ amd64           default/linux/amd64/17.0/x32                            dev
 amd64           default/linux/amd64/17.1                           exp
 amd64           default/linux/amd64/17.1/selinux                   exp
 amd64           default/linux/amd64/17.1/hardened                  exp
+amd64           default/linux/amd64/17.1/hardened/selinux          exp
 amd64           default/linux/amd64/17.1/desktop                   exp
 amd64           default/linux/amd64/17.1/desktop/gnome             exp
 amd64           default/linux/amd64/17.1/desktop/gnome/systemd     exp
@@ -108,9 +109,9 @@ arm64           default/linux/arm64/17.0/systemd                dev
 
 # HPPA Profiles
 # @MAINTAINER: hppa@gentoo.org
-hppa            default/linux/hppa/13.0                         stable
-hppa            default/linux/hppa/13.0/desktop                 dev
-hppa            default/linux/hppa/13.0/developer               dev
+hppa            default/linux/hppa/13.0                         exp
+hppa            default/linux/hppa/13.0/desktop                 exp
+hppa            default/linux/hppa/13.0/developer               exp
 hppa            default/linux/hppa/17.0                         exp
 hppa            default/linux/hppa/17.0/desktop                 exp
 hppa            default/linux/hppa/17.0/developer               exp

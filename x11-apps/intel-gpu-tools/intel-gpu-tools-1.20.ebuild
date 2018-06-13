@@ -7,7 +7,7 @@ inherit xorg-2
 
 DESCRIPTION="Intel GPU userland tools"
 
-KEYWORDS="amd64 ~x86"
+KEYWORDS="~amd64 ~x86"
 IUSE="alsa glib gsl sound test-programs udev unwind valgrind video_cards_amdgpu video_cards_intel video_cards_nouveau X xrandr xv"
 REQUIRED_USE="test-programs? ( sound? ( alsa gsl ) )"
 RESTRICT="test"
@@ -18,7 +18,7 @@ X86_RDEPEND="
 		x11-libs/libXext
 		x11-libs/libXv
 	)"
-X86_DEPEND=">=x11-proto/dri2proto-2.6"
+X86_DEPEND="x11-base/xorg-proto"
 RDEPEND="sys-apps/kmod:=
 	sys-process/procps:=
 	>=x11-libs/cairo-1.12.0[X?]

@@ -2,7 +2,7 @@
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI="6"
-MY_EXTRAS_VER="20180308-1938Z"
+MY_EXTRAS_VER="20180515-1334Z"
 SUBSLOT="18"
 
 JAVA_PKG_OPT_USE="jdbc"
@@ -44,7 +44,7 @@ REQUIRED_USE="jdbc? ( extraengine server !static )
 	static? ( yassl !pam )"
 
 # REMEMBER: also update eclass/mysql*.eclass before committing!
-KEYWORDS="~amd64 ~arm ~arm64 ~hppa ~ia64 ~ppc64 ~sparc ~x86 ~amd64-linux ~x86-linux ~x64-macos ~x86-macos ~x64-solaris ~x86-solaris"
+KEYWORDS="~amd64 ~arm ~arm64 ~hppa ~ia64 ~ppc64 ~s390 ~sparc ~x86 ~amd64-linux ~x86-linux ~x64-macos ~x86-macos ~x64-solaris ~x86-solaris"
 
 # Shorten the path because the socket path length must be shorter than 107 chars
 # and we will run a mysql server during test phase
@@ -53,11 +53,11 @@ S="${WORKDIR}/mysql"
 if [[ "${MY_EXTRAS_VER}" == "live" ]] ; then
 	inherit git-r3
 	EGIT_REPO_URI="https://anongit.gentoo.org/git/proj/mysql-extras.git"
-	EGIT_CHECKOUT_DIR="${WORKDIR}/mysql-extras"
+	EGIT_CHECKOUT_DIR="${WORKDIR%/}/mysql-extras"
 	EGIT_CLONE_TYPE=shallow
-	MY_PATCH_DIR="${WORKDIR}/mysql-extras"
+	MY_PATCH_DIR="${WORKDIR%/}/mysql-extras"
 else
-	MY_PATCH_DIR="${WORKDIR}/mysql-extras-${MY_EXTRAS_VER}"
+	MY_PATCH_DIR="${WORKDIR%/}/mysql-extras-${MY_EXTRAS_VER}"
 fi
 
 PATCHES=(
@@ -65,6 +65,7 @@ PATCHES=(
 	"${MY_PATCH_DIR}"/20018_all_mariadb-10.2.9-without-clientlibs-tools.patch
 	"${MY_PATCH_DIR}"/20024_all_mariadb-10.2.6-mysql_st-regression.patch
 	"${MY_PATCH_DIR}"/20025_all_mariadb-10.2.6-gssapi-detect.patch
+	"${MY_PATCH_DIR}"/20035_all_mariadb-10.3-atomic-detection.patch
 )
 
 # Be warned, *DEPEND are version-dependant
@@ -80,23 +81,23 @@ COMMON_DEPEND="
 	jemalloc? ( dev-libs/jemalloc:0= )
 	tcmalloc? ( dev-util/google-perftools:0= )
 	systemtap? ( >=dev-util/systemtap-1.3:0= )
-	!yassl? (
-		client-libs? (
-			!libressl? ( >=dev-libs/openssl-1.0.0:0=[${MULTILIB_USEDEP},static-libs?] )
-			libressl? ( dev-libs/libressl:0=[${MULTILIB_USEDEP},static-libs?] )
-		)
-		!client-libs? (
-			!libressl? ( >=dev-libs/openssl-1.0.0:0= )
-			libressl? ( dev-libs/libressl:0= )
-		)
-	)
 	client-libs? (
 		>=sys-libs/zlib-1.2.3:0=[${MULTILIB_USEDEP},static-libs?]
 		kerberos? ( virtual/krb5[${MULTILIB_USEDEP}] )
+		yassl? ( net-libs/gnutls:0=[${MULTILIB_USEDEP},static-libs?] )
+		!yassl? (
+			!libressl? ( >=dev-libs/openssl-1.0.0:0=[${MULTILIB_USEDEP},static-libs?] )
+			libressl? ( dev-libs/libressl:0=[${MULTILIB_USEDEP},static-libs?] )
+		)
 	)
 	!client-libs? (
 		>=sys-libs/zlib-1.2.3:0=
 		kerberos? ( virtual/krb5 )
+		yassl? ( net-libs/gnutls:0= )
+		!yassl? (
+			!libressl? ( >=dev-libs/openssl-1.0.0:0= )
+			libressl? ( dev-libs/libressl:0= )
+		)
 	)
 	sys-libs/ncurses:0=
 	!bindist? (
@@ -113,7 +114,7 @@ COMMON_DEPEND="
 		innodb-lz4? ( app-arch/lz4 )
 		innodb-lzo? ( dev-libs/lzo )
 		innodb-snappy? ( app-arch/snappy )
-		mroonga? ( app-text/groonga-normalizer-mysql )
+		mroonga? ( app-text/groonga-normalizer-mysql >=app-text/groonga-7.0.4 )
 		numa? ( sys-process/numactl )
 		oqgraph? ( >=dev-libs/boost-1.40.0:0= dev-libs/judy:0= )
 		pam? ( virtual/pam:0= )
@@ -149,11 +150,11 @@ RDEPEND="selinux? ( sec-policy/selinux-mysql )
 "
 # For other stuff to bring us in
 # dev-perl/DBD-mysql is needed by some scripts installed by MySQL
-# xtrabackup-bin causes a circular dependency if DBD-mysql is not already installed
+# percona-xtrabackup-bin causes a circular dependency if DBD-mysql is not already installed
 PDEPEND="perl? ( >=dev-perl/DBD-mysql-2.9004 )
 	!client-libs? ( dev-db/mariadb-connector-c[${MULTILIB_USEDEP}] dev-db/mysql-connector-c[${MULTILIB_USEDEP}] )
 	 server? ( ~virtual/mysql-5.6[static=]
-		 galera? ( sst-xtrabackup? ( || ( >=dev-db/xtrabackup-bin-2.2.4 dev-db/percona-xtrabackup ) ) ) )"
+		 galera? ( sst-xtrabackup? ( || ( >=dev-db/percona-xtrabackup-bin-2.2.4 dev-db/percona-xtrabackup ) ) ) )"
 
 pkg_setup() {
 	if [[ ${MERGE_TYPE} != binary ]] ; then

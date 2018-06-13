@@ -35,7 +35,7 @@ case ${PV} in
 		;;
 esac
 SLOT="${BVER}"
-KEYWORDS="~alpha ~amd64 ~arm ~arm64 ~hppa ~ia64 ~m68k ~mips ~ppc ~ppc64 ~s390 ~sh ~sparc ~x86 ~amd64-fbsd ~x86-fbsd"
+KEYWORDS="~alpha amd64 ~arm arm64 ~hppa ia64 ~m68k ~mips ~ppc ~ppc64 ~s390 ~sh ~sparc x86 ~amd64-fbsd ~x86-fbsd"
 
 #
 # The Gentoo patchset
@@ -378,7 +378,7 @@ pkg_postrm() {
 		choice=${choice//$'\n'/ }
 		choice=${choice/* }
 		if [[ -z ${choice} ]] ; then
-			env -i ROOT="${ROOT}" binutils-config -u ${CTARGET}
+			binutils-config -u ${CTARGET}
 		else
 			binutils-config ${choice}
 		fi

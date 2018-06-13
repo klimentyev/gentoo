@@ -9,12 +9,12 @@ if [[ ${PV} == *9999* ]]; then
 	EGIT_REPO_URI="https://aomedia.googlesource.com/aom"
 elif [[ ${PV} == *pre* ]]; then
 	SRC_URI="mirror://gentoo/${P}.tar.xz"
-	KEYWORDS="~amd64 ~hppa ~ia64"
+	KEYWORDS="~amd64 ~hppa ~ia64 ~x86"
 	S="${WORKDIR}/${PN}"
 fi
 
 DESCRIPTION="Alliance for Open Media AV1 Codec SDK"
-HOMEPAGE="http://aomedia.org"
+HOMEPAGE="https://aomedia.org"
 
 LICENSE="BSD-2"
 SLOT="0/0"

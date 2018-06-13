@@ -14,7 +14,7 @@ if [[ ${PV} == *9999 ]]; then
 	S="${WORKDIR}/${P}/repoman"
 else
 	SRC_URI="https://dev.gentoo.org/~zmedico/portage/archives/${P}.tar.bz2"
-	KEYWORDS="~alpha ~amd64 ~arm ~arm64 ~hppa ~ia64 ~mips ~ppc ~ppc64 ~sparc ~x86 ~ppc-aix ~x64-cygwin ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~m68k-mint ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris"
+	KEYWORDS="~alpha amd64 ~arm arm64 ~hppa ia64 ~mips ~ppc ~ppc64 s390 ~sparc x86 ~ppc-aix ~x64-cygwin ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~m68k-mint ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris"
 fi
 
 DESCRIPTION="Repoman is a Quality Assurance tool for Gentoo ebuilds"
@@ -33,6 +33,7 @@ DEPEND="${RDEPEND}"
 
 src_prepare() {
 	sed 's:FileNotFoundError:EnvironmentError:' -i pym/repoman/config.py || die
+	sed 's:file\.size\.fatal:file.size-fatal:' -i pym/repoman/modules/scan/fetch/fetches.py || die
 	distutils-r1_src_prepare
 }
 

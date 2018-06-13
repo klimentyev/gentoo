@@ -12,7 +12,7 @@ HOMEPAGE="http://www.kadu.net"
 SRC_URI="http://download.kadu.im/stable/${P}.tar.bz2"
 
 LICENSE="GPL-2"
-KEYWORDS="~amd64 ~x86"
+KEYWORDS="amd64 ~x86"
 SLOT="0"
 IUSE="+gadu mpd otr sdk speech spell xmpp"
 REQUIRED_USE="
@@ -57,9 +57,7 @@ COMMON_DEPEND="
 "
 DEPEND="${COMMON_DEPEND}
 	dev-qt/linguist-tools:5
-	x11-proto/scrnsaverproto
-	x11-proto/xextproto
-	x11-proto/xproto
+	x11-base/xorg-proto
 "
 RDEPEND="${COMMON_DEPEND}
 	speech? ( app-accessibility/powiedz )

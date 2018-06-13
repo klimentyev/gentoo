@@ -122,7 +122,7 @@ RDEPEND="${COMMON_DEPEND}
 		|| ( app-misc/lirc app-misc/inputlircd )
 	)
 	!media-tv/xbmc
-	udisks? ( sys-fs/udisks:0 )
+	udisks? ( sys-fs/udisks:2 )
 	upower? (
 		systemd? ( sys-power/upower )
 		!systemd? (
@@ -235,13 +235,12 @@ src_configure() {
 		-DENABLE_INTERNAL_FFMPEG="$(usex !system-ffmpeg)"
 		-DENABLE_CAP=$(usex caps)
 		-DENABLE_LCMS2=$(usex lcms)
-		-DENABLE_LIRC=$(usex lirc)
+		-DENABLE_LIRCCLIENT=$(usex lirc)
 		-DENABLE_MICROHTTPD=$(usex webserver)
 		-DENABLE_MYSQLCLIENT=$(usex mysql)
 		-DENABLE_NFS=$(usex nfs)
 		-DENABLE_OPENGLES=$(usex gles)
 		-DENABLE_OPENGL=$(usex opengl)
-		-DENABLE_OPENSSL=ON
 		-DENABLE_OPTICAL=$(usex dvd)
 		-DENABLE_PLIST=$(usex airplay)
 		-DENABLE_PULSEAUDIO=$(usex pulseaudio)
@@ -308,5 +307,5 @@ src_install() {
 		usr/share/kodi/addons/skin.estuary/fonts/Roboto-Thin.ttf
 
 	python_domodule tools/EventClients/lib/python/xbmcclient.py
-	python_newscript "tools/EventClients/Clients/Kodi Send/kodi-send.py" kodi-send
+	python_newscript "tools/EventClients/Clients/KodiSend/kodi-send.py" kodi-send
 }
