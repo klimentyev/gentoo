@@ -1,25 +1,31 @@
-From ea6d1be3558d7610ccc82b3a44dd30657a686639 Mon Sep 17 00:00:00 2001
+From 453cbfcb9f837359b0dcb2c62a05ba91924004aa Mon Sep 17 00:00:00 2001
 From: Elvis Pranskevichus <elvis@magic.io>
-Date: Thu, 27 Jul 2017 13:18:54 -0400
+Date: Thu, 5 May 2016 17:23:35 -0400
 Subject: [PATCH] Unbundle electron
 
 ---
- atom.sh | 13 ++++++-------
- 1 file changed, 6 insertions(+), 7 deletions(-)
+ atom.sh | 19 ++++++-------------
+ 1 file changed, 6 insertions(+), 13 deletions(-)
 
 diff --git a/atom.sh b/atom.sh
-index 6b0e94430..ea8e0dc2e 100755
+index cd28dd334..049866474 100755
 --- a/atom.sh
 +++ b/atom.sh
-@@ -102,11 +102,10 @@ elif [ $OS == 'Linux' ]; then
+@@ -107,17 +107,10 @@ elif [ $OS == 'Linux' ]; then
    SCRIPT=$(readlink -f "$0")
    USR_DIRECTORY=$(readlink -f $(dirname $SCRIPT)/..)
  
--  if [ -n "$BETA_VERSION" ]; then
--    ATOM_PATH="$USR_DIRECTORY/share/atom-beta/atom"
--  else
--    ATOM_PATH="$USR_DIRECTORY/share/atom/atom"
--  fi
+-  case $CHANNEL in
+-    beta)
+-      ATOM_PATH="$USR_DIRECTORY/share/atom-beta/atom"
+-      ;;
+-    dev)
+-      ATOM_PATH="$USR_DIRECTORY/share/atom-dev/atom"
+-      ;;
+-    *)
+-      ATOM_PATH="$USR_DIRECTORY/share/atom/atom"
+-      ;;
+-  esac
 +  export NPM_CONFIG_NODEDIR="{{NPM_CONFIG_NODEDIR}}"
 +  export ATOM_RESOURCE_PATH="{{ATOM_RESOURCE_PATH}}"
 +  export LOCAL_GIT_DIRECTORY="{{ATOM_PREFIX}}/usr"
@@ -27,7 +33,7 @@ index 6b0e94430..ea8e0dc2e 100755
  
    ATOM_HOME="${ATOM_HOME:-$HOME/.atom}"
    mkdir -p "$ATOM_HOME"
-@@ -116,11 +115,11 @@ elif [ $OS == 'Linux' ]; then
+@@ -127,11 +120,11 @@ elif [ $OS == 'Linux' ]; then
    [ -x "$ATOM_PATH" ] || ATOM_PATH="$TMPDIR/atom-build/Atom/atom"
  
    if [ $EXPECT_OUTPUT ]; then
@@ -42,4 +48,5 @@ index 6b0e94430..ea8e0dc2e 100755
        cat "$ATOM_HOME/nohup.out"
        exit $?
 -- 
-2.13.3
+2.17.0
+
