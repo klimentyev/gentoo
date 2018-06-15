@@ -4781,7 +4781,6 @@ dev-python/dynd-python 0.7.2-r1: Python exposure of multidimensionnal array libr
 dev-python/ecdsa 0.13: ECDSA cryptographic signature library in pure Python
 dev-python/editobj 0.5.7-r2: EditObj can create a dialog box to edit ANY Python object
 dev-python/egenix-mx-base 3.2.5: eGenix utils for Python
-dev-python/egg-python 2.25.3-r1: EggTrayIcon bindings for Python
 dev-python/elasticsearch-curator 5.1.2 5.4.1: Tending time-series indices in Elasticsearch
 dev-python/elasticsearch-py 5.5.2: official Python low-level client for Elasticsearch
 dev-python/elementtree 1.2.6-r3: A light-weight XML object model for Python
@@ -4866,7 +4865,6 @@ dev-python/fusil 1.5: Fusil the fuzzer is a Python library used to write fuzzing
 dev-python/future 0.15.2 0.16.0: Easy, clean, reliable Python 2/3 compatibility
 dev-python/futures 3.1.1: Backport of the concurrent.futures package from Python 3.2
 dev-python/futurist 1.3.1 1.6.0: Useful additions to futures, from the future
-dev-python/gconf-python 2.28.1-r1: Python bindings for the GConf library
 dev-python/gcs-oauth2-boto-plugin 1.8-r1: OAuth 2.0 plugin for Google Cloud Storage credentials in the Boto library
 dev-python/gdata 2.0.18: Python client library for Google data APIs
 dev-python/genshi 0.7: Python toolkit for stream-based generation of output for the web
@@ -4883,11 +4881,6 @@ dev-python/git-review 1.26.0: Tool to submit code to Gerrit
 dev-python/gitdb 0.6.4: GitDB is a pure-Python git object database
 dev-python/glance_store 0.22.0 0.23.0: A library for glance
 dev-python/gmpy 2.0.8: Python bindings for GMP, MPC, MPFR and MPIR libraries
-dev-python/gnome-keyring-python 2.32.0-r1: Python bindings for the interfacing with the GNOME keyring
-dev-python/gnome-python-base 2.28.1-r1: Provides the base files for the gnome-python bindings
-dev-python/gnome-python-desktop-base 2.32.0-r1: Provides python the base files for the Gnome Python Desktop bindings
-dev-python/gnome-python-extras-base 2.25.3-r1: Provides python the base files for the Gnome Python Desktop bindings
-dev-python/gnome-vfs-python 2.28.1-r1: Python bindings for the GnomeVFS library
 dev-python/gnuplot-py 1.8-r1: A python wrapper for Gnuplot
 dev-python/google-api-python-client 1.5.3 1.6.2 1.6.5: Google API Client for Python
 dev-python/google-apputils 0.4.2-r2: Collection of utilities for building Python applications
@@ -4898,7 +4891,6 @@ dev-python/graphcanvas 4.0.2-r1: Enthought Tool Suite: Interactive Graph (networ
 dev-python/graphy 1.0-r1: Simple Chart Library for Python
 dev-python/greenlet 0.4.12: Lightweight in-process concurrent programming
 dev-python/gst-python 0.10.22-r1 1.12.3: A Python Interface to GStreamer
-dev-python/gtkspell-python 2.25.3-r1: GtkSpell bindings for Python
 dev-python/guessit 2.1.4: Python library for guessing information from video filenames
 dev-python/guppy 0.1.10-r1: Guppy-PE -- A Python Programming Environment
 dev-python/guzzle_sphinx_theme 0.7.11: Sphinx theme used by Guzzle
@@ -4999,16 +4991,11 @@ dev-python/kombu 3.0.37-r1 4.1.0-r1: AMQP Messaging Framework for Python
 dev-python/lazy-object-proxy 1.2.1: A fast and thorough lazy object proxy
 dev-python/ldappool 1.0 2.0.0 2.1.0: A connection pool for python-ldap
 dev-python/lesscpy 0.9j: A compiler written in Python for the LESS language
-dev-python/libbonobo-python 2.28.1-r1: Python bindings for the Bonobo framework
 dev-python/libcloud 0.15.1 1.2.1: Unified Interface to the Cloud - python support libs
 dev-python/libextractor-python 0.6-r1: A library used to extract metadata from files of arbitrary type
-dev-python/libgnome-python 2.28.1-r1: Python bindings for essential GNOME libraries
-dev-python/libgnomecanvas-python 2.28.1-r1: Python bindings for the Gnome Canvas library
 dev-python/libnacl 1.4.4: Python ctypes wrapper for libsodium
 dev-python/librharris 0.1.14-r1: Python Internet Programming Library
-dev-python/librsvg-python 2.32.0-r1: Python bindings for the librsvg library
 dev-python/libvirt-python 4.1.0 4.3.0-r1: libvirt Python bindings
-dev-python/libwnck-python 2.32.0-r1: Python bindings for the libwnck library
 dev-python/libzilla 1.4: Library for managing Bugzilla bug reports from the CLI
 dev-python/linecache2 1.0.0: Backports of the linecache module
 dev-python/lit 3.9.0 4.0.1 5.0.1 5.0.2: A stand-alone install of the LLVM suite testing tool
