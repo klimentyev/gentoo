@@ -17,7 +17,7 @@ IUSE=""
 
 COMMON_DEPEND="
 	>=dev-lang/perl-5.10.0
-	>=sys-devel/clang-5:="
+	sys-devel/clang:5"
 RDEPEND="${COMMON_DEPEND}
 	dev-perl/Benchmark-Timer
 	dev-perl/Exporter-Lite
