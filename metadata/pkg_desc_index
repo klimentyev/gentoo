@@ -5742,7 +5742,7 @@ dev-qt/qtvirtualkeyboard 5.9.4: Virtual keyboard plugin for the Qt5 framework
 dev-qt/qtwayland 5.9.4-r1: Wayland platform plugin for Qt
 dev-qt/qtwebchannel 5.9.4: Qt5 module for integrating C++ and QML applications with HTML/JavaScript clients
 dev-qt/qtwebengine 5.9.4: Library for rendering dynamic web content in Qt5 C++ and QML applications
-dev-qt/qtwebkit 5.9.1: WebKit rendering library for the Qt5 framework (deprecated)
+dev-qt/qtwebkit 5.9.1-r1: WebKit rendering library for the Qt5 framework (deprecated)
 dev-qt/qtwebsockets 5.9.4: Implementation of the WebSocket protocol for the Qt5 framework
 dev-qt/qtwidgets 5.9.4-r1: Set of components for creating classic desktop-style UIs for the Qt5 framework
 dev-qt/qtx11extras 5.9.4: Linux/X11-specific support library for the Qt5 framework
@@ -9961,7 +9961,7 @@ sys-boot/syslinux 3.86 4.07 5.10 6.04_pre1: SYSLINUX, PXELINUX, ISOLINUX, EXTLIN
 sys-boot/unetbootin 657: UNetbootin installs Linux/BSD distributions to a partition or USB drive
 sys-boot/winusb 1.0.11: Creates windows installer on usb media from an iso image
 sys-cluster/ccs 2.03.09: cluster configuration system to manage the cluster config file
-sys-cluster/ceph 10.2.3-r2: Ceph distributed filesystem
+sys-cluster/ceph 10.2.3-r3: Ceph distributed filesystem
 sys-cluster/cinder 11.1.0: Cinder is the OpenStack Block storage service, a spin out of nova-volumes
 sys-cluster/cluster-glue 1.0.11 1.0.12: Library pack for Heartbeat / Pacemaker
 sys-cluster/cman-lib 2.03.09-r1: A library for cluster management common to the various pieces of Cluster Suite
