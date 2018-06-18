@@ -23,23 +23,30 @@ SRC_URI="https://${EGO_PN}/archive/v${PV}.tar.gz -> ${P}.tar.gz
 LICENSE="MIT"
 SLOT="0"
 KEYWORDS="~amd64"
-IUSE=""
+IUSE="test"
 
-DEPEND="dev-go/glide
-	dev-go/go-spew:="
+DEPEND="test? ( dev-go/glide
+		dev-go/go-spew:= )"
 
-DOCS=( src/"${EGO_PN}"/Changes src/"${EGO_PN}"/README.md )
+DOCS=( src/"${EGO_PN}"/{Changes,README.md} )
 
 src_prepare() {
 	default
 
-	# Don't install dependencies
-	sed -i '/peco\$(SUFFIX):/s/ installdeps//' \
+	# Don't install dependencies, make build verbose
+	sed -i -e '/peco\$(SUFFIX):/s/ installdeps//' \
+		-e '/test:/s/ installdeps//' \
+		-e '/go build/s/-o/-v -x -o/' \
+		-e '/go test -v/s#$(INTERNAL_BIN_DIR)/$(THIS_GOOS)/$(THIS_GOARCH)/##' \
 		src/"${EGO_PN}"/Makefile || die "sed failed"
 }
 
 src_compile() {
 	GOPATH="${S}:$(get_golibdir_gopath)" emake -C src/"${EGO_PN}" build
+}
+
+src_test() {
+	GOPATH="${S}:$(get_golibdir_gopath)" emake -C src/"${EGO_PN}" test
 }
 
 src_install() {
