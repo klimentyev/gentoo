@@ -1,23 +1,23 @@
 # Copyright 1999-2018 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=4
+EAPI=7
 inherit toolchain-funcs
 
 DESCRIPTION="A tool which replaces copies of a file with hardlinks"
 HOMEPAGE="https://jak-linux.org/projects/hardlink/"
-SRC_URI="https://jak-linux.org/projects/${PN}/${PN}_${PV}.tar.gz"
+SRC_URI="https://jak-linux.org/projects/${PN}/${PN}_${PV}.tar.xz"
 
 LICENSE="MIT"
 SLOT="0"
-KEYWORDS="amd64 ~arm ppc ppc64 x86"
+KEYWORDS="~amd64 ~arm ~ppc ~ppc64 ~x86"
 IUSE=""
 
 RDEPEND="dev-libs/libpcre"
 DEPEND="${RDEPEND}
 	virtual/pkgconfig"
 
-DOCS="README ${T}/README.rsync"
+DOCS=( README ${T}/README.rsync )
 
 src_prepare() {
 	sed -i -e '/^CF/s:?=:+=:' -e '/^CF/s:-O2 -g::' Makefile || die
@@ -31,9 +31,9 @@ src_prepare() {
 
 	This was discussed at https://bugs.gentoo.org/416613
 	EOF
+	default
 }
 
 src_compile() {
-	tc-export CC
-	emake
+	emake CC=$(tc-getCC)
 }
