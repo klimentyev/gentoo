@@ -30,6 +30,11 @@ RDEPEND="
 	stubby? ( sys-libs/libcap:= )
 "
 
+src_prepare() {
+	eapply "${FILESDIR}/${PN}-1.4.2-stubby.service.patch"
+	eapply_user
+}
+
 src_configure() {
 	econf \
 		--runstatedir=/var/run \
@@ -43,7 +48,7 @@ src_configure() {
 		$(use_with libevent) \
 		$(use_with libev) \
 		$(use_with libuv) \
-		$(use_with threads libpthread)
+		$(use_with threads libpthread) \
 		$(use_enable static-libs static)
 }
 
