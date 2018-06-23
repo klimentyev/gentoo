@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile install
+DESCRIPTION=ASCII Client for the IRTrans Server
+EAPI=7
+HOMEPAGE=http://www.irtrans.de
+KEYWORDS=~x86 ~amd64 ~arm
+LICENSE=BSD
+RESTRICT=strip
+SLOT=0
+SRC_URI=http://www.irtrans.de/download/Client/irclient-src.tar.gz -> irclient-src-6.01.05.tar.gz http://ftp.disconnected-by-peer.at/irtrans/irtrans-irclient-5.11.04-ip_assign-1.patch.bz2
+_eclasses_=eutils	5b8ce72259e08104b337fe28c6de5dbc	flag-o-matic	5128c4729303400bd8d4b0b966530955	multilib	97f470f374f2e94ccab04a2fb21d811e	toolchain-funcs	1e35303c63cd707f6c3422b4493d5607
+_md5_=f86a01b7d084978837a0bd0e31d9ec58
