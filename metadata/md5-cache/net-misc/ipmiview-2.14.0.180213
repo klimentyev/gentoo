@@ -1,0 +1,12 @@
+DEFINED_PHASES=install nofetch unpack
+DESCRIPTION=A GUI application that allows to manage multiple target systems through BMC
+EAPI=6
+HOMEPAGE=https://www.supermicro.com/
+KEYWORDS=-* ~amd64 ~x86
+LICENSE=supermicro
+RDEPEND=net-misc/stunnel virtual/jre
+RESTRICT=bindist fetch mirror strip
+SLOT=0
+SRC_URI=amd64? ( ftp://ftp.supermicro.com/utility/IPMIView/Linux/IPMIView_2.14.0_build.180213_bundleJRE_Linux_x64.tar.gz ) x86? ( ftp://ftp.supermicro.com/utility/IPMIView/Linux/IPMIView_2.14.0_build.180213_bundleJRE_Linux.tar.gz )
+_eclasses_=desktop	1b286a7e7143d8c4ec89cd0d2743a097	eapi7-ver	d97a56a62c7df8614afddcb25f5ff00f
+_md5_=89fcb2951b83e49cd916c4808f772ee7
