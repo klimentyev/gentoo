@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install postinst postrm preinst prepare setup test unpack
+DEPEND=!build? ( sys-apps/sed >=sys-devel/binutils-2.11.90.0.31 ) >=dev-vcs/git-1.8.2.1
+DESCRIPTION=The Zen Kernel Live Sources
+EAPI=6
+HOMEPAGE=https://github.com/zen-kernel
+IUSE=symlink build
+LICENSE=GPL-2 linux-firmware
+RDEPEND=!build? ( >=sys-libs/ncurses-5.2 sys-devel/make dev-lang/perl sys-devel/bc virtual/libelf )
+RESTRICT=binchecks strip
+SLOT=4.17.9999
+_eclasses_=eapi7-ver	d97a56a62c7df8614afddcb25f5ff00f	git-r3	af51ccfceeb403ab80f1bf9209d372c8	kernel-2	4f8e4ef5d06479df452bde173f61fefb	multilib	97f470f374f2e94ccab04a2fb21d811e	python-any-r1	6faea633ae2f79f6d55dcfd431b79fbf	python-utils-r1	3b2e27bcad216823f5a67d01d28b53a4	toolchain-funcs	1e35303c63cd707f6c3422b4493d5607
+_md5_=322112777abd81f4f8a030331bb728e1
