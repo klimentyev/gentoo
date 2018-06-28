@@ -2,7 +2,7 @@
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=6
-inherit cmake-utils gnome2-utils xdg-utils
+inherit cmake-utils eapi7-ver gnome2-utils xdg-utils
 
 if [[ ${PV} = *9999* ]]; then
 	inherit git-r3
@@ -25,12 +25,18 @@ RDEPEND="
 	dev-qt/qtwidgets:5
 	dev-qt/qtx11extras:5
 	x11-libs/libX11
-	=x11-libs/qtermwidget-9999:=
+	=x11-libs/qtermwidget-$(ver_cut 1-2)*:*
 "
 DEPEND="${RDEPEND}
-	dev-qt/linguist-tools:5
 	>=dev-util/lxqt-build-tools-0.5.0
 "
+
+src_configure() {
+	local mycmakeargs=(
+		-DPULL_TRANSLATIONS=OFF
+	)
+	cmake-utils_src_configure
+}
 
 pkg_postinst() {
 	xdg_desktop_database_update

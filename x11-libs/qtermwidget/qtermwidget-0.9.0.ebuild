@@ -16,15 +16,20 @@ DESCRIPTION="Qt terminal emulator widget"
 HOMEPAGE="https://github.com/lxqt/qtermwidget"
 
 LICENSE="GPL-2+"
-SLOT="0/0.9.0"
+SLOT="0/${PV}"
 
 RDEPEND="
 	dev-qt/qtcore:5
 	dev-qt/qtgui:5
 	dev-qt/qtwidgets:5
-	!lxqt-base/lxqt-l10n
 "
 DEPEND="${RDEPEND}
-	dev-qt/linguist-tools:5
 	>=dev-util/lxqt-build-tools-0.5.0
 "
+
+src_configure() {
+	local mycmakeargs=(
+		-DPULL_TRANSLATIONS=OFF
+	)
+	cmake-utils_src_configure
+}
