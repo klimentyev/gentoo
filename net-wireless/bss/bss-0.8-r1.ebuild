@@ -1,7 +1,7 @@
 # Copyright 1999-2018 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=2
+EAPI=7
 inherit toolchain-funcs
 
 DESCRIPTION="Bluetooth stack smasher / fuzzer"
@@ -17,17 +17,18 @@ DEPEND="net-wireless/bluez"
 
 src_prepare() {
 	sed -i -e 's:/local::' Makefile || die
+	default
 }
 
 src_compile() {
 	emake \
 		CC="$(tc-getCC)" \
 		CFLAGS="${CFLAGS}" \
-		BSS_FLAGS="${LDFLAGS}" || die
+		BSS_FLAGS="${LDFLAGS}"
 }
 
 src_install() {
-	dosbin bss || die
+	dosbin bss
 	dodoc AUTHOR BUGS CHANGELOG CONTRIB NOTES README TODO \
 		replay_packet/replay_l2cap_packet.c
 }
