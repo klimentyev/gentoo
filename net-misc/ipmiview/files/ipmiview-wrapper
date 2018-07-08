@@ -1,0 +1,33 @@
+#!/bin/sh
+
+# Variables
+bmcsecurity="/tmp/BMCSecurity"
+ipmiview_home="${HOME}/.config/ipmiview"
+tmp=`mktemp -d`
+
+# Symlink all IPMIView files
+cd ${tmp} && ln -s /usr/share/ipmiview/* .
+
+# Create users IPMIView config folder
+if [ ! -d ${ipmiview_home} ]; then
+	mkdir -p ${ipmiview_home}
+fi
+
+# Copy users IPMIView config files
+for config in account email iKVM IPMIView sort timeout; do
+	if [ -f ${ipmiview_home}/${config}.properties ]; then
+		cp ${ipmiview_home}/${config}.properties ${tmp}
+	fi
+done
+
+# Launch IPMIView
+cd ${tmp} && ipmiview
+
+# Copy back users IPMIView config files
+cp ${tmp}/*.properties ${ipmiview_home}
+
+# Terminate stunnel, since IPMIView does not do this
+pkill stunnel
+
+# Remove temporary files, since IPMIView does not do this
+rm -rf ${bmcsecurity} ${tmp}
