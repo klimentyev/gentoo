@@ -29,23 +29,9 @@ RDEPEND="
 	x11-libs/vte:2.91
 	utempter? ( sys-libs/libutempter )"
 DEPEND="${RDEPEND}
-	dev-python/setuptools[${PYTHON_USEDEP}]
-	gnome-base/gsettings-desktop-schemas
-	sys-devel/gettext
-	sys-devel/make"
+	dev-python/setuptools[${PYTHON_USEDEP}]"
 
 S="${WORKDIR}/${MY_P}"
-
-python_prepare_all() {
-	distutils-r1_python_prepare_all
-	emake prepare-install prefix=/usr
-	emake generate-paths prefix=/usr DATA_DIR='$(datadir)/guake' DEV_SCHEMA_DIR='$(gsettingsschemadir)'
-}
-
-python_install_all() {
-	emake install-schemas install-locale prefix=/usr DESTDIR="${D}"
-	distutils-r1_python_install_all
-}
 
 pkg_postinst() {
 	gnome2_schemas_update
