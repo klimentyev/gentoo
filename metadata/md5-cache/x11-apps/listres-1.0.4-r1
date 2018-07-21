@@ -1,0 +1,12 @@
+BDEPEND=virtual/pkgconfig
+DEFINED_PHASES=-
+DEPEND=x11-libs/libX11 x11-libs/libXaw x11-libs/libXmu x11-libs/libXt
+DESCRIPTION=list resources in widgets
+EAPI=7
+HOMEPAGE=https://www.x.org/wiki/ https://cgit.freedesktop.org/
+KEYWORDS=~amd64 ~arm ~hppa ~mips ~ppc ~ppc64 ~s390 ~sh ~sparc ~x86
+LICENSE=MIT
+RDEPEND=x11-libs/libX11 x11-libs/libXaw x11-libs/libXmu x11-libs/libXt
+SLOT=0
+SRC_URI=mirror://xorg/app/listres-1.0.4.tar.bz2
+_md5_=7932aa0c4e3604e6dcdb89465e516068

@@ -1,0 +1,12 @@
+BDEPEND=virtual/pkgconfig
+DEFINED_PHASES=-
+DEPEND==media-libs/freetype-2* x11-libs/libX11 x11-libs/libfontenc
+DESCRIPTION=X.Org fonttosfnt application
+EAPI=7
+HOMEPAGE=https://www.x.org/wiki/ https://cgit.freedesktop.org/
+KEYWORDS=~amd64 ~arm ~mips ~ppc ~ppc64 ~s390 ~sh ~sparc ~x86
+LICENSE=MIT
+RDEPEND==media-libs/freetype-2* x11-libs/libX11 x11-libs/libfontenc
+SLOT=0
+SRC_URI=mirror://xorg/app/fonttosfnt-1.0.4.tar.bz2
+_md5_=07844950b710cb2dc839364fc37b1976

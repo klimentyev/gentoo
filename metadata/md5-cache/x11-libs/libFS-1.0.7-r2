@@ -1,0 +1,12 @@
+DEFINED_PHASES=configure install
+DEPEND=x11-base/xorg-proto x11-libs/xtrans
+DESCRIPTION=X.Org FS library
+EAPI=7
+HOMEPAGE=https://www.x.org/wiki/ https://cgit.freedesktop.org/
+IUSE=ipv6 static-libs
+KEYWORDS=~alpha ~amd64 ~arm ~hppa ~ia64 ~mips ~ppc ~ppc64 ~s390 ~sh ~sparc ~x86 ~x86-fbsd
+LICENSE=MIT
+RDEPEND=x11-base/xorg-proto x11-libs/xtrans
+SLOT=0
+SRC_URI=mirror://xorg/lib/libFS-1.0.7.tar.bz2
+_md5_=67f961dac53e5dfd7ef2ca425d330c44

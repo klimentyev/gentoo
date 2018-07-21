@@ -1,0 +1,12 @@
+BDEPEND=virtual/pkgconfig
+DEFINED_PHASES=-
+DEPEND=x11-libs/libX11 x11-misc/util-macros
+DESCRIPTION=animate an icosahedron or other polyhedron
+EAPI=7
+HOMEPAGE=https://www.x.org/wiki/ https://cgit.freedesktop.org/
+KEYWORDS=~amd64 ~arm ~mips ~ppc ~ppc64 ~s390 ~sh ~sparc ~x86 ~x86-linux
+LICENSE=MIT
+RDEPEND=x11-libs/libX11
+SLOT=0
+SRC_URI=mirror://xorg/app/ico-1.0.5.tar.bz2
+_md5_=6f753c5b8c2ec54d1111265a6423807c
