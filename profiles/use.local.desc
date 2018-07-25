@@ -5474,6 +5474,7 @@ sys-devel/gcc:ssp - Build packages with stack smashing protector on by default
 sys-devel/gcc:systemtap - enable systemtap static probe points
 sys-devel/gcc:vtv - Build support for virtual table verification (a C++ hardening feature)
 sys-devel/gdb:client - Install the main "gdb" program (most people want this)
+sys-devel/gdb:intel-pt - Enable Intel(R) Processor Trace
 sys-devel/gdb:lzma - Support lzma compression in ELF debug info
 sys-devel/gdb:multitarget - Support all known targets in one gdb binary
 sys-devel/gdb:python - Enable support for the new internal scripting language, as well as extended pretty printers
