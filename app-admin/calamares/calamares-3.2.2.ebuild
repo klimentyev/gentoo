@@ -37,7 +37,7 @@ DEPEND="${PYTHON_DEPS}
 	$(add_qt_dep qtwidgets)
 	$(add_qt_dep qtxml)
 	dev-cpp/yaml-cpp:=
-	>=dev-libs/boost-1.55:=[${PYTHON_USEDEP}]
+	>=dev-libs/boost-1.55:=[python,${PYTHON_USEDEP}]
 	dev-libs/libpwquality[${PYTHON_USEDEP}]
 	sys-apps/dbus
 	sys-apps/dmidecode
@@ -78,6 +78,8 @@ src_configure() {
 	kde5_src_configure
 	sed -i -e 's:pkexec /usr/bin/calamares:calamares-pkexec:' "${S}"/calamares.desktop
 	sed -i -e 's:Icon=calamares:Icon=drive-harddisk:' "${S}"/calamares.desktop
+	sed -i -e 's:etc/default:etc/env.d:' "${S}"/src/modules/localecfg/main.py
+	sed -i -e 's:"locale":"02locale":' "${S}"/src/modules/localecfg/main.py
 }
 
 src_install() {
