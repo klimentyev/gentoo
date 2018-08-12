@@ -29,6 +29,11 @@
 
 #--- END OF EXAMPLES ---
 
+# Jeffrey Lin <jeffrey@icurse.nl> (16 Sep 2018)
+# Java 10 is not fully supported yet on Gentoo.
+virtual/jdk:10
+virtual/jre:10
+
 # Mike Gilbert <floppym@gentoo.org> (16 Sep 2018)
 # Dev channel releases are only for people who are developers or want more
 # experimental features and accept a more unstable release.
