@@ -3253,6 +3253,7 @@ media-sound/ncmpc:help-screen - Enable the help screen
 media-sound/ncmpc:key-screen - Enable key editor screen
 media-sound/ncmpc:lyrics-screen - Enable lyrics screen
 media-sound/ncmpc:mouse - Enable curses getmouse support
+media-sound/ncmpc:outputs-screen - Enable outputs screen
 media-sound/ncmpc:search-screen - Enable search screen
 media-sound/ncmpc:song-screen - Enable song viewer screen
 media-sound/ncmpcpp:clock - Enable clock screen
