@@ -1,0 +1,13 @@
+DEFINED_PHASES=configure install prepare
+DEPEND=media-libs/libvorbis media-libs/libogg flac? ( media-libs/flac ) speex? ( media-libs/speex ) virtual/pkgconfig
+DESCRIPTION=Simple programming interface for decoding and encoding audio data using vorbis or speex
+EAPI=7
+HOMEPAGE=https://www.xiph.org/fishsound/
+IUSE=flac speex
+KEYWORDS=~amd64 ~x86
+LICENSE=BSD
+RDEPEND=media-libs/libvorbis media-libs/libogg flac? ( media-libs/flac ) speex? ( media-libs/speex )
+RESTRICT=test
+SLOT=0
+SRC_URI=https://downloads.xiph.org/releases/libfishsound/libfishsound-1.0.0.tar.gz
+_md5_=a949d772afdc6986f0c030f10fdeee30
