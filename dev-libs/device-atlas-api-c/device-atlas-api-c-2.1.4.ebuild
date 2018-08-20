@@ -40,10 +40,7 @@ multilib_src_install_all() {
 
 	if use examples; then
 		docinto examples
-		dodoc Examples/daexutil.h
-		dodoc Examples/example{0,1,2,3,4}.c
-		dodoc Examples/util.c
-		dodoc Examples/EXAMPLES.USAGE
+		dodoc Examples/*
 	fi
 
 	einstalldocs
