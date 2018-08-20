@@ -1,0 +1,10 @@
+DEFINED_PHASES=-
+DEPEND=dev-libs/yazpp
+DESCRIPTION=Z3950 proxy
+EAPI=6
+HOMEPAGE=https://www.indexdata.com/resources/software/yazproxy
+KEYWORDS=~amd64 ~x86
+RDEPEND=dev-libs/yazpp
+SLOT=0
+SRC_URI=http://ftp.indexdata.dk/pub/yazproxy/yazproxy-1.3.10.tar.gz
+_md5_=207e0066052a9deb1eb0a669f6719713
