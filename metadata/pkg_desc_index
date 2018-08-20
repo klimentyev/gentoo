@@ -3273,6 +3273,7 @@ dev-libs/xmlsec 1.2.26: Command line tool for signing, verifying, encrypting and
 dev-libs/xplc 0.3.13-r1: cross platform lightweight components library for C++
 dev-libs/yajl 2.1.0: Small event-driven (SAX-style) JSON parser
 dev-libs/yaz 3.0.53: C/C++ toolkit for Z39.50v3 clients and servers
+dev-libs/yazpp 1.6.5: C++ toolkit for Z39.50v3 clients and servers
 dev-libs/zthread 2.3.2-r3 2.3.2-r4: platform-independent multi-threading and synchronization library for C++
 dev-libs/zziplib 0.13.62-r2: Lightweight library for extracting data from files archived in a single zip file
 dev-lisp/abcl 1.5.0: Armed Bear Common Lisp is a Common Lisp implementation for the JVM.
