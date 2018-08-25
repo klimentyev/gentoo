@@ -50,7 +50,7 @@ RDEPEND="
 	jpeg2k? ( >=media-libs/jasper-1.900.1:= )
 	lcms? ( >=media-libs/lcms-2.8:2 )
 	lensfun? ( >=media-libs/lensfun-0.2.5 )
-	openexr? ( >=media-libs/openexr-1.6.1:= )
+	openexr? ( =media-libs/openexr-2.2*:= )
 	>=media-libs/libpng-1.6.0:0=
 	raw? ( >=media-libs/libraw-0.15.4:0= )
 	sdl? ( >=media-libs/libsdl-1.2.0 )
