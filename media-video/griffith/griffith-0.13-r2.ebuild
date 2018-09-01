@@ -46,6 +46,7 @@ src_prepare() {
 		"${S}"/lib/gconsole.py || die "sed failed"
 
 	epatch "${FILESDIR}/0.10-fix_lib_path.patch"
+	epatch "${FILESDIR}/fix_griffith-0.13-validators.patch"
 }
 
 src_compile() {
