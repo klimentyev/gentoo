@@ -5,11 +5,11 @@ EAPI=6
 
 DESCRIPTION="Scanner Access Now Easy"
 HOMEPAGE="http://www.sane-project.org"
-SRC_URI="https://alioth.debian.org/frs/download.php/file/1140/${P}.tar.gz"
+SRC_URI="https://salsa.debian.org/debian/sane-frontends/-/archive/upstream/${PV}/${PN}-upstream-${PV}.tar.gz"
 
 LICENSE="GPL-2"
 SLOT="0"
-KEYWORDS="alpha amd64 ppc ppc64 sparc x86"
+KEYWORDS="~alpha ~amd64 ~ppc ~ppc64 ~sparc ~x86"
 IUSE="gimp gtk"
 
 RDEPEND="
@@ -28,6 +28,8 @@ DOCS=( AUTHORS Changelog NEWS PROBLEMS README )
 
 PATCHES=( "${FILESDIR}/MissingCapsFlag.patch" )
 
+S="${WORKDIR}"/"${PN}"-upstream-"${PV}"
+
 src_configure() {
 	econf \
 		--datadir=/usr/share/misc \
@@ -40,20 +42,20 @@ src_install() {
 	local gimpplugindir
 	local gimptool
 	emake DESTDIR="${D}" install
+
+	# link xscanimage so it is seen as a plugin in gimp
 	if use gimp; then
-		for gimptool in gimptool gimptool-2.0; do
-			if [[ -x /usr/bin/${gimptool} ]]; then
-				einfo "Setting plugin link for GIMP version	$(/usr/bin/${gimptool} --version)"
-				gimpplugindir=$(/usr/bin/${gimptool} --gimpplugindir)/plug-ins
-				break
-			fi
-		done
-		if [[ "/plug-ins" != "${gimpplugindir}" ]]; then
-			dodir ${gimpplugindir}
-			dosym xscanimage ${gimpplugindir}/xscanimage
+		local plugindir
+		if [ -x "${EPREFIX}"/usr/bin/gimptool ]; then
+			plugindir="$(gimptool --gimpplugindir)/plug-ins"
+		elif [ -x "${EPREFIX}"/usr/bin/gimptool-2.0 ]; then
+			plugindir="$(gimptool-2.0 --gimpplugindir)/plug-ins"
 		else
-			ewarn "No idea where to find the gimp plugin directory"
+			die "Can't find GIMP plugin directory."
 		fi
+		dodir "${plugindir#${EPREFIX}}"
+		dosym "${EPREFIX}"/usr/bin/xscanimage "${plugindir#${EPREFIX}}"/xscanimage
 	fi
+
 	einstalldocs
 }
