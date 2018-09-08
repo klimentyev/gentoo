@@ -6,7 +6,7 @@ EAPI=6
 PYTHON_COMPAT=( python2_7 )
 PYTHON_REQ_USE="threads"
 
-inherit waf-utils python-single-r1 multilib multilib-minimal
+inherit waf-utils python-single-r1 multilib multilib-minimal toolchain-funcs
 
 DESCRIPTION="Samba talloc library"
 HOMEPAGE="https://talloc.samba.org/"
@@ -55,6 +55,7 @@ multilib_src_configure() {
 		$(usex compat --enable-talloc-compat1 '')
 		$(multilib_native_usex python '' --disable-python)
 	)
+	PKGCONFIG=$(tc-getPKG_CONFIG) \
 	waf-utils_src_configure "${extra_opts[@]}"
 }
 
