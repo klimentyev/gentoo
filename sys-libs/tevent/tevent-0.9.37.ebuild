@@ -5,7 +5,7 @@ EAPI=6
 PYTHON_COMPAT=( python2_7 )
 PYTHON_REQ_USE="threads(+)"
 
-inherit waf-utils multilib-minimal python-single-r1
+inherit waf-utils multilib-minimal python-single-r1 toolchain-funcs
 
 DESCRIPTION="Samba tevent library"
 HOMEPAGE="https://tevent.samba.org/"
@@ -45,6 +45,7 @@ src_prepare() {
 }
 
 multilib_src_configure() {
+	PKGCONFIG=$(tc-getPKG_CONFIG) \
 	waf-utils_src_configure \
 		--bundled-libraries=NONE \
 		--builtin-libraries=NONE \
