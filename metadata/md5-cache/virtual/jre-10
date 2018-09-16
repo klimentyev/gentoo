@@ -1,0 +1,7 @@
+DEFINED_PHASES=-
+DESCRIPTION=Virtual for Java Runtime Environment (JRE)
+EAPI=7
+KEYWORDS=~amd64 ~x64-macos ~sparc64-solaris
+RDEPEND=|| ( virtual/jdk:10 dev-java/openjdk-bin:10[gentoo-vm(+)] )
+SLOT=10
+_md5_=927544b3f7d5a1bb17edd96933158dcd
