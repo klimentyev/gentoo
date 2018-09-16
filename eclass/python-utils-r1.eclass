@@ -995,7 +995,7 @@ python_wrapper_setup() {
 
 	# Use separate directories for SYSROOT in case we need to execute
 	# Python in the context of the build host by unsetting SYSROOT.
-	local workdir=${1:-${T}/${EPYTHON}${SYSROOT:+-sysroot}}
+	local workdir=${1:-${T}/python-wrappers/${EPYTHON}${SYSROOT:+-sysroot}}
 	local impl=${2:-${EPYTHON}}
 
 	[[ ${workdir} ]] || die "${FUNCNAME}: no workdir specified."
@@ -1219,8 +1219,23 @@ python_fix_shebang() {
 				# Match left-to-right in a loop, to avoid matching random
 				# repetitions like 'python2.7 python2'.
 				for i in $(seq 0 $((${#split_shebang[@]} - 1))); do
+					# Fix the leading path if it points to a wrapper
+					# script created by this eclass. We generally only
+					# touch the tail end of the string as this is safer
+					# but if a path starts with ${T} then it definitely
+					# needs fixing. We preserve the tail for further
+					# processing in the case block below.
+					if [[ ${split_shebang[${i}]} == ${T}/python-wrappers/*/bin/* ]]; then
+						split_shebang[${i}]=${EPREFIX}/usr/bin/${split_shebang[${i}]##*/}
+						fix=1
+					fi
+
 					case "/${split_shebang[${i}]}" in
 						*/${EPYTHON})
+							# EPYTHON matched but the leading path may
+							# still need fixing.
+							[[ ${fix} ]] && break
+
 							debug-print "${FUNCNAME}: in file ${f#${D%/}}"
 							debug-print "${FUNCNAME}: shebang matches EPYTHON: ${shebang}"
 
