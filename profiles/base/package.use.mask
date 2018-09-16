@@ -7,6 +7,12 @@
 # This file is only for generic masks. For arch-specific masks (i.e.
 # mask everywhere, unmask on arch/*) use arch/base.
 
+# Jeffrey Lin <jeffrey@icurse.nl> (16 Sep 2018)
+# Java 10 is not yet fully supported on Gentoo. Having a masked gentoo-vm flag
+# allows us to provide it without it breaking Gentoo packages. Those who wish to
+# experiment with it as a fully recognised Gentoo JVM can unmask the flag.
+dev-java/openjdk-bin:10 gentoo-vm
+
 # Alon Bar-Lev <alonbl@gentoo.org> (11 Sep 2018)
 # Waiting for >=dev-libs/libressl-2.7 to be stablized.
 >=dev-libs/opensc-0.18.0 libressl
