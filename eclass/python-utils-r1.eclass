@@ -797,11 +797,11 @@ python_newexe() {
 
 	# install the wrapper
 	_python_ln_rel "${ED%/}"/usr/lib/python-exec/python-exec2 \
-		"${ED%/}/${wrapd}/${newfn}" || die
+		"${ED%/}${wrapd}/${newfn}" || die
 
 	# don't use this at home, just call python_doscript() instead
 	if [[ ${_PYTHON_REWRITE_SHEBANG} ]]; then
-		python_fix_shebang -q "${ED%/}/${d}/${newfn}"
+		python_fix_shebang -q "${ED%/}${d}/${newfn}"
 	fi
 }
 
@@ -927,7 +927,7 @@ python_domodule() {
 		doins -r "${@}" || return ${?}
 	)
 
-	python_optimize "${ED%/}/${d}"
+	python_optimize "${ED%/}${d}"
 }
 
 # @FUNCTION: python_doheader
