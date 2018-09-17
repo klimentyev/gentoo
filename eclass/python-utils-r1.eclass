@@ -211,9 +211,12 @@ _python_impl_matches() {
 #
 # distutils-r1: Set within any of the python sub-phase functions.
 #
+# This will point to an automatically generated wrapper rather than the
+# usual path under /usr/bin in order to accomodate cross-compiling.
+#
 # Example value:
 # @CODE
-# /usr/bin/python2.7
+# /var/tmp/portage/dev-python/pyblake2-1.2.3/temp/python2.7/bin/python2.7
 # @CODE
 
 # @ECLASS-VARIABLE: EPYTHON
@@ -256,6 +259,10 @@ _python_impl_matches() {
 # Set and exported on request using python_export().
 # Requires a proper build-time dependency on the Python implementation.
 #
+# This is prepended with SYSROOT in order to accomodate
+# cross-compiling. You may need to strip SYSROOT and EPREFIX if using it
+# to install new headers.
+#
 # Example value:
 # @CODE
 # /usr/include/python2.7
@@ -269,6 +276,8 @@ _python_impl_matches() {
 # Set and exported on request using python_export().
 # Valid only for CPython. Requires a proper build-time dependency
 # on the Python implementation.
+#
+# This is prepended with SYSROOT in order to accomodate cross-compiling.
 #
 # Example value:
 # @CODE
@@ -313,6 +322,10 @@ _python_impl_matches() {
 # Set and exported on request using python_export().
 # Valid only for CPython. Requires a proper build-time dependency
 # on the Python implementation and on pkg-config.
+#
+# This is prepended with SYSROOT in order to accomodate
+# cross-compiling. You generally should not execute files within SYSROOT
+# but python-config is always a shell script.
 #
 # Example value:
 # @CODE
@@ -387,11 +400,11 @@ python_export() {
 				debug-print "${FUNCNAME}: EPYTHON = ${EPYTHON}"
 				;;
 			PYTHON)
-				export PYTHON=${EPREFIX}/usr/bin/${impl}
+				python_wrapper_setup '' ${impl}
 				debug-print "${FUNCNAME}: PYTHON = ${PYTHON}"
 				;;
 			PYTHON_SITEDIR)
-				[[ -n ${PYTHON} ]] || die "PYTHON needs to be set for ${var} to be exported, or requested before it"
+				python_wrapper_setup '' ${impl}
 				# sysconfig can't be used because:
 				# 1) pypy doesn't give site-packages but stdlib
 				# 2) jython gives paths with wrong case
@@ -400,8 +413,8 @@ python_export() {
 				debug-print "${FUNCNAME}: PYTHON_SITEDIR = ${PYTHON_SITEDIR}"
 				;;
 			PYTHON_INCLUDEDIR)
-				[[ -n ${PYTHON} ]] || die "PYTHON needs to be set for ${var} to be exported, or requested before it"
-				PYTHON_INCLUDEDIR=$("${PYTHON}" -c 'import distutils.sysconfig; print(distutils.sysconfig.get_python_inc())') || die
+				python_wrapper_setup '' ${impl}
+				PYTHON_INCLUDEDIR=${SYSROOT}$("${PYTHON}" -c 'import distutils.sysconfig; print(distutils.sysconfig.get_python_inc())') || die
 				export PYTHON_INCLUDEDIR
 				debug-print "${FUNCNAME}: PYTHON_INCLUDEDIR = ${PYTHON_INCLUDEDIR}"
 
@@ -411,8 +424,8 @@ python_export() {
 				fi
 				;;
 			PYTHON_LIBPATH)
-				[[ -n ${PYTHON} ]] || die "PYTHON needs to be set for ${var} to be exported, or requested before it"
-				PYTHON_LIBPATH=$("${PYTHON}" -c 'import os.path, sysconfig; print(os.path.join(sysconfig.get_config_var("LIBDIR"), sysconfig.get_config_var("LDLIBRARY")) if sysconfig.get_config_var("LDLIBRARY") else "")') || die
+				python_wrapper_setup '' ${impl}
+				PYTHON_LIBPATH=${SYSROOT}$("${PYTHON}" -c 'import os.path, sysconfig; print(os.path.join(sysconfig.get_config_var("LIBDIR"), sysconfig.get_config_var("LDLIBRARY")) if sysconfig.get_config_var("LDLIBRARY") else "")') || die
 				export PYTHON_LIBPATH
 				debug-print "${FUNCNAME}: PYTHON_LIBPATH = ${PYTHON_LIBPATH}"
 
@@ -457,9 +470,9 @@ python_export() {
 
 				case "${impl}" in
 					python*)
-						[[ -n ${PYTHON} ]] || die "PYTHON needs to be set for ${var} to be exported, or requested before it"
+						python_wrapper_setup '' ${impl}
 						flags=$("${PYTHON}" -c 'import sysconfig; print(sysconfig.get_config_var("ABIFLAGS") or "")') || die
-						val=${PYTHON}${flags}-config
+						val=${SYSROOT-${ROOT%/}}${EPREFIX}/usr/bin/${PYTHON##*/}${flags}-config
 						;;
 					*)
 						die "${impl}: obtaining ${var} not supported"
@@ -797,11 +810,11 @@ python_newexe() {
 
 	# install the wrapper
 	_python_ln_rel "${ED%/}"/usr/lib/python-exec/python-exec2 \
-		"${ED%/}/${wrapd}/${newfn}" || die
+		"${ED%/}${wrapd}/${newfn}" || die
 
 	# don't use this at home, just call python_doscript() instead
 	if [[ ${_PYTHON_REWRITE_SHEBANG} ]]; then
-		python_fix_shebang -q "${ED%/}/${d}/${newfn}"
+		python_fix_shebang -q "${ED%/}${d}/${newfn}"
 	fi
 }
 
@@ -927,7 +940,7 @@ python_domodule() {
 		doins -r "${@}" || return ${?}
 	)
 
-	python_optimize "${ED%/}/${d}"
+	python_optimize "${ED%/}${d}"
 }
 
 # @FUNCTION: python_doheader
@@ -954,7 +967,7 @@ python_doheader() {
 	local d PYTHON_INCLUDEDIR=${PYTHON_INCLUDEDIR}
 	[[ ${PYTHON_INCLUDEDIR} ]] || python_export PYTHON_INCLUDEDIR
 
-	d=${PYTHON_INCLUDEDIR#${EPREFIX}}
+	d=${PYTHON_INCLUDEDIR#${SYSROOT}${EPREFIX}}
 
 	(
 		insopts -m 0644
@@ -980,24 +993,26 @@ python_doheader() {
 python_wrapper_setup() {
 	debug-print-function ${FUNCNAME} "${@}"
 
-	local workdir=${1:-${T}/${EPYTHON}}
+	# Use separate directories for SYSROOT in case we need to execute
+	# Python in the context of the build host by unsetting SYSROOT.
+	local workdir=${1:-${T}/python-wrappers/${EPYTHON}${SYSROOT:+-sysroot}}
 	local impl=${2:-${EPYTHON}}
 
 	[[ ${workdir} ]] || die "${FUNCNAME}: no workdir specified."
 	[[ ${impl} ]] || die "${FUNCNAME}: no impl nor EPYTHON specified."
 
+	local EPYTHON
+	python_export "${impl}" EPYTHON
+
 	if [[ ! -x ${workdir}/bin/python ]]; then
 		_python_check_dead_variables
 
-		mkdir -p "${workdir}"/{bin,pkgconfig} || die
+		mkdir -p "${workdir}"/{bin,lib,pkgconfig} || die
 
 		# Clean up, in case we were supposed to do a cheap update.
 		rm -f "${workdir}"/bin/python{,2,3}{,-config} || die
 		rm -f "${workdir}"/bin/2to3 || die
 		rm -f "${workdir}"/pkgconfig/python{,2,3}.pc || die
-
-		local EPYTHON PYTHON
-		python_export "${impl}" EPYTHON PYTHON
 
 		local pyver pyother
 		if python_is_python3; then
@@ -1012,38 +1027,63 @@ python_wrapper_setup() {
 		# note: we don't use symlinks because python likes to do some
 		# symlink reading magic that breaks stuff
 		# https://bugs.gentoo.org/show_bug.cgi?id=555752
-		cat > "${workdir}/bin/python" <<-_EOF_ || die
-			#!/bin/sh
-			exec "${PYTHON}" "\${@}"
-		_EOF_
-		cp "${workdir}/bin/python" "${workdir}/bin/python${pyver}" || die
-		chmod +x "${workdir}/bin/python" "${workdir}/bin/python${pyver}" || die
+		echo '#!/bin/sh' > "${workdir}/bin/python" || die
 
 		local nonsupp=( "python${pyother}" "python${pyother}-config" )
 
 		# CPython-specific
 		if [[ ${EPYTHON} == python* ]]; then
+			local sysrootlib=${SYSROOT-${ROOT%/}}${EPREFIX}/usr/$(get_libdir)
+
 			cat > "${workdir}/bin/python-config" <<-_EOF_ || die
 				#!/bin/sh
-				exec "${PYTHON}-config" "\${@}"
+				exec "${SYSROOT-${ROOT%/}}${EPREFIX}/usr/bin/${EPYTHON}-config" "\${@}"
 			_EOF_
 			cp "${workdir}/bin/python-config" \
 				"${workdir}/bin/python${pyver}-config" || die
 			chmod +x "${workdir}/bin/python-config" \
 				"${workdir}/bin/python${pyver}-config" || die
 
+			# Use host-specific data from SYSROOT. Python 2 looks for
+			# _sysconfigdata while 3 uses _PYTHON_SYSCONFIGDATA_NAME.
+			ln -s "${sysrootlib}/${EPYTHON}"/_sysconfigdata*.py "${workdir}"/lib/_sysconfigdata.py || die
+
+			# Use distutils/sysconfig from SYSROOT as parts of it have
+			# GENTOO_LIBDIR baked in at Python build time.
+			ln -s "${sysrootlib}/${EPYTHON}"/{distutils,sysconfig.py} "${workdir}"/lib/ || die
+
+			# Add env vars to python wrapper accordingly.
+			echo "PYTHONPATH=\"${workdir}/lib\${PYTHONPATH:+:}\${PYTHONPATH}\" _PYTHON_SYSCONFIGDATA_NAME=_sysconfigdata \\" \
+				 >> "${workdir}/bin/python" || die
+
 			# Python 2.6+.
-			ln -s "${PYTHON/python/2to3-}" "${workdir}"/bin/2to3 || die
+			ln -s "${EPYTHON/python/2to3-}" "${workdir}"/bin/2to3 || die
 
 			# Python 2.7+.
-			ln -s "${EPREFIX}"/usr/$(get_libdir)/pkgconfig/${EPYTHON/n/n-}.pc \
+			ln -s "${sysrootlib}"/pkgconfig/${EPYTHON/n/n-}.pc \
 				"${workdir}"/pkgconfig/python.pc || die
 			ln -s python.pc "${workdir}"/pkgconfig/python${pyver}.pc || die
 		else
 			nonsupp+=( 2to3 python-config "python${pyver}-config" )
 		fi
 
+		echo "exec \"${BROOT-${EPREFIX}}/usr/bin/${EPYTHON}\" \"\${@}\"" >> "${workdir}/bin/python" || die
+		cp "${workdir}/bin/python" "${workdir}/bin/python${pyver}" || die
+		cp "${workdir}/bin/python" "${workdir}/bin/${EPYTHON}" || die
+		chmod +x "${workdir}"/bin/{python,python${pyver},"${EPYTHON}"} || die
+
+		# block all other interpreters as incompatible
+		local orig_EPYTHON=${EPYTHON}
 		local x
+		for x in "${_PYTHON_ALL_IMPLS[@]}"; do
+			python_export "${x}" EPYTHON
+			[[ ${EPYTHON} == ${orig_EPYTHON} ]] && continue
+
+			nonsupp+=( "${EPYTHON}" )
+			[[ ${EPYTHON} == python* ]] && nonsupp+=( "${EPYTHON}-config" )
+		done
+		EPYTHON=${orig_EPYTHON}
+
 		for x in "${nonsupp[@]}"; do
 			cat >"${workdir}"/bin/${x} <<-_EOF_ || die
 				#!/bin/sh
@@ -1063,7 +1103,7 @@ python_wrapper_setup() {
 	if [[ ${PKG_CONFIG_PATH##:*} != ${workdir}/pkgconfig ]]; then
 		PKG_CONFIG_PATH=${workdir}/pkgconfig${PKG_CONFIG_PATH:+:${PKG_CONFIG_PATH}}
 	fi
-	export PATH PKG_CONFIG_PATH
+	export PATH PKG_CONFIG_PATH PYTHON="${workdir}/bin/${EPYTHON}"
 }
 
 # @FUNCTION: python_is_python3
@@ -1165,8 +1205,7 @@ python_fix_shebang() {
 		[[ -d ${path} ]] && is_recursive=1
 
 		while IFS= read -r -d '' f; do
-			local shebang i
-			local error= from=
+			local shebang i= error= fix=
 
 			# note: we can't ||die here since read will fail if file
 			# has no newline characters
@@ -1175,65 +1214,71 @@ python_fix_shebang() {
 			# First, check if it's shebang at all...
 			if [[ ${shebang} == '#!'* ]]; then
 				local split_shebang=()
-				read -r -a split_shebang <<<${shebang} || die
+				read -r -a split_shebang <<<${shebang#\#\!} || die
 
 				# Match left-to-right in a loop, to avoid matching random
 				# repetitions like 'python2.7 python2'.
-				for i in "${split_shebang[@]}"; do
-					case "${i}" in
-						*"${EPYTHON}")
+				for i in $(seq 0 $((${#split_shebang[@]} - 1))); do
+					# Fix the leading path if it points to a wrapper
+					# script created by this eclass. We generally only
+					# touch the tail end of the string as this is safer
+					# but if a path starts with ${T} then it definitely
+					# needs fixing. We preserve the tail for further
+					# processing in the case block below.
+					if [[ ${split_shebang[${i}]} == ${T}/python-wrappers/*/bin/* ]]; then
+						split_shebang[${i}]=${EPREFIX}/usr/bin/${split_shebang[${i}]##*/}
+						fix=1
+					fi
+
+					case "/${split_shebang[${i}]}" in
+						*/${EPYTHON})
+							# EPYTHON matched but the leading path may
+							# still need fixing.
+							[[ ${fix} ]] && break
+
 							debug-print "${FUNCNAME}: in file ${f#${D%/}}"
 							debug-print "${FUNCNAME}: shebang matches EPYTHON: ${shebang}"
 
 							# Nothing to do, move along.
 							any_correct=1
-							from=${EPYTHON}
+							continue 2
+							;;
+						*/python)
+							fix=1
 							break
 							;;
-						*python|*python[23])
-							debug-print "${FUNCNAME}: in file ${f#${D%/}}"
-							debug-print "${FUNCNAME}: rewriting shebang: ${shebang}"
-
-							if [[ ${i} == *python2 ]]; then
-								from=python2
-								if [[ ! ${force} ]]; then
-									python_is_python3 "${EPYTHON}" && error=1
-								fi
-							elif [[ ${i} == *python3 ]]; then
-								from=python3
-								if [[ ! ${force} ]]; then
-									python_is_python3 "${EPYTHON}" || error=1
-								fi
-							else
-								from=python
-							fi
-							break
-							;;
-						*python[23].[0123456789]|*pypy|*pypy3|*jython[23].[0123456789])
-							# Explicit mismatch.
+						*/python2)
 							if [[ ! ${force} ]]; then
-								error=1
-							else
-								case "${i}" in
-									*python[23].[0123456789])
-										from="python[23].[0123456789]";;
-									*pypy)
-										from="pypy";;
-									*pypy3)
-										from="pypy3";;
-									*jython[23].[0123456789])
-										from="jython[23].[0123456789]";;
-									*)
-										die "${FUNCNAME}: internal error in 2nd pattern match";;
-								esac
+								python_is_python3 "${EPYTHON}" && error=1
 							fi
+							fix=1
+							break
+							;;
+						*/python3)
+							if [[ ! ${force} ]]; then
+								python_is_python3 "${EPYTHON}" || error=1
+							fi
+							fix=1
+							break
+							;;
+						*/python[2-3].[0-9]|*/pypy|*/pypy3|*/jython[2-3].[0-9])
+							# Explicit mismatch.
+							[[ ! ${force} ]] && error=1
+							fix=1
 							break
 							;;
 					esac
 				done
 			fi
 
-			if [[ ! ${error} && ! ${from} ]]; then
+			if [[ ${fix} ]]; then
+				debug-print "${FUNCNAME}: in file ${f#${D%/}}"
+				debug-print "${FUNCNAME}: rewriting shebang: ${shebang}"
+
+				split_shebang[${i}]=/${split_shebang[${i}]}
+				split_shebang[${i}]=${split_shebang[${i}]%/*}
+				split_shebang[${i}]=${split_shebang[${i}]#/}${split_shebang[${i}]:+/}${EPYTHON}
+			elif [[ ! ${error} ]]; then
 				# Non-Python shebang. Allowed in recursive mode,
 				# disallowed when specifying file explicitly.
 				[[ ${is_recursive} ]] && continue
@@ -1245,13 +1290,7 @@ python_fix_shebang() {
 			fi
 
 			if [[ ! ${error} ]]; then
-				# We either want to match ${from} followed by space
-				# or at end-of-string.
-				if [[ ${shebang} == *${from}" "* ]]; then
-					sed -i -e "1s:${from} :${EPYTHON} :" "${f}" || die
-				else
-					sed -i -e "1s:${from}$:${EPYTHON}:" "${f}" || die
-				fi
+				sed -i -e "1c#\!${split_shebang[*]}" "${f}" || die
 				any_fixed=1
 			else
 				eerror "The file has incompatible shebang:"

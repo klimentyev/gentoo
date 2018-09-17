@@ -72,9 +72,10 @@ src_configure() {
 		local myconf=(
 			"${PYTHON}"
 			"${S}"/configure.py
+			--sysroot="${SYSROOT}/usr"
 			--bindir="${EPREFIX}/usr/bin"
 			--destdir="$(python_get_sitedir)"
-			--incdir="$(python_get_includedir)"
+			--incdir="$(SYSROOT= python_get_includedir)"
 			$(usex debug --debug '')
 			AR="$(tc-getAR) cqs"
 			CC="$(tc-getCC)"

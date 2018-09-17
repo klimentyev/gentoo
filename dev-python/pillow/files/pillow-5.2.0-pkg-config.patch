@@ -1,0 +1,21 @@
+diff -Naur a/setup.py b/setup.py
+--- a/setup.py	2018-07-01 20:02:58.000000000 +0100
++++ b/setup.py	2018-09-06 21:29:23.412697481 +0100
+@@ -148,7 +148,7 @@
+ def _pkg_config(name):
+     try:
+         command = [
+-            'pkg-config',
++            os.environ.get('PKG_CONFIG', 'pkg-config'),
+             '--libs-only-L', name,
+             '--cflags-only-I', name,
+         ]
+@@ -226,7 +226,7 @@
+         _add_directory(include_dirs, "src/libImaging")
+ 
+         pkg_config = None
+-        if _cmd_exists('pkg-config'):
++        if _cmd_exists(os.environ.get('PKG_CONFIG', 'pkg-config')):
+             pkg_config = _pkg_config
+ 
+         #

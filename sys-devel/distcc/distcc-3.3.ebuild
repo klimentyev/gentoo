@@ -4,8 +4,10 @@
 EAPI=6
 
 PYTHON_COMPAT=( python3_{5,6} )
+DISTUTILS_SINGLE_IMPL=true
+DISTUTILS_OPTIONAL=true
 
-inherit flag-o-matic python-single-r1 systemd toolchain-funcs user xdg-utils prefix
+inherit distutils-r1 flag-o-matic systemd toolchain-funcs user xdg-utils prefix
 
 MY_P="${P/_}"
 DESCRIPTION="Distribute compilation of C code across several machines on a network"
@@ -89,6 +91,11 @@ src_configure() {
 		$(use_with gssapi auth) \
 		$(use_with zeroconf avahi) \
 		${myconf}
+}
+
+src_compile() {
+	distutils-r1_create_setup_cfg
+	default
 }
 
 src_install() {

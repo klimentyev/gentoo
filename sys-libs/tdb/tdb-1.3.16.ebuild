@@ -6,7 +6,7 @@ EAPI=6
 PYTHON_COMPAT=( python2_7 )
 PYTHON_REQ_USE="threads"
 
-inherit waf-utils multilib-minimal python-single-r1
+inherit waf-utils multilib-minimal python-single-r1 toolchain-funcs
 
 DESCRIPTION="A simple database API"
 HOMEPAGE="http://tdb.samba.org/"
@@ -39,6 +39,7 @@ multilib_src_configure() {
 		extra_opts+=( --disable-python )
 	fi
 
+	PKGCONFIG=$(tc-getPKG_CONFIG) \
 	waf-utils_src_configure \
 		"${extra_opts[@]}"
 }
