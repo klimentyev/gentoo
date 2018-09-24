@@ -295,21 +295,7 @@ mozconfig_config() {
 			toolkit_comment="gtk2 use flag"
 		fi
 	fi
-	if [[ -n ${MOZCONFIG_OPTIONAL_QT5} ]]; then
-		if use qt5; then
-			toolkit="cairo-qt"
-			toolkit_comment="qt5 use flag"
-			# need to specify these vars because the qt5 versions are not found otherwise,
-			# and setting --with-qtdir overrides the pkg-config include dirs
-			local i
-			for i in qmake moc rcc; do
-				echo "export HOST_${i^^}=\"$(qt5_get_bindir)/${i}\"" \
-					>> "${S}"/.mozconfig || die
-			done
-			echo 'unset QTDIR' >> "${S}"/.mozconfig || die
-			mozconfig_annotate '+qt5' --disable-gio
-		fi
-	fi
+
 	mozconfig_annotate "${toolkit_comment}" --enable-default-toolkit=${toolkit}
 
 	# Instead of the standard --build= and --host=, mozilla uses --host instead
