@@ -171,6 +171,12 @@ pkg_pretend() {
 	CHECKREQS_DISK_BUILD="4G"
 
 	check-reqs_pkg_setup
+
+	# make the use of neon conflict with clang, and additional with tc-is-clang to be dead sure. #666966
+	if use neon && use clang && tc-is-clang ; then
+		die "clang doesn't understand thumb instructions. Use gcc if you really need them"
+	fi
+
 }
 
 src_unpack() {
@@ -320,7 +326,9 @@ src_configure() {
 	fi
 
 	# Modifications to better support ARM, bug 553364
-	if use neon ; then
+
+	# make neon conditional to the use of gcc, as clang doesn't understand thumb instructions. #666966
+	if use neon && tc-is-gcc ; then
 		mozconfig_annotate '' --with-fpu=neon
 		mozconfig_annotate '' --with-thumb=yes
 		mozconfig_annotate '' --with-thumb-interwork=no

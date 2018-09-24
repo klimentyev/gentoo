@@ -319,11 +319,15 @@ mozconfig_config() {
 	mozconfig_use_with system-harfbuzz system-graphite2
 
 	# Modifications to better support ARM, bug 553364
-	if use neon ; then
+	# make neon conditional to the use of gcc, as clang doesn't understand thumb instructions. #666966
+	if use neon && tc-is-gcc ; then
 		mozconfig_annotate '' --with-fpu=neon
 		mozconfig_annotate '' --with-thumb=yes
 		mozconfig_annotate '' --with-thumb-interwork=no
+	elif use neon && tc-is-clang ; then
+		die "clang doesn't understand thumb instructions. Use gcc if you really need them"
 	fi
+
 	if [[ ${CHOST} == armv* ]] ; then
 		mozconfig_annotate '' --with-float-abi=hard
 		if ! use system-libvpx ; then
