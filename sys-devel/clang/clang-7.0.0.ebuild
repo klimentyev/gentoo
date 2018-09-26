@@ -71,6 +71,10 @@ CMAKE_BUILD_TYPE=RelWithDebInfo
 PATCHES=(
 	# add Prefix include paths for Darwin
 	"${FILESDIR}"/6.0.1/darwin_prefix-include-paths.patch
+
+	# add tblgen for cross compile
+	# https://bugs.gentoo.org/667094
+	"${FILESDIR}"/fix-tblgen.patch
 )
 
 # Multilib notes:
@@ -188,11 +192,13 @@ multilib_src_configure() {
 	fi
 
 	if tc-is-cross-compiler; then
-		[[ -x "/usr/bin/clang-tblgen" ]] \
-			|| die "/usr/bin/clang-tblgen not found or usable"
+		local tblgen="${EPREFIX}/usr/lib/llvm/${SLOT}/bin/clang-tblgen"
+		[[ -x "${tblgen}" ]] \
+			|| die "${tblgen} not found or usable"
 		mycmakeargs+=(
-			-DCMAKE_CROSSCOMPILING=ON
-			-DCLANG_TABLEGEN=/usr/bin/clang-tblgen
+			-DCMAKE_CROSSCOMPILING=True
+			-DLLVM_TABLEGEN="${tblgen}"
+			-DLLVM_CONFIG="${EPREFIX}/usr/lib/llvm/${SLOT}/bin/llvm-config"
 		)
 	fi
 

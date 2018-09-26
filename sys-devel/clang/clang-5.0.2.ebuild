@@ -113,6 +113,10 @@ src_prepare() {
 	# add Prefix include paths for Darwin
 	eapply "${FILESDIR}"/6.0.1/darwin_prefix-include-paths.patch
 
+	# add tblgen for cross compile
+	# https://bugs.gentoo.org/667094
+	"${FILESDIR}"/fix-tblgen.patch
+
 	cd tools/extra || die
 	# fix setting LD_LIBRARY_PATH for tests on *BSD (extra part)
 	eapply "${FILESDIR}"/5.0.2/extra/0001-Assume-the-shared-library-path-variable-is-LD_LIBRAR.patch
@@ -190,11 +194,13 @@ multilib_src_configure() {
 	fi
 
 	if tc-is-cross-compiler; then
-		[[ -x "/usr/bin/clang-tblgen" ]] \
-			|| die "/usr/bin/clang-tblgen not found or usable"
+		local tblgen="${EPREFIX}/usr/lib/llvm/${SLOT}/bin/clang-tblgen"
+		[[ -x "${tblgen}" ]] \
+			|| die "${tblgen} not found or usable"
 		mycmakeargs+=(
-			-DCMAKE_CROSSCOMPILING=ON
-			-DCLANG_TABLEGEN=/usr/bin/clang-tblgen
+			-DCMAKE_CROSSCOMPILING=True
+			-DLLVM_TABLEGEN="${tblgen}"
+			-DLLVM_CONFIG="${EPREFIX}/usr/lib/llvm/${SLOT}/bin/llvm-config"
 		)
 	fi
 

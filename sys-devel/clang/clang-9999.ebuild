@@ -65,6 +65,12 @@ S=${WORKDIR}/x/y/${P}
 # least intrusive of all
 CMAKE_BUILD_TYPE=RelWithDebInfo
 
+PATCHES=(
+	# add tblgen for cross compile
+	# https://bugs.gentoo.org/667094
+	"${FILESDIR}"/fix-tblgen.patch
+)
+
 # Multilib notes:
 # 1. ABI_* flags control ABIs libclang* is built for only.
 # 2. clang is always capable of compiling code for all ABIs for enabled
@@ -174,11 +180,13 @@ multilib_src_configure() {
 	fi
 
 	if tc-is-cross-compiler; then
-		[[ -x "/usr/bin/clang-tblgen" ]] \
-			|| die "/usr/bin/clang-tblgen not found or usable"
+		local tblgen="${EPREFIX}/usr/lib/llvm/${SLOT}/bin/clang-tblgen"
+		[[ -x "${tblgen}" ]] \
+			|| die "${tblgen} not found or usable"
 		mycmakeargs+=(
-			-DCMAKE_CROSSCOMPILING=ON
-			-DCLANG_TABLEGEN=/usr/bin/clang-tblgen
+			-DCMAKE_CROSSCOMPILING=True
+			-DLLVM_TABLEGEN="${tblgen}"
+			-DLLVM_CONFIG="${EPREFIX}/usr/lib/llvm/${SLOT}/bin/llvm-config"
 		)
 	fi
 
