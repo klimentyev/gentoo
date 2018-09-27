@@ -320,6 +320,10 @@ mozconfig_config() {
 	mozconfig_use_with system-harfbuzz
 	mozconfig_use_with system-harfbuzz system-graphite2
 
+	if use arm ; then
+		mozconfig_annotate 'elf-hack is broken on arm' --disable-elf-hack
+	fi
+
 	# Modifications to better support ARM, bug 553364
 	# make neon conditional to the use of gcc, as clang doesn't understand thumb instructions. #666966
 	if use neon && tc-is-gcc ; then
