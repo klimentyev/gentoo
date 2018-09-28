@@ -1,8 +1,13 @@
-# Daemon user
-USER="milter"
+# Config file.
+MR_CONF="/etc/milter-regex.conf"
 
-# The location of the Unix socket
-SOCKET="/var/run/milter-regex/milter-regex.sock"
+# Process and socket owner, socket group, socket permissions.
+MR_USER="milter"
+MR_GROUP="milter"
+MR_PERM="0660"
 
-# Regular expression rules
-CONFIG="/etc/mail/milter-regex.conf"
+MR_RUNDIR="/run/milter-regex"
+MR_SOCKET="${MR_RUNDIR}/socket"
+
+# Additional options for logging etc.
+MR_OPTS=""
