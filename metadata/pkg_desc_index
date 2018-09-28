@@ -7035,7 +7035,6 @@ mail-filter/libsrs_alt 1.0: Sender Rewriting Scheme library
 mail-filter/maildrop 2.8.3: Mail delivery agent/filter
 mail-filter/mailfilter 0.8.4: Mailfilter is a utility to get rid of unwanted spam mails
 mail-filter/mapson 3.3: A challenge/response-based white-list spam filter
-mail-filter/milter-regex 1.9: A milter-based regular expression filter
 mail-filter/mimedefang 2.73 2.74: Antispam, antivirus and other customizable filters for MTAs with Milter support
 mail-filter/normalizemime 1.19: Helper program to normalize MIME encoded messages
 mail-filter/opendkim 2.10.3 2.10.3-r3: A milter-based application to provide DKIM signing and verification
