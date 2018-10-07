@@ -3,15 +3,13 @@
 
 EAPI=6
 
-EGIT_COMMIT="7a23a01742b88329fb2260eda007172135ba25d4"
-MY_P="${PN}-${EGIT_COMMIT}"
 PYTHON_COMPAT=( python{2_7,3_4,3_5,3_6,3_7} )
 
 inherit cmake-multilib python-any-r1
 
 DESCRIPTION="Collection of tools, libraries and tests for shader compilation"
 HOMEPAGE="https://github.com/google/shaderc"
-SRC_URI="https://github.com/google/shaderc/archive/${EGIT_COMMIT}.tar.gz -> ${MY_P}.tar.gz"
+SRC_URI="https://github.com/google/shaderc/archive/v${PV}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="Apache-2.0"
 SLOT="0"
@@ -19,7 +17,7 @@ KEYWORDS="~amd64 ~x86"
 IUSE="doc test"
 
 RDEPEND="
-	dev-util/glslang[${MULTILIB_USEDEP}]
+	>=dev-util/glslang-7.9.2888[${MULTILIB_USEDEP}]
 	dev-util/spirv-tools[${MULTILIB_USEDEP}]
 "
 DEPEND="${RDEPEND}
@@ -35,9 +33,10 @@ DEPEND="${RDEPEND}
 # https://github.com/google/shaderc/issues/470
 RESTRICT=test
 
-PATCHES=( "${FILESDIR}/${P}-fix-glslang-link-order.patch" )
-
-S="${WORKDIR}/${MY_P}"
+PATCHES=(
+	"${FILESDIR}/${PN}-2017.2-fix-glslang-link-order.patch"
+	"${FILESDIR}/${P}-restore-NV_EXTENSIONS-guard.patch"
+)
 
 python_check_deps() {
 	if use test; then
@@ -70,6 +69,8 @@ src_prepare() {
 multilib_src_configure() {
 	local mycmakeargs=(
 		-DSHADERC_SKIP_TESTS="$(usex !test)"
+		# NV_EXTENSIONS currently require glslang-9999
+		-DSHADERC_ENABLE_NV_EXTENSIONS=OFF
 	)
 	cmake-utils_src_configure
 }
