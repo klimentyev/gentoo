@@ -1,0 +1,14 @@
+BDEPEND=virtual/latex-base >=sys-apps/texinfo-4.2-r5
+DEFINED_PHASES=compile install postinst postrm
+DEPEND=app-arch/unzip
+DESCRIPTION=TeX support for four URW Classico fonts
+EAPI=7
+HOMEPAGE=https://www.ctan.org/tex-archive/fonts/urw/classico
+IUSE=doc
+KEYWORDS=~amd64 ~x86
+LICENSE=free-noncomm
+RDEPEND=dev-texlive/texlive-latexextra virtual/latex-base
+SLOT=0
+SRC_URI=http://mirrors.ctan.org/install/fonts/urw/classico.tds.zip -> classico-20140828.tds.zip
+_eclasses_=latex-package	17f13abe0de88340745e52e6b627aee7
+_md5_=4c5eee5087cb8a894a24ad8903a34333
