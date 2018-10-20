@@ -15,7 +15,10 @@ SLOT="0"
 KEYWORDS="amd64 x86"
 IUSE=""
 
-RDEPEND="!<kde-apps/kiten-18.08.2-r1"
+RDEPEND="
+	!=kde-apps/kiten-18.08.1-r0
+	!=kde-apps/kiten-18.08.2-r0
+"
 
 # Only installs fonts
 RESTRICT="strip binchecks"
