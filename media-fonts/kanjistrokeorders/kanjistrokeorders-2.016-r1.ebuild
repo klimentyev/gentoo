@@ -1,12 +1,12 @@
 # Copyright 1999-2018 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=0
+EAPI=6
 
 inherit font
 
 MY_P="KanjiStrokeOrders_v${PV}"
-DESCRIPTION="font to view stroke order diagrams for Kanji, Kana and etc"
+DESCRIPTION="Font to view stroke order diagrams for Kanji, Kana and etc"
 HOMEPAGE="https://sites.google.com/site/nihilistorguk/"
 SRC_URI="https://sites.google.com/site/nihilistorguk/Home/${MY_P}.zip"
 

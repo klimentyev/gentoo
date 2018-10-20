@@ -29,7 +29,7 @@ DEPEND="
 	$(add_qt_dep qtwidgets)
 "
 RDEPEND="${DEPEND}
-	media-fonts/kanjistrokeorders
+	>=media-fonts/kanjistrokeorders-2.016-r1
 "
 
 src_prepare() {
