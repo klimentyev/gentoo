@@ -1,0 +1,13 @@
+DEFINED_PHASES=install postinst
+DESCRIPTION=Mocked systemd dbus interface for skype 8.30+
+EAPI=7
+HOMEPAGE=https://github.com/maelnor/skype-dbus-mock
+IUSE=python_targets_python2_7 python_targets_python3_4 python_targets_python3_5 python_targets_python3_6 python_targets_python3_7
+KEYWORDS=~amd64
+LICENSE=MIT
+RDEPEND=>=net-im/skypeforlinux-8.30 dev-python/dbus-python[python_targets_python2_7(-)?,python_targets_python3_4(-)?,python_targets_python3_5(-)?,python_targets_python3_6(-)?,python_targets_python3_7(-)?,-python_single_target_python2_7(-),-python_single_target_python3_4(-),-python_single_target_python3_5(-),-python_single_target_python3_6(-),-python_single_target_python3_7(-)] !sys-apps/systemd !sys-auth/elogind
+REQUIRED_USE=|| ( python_targets_python2_7 python_targets_python3_4 python_targets_python3_5 python_targets_python3_6 python_targets_python3_7 )
+SLOT=0
+SRC_URI=https://github.com/maelnor/skype-dbus-mock/archive/3a9e2882ac5c0ad6be3c5cb5c7da008b4cfa51da.tar.gz -> skype-dbus-mock-0_p20181011.tar.gz
+_eclasses_=multibuild	40fe59465edacd730c644ec2bc197809	multilib	b2f01ad412baf81650c23fcf0975fa33	python-r1	ce1cd23cfdc1848e8e32743efe34f299	python-utils-r1	12114a2a9aab35b93efc037a196b3234	toolchain-funcs	f164325a2cdb5b3ea39311d483988861
+_md5_=e70d96df092eaaf6bcb15f96199a518e
