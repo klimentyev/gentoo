@@ -704,6 +704,7 @@ app-misc/workrave:xfce - Add support for XFCE panel
 app-mobilephone/gammu:bluetooth - Enables bluetooth support
 app-mobilephone/gammu:curl - Enables curl support
 app-mobilephone/gammu:irda - Enables infrared support
+app-mobilephone/gammu:mariadb - Use mysql for data storage
 app-mobilephone/gammu:mysql - Use mysql for data storage
 app-mobilephone/gammu:nls - Enable native language support
 app-mobilephone/gammu:odbc - Use ODBC as DB connector
