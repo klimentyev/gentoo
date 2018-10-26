@@ -14,6 +14,7 @@
         <flag name="curl">Enables curl support</flag>
         <flag name="irda">Enables infrared support</flag>
         <flag name="nls">Enable native language support</flag>
+        <flag name="mariadb">Use mysql for data storage</flag>
         <flag name="mysql">Use mysql for data storage</flag>
         <flag name="odbc">Use ODBC as DB connector</flag>
         <flag name="postgres">Use PostgreSQL for data storage</flag>

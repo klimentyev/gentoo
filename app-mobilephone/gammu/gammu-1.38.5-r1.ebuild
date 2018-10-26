@@ -12,7 +12,7 @@ SRC_URI="https://dl.cihar.com/${PN}/releases/${P}.tar.bz2"
 LICENSE="GPL-2"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
-IUSE="bluetooth curl dbi debug irda mysql nls odbc postgres usb"
+IUSE="bluetooth curl dbi debug irda mariadb mysql nls odbc postgres usb"
 
 COMMON_DEPEND="
 	dev-libs/glib:2=
@@ -20,7 +20,8 @@ COMMON_DEPEND="
 	bluetooth? ( net-wireless/bluez:= )
 	curl? ( net-misc/curl:= )
 	dbi? ( >=dev-db/libdbi-0.8.3:= )
-	mysql? ( virtual/mysql:= )
+	mariadb? ( dev-db/mariadb-connector-c:=[mysqlcompat] )
+	mysql? ( dev-db/mysql-connector-c:= )
 	postgres? ( dev-db/postgresql:= )
 	usb? ( virtual/libusb:1= )
 "
@@ -43,17 +44,21 @@ src_configure() {
 		-DWITH_Iconv=$(usex nls)
 		-DWITH_IRDA=$(usex irda)
 		-DWITH_LibDBI=$(usex dbi)
-		-DWITH_MySQL=$(usex mysql)
 		-DWITH_ODBC=$(usex odbc)
 		-DWITH_Postgres=$(usex postgres)
 		-DWITH_USB=$(usex usb)
 		-DBUILD_SHARED_LIBS=ON
 		-DINSTALL_DOC_DIR="share/doc/${PF}"
 	)
+	if use mysql || use mariadb; then
+		mycmakeargs+=( -DWITH_MySQL=yes )
+	else
+		mycmakeargs+=( -DWITH_MySQL=no )
+	fi
 	cmake-utils_src_configure
 }
 
 src_test() {
 	addwrite "/run/lock/LCK..bar"
-	LD_LIBRARY_PATH="${BUILD_DIR}/libgammu" cmake-utils_src_test -j1
+	MAKEOPTS+=" -j1" LD_LIBRARY_PATH="${BUILD_DIR}/libgammu" cmake-utils_src_test
 }
