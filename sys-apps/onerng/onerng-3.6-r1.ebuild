@@ -1,9 +1,9 @@
-# Copyright 1999-2018 Gentoo Foundation
+# Copyright 1999-2018 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=6
+EAPI="7"
 
-MY_P="${PN}_${PV}"
+MY_P="${P/-/_}"
 PYTHON_COMPAT=( python2_7 python3_{4,5,6,7} )
 
 inherit python-r1 udev
@@ -16,14 +16,18 @@ LICENSE="|| ( LGPL-2.1 LGPL-3 )"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
 
-RDEPEND="app-crypt/gnupg
+DEPEND_RDEPEND="virtual/udev"
+
+RDEPEND="
+	app-crypt/gnupg
 	dev-python/python-gnupg[${PYTHON_USEDEP}]
 	sys-apps/rng-tools
 	sys-process/at
-	virtual/udev"
+	${DEPEND_RDEPEND}
+"
 
-DEPEND="virtual/pkgconfig
-	virtual/udev"
+DEPEND="${DEPEND_RDEPEND}"
+BDEPEND="virtual/pkgconfig"
 
 S="${WORKDIR}/${MY_P}"
 
