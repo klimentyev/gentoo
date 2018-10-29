@@ -1,12 +1,11 @@
-# Copyright 1999-2018 Gentoo Foundation
+# Copyright 1999-2018 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI="4"
+EAPI="7"
 
-inherit multilib versionator rpm
+inherit multilib rpm
 
-MY_PV="$(get_version_component_range 1-3)"
-MY_PVR="$(replace_version_separator 3 -)"
+MY_PVR="$(ver_rs 3 '-')"
 MY_P="esci-interpreter-gt-f720-${MY_PVR}"
 
 DESCRIPTION="Epson Perfection V300 PHOTO scanner plugin for SANE 'epkowa' backend"
@@ -16,7 +15,7 @@ SRC_URI="amd64? ( https://dev.gentoo.org/~flameeyes/avasys/${MY_P}.x86_64.rpm )
 
 LICENSE="AVASYS"
 SLOT="0"
-KEYWORDS="-* amd64 x86"
+KEYWORDS="-* ~amd64 ~x86"
 
 DEPEND=">=media-gfx/iscan-2.21.0"
 RDEPEND="${DEPEND}"
