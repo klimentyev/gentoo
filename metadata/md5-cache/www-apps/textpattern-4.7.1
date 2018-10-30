@@ -1,0 +1,14 @@
+DEFINED_PHASES=install postinst prerm setup
+DEPEND=>=app-admin/webapp-config-1.50.15
+DESCRIPTION=Textpattern a free CMS based on PHP and MySQL
+EAPI=6
+HOMEPAGE=https://textpattern.com
+IUSE=+apache -nginx vhosts
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-2
+RDEPEND=>=virtual/mysql-5.5 nginx? ( >www-servers/nginx-1.13 ) apache? ( >=www-servers/apache-2.4 www-apache/mod_security ) || ( dev-lang/php[apache2,mysql,mysqli] dev-lang/php[apache2,mysql,pdo] ) >=app-admin/webapp-config-1.50.15
+REQUIRED_USE=|| ( apache nginx )
+SLOT=4.7.1
+SRC_URI=https://textpattern.com/File+download/86/textpattern-4.7.1.tar.gz
+_eclasses_=user	8bc2845510e2109af75e3eeac607ec81	webapp	6ae2395d7f341093c36057cb4f69101a
+_md5_=076065eaf322aabcee77fcd3a535ec37
