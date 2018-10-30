@@ -1,0 +1,9 @@
+DEFINED_PHASES=install
+DESCRIPTION=Decode EDID data in a human-readable format
+EAPI=7
+HOMEPAGE=https://git.linuxtv.org/edid-decode.git/
+KEYWORDS=~amd64 ~x86
+LICENSE=MIT
+SLOT=0
+SRC_URI=https://git.linuxtv.org/edid-decode.git/snapshot/edid-decode-5eeb151a748788666534d6ea3da07f90400d24c2.tar.gz -> edid-decode-20180917.tar.gz
+_md5_=bd62985140d72babe6afd7a8c602fab3
