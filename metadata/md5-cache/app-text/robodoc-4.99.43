@@ -1,12 +1,12 @@
 DEFINED_PHASES=configure install
 DEPEND=>=dev-util/ctags-5.3.1
 DESCRIPTION=Automating Software Documentation
-EAPI=5
+EAPI=7
 HOMEPAGE=http://www.xs4all.nl/~rfsber/Robo/robodoc.html
 IUSE=examples
 KEYWORDS=~amd64 ~x86
 LICENSE=GPL-3
 RDEPEND=>=dev-util/ctags-5.3.1
 SLOT=0
-SRC_URI=http://www.xs4all.nl/~rfsber/Robo/DistSource/robodoc-4.99.36.tar.gz
-_md5_=be1679c0bccbc1cf085c7795e940ebc9
+SRC_URI=http://rfsber.home.xs4all.nl/Robo/archives/robodoc-4.99.43.tar.gz
+_md5_=c8efb850676d4fa33ba1e647e9ac177f
