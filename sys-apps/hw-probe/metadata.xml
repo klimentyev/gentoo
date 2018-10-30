@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<maintainer type="person">
+		<email>ck+gentoo@bl4ckb0x.de</email>
+		<name>Conrad Kostecki</name>
+	</maintainer>
+	<maintainer type="project">
+		<email>proxy-maint@gentoo.org</email>
+		<name>Proxy Maintainers</name>
+	</maintainer>
+	<longdescription>
+		This is a project to collect hardware details of Linux-powered
+		computers over the world and help Linux users and developers
+		to collaboratively debug hardware related issues.
+		Make a probe of your computer in order to participate and discover
+		the world of hardware in details. Share your probes and logs with
+		Linux developers to debug and fix problems on your computer.
+		Simplify inventory of hardware.
+	</longdescription>
+	<upstream>
+		<bugs-to>https://github.com/linuxhw/hw-probe/issues</bugs-to>
+		<remote-id type="github">linuxhw/hw-probe</remote-id>
+	</upstream>
+	<use>
+		<flag name="acpi">Use <pkg>sys-power/iasl</pkg> for additional information.</flag>
+		<flag name="cpuid">Use <pkg>sys-apps/cpuid</pkg> for additional information.</flag>
+		<flag name="hdparm">Use <pkg>sys-apps/hdparm</pkg> for additional information.</flag>
+		<flag name="hplip">Use <pkg>net-print/hplip</pkg> for additional information.</flag>
+		<flag name="i2c">Use <pkg>sys-apps/i2c-tools</pkg> for additional information.</flag>
+		<flag name="inxi">Use <pkg>sys-apps/inxi</pkg> for additional information.</flag>
+		<flag name="mcelog">Use <pkg>app-admin/mcelog</pkg> for additional information.</flag>
+		<flag name="memtester">Use <pkg>sys-apps/memtester</pkg> for additional information.</flag>
+		<flag name="mesa">Use <pkg>x11-apps/mesa-progs</pkg> for additional information.</flag>
+		<flag name="pnp">Use <pkg>sys-apps/pnputils</pkg> for additional information.</flag>
+		<flag name="rfkill">Use <pkg>net-wireless/rfkill</pkg> for additional information.</flag>
+		<flag name="scanner">Use <pkg>media-gfx/sane-backends</pkg> for additional information.</flag>
+		<flag name="smartcard">Use <pkg>dev-libs/opensc</pkg> for additional information.</flag>
+		<flag name="sysstat">Use <pkg>app-admin/sysstat</pkg> for additional information.</flag>
+		<flag name="systemd">Use <pkg>sys-apps/systemd</pkg> for additional information.</flag>
+		<flag name="vaapi">Use <pkg>x11-libs/libva</pkg> for additional information.</flag>
+		<flag name="vulkan">Use <pkg>dev-util/vulkan-tools</pkg> for additional information.</flag>
+		<flag name="xinput">Use <pkg>x11-apps/xinput</pkg> for additional information.</flag>
+	</use>	
+</pkgmetadata>
