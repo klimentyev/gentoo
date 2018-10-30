@@ -1,0 +1,17 @@
+# Manual cleanup-patch for the installation of the doc-files
+# This patch is contentually concurrent with the 4.99.43
+# version of robodoc
+
+# Signed-off-by: Ovidiu - Dan Bogat <4z0r@ovidiu.at>
+
+--- Docs/makefile.am	2011-02-02 23:52:40.000000000 +0100
++++ Docs/makefile.am	2018-10-30 14:37:21.279982946 +0100
+@@ -4,8 +4,6 @@
+ 
+ if FINK
+ man1_MANS = robodoc.1 robohdrs.1
+-else
+-man1_MANS = robodoc.1 robohdrs.1
+ endif
+ 
+ #if FINK
