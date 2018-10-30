@@ -1,0 +1,12 @@
+DEFINED_PHASES=install postinst prerm unpack
+DEPEND=>=media-gfx/iscan-2.21.0 >=app-arch/rpm2targz-9.0.0.3g
+DESCRIPTION=Epson Perfection V300 PHOTO scanner plugin for SANE 'epkowa' backend
+EAPI=7
+HOMEPAGE=http://download.ebz.epson.net/dsc/search/01/search/?OSC=LX
+KEYWORDS=-* ~amd64 ~x86
+LICENSE=AVASYS
+RDEPEND=>=media-gfx/iscan-2.21.0
+SLOT=0
+SRC_URI=amd64? ( https://dev.gentoo.org/~flameeyes/avasys/esci-interpreter-gt-f720-0.0.1-2.x86_64.rpm ) x86? ( https://dev.gentoo.org/~flameeyes/avasys/esci-interpreter-gt-f720-0.0.1-2.i386.rpm )
+_eclasses_=eutils	6e6c2737b59a4b982de6fb3ecefd87f8	multilib	b2f01ad412baf81650c23fcf0975fa33	rpm	f52cfa3a435468d86d3b49c357b9cb35	toolchain-funcs	f164325a2cdb5b3ea39311d483988861
+_md5_=05c9d9aafad0b58312d8dae6bbc606e8
