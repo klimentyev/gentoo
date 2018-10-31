@@ -5,7 +5,7 @@ EAPI=6
 
 PYTHON_COMPAT=( python2_7 python3_6 python3_7 )
 
-inherit readme.gentoo-r1 versionator eutils autotools perl-functions python-single-r1 toolchain-funcs udev user
+inherit readme.gentoo-r1 autotools perl-functions python-single-r1 toolchain-funcs udev user
 
 DESCRIPTION="Driver library for GPIB (IEEE 488.2) hardware"
 HOMEPAGE="https://linux-gpib.sourceforge.io/"
@@ -15,7 +15,7 @@ SRC_URI="mirror://sourceforge/linux-gpib/${PN}-user-${PV}.tar.gz
 
 LICENSE="GPL-2"
 SLOT="0"
-KEYWORDS=""
+KEYWORDS="~amd64 ~arm ~x86"
 IUSE="pcmcia static guile perl php python tcl doc firmware"
 
 S="${WORKDIR}/${PN}-user-${PV}"
@@ -28,7 +28,9 @@ COMMONDEPEND="
 	php? ( dev-lang/php:= )
 	python? ( ${PYTHON_DEPS} )
 	firmware? ( sys-apps/fxload )"
-RDEPEND="${COMMONDEPEND}"
+RDEPEND="${COMMONDEPEND}
+	~sci-libs/linux-gpib-modules-${PV}
+"
 DEPEND="${COMMONDEPEND}
 	virtual/pkgconfig
 	doc? ( app-text/docbook-sgml-utils )
@@ -46,8 +48,6 @@ pkg_setup () {
 }
 
 src_prepare () {
-	[[ ${I_KNOW_WHAT_I_AM_DOING} == "1" ]] || \
-		die "This ebuild is work in progress. Do not use."
 	default
 	eautoreconf
 }
@@ -70,7 +70,7 @@ src_compile() {
 		INSTALL_MOD_PATH="${D}" \
 		HOTPLUG_USB_CONF_DIR=/etc/hotplug/usb \
 		UDEV_RULES_DIR="$(get_udevdir)"/rules.d \
-		USB_FIRMWARE_DIR="${D}"${FIRM_DIR} \
+		USB_FIRMWARE_DIR=${FIRM_DIR} \
 		docdir=/usr/share/doc/${PF}/html
 }
 
@@ -81,7 +81,7 @@ src_install() {
 		INSTALL_MOD_PATH="${D}" \
 		HOTPLUG_USB_CONF_DIR=/etc/hotplug/usb \
 		UDEV_RULES_DIR="$(get_udevdir)"/rules.d \
-		USB_FIRMWARE_DIR="${D}"${FIRM_DIR} \
+		USB_FIRMWARE_DIR=${FIRM_DIR} \
 		docdir=/usr/share/doc/${PF}/html install
 
 	if use perl; then

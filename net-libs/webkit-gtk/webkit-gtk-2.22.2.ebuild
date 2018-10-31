@@ -15,7 +15,7 @@ SRC_URI="https://www.webkitgtk.org/releases/${MY_P}.tar.xz"
 
 LICENSE="LGPL-2+ BSD"
 SLOT="4/37" # soname version of libwebkit2gtk-4.0
-KEYWORDS="~alpha ~amd64 ~arm ~arm64 ~ia64 ~ppc ~ppc64 ~sparc ~x86 ~amd64-fbsd ~amd64-linux ~x86-linux ~x86-macos"
+KEYWORDS="~alpha amd64 ~arm ~arm64 ~ia64 ~ppc ~ppc64 ~sparc x86 ~amd64-fbsd ~amd64-linux ~x86-linux ~x86-macos"
 
 IUSE="aqua coverage doc +egl +geolocation gles2 gnome-keyring +gstreamer +introspection +jit libnotify nsplugin +opengl spell wayland +webgl +X"
 
@@ -39,6 +39,7 @@ RESTRICT="test"
 # Dependencies found at Source/cmake/OptionsGTK.cmake
 # Various compile-time optionals for gtk+-3.22.0 - ensure it
 # Missing OpenWebRTC checks and conditionals, but ENABLE_MEDIA_STREAM/ENABLE_WEB_RTC is experimental upstream (PRIVATE OFF)
+# TODO: Raise gst-plugins-opus dep to 1.14.4-r1 once we can, and eventually drop the blocker from epiphany; or remove the dep when older than -opus-1.14.4-r1 is not available anymore
 RDEPEND="
 	>=x11-libs/cairo-1.10.2:=[X?]
 	>=media-libs/fontconfig-2.8.0:1.0
@@ -69,6 +70,7 @@ RDEPEND="
 	gstreamer? (
 		>=media-libs/gstreamer-1.8.3:1.0
 		>=media-libs/gst-plugins-base-1.8.3:1.0
+		>=media-plugins/gst-plugins-opus-1.8.3:1.0
 		>=media-libs/gst-plugins-bad-1.10:1.0[egl?,gles2?,opengl?] )
 
 	X? (

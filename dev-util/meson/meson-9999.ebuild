@@ -22,11 +22,7 @@ SLOT="0"
 IUSE=""
 
 DEPEND="dev-python/setuptools[${PYTHON_USEDEP}]"
-RDEPEND=""
-
-PATCHES=(
-	"${FILESDIR}"/test-llvm.patch
-)
+RDEPEND="${DEPEND}"
 
 python_test() {
 	(
