@@ -3172,7 +3172,7 @@ dev-libs/libstroke 0.5.1: A Stroke and Gesture recognition Library
 dev-libs/libtar 1.2.20-r4: C library for manipulating tar archives
 dev-libs/libtasn1 4.13: ASN.1 library
 dev-libs/libtecla 1.6.1-r2: Tecla command-line editing library
-dev-libs/libtermkey 0.20: Library for easy processing of keyboard entry from terminal-based programs
+dev-libs/libtermkey 0.20-r1: Library for easy processing of keyboard entry from terminal-based programs
 dev-libs/libtommath 0.42.0-r1: Optimized and portable routines for integer theoretic applications
 dev-libs/libtompoly 0.04: portable ISO C library for polynomial basis arithmetic
 dev-libs/libtubo 5.0.15: small and simple interprocess communication library
@@ -3338,7 +3338,7 @@ dev-lua/luasystem 0.2.0_p0: platform independent system calls for lua
 dev-lua/lutok 0.4-r1: Lightweight C++ API library for Lua
 dev-lua/luvit 0.7.0: Takes node.js' architecture and dependencies and fits it in the Lua language
 dev-lua/mediator_lua 1.1.2_p0: Event handling through channels
-dev-lua/mpack 1.0.4: Lua bindings for libmpack
+dev-lua/mpack 1.0.4-r1: Lua bindings for libmpack
 dev-lua/penlight 1.3.2: Lua utility libraries loosely based on the Python standard libraries
 dev-lua/say 1.3_p1: Lua String Hashing/Indexing Library
 dev-lua/toluapp 1.0.93: A tool to integrate C/C++ code with Lua
