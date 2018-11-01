@@ -25,7 +25,7 @@ fi
 LICENSE="GPL-3"
 SLOT="0"
 
-IUSE="openssl qscintilla distorm python3"
+IUSE="openssl qscintilla distorm"
 
 RDEPEND="openssl? ( dev-libs/openssl:0= )
         qscintilla? ( x11-libs/qscintilla )
