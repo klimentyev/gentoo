@@ -11,7 +11,7 @@ DESCRIPTION="Microsemi Adaptec RAID Controller Command Line Utility"
 HOMEPAGE="https://www.microsemi.com/"
 SRC_URI="https://download.adaptec.com/raid/storage_manager/${PN}_${MY_PV}.zip"
 
-KEYWORDS="-* ~amd64"
+KEYWORDS="-* ~amd64 ~x86"
 LICENSE="Microsemi"
 SLOT="0"
 
@@ -20,7 +20,7 @@ RDEPEND="${RDEPEND}"
 
 RESTRICT="fetch mirror bindist"
 
-S="${WORKDIR}/linux_x64"
+S="${WORKDIR}"
 
 QA_PREBUILT="usr/bin/arcconf"
 
@@ -39,5 +39,9 @@ pkg_setup() {
 }
 
 src_install() {
-	dobin cmdline/arcconf
+	if use amd64; then
+		dobin linux_x64/cmdline/arcconf
+	else
+		dobin linux/cmdline/arcconf
+	fi
 }
