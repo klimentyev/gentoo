@@ -19,7 +19,7 @@ fi
 DESCRIPTION="Open codec designed for internet transmission of interactive speech and audio"
 HOMEPAGE="https://opus-codec.org/"
 
-LICENSE="BSD-2"
+LICENSE="BSD"
 SLOT="0"
 INTRINSIC_FLAGS="cpu_flags_x86_sse cpu_flags_arm_neon"
 IUSE="custom-modes doc static-libs ${INTRINSIC_FLAGS}"
