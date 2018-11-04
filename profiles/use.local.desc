@@ -1058,6 +1058,7 @@ dev-embedded/openocd:ftdi - Enable support for USB FTDI chips via dev-embedded/l
 dev-embedded/openocd:jlink - Build the SEGGER J-Link driver
 dev-embedded/openocd:parport - Enable support for parport JTAG devices
 dev-embedded/openocd:verbose-io - Verbose IO and comm JTAG and USB messages
+dev-embedded/sdcc:avr - Add support for AVR -- not supported upstream
 dev-embedded/sdcc:boehm-gc - Enable Hans Boehm's garbage collector dev-libs/boehm-gc
 dev-embedded/sdcc:device-lib - Enable built of devices libraries
 dev-embedded/sdcc:ds390 - Add support for Dallas DS390
@@ -2537,8 +2538,6 @@ mail-filter/amavisd-new:qmail - Add qmail support
 mail-filter/amavisd-new:razor - Add support for mail-filter/razor
 mail-filter/amavisd-new:spamassassin - Add support for mail-filter/spamassassin
 mail-filter/amavisd-new:zmq - Add support for zeromq sockets
-mail-filter/assp:spf - Adds support for Sender Policy Framework
-mail-filter/assp:srs - Adds support for Sender Rewriting Scheme
 mail-filter/bogofilter:tokyocabinet - Enable Tokyo Cabinet database support
 mail-filter/clamassassin:clamd - Use the app-antivirus/clamav daemon for virus checking
 mail-filter/clamassassin:subject-rewrite - Adds support for subject rewriting
@@ -2885,6 +2884,7 @@ media-libs/libsdl2:kms - Build the KMSDRM video driver
 media-libs/libsdl2:sound - Control audio support (disable at your own risk)
 media-libs/libsdl2:tslib - Build with tslib support for touchscreen devices
 media-libs/libsdl2:video - Control video support (disable at your own risk)
+media-libs/libsdl2:vulkan - Enable Vulkan support
 media-libs/libvisio:tools - Build conversion tools
 media-libs/libvpx:highbitdepth - Enable 10 and 12 bit support for VP9.
 media-libs/libvpx:postproc - Enable additional post processing filters
@@ -3158,6 +3158,8 @@ media-sound/mp3blaster:sid - Build with SID (Commodore 64 Audio) support
 media-sound/mp3splt-gtk:audacious - Include media-sound/audacious support
 media-sound/mpd:adplug - Enable the AdPlug decoder plugin
 media-sound/mpd:cdio - Use libcdio for ISO9660 parsing support
+media-sound/mpd:chromaprint - Enable ChromaPrint / AcoustID support
+media-sound/mpd:cue - Enable CUE sheet support
 media-sound/mpd:curl - Support for web stream listening
 media-sound/mpd:eventfd - Use the eventfd function in MPD's event loop
 media-sound/mpd:faad - Use external faad library for AAC decoding
@@ -3173,11 +3175,13 @@ media-sound/mpd:mpg123 - Enable support for mp3 decoding over media-sound/mpg123
 media-sound/mpd:network - Enables network streaming support
 media-sound/mpd:nfs - Enable support for the Network File System
 media-sound/mpd:pipe - Support writing audio to a pipe
+media-sound/mpd:qobuz - Build plugin to access qobuz
 media-sound/mpd:recorder - Enables output plugin for recording radio streams
 media-sound/mpd:sid - Build with SID (Commodore 64 Audio) support
 media-sound/mpd:signalfd - Use the signalfd function in MPD's event loop
 media-sound/mpd:soundcloud - Build plugin to access soundcloud
 media-sound/mpd:systemd - Enable support for systemd socket activation
+media-sound/mpd:tidal - Build plugin to access tidal
 media-sound/mpd:twolame - Support twolame MPEG-2 encoding
 media-sound/mpd:webdav - Enable using music from a WebDAV share
 media-sound/mpd:wildmidi - Enable MIDI support via wildmidi
@@ -4135,7 +4139,6 @@ net-libs/libssh:mbedtls - Use net-libs/mbedtls as TLS provider
 net-libs/libssh:pcap - Build with PCAP output support
 net-libs/libssh:server - Build with SSH server support
 net-libs/libssh:sftp - Build with SFTP support
-net-libs/libssh:ssh1 - Build with SSH1 support
 net-libs/libssh2:gcrypt - Use dev-libs/libgcrypt instead of dev-libs/openssl
 net-libs/libssh2:libressl - Use dev-libs/libressl instead of dev-libs/openssl
 net-libs/libssh2:mbedtls - Use net-libs/mbedtls instead of dev-libs/openssl
