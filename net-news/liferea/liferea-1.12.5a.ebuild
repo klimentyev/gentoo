@@ -1,12 +1,11 @@
-# Copyright 1999-2018 Gentoo Foundation
+# Copyright 1999-2018 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=6
 
-GNOME2_EAUTORECONF="yes"
-PYTHON_COMPAT=( python3_{4,5,6} )
+PYTHON_COMPAT=( python3_{4,5,6,7} )
 
-inherit gnome2 pax-utils python-single-r1
+inherit gnome2 python-single-r1
 
 MY_P=${P/_/-}
 
@@ -17,10 +16,10 @@ SRC_URI="https://github.com/lwindolf/${PN}/releases/download/v${PV/_/-}/${MY_P}.
 LICENSE="GPL-2+"
 SLOT="0"
 KEYWORDS="~amd64 ~arm ~ppc ~x86"
-IUSE=""
+IUSE="gnome-keyring mediaplayer networkmanager notification tray"
 REQUIRED_USE="${PYTHON_REQUIRED_USE}"
 
-RDEPEND="${PYTHON_DEPS}
+CDEPEND="${PYTHON_DEPS}
 	>=dev-db/sqlite-3.7.0:3
 	>=dev-libs/glib-2.28.0:2
 	dev-libs/gobject-introspection
@@ -33,28 +32,17 @@ RDEPEND="${PYTHON_DEPS}
 	net-libs/webkit-gtk:4
 	x11-libs/gtk+:3
 	>=x11-libs/pango-1.4.0"
-DEPEND="${RDEPEND}
+RDEPEND="${CDEPEND}
+	gnome-keyring? ( app-crypt/libsecret[introspection] )
+	mediaplayer? ( media-libs/gstreamer[introspection] )
+	networkmanager? ( net-misc/networkmanager )
+	notification? ( x11-libs/libnotify[introspection] )
+	tray? (
+		dev-python/pycairo
+		x11-libs/gdk-pixbuf[introspection]
+	)"
+DEPEND="${CDEPEND}
 	dev-util/intltool
 	virtual/pkgconfig"
 
 S="${WORKDIR}"/${MY_P}
-
-src_configure() {
-	gnome2_src_configure --disable-schemas-compile
-}
-
-src_install() {
-	gnome2_src_install
-
-	# bug #338213
-	# Uses webkit's JIT. Needs mmap('rwx') to generate code in runtime.
-	# MPROTECT policy violation. Will sit here until webkit will
-	# get optional JIT.
-	pax-mark m "${ED%/}"/usr/bin/liferea
-}
-
-pkg_postinst() {
-	elog "If you want to enhance the functionality of this package,"
-	elog "you should consider installing:"
-	elog "    net-misc/networkmanager"
-}
